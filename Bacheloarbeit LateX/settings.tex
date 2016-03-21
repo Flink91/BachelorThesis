@@ -1,0 +1,65 @@
+\documentclass[a4paper,11pt]{scrreprt}
+
+\usepackage[komastyle,automark]{scrpage2}
+%\usepackage{german}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage[a4paper,left=2.5cm,top=2.5cm,bottom=2.5cm,includeheadfoot,width=16cm]{geometry}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}
+%\setlength{\textheight}{217mm}
+%\setlength{\textwidth}{170mm}
+
+\renewcommand{\captionformat}{~---~}
+\setcapindent{0mm}
+\addtokomafont{caption}{\small}
+\setkomafont{captionlabel}{\sffamily \bfseries}
+
+\setlength{\tabcolsep}{3mm}
+\renewcommand{\arraystretch}{1.2}
+
+
+%\documentclass[11pt]{report}
+
+%\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{ae}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage[german]{varioref}
+
+
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+
+%\usepackage[dvips]{graphicx}
+\DeclareGraphicsExtensions{.eps,.gif}
+
+\usepackage{nonfloat} % Einfügen von Bildern ohne Float (\figcaption)
+\usepackage[percent]{overpic}
+\usepackage{overpic}
+
+
+\usepackage{picins}  % frameenv
+\usepackage{wrapfig} % umfliessende Bilder
+
+\setcounter{secnumdepth}{2} \setcounter{tocdepth}{2} 
+\renewcommand{\topfraction}{.99}
+\renewcommand{\bottomfraction}{.3}
+\renewcommand{\textfraction}{0.00001}
+
+\bibliographystyle{alphadin} 
+
+
+\newenvironment{compactitemize}
+    {
+    \begin{list}{-}{%
+        \setlength{\itemsep}{0pt}%
+    }}
+    {\end{list}}
+
+\clubpenalty=15000%
+\widowpenalty=10000%
+\displaywidowpenalty=10000%

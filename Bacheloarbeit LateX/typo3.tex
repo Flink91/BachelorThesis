@@ -1,0 +1,74 @@
+\chapter{Typo3 - Eine Übersicht}
+\label{kap-typo3}
+
+Die Wahl des CMS fiel nun durch die ausreichende Recherche im vorigen Kapitel auf Typo3, weshalb dies in dieser Bachelorarbeit einen essentiellen Teil ausmacht. In diesem Kapitel werden zunächst alle nötigen Grundlagen rund um Typo3 geklärt um im anschließenden Kapitel die Anpassung Teines Typo3 Systems an die zuvor gesammelten Anforderungen informiert vornehmen zu können.
+
+\section{Version und Hintergrund}
+Typo3 ist ein Open Source CMS, ursprünglich entwickelt von Kasper Skårhøj und basiert auf der Programmiersprache PHP. Typo3 umfasst eine Fülle an Versionen und spaltete sich 2015 sogar in zwei verschiedene Kernentwicklungsteams. Eines das weiter an Typo3 CMS arbeitet und eines, das an Typo3 Neos arbeitet. Diese Arbeit basiert auf der neuesten Version von Typo3 CMS 7.6 LTS. 
+
+\section{Installation}
+
+Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfangreich. Je nach Vorhaben muss mit komplexen Einstellungen am serverseitigen System experimentiert werden. Zum Zweck der Entwicklung bietet es sich jedoch an das Typo3 System zunächst lokal zu installieren. Der hierfür nötige Server kann entweder durch ein Programm wie Wamp oder Xampp, welche eine fertige Apache-Distribution liefern, bereitgestellt werden oder durch das Installieren eines Servers auf einer virtuellen Maschine. Die vorgenommenen Implementationen in Kapitel ? wurden mit Wamp realisiert.
+
+\section{Bedienung}
+
+Typo3 generiert letztendlich eine Website. Diese lässt sich jedoch durch das Typo3 Backend entscheidend verändern. Die Bedienung geschieht fast immer durch dieses Backend, welches von der Startseite aus durch das Anhängen von \texttt{/typo3}. Hier werden im Grunde drei Aufgaben erledigt. Templates erstellen um das Design der Website anzupassen, Typo3 Konfigurationen vornehmen und die Erstellung von Inhalten. 
+
+\begin{figure}[ht]
+	\includegraphics[scale=0.5]{abb/typo3frontend.jpg}
+	\caption{Das Frontend gleicht einer normalen Website.}%
+	\label{fig:typo3backend}
+\end{figure}
+
+\begin{figure}[ht]
+	\includegraphics[scale=0.5]{abb/typo3backend.jpg}
+	\caption{Das Typo3 Backend}%
+	\label{fig:typo3backend}
+\end{figure}
+
+Das größte visuelle Merkmal der neuen Typo3 Version 7.6 LTS ist das neue, klarere Design des Backend von Typo3. So wird es für Anwender ohne Programmierkenntnisse einfacher sich zurechtzufinden und Inhalte zu erstellen. Dies geschieht hauptsächlich über einen integrierten WYSIWYG-Editor.
+Dennoch enthält die Backend sehr viele Optionen, versteckte Knöpfe und Eigenheiten, die einer Erklärung bedürfen.
+
+\section{Funktionalität und Architektur von Typo3}
+
+Es handelt sich an dieser Stelle zwar um eine wissenschaftliche Arbeit und kein Handbuch, doch es ist ein wesentlicher Bestandteil dessen die Typo3 Umgebung zu verstehen um analysieren zu können, wie sie am geschicktesten auf die gesammelten Anforderungen anzupassen ist. Daher folgt nun eine komprimierte Übersicht über die Entwicklung von Typo3 Websites und den Workflow beim Erstellen dieser.
+
+\subsection{Die Backend Module im Überblick}
+Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestaltet sich jedoch immer noch anspruchsvoller als bei vergleichbaren Konkurrenten. Deshalb findet sich hier zunächst eine Liste mit Erklärungen zu den relevantesten Optionen:
+	Page: Hier lassen sich die Einzelseiten der Webanwendung auf einem hohen Level erstellen und verwalten.
+	View: Hier ist es möglich, das Frontend zu begutachten, ohne das Backend zu verlassen
+	List:
+	Info:
+	Functions:
+	Template:
+	Filelist:
+	Extensions:
+	Languages:
+	Access:
+	Backend users:
+	Install:
+	Log:
+	DB check:
+	Configuration: 
+	Reports: Liefert eine Liste von Nachrichten über den Lauf der Webseite und mögliche Probleme
+
+
+\subsection{Typoscript}
+
+Typoscript ist die Skriptsprache von Typo3. Es handelt sich dabei nicht um eine richtige Programmiersprache, was sich vom Namen her vermuten lassen könnte. Das zeigt sich bereits in der Art und Weise wie Typoscript von Typo3 verarbeitet wird, nämlich als sehr langes PHP Array und einem internen Parser. Typoskript ist mehr dafür ausgelegt dem Ersteller der Webseite eine Möglichkeit zu geben zu bestimmen, wie Typo3 mit bestimmten Objekten, wie zum Beispiel Bildern, Menüs oder Templates umgehen soll. Es ist so also für die spezifische Ausgabe von Content zuständig.
+In Typoscript wird immer mit Objekten gearbeitet, denen man bestimmte Eigenschaften zusprechen kann.
+
+\subsection{Templates erstellen}
+
+Bei dem Begriff Template im Kontext von Typo3 können verschiedene Dinge gemeint sein. Zum einen gibt es das HTML-Template, welches als Rahmen für die von Typo3 erzeugten Inhalte fungiert. Zum Anderen kann das TypoScript-Template gemeint sein. Das sind Sammlungen von TypoScript-Anweisungen zur Konfiguration der Frontend Ausgabe von Menüs, Grafiken und Ähnlichem. Die dritte Variante, die mit Template gemeint sein kann ist das Fluid-Template. Dies ist eine Systemextension von Typo3, welche das Erstellen von HTML-Templates erleichtert indem es hier Dinge wie Variablen, Bedingungen und Partials erlaubt. Aus dem Fluid-Template wird dann ein HTML-Template generiert.
+
+https://wiki.typo3.org/Templating_Tutorial_-_Basics
+
+http://www.typo3-websites.eu/typo3-erweiterungen/ergaenzung-a/sichere-downloads/
+
+\subsection{Erweiterungen}
+
+Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterungen oder Extensions. Inzwischen existieren tausende von Erweiterungen für das CMS. Allerdings muss dazugesagt werden, dass ein großer Teil dieser veraltet sind, nicht mehr gepflegt werden oder gar überhaupt nicht auf der neuen Version lauffähig gemacht werden können. Das liegt auch daran, dass viele der Extensions von freien Programmierern in ihrer Freizeit entwickelt werden.
+Zu finden sind diese Extensions auf der offiziellen Seite unter typo3.org/extensions/repository. Wichtig ist es hier auf die Kompatibilität zu achten, die dort angezeigt wird. Auch findet sich hier meist eine Dokumentation zur Einrichtung und weiteren Infos zur jeweiligen Erweiterung. 
+Die  Erweiterungen der eigenen Typo3 Anwendung lassen sich durch den Menüpunkt ?Erweiterungen? im Backend verwalten.
+

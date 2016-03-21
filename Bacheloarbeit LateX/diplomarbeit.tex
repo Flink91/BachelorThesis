@@ -1,0 +1,43 @@
+\include{settings}
+
+\begin{document}
+
+\include{deckblatt}
+
+\pagenumbering{roman}%
+
+%Inhaltsverzeichnis
+\tableofcontents%
+\newpage
+\pagestyle{headings}%
+\pagenumbering{arabic}%
+\setcounter{page}{1}
+\parskip1.5ex 
+
+
+\include{einleitungmotivation}      
+\include{projektanalyse}
+\include{cmswahl}
+\include{typo3}
+\include{typo3praxisteil}
+\include{mehrwert}
+           
+% Weitere Kapitel ...
+\include{zusammenfassungausblick}   
+
+
+%Abbildungsverzeichnis
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+
+%Tabellenverzeichnis
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis} \listoftables
+
+% Literaturverzeichnis
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{bibl}
+
+\newpage
+\pagestyle{empty}
+\include{erklaerung}
+\end{document}
