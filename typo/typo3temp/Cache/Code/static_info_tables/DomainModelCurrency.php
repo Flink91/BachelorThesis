@@ -1,6 +1,6 @@
 <?php
 /***********************************************************************
- * this is partial from: C:/wamp/www/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/Currency.php
+ * this is partial from: C:/wamp/www/BachelorThesis/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/Currency.php
 ***********************************************************************/
 	namespace SJBR\StaticInfoTables\Domain\Model;
 /***************************************************************
@@ -388,4 +388,4 @@ class Currency extends AbstractEntity {
 
 
 }
-#1457808966    8695      
+#1458755854    8710      

@@ -1,6 +1,6 @@
 <?php
 /***********************************************************************
- * this is partial from: C:/wamp/www/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/CountryZone.php
+ * this is partial from: C:/wamp/www/BachelorThesis/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/CountryZone.php
 ***********************************************************************/
 	namespace SJBR\StaticInfoTables\Domain\Model;
 /***************************************************************
@@ -236,4 +236,4 @@ class CountryZone extends AbstractEntity {
 
 
 }
-#1457808966    5263      
+#1458755854    5278      

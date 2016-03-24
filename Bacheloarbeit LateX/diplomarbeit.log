@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  19 MAR 2016 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  24 MAR 2016 16:09
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -414,7 +414,7 @@ Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
 \WF@everypar=\toks24
 Package: wrapfig 2003/01/31  v 3.6
 ))
-(diplomarbeit.aux (deckblatt.aux) (einleitungmotivation.aux)
+(diplomarbeit.aux (deckblatt.aux) (einleitungmotivation.aux) (begriffe.aux)
 (projektanalyse.aux) (cmswahl.aux) (typo3.aux
 
 LaTeX Warning: Label `fig:typo3backend' multiply defined.
@@ -602,11 +602,26 @@ LaTeX Warning: Reference `kap-problemstellung' on page 2 undefined on input lin
 e 37.
 
 ) [2]
+\openout2 = `begriffe.aux'.
+
+ (begriffe.tex
+chapter 2.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 12.
+(V:\ProgrammeV\miktex\tex\latex\ae\omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
+) [3
+
+
+
+]
 \openout2 = `projektanalyse.aux'.
 
  (projektanalyse.tex
-chapter 2.
-) [3
+chapter 3.
+) [4
 
 
 
@@ -614,49 +629,53 @@ chapter 2.
 \openout2 = `cmswahl.aux'.
 
  (cmswahl.tex
-chapter 3.
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 12.
-(V:\ProgrammeV\miktex\tex\latex\ae\omsaer.fd
-File: omsaer.fd 1999/12/27
-)
-LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
- [4
+chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+[5
 
 
 
-]) [5]
+]) [6]
 \openout2 = `typo3.aux'.
 
  (typo3.tex
-chapter 4.
+chapter 5.
 LaTeX Font Info:    Try loading font information for T1+aett on input line 15.
 (V:\ProgrammeV\miktex\tex\latex\ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-<abb/typo3frontend.jpg, id=38, 840.13875pt x 472.76625pt>
+<abb/typo3frontend.jpg, id=41, 840.13875pt x 472.76625pt>
 File: abb/typo3frontend.jpg Graphic file (type jpg)
 
 <use abb/typo3frontend.jpg>
 Package pdftex.def Info: abb/typo3frontend.jpg used on input line 18.
 (pdftex.def)             Requested size: 420.06834pt x 236.38254pt.
 
-<abb/typo3backend.jpg, id=39, 840.89156pt x 474.27188pt>
+<abb/typo3backend.jpg, id=42, 840.89156pt x 474.27188pt>
 File: abb/typo3backend.jpg Graphic file (type jpg)
 
 <use abb/typo3backend.jpg>
 Package pdftex.def Info: abb/typo3backend.jpg used on input line 24.
 (pdftex.def)             Requested size: 420.44475pt x 237.13536pt.
- [6
+ [7
 
 
 
-] [7 <./abb/typo3frontend.jpg> <./abb/typo3backend.jpg>]) [8] [9]
+] [8 <./abb/typo3frontend.jpg> <./abb/typo3backend.jpg>]) [9] [10]
 \openout2 = `typo3praxisteil.aux'.
 
  (typo3praxisteil.tex
-chapter 5.
-[10
+chapter 6.
+[11
 
 
 
@@ -664,12 +683,12 @@ chapter 5.
 Overfull \vbox (100.3517pt too high) has occurred while \output is active []
 
 
-[11]) [12]
+[12]) [13]
 \openout2 = `mehrwert.aux'.
 
  (mehrwert.tex
-chapter 6.
-) [13
+chapter 7.
+) [14
 
 
 
@@ -677,8 +696,8 @@ chapter 6.
 \openout2 = `zusammenfassungausblick.aux'.
 
  (zusammenfassungausblick.tex
-chapter 7.
-) [14
+chapter 8.
+) [15
 
 
 
@@ -686,30 +705,30 @@ chapter 7.
 \tf@lof=\write4
 \openout4 = `diplomarbeit.lof'.
 
- [15
+ [16
 
 
 ] (diplomarbeit.lot)
 \tf@lot=\write5
 \openout5 = `diplomarbeit.lot'.
 
- (diplomarbeit.bbl [16
+ (diplomarbeit.bbl [17
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 3.
 
-) [17
+) [18
 
 ]
 \openout2 = `erklaerung.aux'.
 
- (erklaerung.tex) [18
+ (erklaerung.tex) [19
 
 ] (diplomarbeit.aux (deckblatt.aux)
-(einleitungmotivation.aux) (projektanalyse.aux) (cmswahl.aux) (typo3.aux)
-(typo3praxisteil.aux) (mehrwert.aux) (zusammenfassungausblick.aux)
+(einleitungmotivation.aux) (begriffe.aux) (projektanalyse.aux) (cmswahl.aux)
+(typo3.aux) (typo3praxisteil.aux) (mehrwert.aux) (zusammenfassungausblick.aux)
 (erklaerung.aux))
 
 LaTeX Warning: There were undefined references.
@@ -719,10 +738,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7147 strings out of 493634
- 104930 string characters out of 3146593
- 252175 words of memory out of 3000000
- 10281 multiletter control sequences out of 15000+200000
+ 7158 strings out of 493634
+ 105079 string characters out of 3146593
+ 252490 words of memory out of 3000000
+ 10285 multiletter control sequences out of 15000+200000
  56353 words of font info for 101 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  58i,8n,68p,872b,280s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -736,9 +755,9 @@ pe1/public/amsfonts/cm/cmsl10.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsf
 onts/cm/cmssbx10.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><V:/Progr
 ammeV/miktex/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (21 pages, 408045 bytes).
+Output written on diplomarbeit.pdf (22 pages, 410878 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

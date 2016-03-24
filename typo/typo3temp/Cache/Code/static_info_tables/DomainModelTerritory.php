@@ -1,6 +1,6 @@
 <?php
 /***********************************************************************
- * this is partial from: C:/wamp/www/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/Territory.php
+ * this is partial from: C:/wamp/www/BachelorThesis/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/Territory.php
 ***********************************************************************/
 	namespace SJBR\StaticInfoTables\Domain\Model;
 /***************************************************************
@@ -153,4 +153,4 @@ class Territory extends AbstractEntity {
 
 
 }
-#1457808966    3838      
+#1458755854    3853      

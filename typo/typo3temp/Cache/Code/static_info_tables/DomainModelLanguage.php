@@ -1,6 +1,6 @@
 <?php
 /***********************************************************************
- * this is partial from: C:/wamp/www/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/Language.php
+ * this is partial from: C:/wamp/www/BachelorThesis/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/Language.php
 ***********************************************************************/
 	namespace SJBR\StaticInfoTables\Domain\Model;
 /***************************************************************
@@ -303,4 +303,4 @@ class Language extends AbstractEntity {
 
 
 }
-#1457808966    6377      
+#1458755854    6392      

@@ -299,11 +299,29 @@ return array (
       array (
       ),
     ),
+    'recycler' => 
+    array (
+      'composerName' => 'typo3/cms-recycler',
+      'state' => 'active',
+      'packagePath' => 'typo3/sysext/recycler/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'reports' => 
     array (
       'composerName' => 'typo3/cms-reports',
       'state' => 'active',
       'packagePath' => 'typo3/sysext/reports/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'scheduler' => 
+    array (
+      'composerName' => 'typo3/cms-scheduler',
+      'state' => 'active',
+      'packagePath' => 'typo3/sysext/scheduler/',
       'suggestions' => 
       array (
       ),
@@ -399,6 +417,24 @@ return array (
       array (
       ),
     ),
+    'bootstrap_core' => 
+    array (
+      'composerName' => 'laxap/bootstrap-core',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/bootstrap_core/',
+      'suggestions' => 
+      array (
+      ),
+    ),
+    'bsdist' => 
+    array (
+      'composerName' => 'laxap/bsdist',
+      'state' => 'active',
+      'packagePath' => 'typo3conf/ext/bsdist/',
+      'suggestions' => 
+      array (
+      ),
+    ),
     'typo3_forum' => 
     array (
       'composerName' => 'mittwald/typo3-forum',
@@ -487,24 +523,6 @@ return array (
       'composerName' => 'typo3/cms-opendocs',
       'state' => 'inactive',
       'packagePath' => 'typo3/sysext/opendocs/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'recycler' => 
-    array (
-      'composerName' => 'typo3/cms-recycler',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/recycler/',
-      'suggestions' => 
-      array (
-      ),
-    ),
-    'scheduler' => 
-    array (
-      'composerName' => 'typo3/cms-scheduler',
-      'state' => 'inactive',
-      'packagePath' => 'typo3/sysext/scheduler/',
       'suggestions' => 
       array (
       ),

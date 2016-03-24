@@ -1,6 +1,6 @@
 <?php
 /***********************************************************************
- * this is partial from: C:/wamp/www/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/Country.php
+ * this is partial from: C:/wamp/www/BachelorThesis/typo/typo3conf/ext/static_info_tables/Classes/Domain/Model/Country.php
 ***********************************************************************/
 	namespace SJBR\StaticInfoTables\Domain\Model;
 /***************************************************************
@@ -566,4 +566,4 @@ class Country extends AbstractEntity {
 
 
 }
-#1457808966    11475     
+#1458755854    11490     

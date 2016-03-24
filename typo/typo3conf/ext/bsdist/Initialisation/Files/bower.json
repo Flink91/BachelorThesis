@@ -1,0 +1,23 @@
+{
+  "name": "your-name",
+  "version": "1.0.0",
+  "description": "new TYPO3 website",
+  "authors": [ "Firstname Lastname <example@example.com>" ],
+  "private": true,
+  "dependencies": {
+    "jquery": "2.1.4",
+    "bootstrap": "3.3.5",
+    "bootstrap-sass-official": "3.3.5",
+    "jquery-prettyPhoto": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "composer.json",
+    "package.json"
+  ]
+}

@@ -24,6 +24,7 @@ return array(
     'BK2K\\BootstrapPackage\\ViewHelpers\\FlexFormViewHelper' => $typo3InstallDir . 'typo3conf/ext/bootstrap_package/Classes/ViewHelpers/FlexFormViewHelper.php',
     'BK2K\\BootstrapPackage\\ViewHelpers\\VarViewHelper' => $typo3InstallDir . 'typo3conf/ext/bootstrap_package/Classes/ViewHelpers/VarViewHelper.php',
     'BK2K\\BootstrapPackage\\Xclass\\Backend\\View\\LogoView' => $typo3InstallDir . 'typo3conf/ext/bootstrap_package/Classes/Xclass/Backend/View/LogoView.php',
+    'Laxap\\BootstrapCore\\Service\\InstallService' => $typo3InstallDir . 'typo3conf/ext/bootstrap_core/Classes/Service/InstallService.php',
     'Mittwald\\Typo3Forum\\Ajax\\Dispatcher' => $typo3InstallDir . 'typo3conf/ext/typo3_forum/Classes/Ajax/Dispatcher.php',
     'Mittwald\\Typo3Forum\\Cache\\Cache' => $typo3InstallDir . 'typo3conf/ext/typo3_forum/Classes/Cache/Cache.php',
     'Mittwald\\Typo3Forum\\Cache\\CacheManager' => $typo3InstallDir . 'typo3conf/ext/typo3_forum/Classes/Cache/CacheManager.php',
