@@ -12,7 +12,7 @@ Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfan
 
 \section{Bedienung}
 
-Typo3 generiert letztendlich eine Website. Diese lässt sich jedoch durch das Typo3 Backend entscheidend verändern. Die Bedienung geschieht fast immer durch dieses Backend, welches von der Startseite aus durch das Anhängen von \texttt{/typo3}. Hier werden im Grunde drei Aufgaben erledigt. Templates erstellen um das Design der Website anzupassen, Typo3 Konfigurationen vornehmen und die Erstellung von Inhalten. 
+Typo3 generiert letztendlich eine Website. Diese lässt sich jedoch durch das Typo3 Backend entscheidend verändern. Die Bedienung geschieht fast immer durch dieses Backend, welches von der Startseite aus durch das Anhängen von \texttt{/typo3} in der Adresszeile zu erreichen ist. Hier werden im Grunde drei Aufgaben erledigt. Templates erstellen um das Design der Website anzupassen, Typo3 Konfigurationen vornehmen und die Erstellung von Inhalten. 
 
 \begin{figure}[ht]
 	\includegraphics[scale=0.5]{abb/typo3frontend.jpg}
@@ -31,31 +31,57 @@ Dennoch enthält die Backend sehr viele Optionen, versteckte Knöpfe und Eigenheit
 
 \section{Funktionalität und Architektur von Typo3}
 
-Es handelt sich an dieser Stelle zwar um eine wissenschaftliche Arbeit und kein Handbuch, doch es ist ein wesentlicher Bestandteil dessen die Typo3 Umgebung zu verstehen um analysieren zu können, wie sie am geschicktesten auf die gesammelten Anforderungen anzupassen ist. Daher folgt nun eine komprimierte Übersicht über die Entwicklung von Typo3 Websites und den Workflow beim Erstellen dieser.
+Es handelt sich an dieser Stelle zwar um eine wissenschaftliche Arbeit und kein Handbuch, doch es ist ein wesentlicher Bestandteil dessen, die Typo3 Umgebung zu verstehen um analysieren zu können, wie sie am geschicktesten auf die gesammelten Anforderungen anzupassen ist. Daher folgt nun eine komprimierte Übersicht über den Umgang und die Entwicklung von Typo3 Websites und den Workflow beim Erstellen dieser.
 
 \subsection{Die Backend Module im Überblick}
-Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestaltet sich jedoch immer noch anspruchsvoller als bei vergleichbaren Konkurrenten. Deshalb findet sich hier zunächst eine Liste mit Erklärungen zu den relevantesten Optionen:
-	Page: Hier lassen sich die Einzelseiten der Webanwendung auf einem hohen Level erstellen und verwalten.
-	View: Hier ist es möglich, das Frontend zu begutachten, ohne das Backend zu verlassen
-	List:
-	Info:
-	Functions:
-	Template:
-	Filelist:
-	Extensions:
-	Languages:
-	Access:
-	Backend users:
-	Install:
-	Log:
-	DB check:
-	Configuration: 
-	Reports: Liefert eine Liste von Nachrichten über den Lauf der Webseite und mögliche Probleme
+
+Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestaltet sich jedoch immer noch anspruchsvoller als bei vergleichbaren Konkurrenten. Deshalb findet sich hier zunächst eine Liste mit Erklärungen zur Navigationsleiste im Backend:\\
+\begin{wrapfigure}{lh!}{0.25\textwidth}
+	\begin{center}
+		\includegraphics[width=0.25\textwidth]{abb/typo3menu.jpg}
+	\end{center}
+	\caption{Typo3 Backend Menü}
+\end{wrapfigure}
+\begin{itemize}
+	
+	\item Page: Hier lassen sich die Einzelseiten der Webanwendung auf einem hohen Level erstellen und verwalten. Auch wenn noch keine Seite angelegt wurde, sieht man im Hierarchiebaum bereits einen Eintrag. Dieser stellt sozusagen die Wurzel aller zukünftigen Seiten dar, zeigt selbst jedoch keine Seite an.
+	
+	\item View: Hier ist es möglich, das Frontend zu begutachten, ohne das Backend zu verlassen.
+	
+	\item List: In diesem Menüpunkt findet sich eine Übersicht der Elemente, die dem Seitenbaum zugeordnet sind. Das können Webseiten oder auch Kompontenten von Plugins sein.
+	
+	\item Info: Hier lassen sich lediglich Informationen, wie zum Beispiel Erstelleungsdatum, zu einzelnen Komponenten anzeigen.
+	
+	\item Functions: Dieser Bereich beherbergt einige nützliche Hilfsfunktionen, um schneller Änderungen, wie Seitensortierung, durchzuführen. 
+	
+	\item Template: Hier werden alle Templates der Seite verwaltet.
+	
+	\item Filelist: Hier werden alle Dateien des sogenannten Filemount verwaltet. Meist handelt es sich um Dateien, die Redakteure in Einträge integrieren. Aber auch schnelle Änderungen an CSS-Dateien lassen sich hier durch einen integrierten Texteditor vornehmen.
+	
+	\item Extensions: In diesem Bereich werden alle installierten Erweiterungen gelistet. Man hat dort die Möglichkeit diese zu aktivieren und deaktivieren. Zu bemerken ist, dass das nicht mit allen Erweiterungen möglich ist, da einige Grundfunktionalitäten vonTypo3 auch als Erweiterungen gelistet sind und diese lassen sich nicht manipulieren. Darüber hinaus lassen sich hier neue Erweiterungen suchen und herunterladen.
+	
+	\item Languages: Dieser Punkt hilft bei der Verwaltung von mehrsprachigen Seiten. Auch das Backend lässt sich in mehreren Sprachen anzeigen.
+	
+	\item Access:
+	
+	\item Backend users: Hier lassen sich die Nutzer des Backend verwalten. Es lassen sich neue Backend User anlegen und auch spezifische Rechte dieser User konfigurieren. Typische Rollen sind Administrator/-in und Redakteur/-in.
+	
+	\item Install: Hier lassen sich durch das Install-Tool einige gravierende Einstellungen vornehmen, wie das Zurücksetzen von Passwörtern und ähnlichen Interaktionen mit der Datenbank. Außerdem zeigt diese Unterseite die Konfigurationsdetails der Umgebung an.
+	
+	\item Log: In diesem Bereich findet sich ein Protokoll über alle Nutzeraktionen und aufkommende Fehler.
+	
+	\item DB check: Hier lassen sich Statistiken über die Einträge der Datenbank anzeigen und Suchen in der Datenbank direkt durchs Backend durchführen.
+	
+	\item Configuration: In diesem Punkt findet sich eine recht unübersichtliche Liste von Konfigurationsvariablen.
+	
+	\item Reports: Der Report liefert eine Liste von Nachrichten über den Lauf der Webseite und mögliche Probleme.
+	
+\end{itemize}
 
 
 \subsection{Typoscript}
 
-Typoscript ist die Skriptsprache von Typo3. Es handelt sich dabei nicht um eine richtige Programmiersprache, was sich vom Namen her vermuten lassen könnte. Das zeigt sich bereits in der Art und Weise wie Typoscript von Typo3 verarbeitet wird, nämlich als sehr langes PHP Array und einem internen Parser. Typoskript ist mehr dafür ausgelegt dem Ersteller der Webseite eine Möglichkeit zu geben zu bestimmen, wie Typo3 mit bestimmten Objekten, wie zum Beispiel Bildern, Menüs oder Templates umgehen soll. Es ist so also für die spezifische Ausgabe von Content zuständig.
+Typoscript ist die Skriptsprache von Typo3. Es handelt sich dabei nicht um eine richtige Programmiersprache, was sich auch schon vom Namen her vermuten lassen könnte. Das zeigt sich auch in der Art und Weise wie Typoscript von Typo3 verarbeitet wird, nämlich als sehr langes PHP Array und einem internen Parser. Typoskript ist mehr dafür ausgelegt dem Ersteller der Webseite eine Möglichkeit zu geben zu bestimmen, wie Typo3 mit bestimmten Objekten, wie zum Beispiel Bildern, Menüs oder Templates umgehen soll. Es ist so also für die spezifische Ausgabe von Content zuständig.
 In Typoscript wird immer mit Objekten gearbeitet, denen man bestimmte Eigenschaften zusprechen kann.
 
 \subsection{Templates erstellen}
