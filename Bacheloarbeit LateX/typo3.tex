@@ -84,12 +84,27 @@ Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestal
 Typoscript ist die Skriptsprache von Typo3. Es handelt sich dabei nicht um eine richtige Programmiersprache, was sich auch schon vom Namen her vermuten lassen könnte. Das zeigt sich auch in der Art und Weise wie Typoscript von Typo3 verarbeitet wird, nämlich als sehr langes PHP Array und einem internen Parser. Typoskript ist mehr dafür ausgelegt dem Ersteller der Webseite eine Möglichkeit zu geben zu bestimmen, wie Typo3 mit bestimmten Objekten, wie zum Beispiel Bildern, Menüs oder Templates umgehen soll. Es ist so also für die spezifische Ausgabe von Content zuständig.
 In Typoscript wird immer mit Objekten gearbeitet, denen man bestimmte Eigenschaften zusprechen kann.
 
-\subsection{Templates erstellen}
-
-
 \subsection{Erweiterungen}
 
 Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterungen oder Extensions. Inzwischen existieren tausende von Erweiterungen für das CMS. Allerdings muss dazugesagt werden, dass ein großer Teil dieser veraltet sind, nicht mehr gepflegt werden oder gar überhaupt nicht auf der neuen Version lauffähig gemacht werden können. Das liegt auch daran, dass viele der Extensions von freien Programmierern in ihrer Freizeit entwickelt werden.
 Zu finden sind diese Extensions auf der offiziellen Seite unter typo3.org/extensions/repository. Wichtig ist es hier auf die Kompatibilität zu achten, die dort angezeigt wird. Auch findet sich hier meist eine Dokumentation zur Einrichtung und weiteren Infos zur jeweiligen Erweiterung. 
 Die  Erweiterungen der eigenen Typo3 Anwendung lassen sich durch den Menüpunkt ?Erweiterungen? im Backend verwalten.
+
+\subsection{Templates erstellen}
+
+Beim Erstellen einer Typo3 Website bekommt der Entwickler für gewöhnlich ein Frontend Design der Seite geliefert und hat dann die Aufgabe dieses Design in Typo3 zu integrieren. Das geschieht durch das Schreiben von Typoskript, das Installieren von Extensions, der Anpassung des Backend und die Entwicklung von Templates. Der Begriff Template ist bei Typo3 mehrfach belegt, deshalb vorerst eine Unterscheidung:
+
+\begin{itemize}
+	\item HTML-Template: Die HTML-Vorlage, welche meist ein Designer liefert.
+	\item TypoScript-Template: Alle Typoscript-Anweisungen, die Ausgabe von Menüs und Ähnlichem steuern.
+	\item Fluidtemplate: Mit Typo3 lassen sich im HTML-Code Fluid-Funktionen  verwenden. Diese erlauben Variablen, Bedingungen und das Aufteilen des HTML-Codes in Partials.
+\end{itemize}
+
+Im Folgenden geht es vor Allem um das Fluidtemplate, welches aus dem HTML-Template erzeugt wird. Für das Fluidtemplate ist es heutzutage üblich eine Template-Extension zu erstellen. Das bedeutet, dass das Template in einzelnen Dateien auffindbar ist, statt in der Datenbank, was die Versionierung und Weitergabe eines Templates erheblich vereinfacht. Da die Teamarbeit durch Dienste wie Git äußerst populär geworden ist, wird diese Methode der Template-Entwicklung bevorzugt.
+
+Zu Beginn einer neuen Template-Extension hilft eine Typo3 Extension weiter. Diese findet sich unter dem Namen \textit{extension_builder}. Dieser Builder erzeugt im Backend einen neuen Menüpunkt unter dem sich im Unterpunkt Domain Modeling eine neue Template-Extension erstellen lässt. Diese taucht dann auch in der Extension-Liste auf.
+
+Für die Arbeit mit den Dateien des erstellten Templates wird ein externer Editor benötigt. Im besten Fall sollte dieser auch mit Typoscript umgehen können, was die Wahl deutlich einschränkt. Zwei gute Optionen sind hier die IDEs UltraEdit und Webstorm. 
+
+Da der Fokus dieser Arbeit mehr auf der Umsetzung funktionaler Anforderungen liegt, wird an dieser Stelle nicht weiter auf die Möglichkeiten zum designen von Typo3 Webseiten eingegangen. Für die beispielhafte Umsetzung der Anforderungen wird ein einfaches Bootstrap Gerüst verwendet.
 
