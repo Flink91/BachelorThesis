@@ -1,9 +1,0 @@
-plugin.tx_typo3forum.view {
-	templateRootPath = EXT:typo3_forum/Resources/Private/Templates
-	partialRootPath = EXT:typo3_forum/Resources/Private/Partials
-	layoutRootPath = EXT:typo3_forum/Resources/Private/Layouts
-}
-
-plugin.tx_typo3forum.persistence {
-	storagePid = 30
-}

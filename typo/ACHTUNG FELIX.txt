@@ -1,3 +1,0 @@
-in der httpd.conf von apache musst du den threadstacksize raufsetzen.
-
-ThreadStackSize 8388608
