@@ -1,0 +1,13 @@
+Tue, 12 Apr 2016 09:02:42 +0000 [WARNING] request="3c0595fb6690d" component="TYPO3.CMS.Impexp.Utility.ImportExportUtility": <pre>
+array(7 items)
+   0 => "Possible error: sys_filemounts:1 had no new id assigned to it. This indicate
+      s that the record was not added to database during import. Please check chan
+      gelog!" (158 chars)
+   1 => "Lost relation: sys_filemounts:1" (31 chars)
+   2 => "Error: this records is NOT created it seems! (sys_filemounts:1)" (63 chars)
+   3 => "Error: this records is NOT created it seems! (sys_filemounts:1)" (63 chars)
+   4 => "ERROR: Could not find file ID in header." (40 chars)
+   5 => "ERROR: Could not find file ID in header." (40 chars)
+   6 => "ERROR: Could not find file ID in header." (40 chars)
+
+</pre> 

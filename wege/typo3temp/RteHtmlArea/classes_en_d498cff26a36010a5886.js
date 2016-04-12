@@ -1,0 +1,9 @@
+HTMLArea.classesLabels = {"align-left":"Justify Left","align-center":"Justify Center","align-right":"Justify Right","csc-frame-frame1":"Frame with grey background","csc-frame-frame2":"Frame with yellow background","important":"Important","name-of-person":"Name of person","detail":"Detail","component-items":"Component items","action-items":"Action items","component-items-ordered":"Component items","action-items-ordered":"Action items","lead":"Lead","text-center":"Align center","text-left":"Align left","text-right":"Align right","text-justify":"Align justified","text-success":"Marker: Success","text-info":"Marker: Info","text-warning":"Marker: Attention","text-danger":"Marker: Alert","badge":"Badge","success":"Marker: Success","info":"Marker: Info","warning":"Marker: Attention","danger":"Marker: Alert","btn":"Button","lightbox":"Open in lightbox"};
+HTMLArea.classesValues = {"align-left":"text-align: left;","align-center":"text-align: center;","align-right":"text-align: right;","csc-frame-frame1":"background-color: #EDEBF1; border: 1px solid #333333;","csc-frame-frame2":"background-color: #F5FFAA; border: 1px solid #333333;","important":"color: #8A0020;","name-of-person":"color: #10007B;","detail":"color: #186900;","component-items":"color: #186900;","action-items":"color: #8A0020;","component-items-ordered":"color: #186900;","action-items-ordered":"color: #8A0020;","lead":"","text-center":"","text-left":"","text-right":"","text-justify":"","text-success":"","text-info":"","text-warning":"","text-danger":"","badge":"","success":"","info":"","warning":"","danger":"","btn":"","lightbox":""};
+HTMLArea.classesNoShow = {};
+HTMLArea.classesAlternating = {};
+HTMLArea.classesCounting = {};
+HTMLArea.classesSelectable = {};
+HTMLArea.classesRequires = {};
+HTMLArea.classesRequiredBy = {};
+HTMLArea.classesXOR = {};
