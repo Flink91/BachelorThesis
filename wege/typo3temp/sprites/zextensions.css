@@ -1,1 +1,26 @@
 /* Auto-Generated via TYPO3\CMS\Backend\Sprite\SimpleSpriteHandler */
+
+.t3-icon-tx_news_domain_model_file-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_file.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_news_domain_model_link-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_link.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_news_domain_model_media-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_media.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_news_domain_model_tag-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_tag.png') !important;
+	background-size: contain;
+}
+	

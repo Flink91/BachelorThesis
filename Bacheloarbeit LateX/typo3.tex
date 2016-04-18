@@ -100,11 +100,75 @@ Beim Erstellen einer Typo3 Website bekommt der Entwickler für gewöhnlich ein Fro
 	\item Fluidtemplate: Mit Typo3 lassen sich im HTML-Code Fluid-Funktionen  verwenden. Diese erlauben Variablen, Bedingungen und das Aufteilen des HTML-Codes in Partials.
 \end{itemize}
 
+Ein Typo3 Fluidtemplate besteht also aus einem Layout, das Dinge wie head und header enthalten kann, einem Template, das den Inhalt repräsentiert und Partials, die mehrmals auf einer Seite vorkommen können.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{abb/typo3_template_overview.png}
+\caption[Typo3 Template Teile]{Typo3 Template Komponenten}
+\label{fig:typo3_template_overview}
+\end{figure}
+
 Im Folgenden geht es vor Allem um das Fluidtemplate, welches aus dem HTML-Template erzeugt wird. Für das Fluidtemplate ist es heutzutage üblich eine Template-Extension zu erstellen. Das bedeutet, dass das Template in einzelnen Dateien auffindbar ist, statt in der Datenbank, was die Versionierung und Weitergabe eines Templates erheblich vereinfacht. Da die Teamarbeit durch Dienste wie Git äußerst populär geworden ist, wird diese Methode der Template-Entwicklung bevorzugt.
 
-Zu Beginn einer neuen Template-Extension hilft eine Typo3 Extension weiter. Diese findet sich unter dem Namen \textit{extension_builder}. Dieser Builder erzeugt im Backend einen neuen Menüpunkt unter dem sich im Unterpunkt Domain Modeling eine neue Template-Extension erstellen lässt. Diese taucht dann auch in der Extension-Liste auf.
+Zu Beginn einer neuen Template-Extension hilft eine Typo3 Extension weiter. Diese findet sich unter dem Namen \textit{extension\_builder}. Dieser Builder erzeugt im Backend einen neuen Menüpunkt unter dem sich im Unterpunkt Domain Modeling eine neue Template-Extension erstellen lässt. Diese taucht dann auch in der Extension-Liste auf.
 
 Für die Arbeit mit den Dateien des erstellten Templates wird ein externer Editor benötigt. Im besten Fall sollte dieser auch mit Typoscript umgehen können, was die Wahl deutlich einschränkt. Zwei gute Optionen sind hier die IDEs UltraEdit und Webstorm. 
 
 Da der Fokus dieser Arbeit mehr auf der Umsetzung funktionaler Anforderungen liegt, wird an dieser Stelle nicht weiter auf die Möglichkeiten zum designen von Typo3 Webseiten eingegangen. Für die beispielhafte Umsetzung der Anforderungen wird ein einfaches Bootstrap Gerüst verwendet.
 
+\section{Beispielinstallation}
+
+In diesem Unterpunkt wird der tatsächliche Installationsprozess der Testumgebung, inklusive einem Blick auf den Code, dokumentiert. Da sich diese Installationsanleitung sehr praktisch gestaltet, sollten die Versionen der genutzten Software beachtet werden, da hier schnell Änderungen auftreten können. Die Testumgebung läuft mit Typo3 7.6 LTS und Wamp 3.0.0 mit PHP 5.6. Wichtig hierbei ist vor Allem die Typo3 Version. Es wird mit Bootstrap Version 3 gearbeitet.
+
+\paragraph{Typo 3 Installationsschritte}
+\begin{enumerate}
+	
+	\item Typo3 7.6 LTS herunterladen.
+	\item Wamp oder vergleichbares Programm herunterladen und installieren.
+	\item Den Typo3 Ordner in den \texttt{www}-Ordner von Wamp (htdocs bei XAMPP) verschieben
+	\item Nach dem Starten von Wamp zu \texttt{localhost/\textit{typo3Ordner}} navigieren.
+	\item Es erscheint ein Installationsguide und wahrscheinlich eine Reihe von Fehlern, die zu beheben sind
+	\item Die \texttt{php.ini} öffnen
+	\subitem Die Variable \texttt{memory\_limit} erhöhen auf 64 oder höher
+	\subitem Die Variable \texttt{upload\_max\_filesize} auf mindestens 10MB erhöhen
+	\subitem Die Variable \texttt{max\_execution\_time} auf 240 setzen
+	\item Die OpenSSL Extension muss als Systemvariable gesetzt werden. Unter Systemvariablen die Variable mit dem Namen \texttt{OPENSSL\_CONF} und dem Wert des Pfades zur openssl.cnf angeben. Danach eventuell Computer neu starten.
+	\item Die PHP Extension Fileinfo geht nicht. In der php.ini das Semikolon vor \texttt{extension=php\_fileinfo.dll} entfernen.
+	\item Windows Apache Thread Stack Size Fehler. Dieser kann in der httpd.conf Datei angepasst werden. Hier folgenden Codeschnipsel ans Ende der Datei kopieren:\\ \texttt{<IfModule mpm\_winnt\_module> ThreadStackSize 8388608 </IfModule>}
+	\item Alle Dienste von Wamp neu starten und zum Installationstool von Typo3 zurückkehren. Im nächsten Schritt wird eine Datenbank benötigt. Will man diese selbst anlegen hilft das Tool phpmyadmin unter localhost/phpmyadmin. Hier lässt sich mit einem Klick eine leere Datenbank anlegen.
+	\item Typo3 verlangt beim Anlegen der Datenbank auch den Port. Dieser lässt sich in der Konsole mit dem Befehl netstat -a -o auslesen. Hierzu vergleicht man die angezeigte PID mit dem Wamp Prozess im Taskmanager. Für gewöhnlich ist der Port eine Zahl um die 3000.
+	\item Nun lässt sich das Backend, durch das Anhängen von /typo3 in der Adresszeile, aufrufen.
+	
+\end{enumerate}
+
+\paragraph{Template-Erstellung Schritte} 
+
+Der Vorteil eines CMS ist die Erstellung von dynamischem Content. Um das zu bewerkstelligen braucht es ein Template zum Anzeigen dieser Inhalte. Für die Testumgebung wurde ein rudimentäres Template basierend auf dem Bootstrap Framework installiert. Das Bootstrap Framework sorgt ohne viel Arbeit für ein besseres Aussehen der Webseite und Responsivität, d.h. eine automatische Anpassung an alle Bildschirmgrößen.
+
+
+\begin{enumerate}
+	
+	\item Bootstrap 3 herunterladen.
+	\item Bootstrap Starter Template herunterladen durch das Kopieren des Quellcodes (F12). Diese vorerst als \texttt{index.html} abspeichern.
+	\item In der \texttt{index.html} alle href-Links an die neue Umgebung anpassen. Der vollständige Code findet sich im Anhang.
+	\item Einen neuen Ordner im Verzeichnis fileadmin anlegen. Dieser hält das Template.
+	\item Hier die \texttt{index.html} und den bootstrap Ordner ablegen. Dazu drei neue Ordner anlegen mit den Namen \texttt{layouts}, \texttt{partials} und \texttt{ts}.
+	\item Im Backend unter dem Menüpunkt Template muss das Bootstrap Template im Root der Webseite angelegt werden. Sollte dieser nicht existieren, kann dieser unter \texttt{Page} angelegt werden.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.3\linewidth]{abb/roottemplate.jpg}
+		\caption{Aufbau Website-Baum}
+		\label{fig:roottemplate}
+	\end{figure}
+	\item Im Root-Template unter \texttt{Includes} müssen zwei Dinge eingefügt werden, \texttt{css\_styled\_content} und \texttt{fluid\_styled\_content}. Die Reihenfolge ist dabei wichtig. Sollte \texttt{fluid\_styled\_content} nicht existieren, muss dieses als Extension installiert werden.
+	\item Unter \texttt{General} werden nun zwei externe Typoscript Dateien für die Konstanten und das Setup verlinkt. So erhält man mehr Flexibilität bei der Arbeit mit Versionierungen und Teamarbeit.
+	\subitem Unter \texttt{Constants} wird Folgendes geschrieben: \texttt{<INCLUDE\_TYPOSCRIPT: source=" FILE:fileadmin/\textit{Template\_WegE}/ts/constants.ts">}
+	\subitem Unter \texttt{Setup}: \texttt{<INCLUDE\_TYPOSCRIPT: source= " FILE:fileadmin/\textit{Template\_WegE}/ts/setup.ts">}
+	\subitem Die zwei verlinkten Dateien müssen nun auch im ts-Ordner erstellt werden.
+	\item Die setup.ts benötigt nun einiges an Code, der aus der index.html übertragen wird. Diese enthält dann nur noch den Code zwischen den body-tags. Die fertige Datei ist im Anhang zu finden. 
+	\item Die Teile aus der index.html, die nun wegfallen, werden in der setup.ts angelegt. Dafür ist ein PAGE Objekt nötig, welches alle referenzierten Dateien, wie bootstrap.css, einbindet. Die komplette Datei ist im Anhang zu finden. Die Inhalte, die das Template der Testumgebung dynamisch erstellt werden sollen beschränken sich auf das Menü und den Seitentitel. Nachdem diese Datei angelegt ist, wird das Menü automatisch mit den erstellten Seiten aus dem Typo3 Backend gefüllt.
+	
+\end{enumerate} 
+
+Nach dem Anlegen eines rudimentären, aber voll funktionsfähigem Template, kann mit dem Erstellen von Content, beziehungsweise dem Installieren und Testen von Extensions, begonnen werden.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  7 APR 2016 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  18 APR 2016 15:45
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -679,25 +679,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--44
 
  []
 
-[10 <./abb/typo3menu.jpg>] [11]) [12]
+[10 <./abb/typo3menu.jpg>] [11]
+<abb/typo3_template_overview.png, id=61, 647.41875pt x 536.0025pt>
+File: abb/typo3_template_overview.png Graphic file (type png)
+
+<use abb/typo3_template_overview.png>
+Package pdftex.def Info: abb/typo3_template_overview.png used on input line 107
+.
+(pdftex.def)             Requested size: 318.66946pt x 263.82944pt.
+ [12] [13 <./abb/typo3_template_overview.png>]
+Overfull \hbox (58.62167pt too wide) in paragraph at lines 137--138
+[]\T1/aer/m/n/10.95 Die PHP Ex-ten-si-on Filein-fo geht nicht. In der php.ini d
+as Se-mi-ko-lon vor \T1/aett/m/n/10.95 ex-ten-si-on=php_fileinfo.dll
+ []
+
+[14] <abb/roottemplate.jpg, id=74, 216.81pt x 182.18062pt>
+File: abb/roottemplate.jpg Graphic file (type jpg)
+
+<use abb/roottemplate.jpg>
+Package pdftex.def Info: abb/roottemplate.jpg used on input line 160.
+(pdftex.def)             Requested size: 136.5746pt x 114.76604pt.
+
+Overfull \hbox (16.57599pt too wide) in paragraph at lines 164--165
+[]\T1/aer/m/n/10.95 Im Root-Template un-ter \T1/aett/m/n/10.95 In-clu-des \T1/a
+er/m/n/10.95 müs-sen zwei Din-ge ein-ge-fügt wer-den, \T1/aett/m/n/10.95 css_st
+yled_content
+ []
+
+
+Overfull \hbox (14.97731pt too wide) in paragraph at lines 164--165
+\T1/aer/m/n/10.95 und \T1/aett/m/n/10.95 fluid_styled_content\T1/aer/m/n/10.95 
+. Die Rei-hen-fol-ge ist da-bei wich-tig. Soll-te \T1/aett/m/n/10.95 fluid_styl
+ed_content
+ []
+
+ngerman: "FF is now obsolete, please use FFF instead on input line 166.
+ngerman: "FF is now obsolete, please use FFF instead on input line 167.
+
+Overfull \hbox (65.11401pt too wide) in paragraph at lines 167--168
+[]| \T1/aer/m/n/10.95 Un-ter \T1/aett/m/n/10.95 Se-tup\T1/aer/m/n/10.95 : \T1/a
+ett/m/n/10.95 <IN-CLU-DE_TYPOSCRIPT: sour-ce= FF-ILE:fileadmin/\T1/aett/m/it/10
+.95 Template_WegE\T1/aett/m/n/10.95 /ts/setup.ts 
+ []
+
+) [15 <./abb/roottemplate.jpg>]
 \openout2 = `typo3praxisteil.aux'.
 
  (typo3praxisteil.tex
 chapter 6.
-[13
+<abb/newsextension.jpg, id=78, 695.59875pt x 424.58624pt>
+File: abb/newsextension.jpg Graphic file (type jpg)
+
+<use abb/newsextension.jpg>
+Package pdftex.def Info: abb/newsextension.jpg used on input line 30.
+(pdftex.def)             Requested size: 341.43306pt x 208.4054pt.
+ [16
 
 
 
-]
-Overfull \vbox (100.3517pt too high) has occurred while \output is active []
-
-
-[14]) [15]
+] [17 <./abb/newsextension.jpg>]) [18] [19]
 \openout2 = `mehrwert.aux'.
 
- (mehrwert.tex
+
+(mehrwert.tex
 chapter 7.
-) [16
+) [20
 
 
 
@@ -706,7 +752,7 @@ chapter 7.
 
  (zusammenfassungausblick.tex
 chapter 8.
-) [17
+) [21
 
 
 
@@ -714,26 +760,26 @@ chapter 8.
 \tf@lof=\write4
 \openout4 = `diplomarbeit.lof'.
 
- [18
+ [22
 
 
 ] (diplomarbeit.lot)
 \tf@lot=\write5
 \openout5 = `diplomarbeit.lot'.
 
- (diplomarbeit.bbl [19
+ (diplomarbeit.bbl [23
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 3.
 
-) [20
+) [24
 
 ]
 \openout2 = `erklaerung.aux'.
 
- (erklaerung.tex) [21
+ (erklaerung.tex) [25
 
 ] (diplomarbeit.aux (deckblatt.aux)
 (einleitungmotivation.aux) (begriffe.aux) (projektanalyse.aux) (cmswahl.aux)
@@ -747,27 +793,29 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7163 strings out of 493634
- 105040 string characters out of 3143744
- 252490 words of memory out of 3000000
- 10289 multiletter control sequences out of 15000+200000
- 56353 words of font info for 101 fonts, out of 3000000 for 9000
+ 7185 strings out of 493634
+ 105547 string characters out of 3143744
+ 252528 words of memory out of 3000000
+ 10305 multiletter control sequences out of 15000+200000
+ 56843 words of font info for 103 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 58i,8n,68p,878b,280s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,8n,68p,878b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (24 pages, 446499 bytes).
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on diplomarbeit.pdf (28 pages, 659634 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

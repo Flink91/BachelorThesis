@@ -258,6 +258,12 @@ return [
             'packagePath' => 'typo3/sysext/viewpage/',
             'suggestions' => [],
         ],
+        'news' => [
+            'composerName' => 'georgringer/news',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/news/',
+            'suggestions' => [],
+        ],
         'adodb' => [
             'composerName' => 'typo3/cms-adodb',
             'state' => 'inactive',

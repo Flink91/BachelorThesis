@@ -1,0 +1,38 @@
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">{siteName}</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <f:cObject typoscriptObjectPath="lib.mainmenu" />
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subnavbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="subnavbar" class="collapse navbar-collapse">
+            <f:cObject typoscriptObjectPath="lib.submenu" />
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <f:format.raw>{content}</f:format.raw>
+
+    </div><!-- /.container -->

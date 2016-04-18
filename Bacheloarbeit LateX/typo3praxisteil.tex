@@ -1,8 +1,10 @@
 \chapter{Anpassung eines Typo3 Systems an die gesammelten Requirements}
 \label{kap-typo3praxisteil}
 
+Nach dem Erstellen einer simplen Typo3 Umgebung ist das Ziel dieses Teils die Untersuchung verschiedener Extensions, die zur Umsetzung der WegE Requirements genutzt werden können. Eine passende Extension erfüllt dabei klar die Anforderungen, ist effizient in der Nutzung und Wartung und lässt sich möglichst leicht implementieren.
 
 \section{Rechtemanagement und Authentikation}
+Die Erstellung und das Management der Usergruppen, die für das WegE Projekt geplant sind, könnten sich als eine der schwierigsten Aufgaben entpuppen. Zum einen gibt es eine Menge Redakteure, für viele verschiedene Sektionen der Webseite. Dann soll es die Möglichkeit geben sich mittels Kennnummer der Universität einzuloggen und zu, Schluss soll jeder interessierte User sich einen Account anlegen können, um zum Beispiel im Forum mitzuwirken. 
 
 \subsection{Möglichkeiten}
 
@@ -11,13 +13,28 @@
 \subsection{Evaluation}
 
 \section{Blog und News}
+Die Anzeige von News oder einem fortlaufenden Blog findet auf immer mehr Webseiten Relevanz. So ist es wenig verwunderlich, dass die bekannteste News-Extension von Typo3 auch eine der meistverwendeten Extensions überhaupt ist. Die populärste Wahl scheint dabei die Extension mit dem Namen \texttt{news} zu sein.
 
 \subsection{Möglichkeiten}
+D
 
 \subsection{Implementation}
+Zu Beginn eine kleine Warnung: Eine Extension mit dem Namen \texttt{tt\_news} ist nicht mehr lauffähig und sollte nicht mit der Extension \texttt{news} verwechselt werden.\\
+Nach dem Installieren der Extension findet sich im Menü des Typo3 Backend ein neuer Unterpunkt. Hier lassen sich neue News anlegen und verwalten. Vorerst müssen jedoch einige Seiten zur Anzeige der News angelegt werden. Im Page Menü erstellt man dazu eine Seite zum Anzeigen der Übersicht aller News. Hier werden kleine Vorschauen der News in einer Liste angezeigt. Dazu muss des Weiteren eine Unterseite zur News Übersichtsseite angelegt werden. Hier wird eine volle News angezeigt, sofern der User auf der Übersichtsseite auf den Auszug einer News klickt. Als letztes wird noch ein Ordner benötigt, in dem alle News gespeichert werden. Dieser wird im Webseitenbaum angelegt.\\
+Beim Erstellen von Content auf der News Übersichtsseite und einem Klick auf Normal->Content, findet sich oben im Menü der Reiter Plugins. Hier taucht auch das News System auf. Dieses muss noch ein zweites Mal auf der Detailseite hinzugefügt werden. \\
+Um diese Funktionalität der Detailseite zu bewerkstelligen müssen nach dem Erstellen dieser Seiten im Plugin einige Angaben gemacht werden. Beim Editieren des Plugins auf der News Übersichtsseite unter dem Reiter Plugin muss die List view ausgewählt sein. Diese erzeugt die gewünschte Übersicht aller News. Im Unterreiter Additional wird angegeben welche Seite für die Detailansicht verantwortlich sein soll. Im Plugin der Detailseite ist für die Detailansicht Detail view zu wählen und eine Referenz auf die Übersichtsseite zu setzen.\\
+Unter dem News Menüpunkt lassen sich nun neue Artikel mit Tags, Bildern, Kategorien, Autor etc. erstellen, die bereits, wie gewollt, angezeigt werden.\\
+Die Extension kommt mit einem eigenen Design daher, was für eine seriöse Anwendung natürlich angepasst werden müsste. Für diese Testumgebung bleibt es jedoch beim Standard-Design.
+\begin{figure}
+\centering
+\includegraphics[width=0.75\linewidth]{abb/newsextension.jpg}
+\caption[News Extension]{Das Ergebnis der news Extension}
+\label{fig:newsextension}
+\end{figure}
+
 
 \subsection{Evaluation}
-
+Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeige von News jemals brauchen wird. Die Implementation geht schnell, wenn auch nicht unbedingt beim ersten Mal. Alles in Allem ist diese Extension eine exzellente Wahl.
 
 \section{Forum}
 
@@ -55,7 +72,6 @@
 \item Yag - Fotogalerie
 \item Grid Elements - Spalten für den WYSIWYG
 \item Mask - Eigene Contentelemente machen
-\item News system - auch zum bloggen
 
 \end{itemize}
 

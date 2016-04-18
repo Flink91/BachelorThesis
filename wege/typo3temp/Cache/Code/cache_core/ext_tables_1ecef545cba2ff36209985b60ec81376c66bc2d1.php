@@ -1839,107 +1839,144 @@ if (TYPO3_MODE === 'BE' && !(TYPO3_REQUESTTYPE & TYPO3_REQUESTTYPE_INSTALL)) {
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 
 /**
- * Extension: bootstrap_core
- * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/bootstrap_core/ext_tables.php
+ * Extension: news
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/news/ext_tables.php
  */
 
-$_EXTKEY = 'bootstrap_core';
+$_EXTKEY = 'news';
 $_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
 
 
-if (!defined ('TYPO3_MODE')) die ('Access denied.');
+defined('TYPO3_MODE') or die();
 
-// --- Get extension configuration ---
-$extConf = array();
-if ( strlen($_EXTCONF) ) {
-	$extConf = unserialize($_EXTCONF);
-}
+$boot = function () {
 
+    // CSH - context sensitive help
+    foreach (['news', 'media', 'file', 'link', 'tag'] as $table) {
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_news_domain_model_' . $table);
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+            'tx_news_domain_model_' . $table, 'EXT:news/Resources/Private/Language/locallang_csh_' . $table . '.xlf');
+    }
 
-// --------------------------------------------------------------------
-// Default bootstrap_core setup
-//
-// Add static typoscript configurations
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'Bootstrap Core');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+        'tt_content.pi_flexform.news_pi1.list', 'EXT:news/Resources/Private/Language/locallang_csh_flexforms.xlf');
 
-// Only if enables in ext conf
-if ( isset($extConf['enableHeaderRenderingOption']) && $extConf['enableHeaderRenderingOption'] ) {
-	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Header', 'Headers rendering option');
-}
+    // Extension manager configuration
+    $configuration = \GeorgRinger\News\Utility\EmConfiguration::getSettings();
 
-// Set custom flexform for tt_content ctype table
-$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds']['*,table'] = 'FILE:EXT:bootstrap_core/Configuration/FlexForm/flexform_table.xml';
+    if (TYPO3_MODE === 'BE') {
+        // Override news icon
+        $GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = [
+            0 => 'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:news-folder',
+            1 => 'news',
+            2 => 'apps-pagetree-folder-contains-news'
+        ];
 
+        /***************
+         * Show news table in page module
+         */
+        if ($configuration->getPageModuleFieldsNews()) {
+            $addTableItems = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode(';',
+                $configuration->getPageModuleFieldsNews(), true);
+            foreach ($addTableItems as $item) {
+                $split = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode('=', $item, true);
+                if (count($split) == 2) {
+                    $fTitle = $split[0];
+                    $fList = $split[1];
+                } else {
+                    $fTitle = '';
+                    $fList = $split[0];
+                }
+                $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cms']['db_layout']['addTables']['tx_news_domain_model_news'][] = [
+                    'MENU' => $fTitle,
+                    'fList' => $fList,
+                    'icon' => true,
+                ];
+            }
+        }
 
-// --------------------------------------------------------------------
-// Additional fields
-//
+        if ($configuration->getPageModuleFieldsCategory()) {
+            $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cms']['db_layout']['addTables']['sys_category'][0] = [
+                'fList' => htmlspecialchars($configuration->getPageModuleFieldsCategory()),
+                'icon' => true
+            ];
+        }
 
-// Define field
-$tempColumn = array(
-	'tx_bootstrapcore_visibility' => array (
-		'exclude' => 0,
-		'displayCond' => 'FIELD:section_frame:!=:66',
-		'label' => 'LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.tx_bootstrapcore_visibility',
-		'config' => array (
-			'type' => 'select',
-			'renderType' => 'selectSingle',
-			'items' => array(
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.visibility.notset',  ''),
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.visible.xs',	'visible-xs'),
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.visible.sm-xs','visible-xs visible-sm'),
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.visible.md-lg','visible-md visible-lg'),
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.visible.lg',   'visible-lg'),
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.hidden.xs', 	'hidden-xs'),
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.hidden.sm-xs', 'hidden-xs hidden-sm'),
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.hidden.md-lg', 'hidden-md hidden-lg'),
-				array('LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.hidden.lg', 	'hidden-lg')
-			),
-			'size' => 1,
-			'maxitems' => 1,
-		)
-	),
-);
+        // Extend user settings
+        $GLOBALS['TYPO3_USER_SETTINGS']['columns']['newsoverlay'] = [
+            'label' => 'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:usersettings.overlay',
+            'type' => 'select',
+            'itemsProcFunc' => \GeorgRinger\News\Hooks\ItemsProcFunc::class . '->user_categoryOverlay',
+        ];
+        $GLOBALS['TYPO3_USER_SETTINGS']['showitem'] .= ',
+			--div--;LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:pi1_title,newsoverlay';
 
-// re-add removed field in 7.2
-if ( TYPO3\CMS\Core\Utility\VersionNumberUtility::convertVersionNumberToInteger(TYPO3_version) >= 7002000 ) {
-	// labels still available in 7.3.1
-	$tempColumn['imagecaption_position'] = array(
-		'label' => 'LLL:EXT:cms/locallang_ttc.xlf:imagecaption_position',
-		'config' => array(
-			'type' => 'select',
-			'renderType' => 'selectSingle',
-			'items' => array(
-				array(
-					'LLL:EXT:lang/locallang_general.xlf:LGL.default_value',
-					''
-				),
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imagecaption_position.I.1',
-					'center'
-				),
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imagecaption_position.I.2',
-					'right'
-				),
-				array(
-					'LLL:EXT:cms/locallang_ttc.xlf:imagecaption_position.I.3',
-					'left'
-				)
-			),
-			'default' => ''
-		)
-	);
-}
+        // Add tables to livesearch (e.g. "#news:fo" or "#newscat:fo")
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['livesearch']['news'] = 'tx_news_domain_model_news';
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['livesearch']['newstag'] = 'tx_news_domain_model_tag';
 
-// Add field to tt_content
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumn, 1);
+        /* ===========================================================================
+            Register BE-Modules
+        =========================================================================== */
+        if ($configuration->getShowImporter()) {
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+                'GeorgRinger.news',
+                'web',
+                'tx_news_m1',
+                '',
+                ['Import' => 'index, runJob, jobInfo'],
+                [
+                    'access' => 'user,group',
+                    'icon' => 'EXT:news/Resources/Public/Icons/module_import.svg',
+                    'labels' => 'LLL:EXT:news/Resources/Private/Language/locallang_mod.xlf',
+                ]
+            );
+        }
 
-// Add to forms
-// visiblity below frames
-$GLOBALS['TCA']['tt_content']['palettes']['frames']['showitem'] .= ',--linebreak--, tx_bootstrapcore_visibility;LLL:EXT:bootstrap_core/Resources/Private/Language/locallang_db.xlf:tt_content.tx_bootstrapcore_visibility';
+        /* ===========================================================================
+            Register BE-Module for Administration
+        =========================================================================== */
+        if ($configuration->getShowAdministrationModule()) {
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+                'GeorgRinger.news',
+                'web',
+                'tx_news_m2',
+                '',
+                ['Administration' => 'index,newNews,newCategory,newTag,newsPidListing'],
+                [
+                    'access' => 'user,group',
+                    'icon' => 'EXT:news/Resources/Public/Icons/module_administration.svg',
+                    'labels' => 'LLL:EXT:news/Resources/Private/Language/locallang_modadministration.xlf',
+                ]
+            );
+        }
 
+        /* ===========================================================================
+            Ajax call to save tags
+        =========================================================================== */
+        $GLOBALS['TYPO3_CONF_VARS']['BE']['AJAX']['News::createTag'] = [
+            'callbackMethod' => \GeorgRinger\News\Hooks\SuggestReceiverCall::class . '->createTag',
+            'csrfTokenCheck' => false
+        ];
+    }
 
+    /* ===========================================================================
+        Default configuration
+    =========================================================================== */
+    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByCategory'] = 'uid,title,tstamp,sorting';
+    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByNews'] = 'tstamp,datetime,crdate,title' . ($configuration->getManualSorting() ? ',sorting' : '');
+    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByTag'] = 'tstamp,crdate,title';
+    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['switchableControllerActions']['list'] = $configuration->getRemoveListActionFromFlexforms();
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+        'news',
+        'Configuration/TSconfig/Page/news_only.txt',
+        'EXT:news :: Restrict pages to news records');
+
+};
+
+$boot();
+unset($boot);
 
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 

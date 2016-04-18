@@ -277,5 +277,9 @@ $GLOBALS['TBE_STYLES']['spriteIconApi']['iconsAvailable'] = array (
   274 => 'module-tools',
   275 => 'module-user',
   276 => 'module-help',
+  277 => 'tcarecords-tx_news_domain_model_file-default',
+  278 => 'tcarecords-tx_news_domain_model_link-default',
+  279 => 'tcarecords-tx_news_domain_model_media-default',
+  280 => 'tcarecords-tx_news_domain_model_tag-default',
 );
 #

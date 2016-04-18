@@ -5,4 +5,5 @@
 $typo3InstallDir = PATH_site;
 
 return array(
+    'GeorgRinger\\News\\' => array($typo3InstallDir . 'typo3conf/ext/news/Classes'),
 );
