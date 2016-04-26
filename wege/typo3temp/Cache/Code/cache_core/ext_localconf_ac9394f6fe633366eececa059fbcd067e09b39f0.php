@@ -1315,6 +1315,280 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1433089350] = a
 
 
 /**
+ * Extension: static_info_tables
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/static_info_tables/ext_localconf.php
+ */
+
+$_EXTKEY = 'static_info_tables';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+defined('TYPO3_MODE') or die();
+
+if (!defined ('STATIC_INFO_TABLES_EXTkey')) {
+	define('STATIC_INFO_TABLES_EXTkey', $_EXTKEY);
+}
+
+if (!defined ('PATH_BE_staticinfotables')) {
+	define('PATH_BE_staticinfotables', \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY));
+}
+
+if (!defined ('PATH_BE_staticinfotables_rel')) {
+	define('PATH_BE_staticinfotables_rel', \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY));
+}
+// Unserializing the configuration so we can use it here
+$_EXTCONF = unserialize($_EXTCONF);
+
+// Including Extbase configuration
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TypoScript/Extbase/setup.txt">');
+
+// Register cache static_info_tables
+if (!is_array($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$_EXTKEY])) {
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$_EXTKEY] = array();
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$_EXTKEY]['groups'] = array('all');
+}
+if (!isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$_EXTKEY]['frontend'])) {
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$_EXTKEY]['frontend'] = 'TYPO3\\CMS\\Core\\Cache\\Frontend\\PhpFrontend';
+}
+if (!isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$_EXTKEY]['backend'])) {
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$_EXTKEY]['backend'] = 'TYPO3\\CMS\\Core\\Cache\\Backend\\FileBackend';
+}
+
+// Configure clear cache post processing for extended domain model
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['clearCachePostProc'][$_EXTKEY] = 'SJBR\\StaticInfoTables\\Cache\\ClassCacheManager->reBuild';
+
+// Names of static entities
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['entities'] = array(
+	'Country',
+	'CountryZone',
+	'Currency',
+	'Language',
+	'Territory'
+);
+
+// Register cached domain model classes autoloader
+require_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Classes/Cache/CachedClassLoader.php');
+\SJBR\StaticInfoTables\Cache\CachedClassLoader::registerAutoloader();
+
+// Possible label fields for different languages. Default as last.
+$labelTable = array(
+	'static_territories' => array(
+		'label_fields' => array(
+			'tr_name_##', 'tr_name_en',
+		),
+		'isocode_field' => array(
+			'tr_iso_##',
+		),
+	),
+	'static_countries' => array(
+		'label_fields' => array(
+			'cn_short_##', 'cn_short_en',
+		),
+		'isocode_field' => array(
+			'cn_iso_##',
+		),
+	),
+	'static_country_zones' => array(
+		'label_fields' => array(
+			'zn_name_##', 'zn_name_local',
+		),
+		'isocode_field' => array(
+			'zn_code', 'zn_country_iso_##',
+		),
+	),
+	'static_languages' => array(
+		'label_fields' => array(
+			'lg_name_##', 'lg_name_en',
+		),
+		'isocode_field' => array(
+			'lg_iso_##', 'lg_country_iso_##',
+		),
+	),
+	'static_currencies' => array(
+		'label_fields' => array(
+			'cu_name_##', 'cu_name_en',
+		),
+		'isocode_field' => array(
+			'cu_iso_##',
+		),
+	),
+);
+
+if (isset($GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['tables']) && is_array($GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['tables'])) {
+	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['tables'] = array_merge($labelTable, $GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['tables']);
+} else {
+	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['tables'] = $labelTable;
+}
+unset($labelTable);
+
+// Registering backend form select field pre-rendering hook in order to localize selected items
+if (\TYPO3\CMS\Core\Utility\VersionNumberUtility::convertVersionNumberToInteger(TYPO3_version) < 7000000) {
+	$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tceforms.php']['getSingleFieldClass'][] = 'SJBR\\StaticInfoTables\\Hook\\Backend\\Form\\ElementRenderingHelper';
+}
+
+// Add data handling hook to manage ISO codes redundancies on records
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = 'SJBR\\StaticInfoTables\\Hook\\Core\\DataHandling\\ProcessDataMap';
+
+// Register slot for AfterExtensionInstall signal
+$dispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\SignalSlot\\Dispatcher');
+$dispatcher->connect('TYPO3\\CMS\\Extensionmanager\\Utility\\InstallUtility', 'afterExtensionInstall', 'SJBR\\StaticInfoTables\\Slot\\Extensionmanager\\AfterExtensionInstall', 'executeUpdateScript');
+
+// Enabling the Static Info Tables Manager module
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['enableManager'] = isset($_EXTCONF['enableManager']) ? $_EXTCONF['enableManager'] : '0';
+
+// Make the extension version and constraints available when creating language packs and to other extensions
+require_once(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'ext_emconf.php');
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['version'] = $EM_CONF[$_EXTKEY]['version'];
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$_EXTKEY]['constraints'] = $EM_CONF[$_EXTKEY]['constraints'];
+
+
+/**
+ * Extension: typo3_forum
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/typo3_forum/ext_localconf.php
+ */
+
+$_EXTKEY = 'typo3_forum';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+
+if (!defined('TYPO3_MODE')) {
+	die('Access denied.');
+}
+
+$_EXTKEY = 'typo3_forum';
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TSconfig/pageTS.txt">');
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	'Mittwald.Typo3Forum',
+	'Pi1',
+	[
+		'Forum' => 'index, show, markRead, showUnread',
+		'Topic' => 'show, new, create, solution, listLatest',
+		'Post' => 'show, new, create, edit, update, delete',
+		'User' => 'showMyProfile, index, list, subscribe, favSubscribe, show, disableUser, unDisableUser, listNotifications, listMessages, createMessage, newMessage',
+		'Report' => 'newUserReport, newPostReport, createUserReport, createPostReport',
+		'Moderation' => 'indexReport, editReport, newReportComment, editTopic, updateTopic, updateUserReportStatus, updatePostReportStatus, createUserReportComment, createPostReportComment, topicConformDelete',
+		'Tag' => 'list, show, new, create, listUserTags, newUserTag, deleteUserTag',
+	],
+	[
+		'Forum' => 'show, index, create, update, delete, markRead, showUnread',
+		'Topic' => 'create',
+		'Post' => 'new, create, edit, update, delete',
+		'User' => 'showMyProfile, dashboard, subscribe, favSubscribe, listFavorites, listNotifications, listTopics, listMessages, createMessage',
+		'Report' => 'newUserReport, newPostReport, createUserReport, createPostReport',
+		'Moderation' => 'indexReport, updateTopic, updateUserReportStatus, updatePostReportStatus, newReportComment, createUserReportComment, createPostReportComment',
+		'Tag' => 'list, show, new, create, listUserTags, newUserTag, deleteUserTag',
+	]
+);
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	'Mittwald.Typo3Forum',
+	'Widget',
+	[
+		'User' => 'list',
+		'Stats' => 'list',
+	],
+	[
+		'User' => 'list',
+	]
+);
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	'Mittwald.Typo3Forum',
+	'Ajax',
+	[
+		'Forum' => 'index',
+		'Post' => 'preview, addSupporter, removeSupporter',
+		'Tag' => 'autoComplete',
+		'Ajax' => 'main, postSummary, loginbox'
+	],
+	[
+		'Forum' => 'index',
+		'Post' => 'preview, addSupporter, removeSupporter',
+		'Ajax' => 'main, postSummary, loginbox',
+	]
+);
+
+# TCE-Main hook for clearing all typo3_forum caches
+$TYPO3_CONF_VARS['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['clearCachePostProc'][] = 'Mittwald\Typo3Forum\Cache\CacheManager->clearAll';
+
+if (!is_array($TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main'])) {
+	$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main'] = [];
+}
+
+if (\TYPO3\CMS\Core\Utility\VersionNumberUtility::convertVersionNumberToInteger(TYPO3_version) < '4006000') {
+	if (!isset($TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['frontend'])) {
+		$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['frontend'] = 't3lib_cache_frontend_VariableFrontend';
+	}
+	if (!isset($TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['backend'])) {
+		$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['backend'] = 't3lib_cache_backend_DbBackend';
+	}
+	if (!isset($TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['options'])) {
+		$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['options'] = [];
+	}
+	if (!isset($TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['options']['cacheTable'])) {
+		$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['options']['cacheTable'] = 'tx_typo3forum_cache';
+	}
+	if (!isset($TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['options']['tagsTable'])) {
+		$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['typo3forum_main']['options']['tagsTable'] = 'tx_typo3forum_cache_tags';
+	}
+}
+
+$TYPO3_CONF_VARS['FE']['eID_include']['typo3_forum'] = 'EXT:typo3_forum/Classes/Ajax/Dispatcher.php';
+
+// Connect signals to slots. Some parts of extbase suck, but the signal-slot
+// pattern is really cool! :P
+$signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Extbase\SignalSlot\Dispatcher');
+$signalSlotDispatcher->connect('Mittwald\Typo3Forum\Domain\Model\Forum\Post', 'postCreated', 'Mittwald\Typo3Forum\Service\Notification\SubscriptionListener', 'onPostCreated');
+$signalSlotDispatcher->connect('Mittwald\Typo3Forum\Domain\Model\Forum\Topic', 'topicCreated', 'Mittwald\Typo3Forum\Service\Notification\SubscriptionListener', 'onTopicCreated');
+
+// adding scheduler tasks
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Mittwald\Typo3Forum\Scheduler\Counter'] = [
+	'extension' => $_EXTKEY,
+	'title' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_counter_title',
+	'description' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_counter_description',
+	'additionalFields' => 'Mittwald\Typo3Forum\Scheduler\CounterAdditionalFieldProvider'
+];
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Mittwald\Typo3Forum\Scheduler\DatabaseMigrator'] = [
+	'extension' => $_EXTKEY,
+	'title' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_databaseMigrator_title',
+	'description' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_databaseMigrator_description',
+];
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Mittwald\Typo3Forum\Scheduler\ForumRead'] = [
+	'extension' => $_EXTKEY,
+	'title' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_forumRead_title',
+	'description' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_forumRead_description',
+	'additionalFields' => 'Mittwald\Typo3Forum\Scheduler\ForumReadAdditionalFieldProvider',
+];
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Mittwald\Typo3Forum\Scheduler\Notification'] = [
+	'extension' => $_EXTKEY,
+	'title' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_notification_title',
+	'description' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_notification_description',
+	'additionalFields' => 'Mittwald\Typo3Forum\Scheduler\NotificationAdditionalFieldProvider',
+];
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Mittwald\Typo3Forum\Scheduler\SessionResetter'] = [
+	'extension' => $_EXTKEY,
+	'title' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_sessionResetter_title',
+	'description' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_sessionResetter_description',
+	'additionalFields' => 'Mittwald\Typo3Forum\Scheduler\SessionResetterAdditionalFieldProvider',
+];
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Mittwald\Typo3Forum\Scheduler\StatsSummary'] = [
+	'extension' => $_EXTKEY,
+	'title' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_statsSummary_title',
+	'description' => 'LLL:EXT:typo3_forum/Resources/Private/Language/locallang.xml:tx_typo3forum_scheduler_statsSummary_description',
+	'additionalFields' => 'Mittwald\Typo3Forum\Scheduler\StatsSummaryAdditionalFieldProvider',
+];
+
+
+/**
  * Extension: news
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/news/ext_localconf.php
  */
@@ -1464,6 +1738,276 @@ $boot = function () {
 
 $boot();
 unset($boot);
+
+
+/**
+ * Extension: pt_extbase
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/pt_extbase/ext_localconf.php
+ */
+
+$_EXTKEY = 'pt_extbase';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+if (!defined('TYPO3_MODE')) {
+    die('Access denied.');
+}
+
+
+// TODO this is deactivated but we set it anyways in Tx_PtExtbase_State_Session_Storage_DBAdapterFactory since some websites crash otherwise. Fix this if you want to use caching!!!
+/**
+// Define state cache, if not already defined
+if (!is_array($TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['tx_ptextbase'])) {
+    $TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['tx_ptextbase'] = array(
+        'frontend' => 't3lib_cache_frontend_VariableFrontend',
+        'backend' => 't3lib_cache_backend_DbBackend',
+        'options' => array(
+            'cacheTable' => 'tx_ptextbase_cache_state',
+            'tagsTable'  => 'tx_ptextbase_cache_state_tags',
+        )
+    );
+}
+*/
+
+/**
+ * Register LifeCycle Manager
+ */
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['hook_eofe'][] = 'EXT:pt_extbase/Classes/Lifecycle/HookManager.php:tx_PtExtbase_Lifecycle_HookManager->updateEnd';
+
+/**
+ * Include the eId dispatcher in Frontend environment
+ * TODO Mind, that there is no access controll ATM!!!!
+ */
+$TYPO3_CONF_VARS['FE']['eID_include']['ptxAjax'] = ExtensionManagementUtility::extPath('pt_extbase').'Classes/Utility/eIDDispatcher.php';
+
+/**
+ * Include the ajax dispatcher in Backend environment
+ * TODO Mind, that there is no access controll ATM!!!
+ */
+$TYPO3_CONF_VARS['BE']['AJAX']['ptxAjax'] = ExtensionManagementUtility::extPath('pt_extbase').'Classes/Utility/AjaxDispatcher.php:Tx_PtExtbase_Utility_AjaxDispatcher->initAndDispatch';
+
+// Scheduler Tasks
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Tx_PtExtbase_Scheduler_SqlRunner_SqlRunnerTask'] = array(
+    'extension' => $_EXTKEY,
+    'title' => 'SQL Runner',
+    'description' => 'Runs an SQL file.',
+    'additionalFields' => 'Tx_PtExtbase_Scheduler_SqlRunner_SqlRunnerTaskAdditionalFields'
+);
+
+/*
+ * Test Scheduler Task
+ */
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['PunktDe\PtExtbase\Tests\Functional\Scheduler\TestTask'] = array(
+    'extension' => $_EXTKEY,
+    'title' => 'Pt_Extbase Test Abstract Scheduler Task',
+    'description' => 'This Task is for Testing, do not run this task in Production Environment',
+);
+
+
+/**
+ * Extension: pt_extlist
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/pt_extlist/ext_localconf.php
+ */
+
+$_EXTKEY = 'pt_extlist';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+    die('Access denied.');
+}
+
+/**
+ * Configure the Plugin to call the
+ * right combination of Controller and Action according to
+ * the user input (default settings, FlexForm, URL etc.)
+ * 
+ * By default, first Action of first Controller is called
+ * if no other settings are given.
+ */
+
+$controllerActions = array(                                                            // An array holding the controller-action-combinations that are accessible 
+    'List' => 'list,sort', // The first controller and its first action will be the default
+    'Export'=>'showLink,download',
+    'Filterbox' => 'show,submit,reset,resetFilter',
+    'Pager' => 'show',
+    'Bookmark' => 'show,save,delete,restore',
+    'BreadCrumbs' => 'index,resetFilter',
+    'ColumnSelector' => 'show',
+    'AjaxFilter' => 'getFilterElement'
+);
+
+
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $_EXTKEY,                                                                        // The extension name (in UpperCamelCase) or the extension key (in lower_underscore)
+    'Pi1',                                                                            // A unique name of the plugin in UpperCamelCase
+    $controllerActions,
+    $controllerActions
+);
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $_EXTKEY,                                                                        // The extension name (in UpperCamelCase) or the extension key (in lower_underscore)
+    'Cached',                                                                        // A unique name of the plugin in UpperCamelCase
+    $controllerActions,
+    array()
+);
+
+
+if (TYPO3_MODE == 'BE') {
+    // Hooks
+    $TYPO3_CONF_VARS['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['list_type_Info']['ptextlist_pi1']['pt_extlist'] = 'EXT:pt_extlist/Classes/Hooks/CMSLayoutHook.php:user_Tx_PtExtlist_Hooks_CMSLayoutHook->getExtensionSummary';
+}
+
+require_once \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('pt_extlist').'Classes/Utility/FlexformDataProvider.php';
+
+
+/**
+ * Register LifeCycle Manager
+ */
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['hook_eofe'][] = 'EXT:pt_extbase/Classes/Lifecycle/HookManager.php:tx_PtExtbase_Lifecycle_HookManager->updateEnd';
+
+
+/**
+ * Extension: yag
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/yag/ext_localconf.php
+ */
+
+$_EXTKEY = 'yag';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+/***************************************************************
+*  Copyright notice
+*
+*  (c) 2010-2011 Michael Knoll <mimi@kaktusteam.de>, Daniel Lienert <typo3@lienert.cc>
+*            
+*           
+*  All rights reserved
+*
+*  This script is part of the TYPO3 project. The TYPO3 project is
+*  free software; you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License as published by
+*  the Free Software Foundation; either version 2 of the License, or
+*  (at your option) any later version.
+*
+*  The GNU General Public License can be found at
+*  http://www.gnu.org/copyleft/gpl.html.
+*
+*  This script is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU General Public License for more details.
+*
+*  This copyright notice MUST APPEAR in all copies of the script!
+***************************************************************/
+
+/**
+ * Configuration file for YAG gallery
+ *
+ * @author Daniel Lienert <typo3@lienert.cc>
+ * @author Michael Knoll <mimi@kaktusteam.de>
+ */
+
+if (!defined('TYPO3_MODE')) {
+    die('Access denied.');
+}
+
+
+/*
+ * Main plugin
+ */
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $_EXTKEY,
+    'Pi1',
+    array(
+          'Album' => 'show,showSingle,list,                      			new,delete,edit,addItems,create,update',
+          'Gallery' => 'list, showSingle, index,                 			new,create,edit,update,delete',
+          'Item' => 'index, show, showSingle, showRandomSingle, download,  	delete',
+          'ItemList' => 'list,show,submitFilter,resetFilter,uncachedList,downloadAsZip',
+          'FileUpload' => 'upload',
+          'Error' => 'index',
+    ),
+    array(
+        'Gallery' => 'new,create,edit,update,delete',
+        'Album' => 'new,delete,edit,addItems,create,update',
+        'Item' => 'delete, download',
+        'ItemList' => 'unCachedList,downloadAsZip',
+        'FileUpload' => 'upload',
+    )
+);
+
+
+
+if (TYPO3_MODE == 'BE') {
+    $yagExtConfig = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['yag']);
+
+    // Hooks
+    $TYPO3_CONF_VARS['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['list_type_Info']['yag_pi1']['yag'] = 'EXT:yag/Classes/Hooks/CMSLayoutHook.php:user_Tx_Yag_Hooks_CMSLayoutHook->getExtensionSummary';
+
+    // Clear resFileCache with clearCacheCommand
+    if ((int) $yagExtConfig['clearResFileCacheWithCacheClearCommand'] === 1) {
+        $TYPO3_CONF_VARS['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['clearAllCache_additionalTables']['tx_yag_domain_model_resolutionfilecache'] = 'tx_yag_domain_model_resolutionfilecache';
+    }
+
+    // Flexform general
+    require_once \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('yag').'Classes/Utility/Flexform/Div.php';
+
+
+    // Flexform typoScript data provider
+    require_once \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('yag').'Classes/Utility/Flexform/TyposcriptDataProvider.php';
+
+
+    // Flexform record selector
+    require_once \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('yag').'Classes/Utility/Flexform/RecordSelector.php';
+
+    $yagGalleryRecordSelectorClass = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('yag') . 'Classes/Utility/Flexform/RecordSelector.php:user_Tx_Yag_Utility_Flexform_RecordSelector';
+
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerAjaxHandler(
+        'txyagM1::getGalleryList', $yagGalleryRecordSelectorClass . '->getGallerySelectList', false
+    );
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerAjaxHandler(
+        'txyagM1::getAlbumList', $yagGalleryRecordSelectorClass . '->getAlbumSelectList', false
+    );
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerAjaxHandler(
+        'txyagM1::getImageList', $yagGalleryRecordSelectorClass . '->getImageSelectList', false
+    );
+
+
+    /*
+     * Scheduler Tasks
+     */
+
+    // Importer
+/*	$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['Tx_Yag_Scheduler_Importer_DirectoryImporterTask'] = array(
+        'extension' => $_EXTKEY,
+        'title' => 'YAG Importer',
+        'description' => 'Imports images from a directory structure',
+        'additionalFields' => 'Tx_Yag_Scheduler_Importer_DirectoryImporterTaskAdditionalFields'
+    );
+*/
+    // Cache Warming
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks']['YAG\\Yag\\Scheduler\\Cache\\CacheWarmingTask'] = array(
+        'extension' => $_EXTKEY,
+        'title' => 'YAG Cache Warming',
+        'description' => 'Warm up the YAG Image Cache',
+        'additionalFields' => 'YAG\\Yag\\Scheduler\\Cache\\CacheWarmingTaskAdditionalFieldProvider'
+    );
+}
+
+
+/*
+$TYPO3_CONF_VARS['SYS']['fal']['registeredDrivers']['Yag'] = array(
+        'class' => 'TYPO3\\CMS\\Yag\\Fal\\Driver\\YagDriver',
+        'label' => 'Galerie',
+        'flexFormDS' => 'EXT:yag/Configuration/FlexForms/YagDriverFlexForm.xml'
+);
+*/
 
 
 #

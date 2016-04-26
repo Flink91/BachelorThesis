@@ -1,3 +1,5 @@
+config.contentObjectExceptionHandler = 0
+
 lib.mainmenu = HMENU
 lib.mainmenu{
   entryLevel = 0
@@ -59,3 +61,15 @@ page{
     }
   }
 }
+
+plugin.tx_typo3forum {
+            persistence {
+                    storagePid = 26
+                                    }
+            settings {
+
+                    pids {
+                            Forum = 14
+                    }
+            }
+    }

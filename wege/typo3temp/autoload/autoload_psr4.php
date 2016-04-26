@@ -5,5 +5,10 @@
 $typo3InstallDir = PATH_site;
 
 return array(
+    'DL\\Yag\\' => array($typo3InstallDir . 'typo3conf/ext/yag/Classes'),
     'GeorgRinger\\News\\' => array($typo3InstallDir . 'typo3conf/ext/news/Classes'),
+    'Mittwald\\Typo3Forum\\' => array($typo3InstallDir . 'typo3conf/ext/typo3_forum/Classes'),
+    'PunktDe\\PtExtbase\\' => array($typo3InstallDir . 'typo3conf/ext/pt_extbase/Classes'),
+    'PunktDe\\PtExtlist\\' => array($typo3InstallDir . 'typo3conf/ext/pt_extlist/Classes'),
+    'SJBR\\StaticInfoTables\\' => array($typo3InstallDir . 'typo3conf/ext/static_info_tables/Classes'),
 );

@@ -258,10 +258,40 @@ return [
             'packagePath' => 'typo3/sysext/viewpage/',
             'suggestions' => [],
         ],
+        'static_info_tables' => [
+            'composerName' => 'sjbr/static-info-tables',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/static_info_tables/',
+            'suggestions' => [],
+        ],
+        'typo3_forum' => [
+            'composerName' => 'mittwald/typo3-forum',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/typo3_forum/',
+            'suggestions' => [],
+        ],
         'news' => [
             'composerName' => 'georgringer/news',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/news/',
+            'suggestions' => [],
+        ],
+        'pt_extbase' => [
+            'composerName' => 'punktde/pt_extbase',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/pt_extbase/',
+            'suggestions' => [],
+        ],
+        'pt_extlist' => [
+            'composerName' => 'punktde/pt_extlist',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/pt_extlist/',
+            'suggestions' => [],
+        ],
+        'yag' => [
+            'composerName' => 'dl/yag',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/yag/',
             'suggestions' => [],
         ],
         'adodb' => [
