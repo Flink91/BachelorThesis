@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  26 APR 2016 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  3 MAY 2016 11:19
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -7,34 +7,27 @@ Babel <3.9n> and hyphenation patterns for 69 languages loaded.
 \@input{settings.aux}
 \openout2 = `settings.aux'.
 
-(settings.tex
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrreprt.c
-ls
+(settings.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrreprt.cls"
 Document Class: scrreprt 2015/10/03 v3.19a KOMA-Script document class (report)
-
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.s
-ty
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
 Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.st
-y
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
 Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
  basics and keyval usage)
- (V:\ProgrammeV\miktex\tex\latex\graphics\keyval.sty
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.s
-ty
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
 Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
 
 Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-)))
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.s
-ty
+))) ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty"
 Package: tocbasic 2015/10/03 v3.19a KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
@@ -57,13 +50,11 @@ Package scrreprt Info: You've used standard option `11pt'.
 Class scrreprt Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 2248.
 
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize11p
-t.clo
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrsize11pt.clo"
 File: scrsize11pt.clo 2015/10/03 v3.19a KOMA-Script font size class option (11p
 t)
 )
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.s
-ty
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\typearea.sty"
 Package: typearea 2015/10/03 v3.19a KOMA-Script package (type area)
 
 Package typearea, 2015/10/03 v3.19a KOMA-Script package (type area)
@@ -114,40 +105,39 @@ LaTeX Info: Redefining \textsubscript on input line 4652.
 \c@figure=\count87
 \c@table=\count88
 \bibindent=\dimen102
-)
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrpage2.s
-ty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrpage2.sty"
 Package: scrpage2 2015/10/03 v3.19a KOMA-Script package (page head and foot)
 LaTeX Info: Redefining \pagemark on input line 174.
-) (V:\ProgrammeV\miktex\tex\latex\base\inputenc.sty
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-(V:\ProgrammeV\miktex\tex\latex\base\latin1.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 ))
-(V:\ProgrammeV\miktex\tex\latex\graphics\graphicx.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(V:\ProgrammeV\miktex\tex\latex\graphics\graphics.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(V:\ProgrammeV\miktex\tex\latex\graphics\trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(V:\ProgrammeV\miktex\tex\latex\00miktex\graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(V:\ProgrammeV\miktex\tex\latex\pdftex-def\pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\ltxcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count89
@@ -155,18 +145,18 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(V:\ProgrammeV\miktex\tex\latex\geometry\geometry.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\ifpdf.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\ifvtex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(V:\ProgrammeV\miktex\tex\generic\ifxetex\ifxetex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count90
@@ -182,45 +172,45 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks17
 
-(V:\ProgrammeV\miktex\tex\latex\geometry\geometry.cfg))
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\german\ngerman.sty
-v2.5e 1998-07-08
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\german\ngerman.sty" v2.5e 1998-07-08
 Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen113
 ngerman -- \language number for naustrian undefined, default 44 used.
-) (V:\ProgrammeV\miktex\tex\latex\ae\ae.sty
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ae\ae.sty"
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-(V:\ProgrammeV\miktex\tex\latex\base\fontenc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(V:\ProgrammeV\miktex\tex\latex\base\t1enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 
-(V:\ProgrammeV\miktex\tex\latex\ae\t1aer.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-(V:\ProgrammeV\miktex\tex\latex\amsmath\amsmath.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
-(V:\ProgrammeV\miktex\tex\latex\amsmath\amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(V:\ProgrammeV\miktex\tex\latex\amsmath\amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen114
 ))
-(V:\ProgrammeV\miktex\tex\latex\amsmath\amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen115
 )
-(V:\ProgrammeV\miktex\tex\latex\amsmath\amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count93
@@ -261,7 +251,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count105
 \lst@gtempboxa=\box29
 \lst@token=\toks23
@@ -275,42 +265,43 @@ LaTeX Info: Redefining \] on input line 2666.
 \lst@lineno=\count110
 \lst@maxwidth=\dimen126
 
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count111
 \lst@skipnumbers=\count112
 \lst@framebox=\box30
 )
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
- (V:\ProgrammeV\miktex\tex\latex\tools\varioref.sty
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\varioref.sty"
 Package: varioref 2015/09/22 v1.5b package for extended references (FMi)
 \c@vrcnt=\count113
 )
-(V:\ProgrammeV\miktex\tex\latex\oberdiek\epstopdf.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-(V:\ProgrammeV\miktex\tex\latex\oberdiek\epstopdf-base.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(V:\ProgrammeV\miktex\tex\latex\oberdiek\grfext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\kvdefinekeys.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(V:\ProgrammeV\miktex\tex\latex\oberdiek\kvoptions.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\kvsetkeys.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\etexcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\ifluatex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -319,7 +310,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(V:\ProgrammeV\miktex\tex\generic\oberdiek\pdftexcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -332,15 +323,15 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 ))
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\nonfloat\nonfloat.sty
-(V:\ProgrammeV\miktex\tex\latex\base\ifthen.sty
+(C:\Users\Felix\AppData\Roaming\MiKTeX\2.9\tex\latex\nonfloat\nonfloat.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ))
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\overpic\overpic.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\overpic\overpic.sty"
 Package: overpic 2010/09/13 v0.53  Overwriting graphics
 
 Package: overpic v0.53 <2010/09/13> (RN)
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\eepic\epic.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\eepic\epic.sty"
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@@multicnt=\count114
 \d@lta=\count115
@@ -360,7 +351,7 @@ Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@datafile=\read1
 )
 overpic: relative positioning in percent
-) (C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\picins\picins.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\picins\picins.sty"
 Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
 \@BILD=\box32
 \@TEXT=\box33
@@ -406,7 +397,7 @@ Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
 \c@envdp=\count143
 \d@envb=\dimen149
 )
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
 \wrapoverhang=\dimen150
 \WF@size=\dimen151
 \c@WF@wrappedlines=\count144
@@ -435,8 +426,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
-
-(C:\Users\fgell_000\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count145
 \scratchdimen=\dimen152
@@ -551,12 +541,13 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 
 
 
-{C:/Users/fgell_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+{C:/Users/Felix/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 LaTeX Font Info:    Try loading font information for T1+aess on input line 10.
 
-(V:\ProgrammeV\miktex\tex\latex\ae\t1aess.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aess.fd"
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
-) (diplomarbeit.toc [1
+) (diplomarbeit.toc
+[1
 
 
 ])
@@ -607,7 +598,7 @@ e 37.
  (begriffe.tex
 chapter 2.
 LaTeX Font Info:    Try loading font information for OMS+aer on input line 12.
-(V:\ProgrammeV\miktex\tex\latex\ae\omsaer.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\ae\omsaer.fd"
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
@@ -619,7 +610,8 @@ LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10.95> not available
 ] [4]
 \openout2 = `projektanalyse.aux'.
 
- (projektanalyse.tex
+
+(projektanalyse.tex
 chapter 3.
 ) [5
 
@@ -650,7 +642,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
  (typo3.tex
 chapter 5.
 LaTeX Font Info:    Try loading font information for T1+aett on input line 15.
-(V:\ProgrammeV\miktex\tex\latex\ae\t1aett.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 <abb/typo3frontend.jpg, id=44, 840.13875pt x 472.76625pt>
@@ -745,13 +737,20 @@ Package pdftex.def Info: abb/newsextension.jpg used on input line 30.
 
 
 
-] [17 <./abb/newsextension.jpg>]) [18] [19]
+] [17 <./abb/newsextension.jpg>]
+<abb/forumextension.png, id=87, 877.02657pt x 491.58656pt>
+File: abb/forumextension.png Graphic file (type png)
+
+<use abb/forumextension.png>
+Package pdftex.def Info: abb/forumextension.png used on input line 53.
+(pdftex.def)             Requested size: 341.43306pt x 191.38043pt.
+ [18] [19 <./abb/forumextension.png>]) [20]
 \openout2 = `mehrwert.aux'.
 
 
 (mehrwert.tex
 chapter 7.
-) [20
+) [21
 
 
 
@@ -760,7 +759,7 @@ chapter 7.
 
  (zusammenfassungausblick.tex
 chapter 8.
-) [21
+) [22
 
 
 
@@ -768,26 +767,26 @@ chapter 8.
 \tf@lof=\write4
 \openout4 = `diplomarbeit.lof'.
 
- [22
+ [23
 
 
 ] (diplomarbeit.lot)
 \tf@lot=\write5
 \openout5 = `diplomarbeit.lot'.
 
- (diplomarbeit.bbl [23
+ (diplomarbeit.bbl [24
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 3.
 
-) [24
+) [25
 
 ]
 \openout2 = `erklaerung.aux'.
 
- (erklaerung.tex) [25
+ (erklaerung.tex) [26
 
 ] (diplomarbeit.aux (deckblatt.aux)
 (einleitungmotivation.aux) (begriffe.aux) (projektanalyse.aux) (cmswahl.aux)
@@ -801,28 +800,29 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7185 strings out of 493634
- 105686 string characters out of 3146593
- 252528 words of memory out of 3000000
- 10305 multiletter control sequences out of 15000+200000
+ 7191 strings out of 493634
+ 105692 string characters out of 3143744
+ 252539 words of memory out of 3000000
+ 10310 multiletter control sequences out of 15000+200000
  56843 words of font info for 103 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 58i,8n,68p,878b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
-<V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><V:/Programme
-V/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><V:/ProgrammeV/miktex/fonts/
-type1/public/amsfonts/cm/cmcsc10.pfb><V:/ProgrammeV/miktex/fonts/type1/public/a
-msfonts/cm/cmitt10.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><V:/Prog
-rammeV/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><V:/ProgrammeV/miktex/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><V:/ProgrammeV/miktex/fonts/type1/public/a
-msfonts/cm/cmr9.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmsl10
-.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><V:/Prog
-rammeV/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><V:/ProgrammeV/miktex/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><V:/ProgrammeV/miktex/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (28 pages, 659443 bytes).
+ 58i,8n,68p,984b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on diplomarbeit.pdf (29 pages, 691503 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

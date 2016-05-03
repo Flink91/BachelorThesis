@@ -15,8 +15,8 @@ Die Erstellung und das Management der Usergruppen, die für das WegE Projekt gepl
 \section{Blog und News}
 Die Anzeige von News oder einem fortlaufenden Blog findet auf immer mehr Webseiten Relevanz. So ist es wenig verwunderlich, dass die bekannteste News-Extension von Typo3 auch eine der meistverwendeten Extensions überhaupt ist. Die populärste Wahl scheint dabei die Extension mit dem Namen \texttt{news} zu sein.
 
-\subsection{Möglichkeiten}
-D
+\subsection{Alternativen}
+Eine weitere Extension, die für die Anzeige eines Blogs geeignet ist, heißt typo3\_blog. Die Extension steht der vorgestellten news Extension in Nichts nach, jedoch bietet die news Extension zwei Dinge in einem, news und Blog Funktionalität und deckt somit zwei mögliche Anforderungen der WegE Plattform ab und minimiert so theoretisch Installationsaufwand.
 
 \subsection{Implementation}
 Zu Beginn eine kleine Warnung: Eine Extension mit dem Namen \texttt{tt\_news} ist nicht mehr lauffähig und sollte nicht mit der Extension \texttt{news} verwechselt werden.\\
@@ -38,14 +38,30 @@ Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeig
 
 \section{Forum}
 
+Die Anforderung an ein Forum ist mit Sicherheit eines der aufwändigsten Teile dieses Projekts. Das bedeutet auch, dass eine hochwertige Extension hier eine große Zeitersparnis bedeuten kann. Ein Forum soll bestimmten Nutzern erlauben neue Themen anzulegen. Diese Themen werden in Listen angeordnet und das Klicken eines Themas führt zu einer Unterseite, in der User dieses Thema diskutieren können. Der Content besteht dabei nicht nur aus Text, sondern auch aus Bildern und eventuell aus Dateianhängen. Dazu soll es Funktionalität geben, all diesen Content editieren und löschen zu können und dabei diese Funktionalität sinnvoll nur bestimmten Nutzern zu geben. So soll zum Beispiel nur der Ersteller ein Thema wieder löschen können. Erreicht ein Forum eine bestimmte Größe ist es wünschenswert eine weitere Usergruppe definieren zu können, die ein Forum moderieren und somit die Rechte besitzen jegliche Anpassungen vorzunehmen. 
+
 \subsection{Möglichkeiten}
+
+Es gibt eigentlich nur eine Extension, die für Typo3 7.6 in Frage kommt und die heißt typo3\_forum. Sollte diese aus irgendwelchen Gründen als Möglichkeit ausscheiden kann man auf ein externes Forum Plugin zurückgreifen, das auf einer niedrigeren Ebene integriert wird. Ein etabliertes Beispiel heißt phpBB und bietet genau diese Funktionalität. Tatsächlich bietet phpBB mehr Anpassungsmöglichkeiten als die typo3\_forum Extension, ist aber auch mit etwas mehr Arbeit verbunden, da man aus der Typo3 Umgebung ausbricht.
 
 \subsection{Implementation}
 
+Die Implementation der grundlegensten Forum-Funktionalität fällt moderat aus. Nach der Installation wird ein Sysfolder benötigt und ein spezieller Forum-Record angelegt. In diesem lassen sich die Rechte für jegliche Funktionen genau anpassen. Beispielsweise welche Usergruppen in der Lage sind Antworten zu posten. Außerdem wird das Root Template mit der Extension erweitert. Zuletzt kommt man nicht drum herum etwas Typoscript zu schreiben. Es handelt sich hierbei jedoch nur um einen kleinen Schnipsel, der die Orte zur Anzeige des Forums und des Speichers über die PID definieren. Zusätzlich ist zu beachten, dass MySQL nicht im strict mode sein darf. Das lässt sich in der my.ini abschalten.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{abb/forumextension.png}
+	\caption[News Extension]{Das Ergebnis der typo3\_forum Extension}
+	\label{fig:forumextension}
+\end{figure}
+
 \subsection{Evaluation}
 
+Grundsätzlich bietet dieses Forum alle Funktionen, die für ein vernünftiges WegE Forum nötig sind. Leider existieren zu diesem Zeitpunkt noch einige schwer nachvollziehbare Bugs. Ein Beispiel hierfür sind die Buttons zum Erstellen eines neuen Forumeintrages, die nicht immer angezeigt werden, wenn sie es sollten. Diese lassen sich durch individuelle Anpassungen soweit vermeiden, das bedeutet wiederum merh Aufwand. Da diese Extension jedoch noch sehr neu ist und von einem professionellen Team betreut wird, ist es gut möglich, dass sich dieser Fakt bereits in wenigen Monaten ändert.
 
 \section{Anbindung an bestehende Systeme wie Opus}
+
+
 
 \subsection{Möglichkeiten}
 
@@ -75,5 +91,10 @@ Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeig
 
 \end{itemize}
 
+\subsubsection{YAG - Yet another Gallery}
+
+Will man auf einer Webseite sehr viele Bilder anzeigen, ist es ratsam diese ein wenig zu strukturieren. Das geschieht meist durch die Aufteilung in Galerien und Alben. Dieses sollen dem Betrachter natürlich auch ansprechend präsentiert werden. Beide dieser Anforderungen werden von der YAG Extension erfüllt. Die Installation ist sehr einfach, zu beachten ist jedoch, dass eine nahtlose Integration nicht trivial ist und einige Anpassungen vorgenommen werden um eine ansprechende Ausgabe zu bekommen. 
+
+\subsubsection{Grid Elements}
 
 \section{Wartung}
