@@ -1,0 +1,42 @@
+{
+    "tt_content": {
+        "elements": {
+            "wegepromobox": {
+                "label": "WegE Promobox",
+                "key": "wegepromobox",
+                "shortLabel": "Wege Box",
+                "description": "WegE Promobox",
+                "icon": "",
+                "color": "#000000",
+                "columns": [
+                    "image",
+                    "tx_mask_wat"
+                ],
+                "labels": [
+                    "",
+                    ""
+                ]
+            }
+        },
+        "sql": {
+            "tx_mask_wat": {
+                "tt_content": {
+                    "tx_mask_wat": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_wat": {
+                "config": {
+                    "type": "input",
+                    "eval": "",
+                    "size": "",
+                    "max": "",
+                    "default": ""
+                },
+                "exclude": "1",
+                "key": "wat"
+            }
+        }
+    }
+}

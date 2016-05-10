@@ -270,6 +270,12 @@ return [
             'packagePath' => 'typo3conf/ext/typo3_forum/',
             'suggestions' => [],
         ],
+        'mask' => [
+            'composerName' => 'mask/mask',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/mask/',
+            'suggestions' => [],
+        ],
         'news' => [
             'composerName' => 'georgringer/news',
             'state' => 'active',
