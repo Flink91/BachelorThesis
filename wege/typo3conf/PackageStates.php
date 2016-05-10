@@ -276,6 +276,12 @@ return [
             'packagePath' => 'typo3conf/ext/news/',
             'suggestions' => [],
         ],
+        'powermail' => [
+            'composerName' => 'powermail',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/powermail/',
+            'suggestions' => [],
+        ],
         'pt_extbase' => [
             'composerName' => 'punktde/pt_extbase',
             'state' => 'active',

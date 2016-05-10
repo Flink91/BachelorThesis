@@ -1562,3 +1562,445 @@ Using select fields without the "renderType" setting is deprecated in table "dum
 03-05-16 09:31: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
 04-05-16 13:24: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
 10-05-16 08:02: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:10: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:10: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:10: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:10: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:10: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:10: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:11: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:12: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:12: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:13: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:14: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:15: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:16: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:17: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:18: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:19: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:19: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:19: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:19: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:20: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:20: Usage of feInterface is no longer part of the TYPO3 CMS Core. Please check EXT:yag.
+10-05-16 08:20: Usage of feInterface is no longer part of the TYPO3 CMS Core. Please check EXT:yag.
+10-05-16 08:20: Automatic TCA migration done during bootstrap. Please adapt TCA accordingly, these migrations will be removed with TYPO3 CMS 8. The backend module "Configuration -> TCA" shows the modified values. Please adapt these areas:
+Changed showitem string of TCA table "tx_yag_domain_model_tag" type "1" due to changed field "sys_language_uid".
+Migrated TCA table "tx_yag_domain_model_tag" showitem field of type "1": Moved additional palette with name "1" as 3rd argument of field "hidden" to an own palette. The result of this part is: "hidden, --palette--;;1"
+Migrated icon path of wizard "RTE" in field "description" from TCA table "tx_yag_domain_model_album". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif
+Migrated icon path of wizard "edit" in field "gallery" from TCA table "tx_yag_domain_model_album". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "gallery" from TCA table "tx_yag_domain_model_album". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+Migrated icon path of wizard "RTE" in field "description" from TCA table "tx_yag_domain_model_gallery". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif
+Migrated icon path of wizard "RTE" in field "description" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif
+Migrated icon path of wizard "link" in field "link" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif
+Migrated icon path of wizard "edit" in field "album" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "album" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+Migrated icon path of wizard "edit" in field "item_meta" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "item_meta" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+Migrated icon path of wizard "edit" in field "item" from TCA table "tx_yag_domain_model_itemmeta". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "item" from TCA table "tx_yag_domain_model_itemmeta". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+Migrated icon path of wizard "edit" in field "item" from TCA table "tx_yag_domain_model_resolutionfilecache". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "item" from TCA table "tx_yag_domain_model_resolutionfilecache". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+[tx_typo3forum_domain_model_format_textparser.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_access.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_ad.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_attachment.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_criteria.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_criteria_options.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_forum.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_post.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_tag.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_topic.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_moderation_report.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_moderation_reportcomment.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_moderation_reportworkflowstatus.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_stats_summary.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_notification.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_privatemessage.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_privatemessage_text.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_rank.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_userfield_userfield.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_userfield_value.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_ptextbase_tree_node.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_ptextlist_domain_model_bookmark_bookmark.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_album.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_gallery.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_item.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_itemmeta.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_resolutionfilecache.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_tag.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_rank"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_topic_favsubscriptions"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_topic_subscriptions"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_forum_subscriptions"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_support_posts"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_working_environment"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_format_textparser" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_format_textparser" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_format_textparser" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "operation"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "forum"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "affected_group"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "login_level"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_attachment" and column "post"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_criteria" and column "default_option"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_criteria_options" and column "criteria"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_forum" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_forum" and column "criteria"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_forum" and column "forum"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_post" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_post" and column "author"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_post" and column "topic"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_post" and column "supporters"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_tag" and column "feuser"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "author"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "last_post"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "solution"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "forum"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "criteria_options"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "tags"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "subscribers"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "fav_subscribers"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "target"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "readers"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "post"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "feuser"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "reporter"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "moderator"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "workflow_status"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_reportcomment" and column "report"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_reportcomment" and column "author"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_reportworkflowstatus" and column "followup_status"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_notification" and column "feuser"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_notification" and column "post"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_notification" and column "tag"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_notification" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_privatemessage" and column "feuser"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_privatemessage" and column "opponent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_userfield" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_userfield" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_userfield" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_value" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_value" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_value" and column "user"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_value" and column "userfield"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextbase_tree_node" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextbase_tree_node" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextlist_domain_model_bookmark_bookmark" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextlist_domain_model_bookmark_bookmark" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextlist_domain_model_bookmark_bookmark" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_album" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_album" and column "fe_group"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_album" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_album" and column "gallery"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_gallery" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_gallery" and column "fe_group"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_gallery" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "fe_group"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "album"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "item_meta"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_itemmeta" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_itemmeta" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_itemmeta" and column "item"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_resolutionfilecache" and column "item"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_tag" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_tag" and column "l10n_parent"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "sys_language" and field "static_lang_isocode"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "tx_rtehtmlarea_acronym" and field "static_lang_isocode"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "static_countries" and field "cn_parent_territory_uid"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "static_countries" and field "cn_currency_uid"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "static_territories" and field "tr_parent_territory_uid"
+10-05-16 08:20: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:20: Usage of feInterface is no longer part of the TYPO3 CMS Core. Please check EXT:.
+10-05-16 08:20: Usage of feInterface is no longer part of the TYPO3 CMS Core. Please check EXT:.
+10-05-16 08:20: Automatic TCA migration done during bootstrap. Please adapt TCA accordingly, these migrations will be removed with TYPO3 CMS 8. The backend module "Configuration -> TCA" shows the modified values. Please adapt these areas:
+Changed showitem string of TCA table "tx_yag_domain_model_tag" type "1" due to changed field "sys_language_uid".
+Migrated TCA table "tx_yag_domain_model_tag" showitem field of type "1": Moved additional palette with name "1" as 3rd argument of field "hidden" to an own palette. The result of this part is: "hidden, --palette--;;1"
+Migrated icon path of wizard "RTE" in field "description" from TCA table "tx_yag_domain_model_album". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif
+Migrated icon path of wizard "edit" in field "gallery" from TCA table "tx_yag_domain_model_album". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "gallery" from TCA table "tx_yag_domain_model_album". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+Migrated icon path of wizard "RTE" in field "description" from TCA table "tx_yag_domain_model_gallery". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif
+Migrated icon path of wizard "RTE" in field "description" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif
+Migrated icon path of wizard "link" in field "link" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif
+Migrated icon path of wizard "edit" in field "album" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "album" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+Migrated icon path of wizard "edit" in field "item_meta" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "item_meta" from TCA table "tx_yag_domain_model_item". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+Migrated icon path of wizard "edit" in field "item" from TCA table "tx_yag_domain_model_itemmeta". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "item" from TCA table "tx_yag_domain_model_itemmeta". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+Migrated icon path of wizard "edit" in field "item" from TCA table "tx_yag_domain_model_resolutionfilecache". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_edit.gif
+Migrated icon path of wizard "add" in field "item" from TCA table "tx_yag_domain_model_resolutionfilecache". New path is: EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_add.gif
+[tx_typo3forum_domain_model_format_textparser.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_access.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_ad.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_attachment.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_criteria.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_criteria_options.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_forum.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_post.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_tag.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_forum_topic.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_moderation_report.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_moderation_reportcomment.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_moderation_reportworkflowstatus.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_stats_summary.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_notification.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_privatemessage.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_privatemessage_text.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_rank.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_userfield_userfield.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_typo3forum_domain_model_user_userfield_value.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_ptextbase_tree_node.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_ptextlist_domain_model_bookmark_bookmark.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_album.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_gallery.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_item.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_itemmeta.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_resolutionfilecache.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+[tx_yag_domain_model_tag.ctrl.iconfile] relative path to ../typo3conf/ext/ is deprecated, use EXT: instead
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_rank"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_topic_favsubscriptions"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_topic_subscriptions"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_forum_subscriptions"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_support_posts"
+Using select fields without the "renderType" setting is deprecated in table "fe_users" and column "tx_typo3forum_working_environment"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_format_textparser" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_format_textparser" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_format_textparser" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "operation"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "forum"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "affected_group"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_access" and column "login_level"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_attachment" and column "post"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_criteria" and column "default_option"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_criteria_options" and column "criteria"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_forum" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_forum" and column "criteria"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_forum" and column "forum"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_post" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_post" and column "author"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_post" and column "topic"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_post" and column "supporters"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_tag" and column "feuser"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "author"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "last_post"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "solution"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "forum"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "criteria_options"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "tags"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "subscribers"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "fav_subscribers"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "target"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_forum_topic" and column "readers"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "post"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "feuser"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "reporter"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "moderator"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_report" and column "workflow_status"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_reportcomment" and column "report"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_reportcomment" and column "author"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_moderation_reportworkflowstatus" and column "followup_status"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_notification" and column "feuser"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_notification" and column "post"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_notification" and column "tag"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_notification" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_privatemessage" and column "feuser"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_privatemessage" and column "opponent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_userfield" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_userfield" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_userfield" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_value" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_value" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_value" and column "user"
+Using select fields without the "renderType" setting is deprecated in table "tx_typo3forum_domain_model_user_userfield_value" and column "userfield"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextbase_tree_node" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextbase_tree_node" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextlist_domain_model_bookmark_bookmark" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextlist_domain_model_bookmark_bookmark" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_ptextlist_domain_model_bookmark_bookmark" and column "type"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_album" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_album" and column "fe_group"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_album" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_album" and column "gallery"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_gallery" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_gallery" and column "fe_group"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_gallery" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "fe_group"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "album"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_item" and column "item_meta"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_itemmeta" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_itemmeta" and column "l18n_parent"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_itemmeta" and column "item"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_resolutionfilecache" and column "item"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_tag" and column "sys_language_uid"
+Using select fields without the "renderType" setting is deprecated in table "tx_yag_domain_model_tag" and column "l10n_parent"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "sys_language" and field "static_lang_isocode"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "tx_rtehtmlarea_acronym" and field "static_lang_isocode"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "static_countries" and field "cn_parent_territory_uid"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "static_countries" and field "cn_currency_uid"
+The "noIconsBelowSelect" setting for select fields was removed. Please define the setting "showIconTable" for table "static_territories" and field "tr_parent_territory_uid"
+10-05-16 08:20: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:21: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:21: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:21: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:21: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:21: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:22: The PageTS-Config: mod.wizards.newContentElement.wizardItems.*.elements.*.icon is deprecated since TYPO3 CMS 7, will be removed in TYPO3 CMS 8. Register your icon in IconRegistry::registerIcon and use the new setting: mod.wizards.newContentElement.wizardItems.*.elements.*.iconIdentifier
+10-05-16 08:22: The PageTS-Config: mod.wizards.newContentElement.wizardItems.*.elements.*.icon is deprecated since TYPO3 CMS 7, will be removed in TYPO3 CMS 8. Register your icon in IconRegistry::registerIcon and use the new setting: mod.wizards.newContentElement.wizardItems.*.elements.*.iconIdentifier
+10-05-16 08:22: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:23: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:23: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:23: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:23: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:23: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:23: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:24: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:24: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:24: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:24: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:25: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:25: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:25: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:25: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:25: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:25: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:25: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:25: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:26: The PageTS-Config: mod.wizards.newContentElement.wizardItems.*.elements.*.icon is deprecated since TYPO3 CMS 7, will be removed in TYPO3 CMS 8. Register your icon in IconRegistry::registerIcon and use the new setting: mod.wizards.newContentElement.wizardItems.*.elements.*.iconIdentifier
+10-05-16 08:26: The PageTS-Config: mod.wizards.newContentElement.wizardItems.*.elements.*.icon is deprecated since TYPO3 CMS 7, will be removed in TYPO3 CMS 8. Register your icon in IconRegistry::registerIcon and use the new setting: mod.wizards.newContentElement.wizardItems.*.elements.*.iconIdentifier
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:27: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:28: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:29: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:29: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:29: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:29: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:29: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:29: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:30: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:30: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:30: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:31: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:31: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:31: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:31: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:32: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:32: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:32: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:33: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:33: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:33: The PageTS-Config: mod.wizards.newContentElement.wizardItems.*.elements.*.icon is deprecated since TYPO3 CMS 7, will be removed in TYPO3 CMS 8. Register your icon in IconRegistry::registerIcon and use the new setting: mod.wizards.newContentElement.wizardItems.*.elements.*.iconIdentifier
+10-05-16 08:33: The PageTS-Config: mod.wizards.newContentElement.wizardItems.*.elements.*.icon is deprecated since TYPO3 CMS 7, will be removed in TYPO3 CMS 8. Register your icon in IconRegistry::registerIcon and use the new setting: mod.wizards.newContentElement.wizardItems.*.elements.*.iconIdentifier
+10-05-16 08:33: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:33: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:33: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:33: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:34: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:34: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:34: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:34: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:34: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:34: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:35: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:35: TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->getPageRenderer() - since TYPO3 CMS 7, will be removed in TYPO3 CMS 8. - call_user_func#34 // {closure}# // TYPO3\CMS\Frontend\Http\Application->run#33 // TYPO3\CMS\Core\Core\Bootstrap->handleRequest#78 // TYPO3\CMS\Frontend\Http\RequestHandler->handleRequest#302 // TYPO3\CMS\Frontend\Page\PageGenerator::renderContent#216 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->cObjGet#210 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->cObjGetSingle#805 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->render#859 // TYPO3\CMS\Frontend\ContentObject\FluidTemplateContentObject->render#943 // TYPO3\CMS\Frontend\ContentObject\FluidTemplateContentObject->getContentObjectVariables#97 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->cObjGetSingle#263 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->render#859 // TYPO3\CMS\Frontend\ContentObject\ContentContentObject->render#943 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->cObjGetSingle#98 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->cObjGetSingle#841 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->render#859 // TYPO3\CMS\Frontend\ContentObject\CaseContentObject->render#943 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->cObjGetSingle#44 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->cObjGetSingle#841 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->render#859 // TYPO3\CMS\Frontend\ContentObject\FluidTemplateContentObject->render#943 // TYPO3\CMS\Frontend\ContentObject\FluidTemplateContentObject->renderFluidView#102 // TYPO3\CMS\Fluid\View\AbstractTemplateView->render#300 // FluidCache_Standalone_layout_HeaderContentFooter_81b202ccd6f61320e8b4feecab49443523db01c4->render#189 // TYPO3\CMS\Fluid\ViewHelpers\RenderViewHelper::renderStatic#62 // TYPO3\CMS\Fluid\View\AbstractTemplateView->renderSection#121 // FluidCache_Standalone_template_file_List_0f0b83843fa5a90879867b76e9c6e7327ef2f859->section_040f06fd774092478d450774f5ba30c5da78acc8#230 // TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper->initializeArgumentsAndRender#46 // TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper->callRenderMethod#249 // call_user_func_array#268 // TYPO3\CMS\Fluid\ViewHelpers\CObjectViewHelper->render# // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->cObjGetSingle#119 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->render#859 // TYPO3\CMS\Frontend\ContentObject\UserContentObject->render#943 // TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->callUserFunction#40 // call_user_func_array#7315 // TYPO3\CMS\Extbase\Core\Bootstrap->run# // TYPO3\CMS\Extbase\Core\Bootstrap->handleRequest#193 // TYPO3\CMS\Extbase\Mvc\Web\FrontendRequestHandler->handleRequest#206 // TYPO3\CMS\Extbase\Mvc\Dispatcher->dispatch#69 // Tx_Yag_Controller_AbstractController->processRequest#86 // Tx_PtExtbase_Controller_AbstractActionController->processRequest#278 // TYPO3\CMS\Extbase\Mvc\Controller\ActionController->processRequest#250 // TYPO3\CMS\Extbase\Mvc\Controller\ActionController->resolveView#172 // Tx_PtExtbase_Controller_AbstractActionController->setViewConfiguration#343 // Tx_Yag_Controller_AbstractController->setCustomPathsInView#100 // TYPO3\CMS\Extbase\Object\ObjectManager->get#576 // TYPO3\CMS\Extbase\Object\Container\Container->getInstance#99 // TYPO3\CMS\Extbase\Object\Container\Container->getInstanceInternal#126 // TYPO3\CMS\Extbase\Object\Container\Container->initializeObject#183 // Tx_Yag_Utility_HeaderInclusion->initializeObject#258 // Tx_Yag_Utility_HeaderInclusion->initializeFrontend#71 // TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->getPageRenderer#221 // TYPO3\CMS\Core\Utility\GeneralUtility::logDeprecatedFunction#1035 (typo3\sysext\frontend\Classes\Controller\TypoScriptFrontendController.php#1033)
+10-05-16 08:35: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:35: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:35: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:36: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:37: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:38: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:38: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:38: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:38: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:38: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:39: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:40: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:41: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:42: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:43: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:44: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:45: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:46: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:47: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:48: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:49: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:50: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:51: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:52: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:53: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:53: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:54: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:55: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:56: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:57: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:58: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 08:59: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:00: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:01: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:02: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:03: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:04: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:04: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:05: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:06: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:07: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:07: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8
+10-05-16 09:07: TYPO3\CMS\Backend\Sprite\SpriteManager is deprecated since TYPO3 CMS 7, will be removed with TYPO3 CMS 8

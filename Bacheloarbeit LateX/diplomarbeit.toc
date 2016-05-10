@@ -49,14 +49,15 @@
 \contentsline {subsection}{\numberline {6.5.3}Evaluation}{22}
 \contentsline {section}{\numberline {6.6}Weitere n\"utzliche Extensions}{22}
 \contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{22}
-\contentsline {subsubsection}{\nonumberline Grid Elements}{22}
-\contentsline {section}{\numberline {6.7}Wartung}{22}
-\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{23}
-\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{23}
-\contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{23}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{24}
-\contentsline {section}{\numberline {8.1}Erkenntnisse}{24}
-\contentsline {section}{\numberline {8.2}Meine Meinung}{24}
-\contentsline {chapter}{Abbildungsverzeichnis}{25}
-\contentsline {chapter}{Tabellenverzeichnis}{25}
-\contentsline {chapter}{Literaturverzeichnis}{26}
+\contentsline {subsubsection}{\nonumberline Grid Elements}{23}
+\contentsline {subsubsection}{\nonumberline Powermail}{23}
+\contentsline {section}{\numberline {6.7}Wartung}{23}
+\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{24}
+\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{24}
+\contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{24}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{25}
+\contentsline {section}{\numberline {8.1}Erkenntnisse}{25}
+\contentsline {section}{\numberline {8.2}Meine Meinung}{25}
+\contentsline {chapter}{Abbildungsverzeichnis}{26}
+\contentsline {chapter}{Tabellenverzeichnis}{26}
+\contentsline {chapter}{Literaturverzeichnis}{27}
