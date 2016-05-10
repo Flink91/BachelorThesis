@@ -81,8 +81,33 @@ Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestal
 
 \subsection{Typoscript}
 
-Typoscript ist die Skriptsprache von Typo3. Es handelt sich dabei nicht um eine richtige Programmiersprache, was sich auch schon vom Namen her vermuten lassen könnte. Das zeigt sich auch in der Art und Weise wie Typoscript von Typo3 verarbeitet wird, nämlich als sehr langes PHP Array und einem internen Parser. Typoskript ist mehr dafür ausgelegt dem Ersteller der Webseite eine Möglichkeit zu geben zu bestimmen, wie Typo3 mit bestimmten Objekten, wie zum Beispiel Bildern, Menüs oder Templates umgehen soll. Es ist so also für die spezifische Ausgabe von Content zuständig.
+Typoscript ist die Skriptsprache von Typo3. Es handelt sich dabei nicht um eine richtige Programmiersprache, was sich auch schon vom Namen her vermuten lassen könnte. Das zeigt sich auch in der Art und Weise wie Typoscript von Typo3 verarbeitet wird, nämlich als sehr langes PHP Array und einem internen Parser. Typoscript ist mehr dafür ausgelegt dem Ersteller der Webseite eine Möglichkeit zu geben, zu bestimmen, wie Typo3 mit bestimmten Objekten, wie zum Beispiel Bildern, Menüs oder Templates, umgehen soll. Es ist so also hauptsächlich für die spezifische Ausgabe von Content zuständig.
 In Typoscript wird immer mit Objekten gearbeitet, denen man bestimmte Eigenschaften zusprechen kann.
+
+Eine Typoscript Datei, die in jedem Template enthalten ist, ist die setup.ts. Aus dieser ist nun ein kleiner Schnipsel zu sehen.
+
+\begin{verbatim}
+page = PAGE
+page{
+ includeCSS.style = fileadmin/Template_WegE/bootstrap/css/style.css
+
+ 10 = FLUIDTEMPLATE
+ 10{
+  file = fileadmin/Template_WegE/index.html
+  layoutRootPath = fileadmin/Template_WegE/layouts/
+  partialRootPath = fileadmin/Template_WegE/partials/
+
+  variables{
+	siteName = TEXT
+	siteName.value = WegE Fallstudie
+
+	content < styles.content.get
+  }
+ }
+}
+\end{verbatim}
+
+Zu Beginn wird eine Variable mit dem Namen page gesetzt, welche die ganze Seite präsentiert.
 
 \subsection{Erweiterungen}
 

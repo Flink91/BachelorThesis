@@ -1,0 +1,105 @@
+<br />
+
+<table>
+    <tr>
+        <td width="80"><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_flexform_controllerAction" /></td>
+        <td><strong><f:translate key="{caLabel}"/></strong></td>
+    </tr>
+
+
+    <tr>
+        <td width="80"><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_general.folder" /></td>
+        <td><strong>{storageFolder}</strong></td>
+    </tr>
+
+	<tr><td>&nbsp;</td><td></td></tr>
+
+    <f:if condition="{Album_showSingle}">
+        <tr>
+            <td>
+                <f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_album" />
+            </td>
+            <td>
+                <f:if condition="{album}">
+                    <f:then><span><strong>{album.name}</strong></span></f:then>
+                    <f:else><span class="typo3-red"><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_flexform_notSelected" /></span></f:else>
+                </f:if>
+            </td>
+        </tr>
+    </f:if>
+
+	<f:if condition="{ItemList_list}">
+		<tr>
+			<td><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_gallery" /></td>
+			<td><f:if condition="{gallery}"><f:then><span><strong>{gallery.name}</strong></span></f:then><f:else>-</f:else></f:if></td>
+		</tr>
+		<tr>
+			<td><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_album" /></td>
+			<td><f:if condition="{album}"><f:then><span><strong>{album.name}</strong></span></f:then><f:else>-</f:else></f:if></td>
+		</tr>
+		<tr>
+			<td><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_item" /></td>
+			<td><f:if condition="{item}"><f:then><span><strong>{item.title}</strong></span></f:then><f:else>-</f:else></f:if></td>
+		</tr>
+	</f:if>
+
+	<f:if condition="{ItemList_unCachedList}">
+		<tr>
+			<td><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_gallery" /></td>
+			<td><f:if condition="{gallery}"><f:then><span><strong>{gallery.name}</strong></span></f:then><f:else>-</f:else></f:if></td>
+		</tr>
+		<tr>
+			<td><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_album" /></td>
+			<td><f:if condition="{album}"><f:then><span><strong>{album.name}</strong></span></f:then><f:else>-</f:else></f:if></td>
+		</tr>
+		<tr>
+			<td><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_item" /></td>
+			<td><f:if condition="{item}"><f:then><span><strong>{item.title}</strong></span></f:then><f:else>-</f:else></f:if></td>
+		</tr>
+	</f:if>
+
+
+	<f:if condition="{Gallery_showSingle}">
+		<f:if condition="{gallery}">
+        <tr>
+            <td>
+                <f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_gallery" />
+            </td>
+            <td>
+				<f:then><span><strong>{gallery.name}</strong></span></f:then>
+				<f:else><span class="typo3-red"><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_flexform_notSelected" /></span></f:else>
+            </td>
+        </tr>
+		</f:if>
+    </f:if>
+
+
+    <f:if condition="{Item_showSingle}">
+        <tr>
+            <td>
+                <f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_domain_model_item" />
+            </td>
+            <td>
+                <f:if condition="{item}">
+                    <f:then><span><strong>{item.title}</strong></span></f:then>
+                    <f:else><span class="typo3-red"><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_flexform_notSelected" /></span></f:else>
+                </f:if>
+            </td>
+        </tr>
+    </f:if>
+
+	<tr><td>&nbsp;</td><td></td></tr>
+
+    <tr>
+        <td><f:translate key="LLL:EXT:yag/Resources/Private/Language/locallang.xlf:tx_yag_flexform_theme" /></td>
+        <td><strong>{theme}</strong></td>
+    </tr>
+
+
+    <f:if condition="{context}">
+        <tr>
+            <td>Context</td>
+            <td><strong>{context}</strong></td>
+        </tr>
+    </f:if>
+</table>

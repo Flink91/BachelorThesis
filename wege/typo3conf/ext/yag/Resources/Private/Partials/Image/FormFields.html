@@ -1,0 +1,151 @@
+{namespace yag=Tx_Yag_ViewHelpers}
+{namespace yagns=DL\Yag\ViewHelpers}
+{namespace ptx=Tx_PtExtbase_ViewHelpers}
+{namespace extlist=Tx_PtExtlist_ViewHelpers}
+{namespace core=TYPO3\CMS\Core\ViewHelpers}
+
+<f:form method="post" action="update" controller="Item" name="item" object="{item}">
+    <div class="yag-itemedit-form-inner yag-editfields">
+        <div class="yag-itemedit-leftcontainer">
+            <div>
+                <table class="yag-itemedit-table">
+                    <tr>
+                      <td>
+                          <div class="yag-itemedit-thumb">
+                              <yag:image item="{item}" resolutionName="thumb" />
+                          </div>
+                      </td>
+                      <td>
+						  <div class="yag-itemedit-properties">
+							  <table>
+								  <tr>
+									  <td><f:translate key="tx_yag_domain_model_item.size" default="Image size" />:</td>
+									  <td>{item.width} x {item.height}</td>
+								  </tr>
+								  <tr>
+									  <td><f:translate key="tx_yag_domain_model_item.filesize" default="File size" />:</td>
+									  <td><ptx:format.fileSize>{item.fileSize}</ptx:format.fileSize></td>
+								  </tr>
+								  <tr>
+									  <td><f:translate key="tx_yag_domain_model_item.path" default="Path" />:</td>
+									  <td><div style="overflow:hidden; width:200px">{item.sourceUri}</div></td>
+								  </tr>
+							  </table>
+                          </div>
+						  <div class="yag-itemedit-commands">
+
+                              <a href="{yagns:Backend.editRecordUrl(entity:item, returnUrl: '{f:uri.action(action:\'submitFilter\', additionalParams:\'{id:currentPid}\', arguments:\'{extlist:namespace.GPArray(object: yagContext arguments:\\'albumUid:{item.album.uid}\\')}\')}')}">
+                                  <core:icon identifier="actions-document-open" />
+                                  <f:translate key="tx_yag_controller_item.editItemInListModule"/>
+                              </a>
+
+						  </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_item.title" default="Title" />:</td>
+                        <td><f:form.textfield property="title" value="{item.title}"/></td>
+                    </tr>
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_item.description" default="Title" />:</td>
+                        <td><f:form.textarea property="description" value="{item.description}" rows="5" cols="20" />
+                    </tr>
+                    <tr>
+                        <td>
+                            <f:translate key="tx_yag_controller_item.moveToAlbum" default="Move to album" />: <br />
+                        </td>
+                        <td>
+                            <f:form.select property="album" optionValueField="uid" optionLabelField="name" options="{albums}" value="{album}"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_item.tags" />:</td>
+                        <td><f:form.textfield property="tagsFromCSV" value="{item.TagsSeparated}"/></td>
+                    </tr>
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_item.date" /></td>
+                        <td>
+                            <f:form.textfield name="item[date][date]" value="{f:format.date(date:item.date)}"/>
+                            <f:form.hidden name="item[date][dateFormat]" value="Y-m-d"/>
+                        </td>
+                    </tr>
+					<tr>
+						<td><f:translate key="tx_yag_domain_model_item.categories" /></td>
+						<td>
+							<yag:Form.Category class="yag-multiselect" property="categories" multiple="1" categoryPid="{item.pid}" value="{item.categories}"/>
+						</td>
+					</tr>
+                </table>
+            </div>
+
+        </div>
+
+
+        <div class="yag-itemedit-rightcontainer">
+
+            <div class="yag-itemedit-innercontainer">
+                <h1><f:translate key="tx_yag_controller_item.metaData"/></h1>
+
+                <table class="yag-itemedit-table">
+
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_itemmeta.copyright" /></td>
+                        <td><f:form.textfield property="itemMeta.copyright" value="{item.itemMeta.copyright}"/></td>
+                    </tr>
+
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_itemmeta.artist" /></td>
+                        <td><f:form.textfield property="itemMeta.artist" value="{item.itemMeta.artist}"/></td>
+                    </tr>
+
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_itemmeta.artist_mail" /></td>
+                        <td><f:form.textfield property="itemMeta.artistMail" value="{item.itemMeta.artistMail}"/></td>
+                    </tr>
+
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_itemmeta.artist_website" /></td>
+                        <td><f:form.textfield property="itemMeta.artistWebsite" value="{item.itemMeta.artistWebsite}"/></td>
+                    </tr>
+
+                    <tr><td>&nbsp;</td><td></td></tr>
+
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_itemmeta.camera_model" /></td>
+                        <td><f:form.textfield property="itemMeta.cameraModel" value="{item.itemMeta.cameraModel}"/></td>
+                    </tr>
+
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_itemmeta.lens" /></td>
+                        <td><f:form.textfield property="itemMeta.lens" value="{item.itemMeta.lens}"/></td>
+                    </tr>
+
+                    <tr>
+                        <td><f:translate key="tx_yag_domain_model_itemmeta.iso" /></td>
+                        <td><f:form.textfield property="itemMeta.iso" value="{item.itemMeta.iso}"/></td>
+                    </tr>
+
+                    <tr><td>&nbsp;</td><td></td></tr>
+                    <yag:eachCustomMetaData item="{item}" showEmptyFields="1">
+                        <tr>
+                            <td>{customMetaData.config.title}</td>
+                            <td>
+                                <f:form.textfield name="item[itemMeta][customMetaDataArray][{customMetaData.config.key}]" value="{customMetaData.data}"/>
+                            </td>
+                        </tr>
+                    </yag:eachCustomMetaData>
+                </table>
+            </div>
+            <div>
+                <f:form.hidden name="item[itemMeta][__identity]" value="{item.itemMeta.uid}" />
+            </div>
+        </div>
+    </div>
+
+    <div class="yag-buttonLine">
+        <f:form.submit class="submit btn btn-primary" value="{f:translate(key: 'tx_yag_general.save', default: 'Save')}" />
+    </div>
+
+</f:form>
+
