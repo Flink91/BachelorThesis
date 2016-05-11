@@ -1888,6 +1888,20 @@ if (TYPO3_MODE == 'BE' && !(TYPO3_REQUESTTYPE & TYPO3_REQUESTTYPE_INSTALL)) {
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 
 /**
+ * Extension: sr_feuser_register
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/sr_feuser_register/ext_tables.php
+ */
+
+$_EXTKEY = 'sr_feuser_register';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+defined('TYPO3_MODE') or die();
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('fe_groups_language_overlay');
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
  * Extension: typo3_forum
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/typo3_forum/ext_tables.php
  */

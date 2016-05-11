@@ -264,11 +264,19 @@ return [
             'packagePath' => 'typo3conf/ext/static_info_tables/',
             'suggestions' => [],
         ],
+        'sr_feuser_register' => [
+            'composerName' => 'sjbr/sr-feuser-register',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/sr_feuser_register/',
+            'suggestions' => [],
+        ],
         'typo3_forum' => [
             'composerName' => 'mittwald/typo3-forum',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/typo3_forum/',
-            'suggestions' => [],
+            'suggestions' => [
+                'sr_feuser_register',
+            ],
         ],
         'mask' => [
             'composerName' => 'mask/mask',
