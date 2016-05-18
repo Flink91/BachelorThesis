@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  17 MAY 2016 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  18 MAY 2016 15:12
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -590,13 +590,13 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-
-LaTeX Warning: Citation `BilVer' on page 1 undefined on input line 15.
-
 [1
 
 
 ]
+
+LaTeX Warning: Citation `BilVer' on page 2 undefined on input line 15.
+
 
 LaTeX Warning: Reference `kap-problemstellung' on page 2 undefined on input lin
 e 37.
@@ -649,89 +649,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  (typo3.tex
 chapter 5.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 15.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 17.
 (V:\ProgrammeV\miktex\tex\latex\ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-<abb/typo3frontend.jpg, id=47, 840.13875pt x 472.76625pt>
+) [9
+
+
+
+]
+<abb/typo3frontend.jpg, id=50, 840.13875pt x 472.76625pt>
 File: abb/typo3frontend.jpg Graphic file (type jpg)
 
 <use abb/typo3frontend.jpg>
-Package pdftex.def Info: abb/typo3frontend.jpg used on input line 18.
+Package pdftex.def Info: abb/typo3frontend.jpg used on input line 20.
 (pdftex.def)             Requested size: 420.06834pt x 236.38254pt.
 
-<abb/typo3backend.jpg, id=48, 840.89156pt x 474.27188pt>
+<abb/typo3backend.jpg, id=51, 840.89156pt x 474.27188pt>
 File: abb/typo3backend.jpg Graphic file (type jpg)
 
 <use abb/typo3backend.jpg>
-Package pdftex.def Info: abb/typo3backend.jpg used on input line 24.
+Package pdftex.def Info: abb/typo3backend.jpg used on input line 26.
 (pdftex.def)             Requested size: 420.44475pt x 237.13536pt.
- [9
 
-
-
-] [10 <./abb/typo3frontend.jpg> <./abb/typo3backend.jpg>] <abb/typo3menu.jpg, i
-d=57, 145.29282pt x 649.67719pt>
+<abb/typo3menu.jpg, id=52, 145.29282pt x 649.67719pt>
 File: abb/typo3menu.jpg Graphic file (type jpg)
-
-<use abb/typo3menu.jpg>
-Package pdftex.def Info: abb/typo3menu.jpg used on input line 41.
+ <use abb/typo3menu.jpg>
+Package pdftex.def Info: abb/typo3menu.jpg used on input line 43.
 (pdftex.def)             Requested size: 113.81102pt x 508.91718pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 [] []\T1/aer/m/n/10 Typo3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--44
+Underfull \hbox (badness 10000) in paragraph at lines 40--46
 
  []
 
-[11 <./abb/typo3menu.jpg>] [12] [13]
+[10 <./abb/typo3frontend.jpg>] [11 <./abb/typo3backend.jpg> <./abb/typo3menu.jp
+g>] [12] [13]
 <abb/typo3_template_overview.png, id=67, 647.41875pt x 536.0025pt>
 File: abb/typo3_template_overview.png Graphic file (type png)
 
 <use abb/typo3_template_overview.png>
-Package pdftex.def Info: abb/typo3_template_overview.png used on input line 132
+Package pdftex.def Info: abb/typo3_template_overview.png used on input line 134
 .
 (pdftex.def)             Requested size: 318.66946pt x 263.82944pt.
  [14 <./abb/typo3_template_overview.png>]
-Overfull \hbox (58.62167pt too wide) in paragraph at lines 162--163
+[15]
+Overfull \hbox (58.62167pt too wide) in paragraph at lines 164--165
 []\T1/aer/m/n/10.95 Die PHP Ex-ten-si-on Filein-fo geht nicht. In der php.ini d
 as Se-mi-ko-lon vor \T1/aett/m/n/10.95 extension=php_fileinfo.dll
  []
 
-[15] <abb/roottemplate.jpg, id=77, 216.81pt x 182.18062pt>
+<abb/roottemplate.jpg, id=77, 216.81pt x 182.18062pt>
 File: abb/roottemplate.jpg Graphic file (type jpg)
 
 <use abb/roottemplate.jpg>
-Package pdftex.def Info: abb/roottemplate.jpg used on input line 185.
+Package pdftex.def Info: abb/roottemplate.jpg used on input line 187.
 (pdftex.def)             Requested size: 136.5746pt x 114.76604pt.
 
-Overfull \hbox (16.57599pt too wide) in paragraph at lines 189--190
+Overfull \hbox (16.57599pt too wide) in paragraph at lines 191--192
 []\T1/aer/m/n/10.95 Im Root-Template un-ter \T1/aett/m/n/10.95 Includes \T1/aer
 /m/n/10.95 müs-sen zwei Din-ge ein-ge-fügt wer-den, \T1/aett/m/n/10.95 css_styl
 ed_content
  []
 
 
-Overfull \hbox (14.97731pt too wide) in paragraph at lines 189--190
+Overfull \hbox (14.97731pt too wide) in paragraph at lines 191--192
 \T1/aer/m/n/10.95 und \T1/aett/m/n/10.95 fluid_styled_content\T1/aer/m/n/10.95 
 . Die Rei-hen-fol-ge ist da-bei wich-tig. Soll-te \T1/aett/m/n/10.95 fluid_styl
 ed_content
  []
 
-ngerman: "FF is now obsolete, please use FFF instead on input line 191.
-[16 <./abb/roottemplate.jpg>]
-ngerman: "FF is now obsolete, please use FFF instead on input line 192.
+[16]
+ngerman: "FF is now obsolete, please use FFF instead on input line 193.
+ngerman: "FF is now obsolete, please use FFF instead on input line 194.
 
-Overfull \hbox (65.11401pt too wide) in paragraph at lines 192--193
+Overfull \hbox (65.11401pt too wide) in paragraph at lines 194--195
 []| \T1/aer/m/n/10.95 Un-ter \T1/aett/m/n/10.95 Setup\T1/aer/m/n/10.95 : \T1/ae
 tt/m/n/10.95 <INCLUDE_TYPOSCRIPT: source= FF-ILE:fileadmin/\T1/aett/m/it/10.95 
 Template_WegE\T1/aett/m/n/10.95 /ts/setup.ts 
  []
 
-) [17]
+) [17 <./abb/roottemplate.jpg>]
 \openout2 = `typo3praxisteil.aux'.
 
  (typo3praxisteil.tex
@@ -790,12 +791,8 @@ chapter 8.
 
  (diplomarbeit.bbl [27
 
-]
-
-LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
-               before end of `thebibliography' environment on input line 3.
-
-) [28
+])
+[28
 
 ]
 \openout2 = `erklaerung.aux'.
@@ -814,13 +811,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7197 strings out of 493634
- 105946 string characters out of 3146593
- 252551 words of memory out of 3000000
- 10315 multiletter control sequences out of 15000+200000
+ 7198 strings out of 493634
+ 105957 string characters out of 3146593
+ 252558 words of memory out of 3000000
+ 10316 multiletter control sequences out of 15000+200000
  56843 words of font info for 103 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 58i,8n,68p,984b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,8n,68p,1626b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
 <V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><V:/Programme
 V/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><V:/ProgrammeV/miktex/fonts/
 type1/public/amsfonts/cm/cmcsc10.pfb><V:/ProgrammeV/miktex/fonts/type1/public/a
@@ -833,7 +830,7 @@ msfonts/cm/cmr9.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmsl10
 rammeV/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><V:/ProgrammeV/miktex/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><V:/ProgrammeV/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (32 pages, 739450 bytes).
+Output written on diplomarbeit.pdf (32 pages, 747507 bytes).
 PDF statistics:
  171 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

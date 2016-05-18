@@ -12,4 +12,8 @@ A level-1 auxiliary file: zusammenfassungausblick.aux
 A level-1 auxiliary file: erklaerung.aux
 Database file #1: bibl.bib
 Warning--I didn't find a database entry for "BilVer"
-(There was 1 warning)
+ptr=1, stack=
+
+---the literal stack isn't empty for entry typo3cms7
+while executing---line 1656 of file alphadin.bst
+(There was 1 error message)
