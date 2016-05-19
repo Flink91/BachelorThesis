@@ -1,16 +1,27 @@
 \chapter{Typo3 - Eine Übersicht}
 \label{kap-typo3}
 
-Die Wahl des CMS fiel nun durch die ausreichende Recherche im vorigen Kapitel auf Typo3, weshalb dies in dieser Bachelorarbeit einen essentiellen Teil ausmacht. In diesem Kapitel werden zunächst alle nötigen Grundlagen rund um Typo3 geklärt um im anschließenden Kapitel die Anpassung Teines Typo3 Systems an die zuvor gesammelten Anforderungen informiert vornehmen zu können.
+Die Wahl des CMS fiel nun durch die ausreichende Recherche im vorigen Kapitel auf Typo3 und wird als Grundlage für alle technischen Aspekte dienen, weshalb Typo3 in dieser Bachelorarbeit einen essentiellen Teil ausmacht. In diesem Kapitel werden zunächst alle nötigen Grundlagen rund um Typo3 geklärt, um im anschließenden Kapitel die Anpassung eines Typo3 Systems an die zuvor gesammelten Anforderungen informiert vornehmen zu können.
 
-Die meisten hier präsentierten Information entspringen den offiziellen Typo3 Docs\footnote{https://docs.typo3.org/} und einem Lernkurs des Rheinwerk Verlages zur neuen Typo3 Version \cite{typo3cms7}. Spezifische Verweise werden natürlich extra angegeben.
+Die meisten hier präsentierten Informationen entspringen den offiziellen Typo3 Docs\footnote{https://docs.typo3.org/} und einem Lernkurs des Rheinwerk Verlages zur neuen Typo3 Version 7\cite{typo3cms7}. Spezifische Verweise werden natürlich extra angegeben.
 
 \section{Version und Hintergrund}
-Typo3 ist ein Open Source CMS, ursprünglich entwickelt von Kasper Skårhøj und basiert auf der Programmiersprache PHP. Bei der Popularität von Open Source Web Content Management Systemen belegt es, je nach Quelle, meist den fünften Platz\footnote{http://trends.builtwith.com/cms/open-source Mai 2016: Platz 5}. Typo3 umfasst eine Fülle an Versionen und spaltete sich 2015 sogar in zwei verschiedene Kernentwicklungsteams. Eines das weiter an Typo3 CMS arbeitet und eines, das an Typo3 Neos arbeitet. Diese Arbeit basiert auf der neuesten Version von Typo3 CMS 7.6 LTS. 
+Typo3 ist ein Open Source CMS, ursprünglich entwickelt von Kasper Skårhøj und basiert auf der Programmiersprache PHP. Die Entwicklung begann bereits 1997 als Nebenprodukt von Skårhøjs Tätigkeit als Webdesigner. Der Name Typo3 enstand, nachdem Skårhøj durch einen Schreibfehler (engl. Typo) die Arbeit mehrerer Tage löschte. Die Zahl 3 ist der damals aktuellen Version geschuldet, wurde jedoch weiterhin beibehalten. Das System ist Open Source unter der GPL-Lizenz. Bei der Popularität von Open Source Web Content Management Systemen belegt Typo3, je nach Quelle, meist den fünften Platz\footnote{http://trends.builtwith.com/cms/open-source Mai 2016: Platz 5}. Typo3 umfasst eine Fülle an Versionen und spaltete sich 2015 sogar in zwei verschiedene Kernentwicklungsteams. Eines das weiter an Typo3 CMS arbeitet und eines, das an Typo3 Neos arbeitet. Diese Arbeit basiert auf der neuesten Version von Typo3 CMS 7.6 LTS. Version 8 wird jedoch auch noch 2016 kommen.
 
 \section{Installation}
 
-Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfangreich. Je nach Vorhaben muss mit komplexen Einstellungen am serverseitigen System experimentiert werden. Zum Zweck der Entwicklung bietet es sich jedoch an das Typo3 System zunächst lokal zu installieren. Der hierfür nötige Server kann entweder durch ein Programm wie Wamp oder Xampp, welche eine fertige Apache-Distribution liefern, bereitgestellt werden oder durch das Installieren eines Servers auf einer virtuellen Maschine. Die vorgenommenen Implementationen in Kapitel ? wurden mit Wamp realisiert.
+Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfangreich. Je nach Vorhaben muss mit komplexen Einstellungen am serverseitigen System experimentiert werden. Zum Zweck der Entwicklung bietet es sich jedoch an das Typo3 System zunächst lokal zu installieren. Der hierfür nötige Server kann entweder durch ein Programm wie Wamp oder Xampp, welche eine fertige Apache-Distribution liefern, bereitgestellt werden oder durch das Installieren eines Servers auf einer virtuellen Maschine. Die vorgenommenen Implementationen in Kapitel 4 wurden mit Wamp\footnote{http://www.wampserver.com} realisiert.
+
+\section{Frontend Struktur}
+Das Frontend ist von Typo3 in bestimmte Bereiche unterteilt:
+\begin{itemize}
+\item Header - Zeigt Inhalte ganz oben auf der Website, wie ein Logo
+\item Menü - Beinhaltet das Hauptmenü
+\item Content - Unterteilt sich in drei Teile, Links, Mitte und Rechts
+\item Footer - Zeigt Inhalte am Ende der Webseite
+\end{itemize}
+
+Wo genau diese Bereiche auftauchen lässt sich mittels eines Templates definieren, das mit Typoscript beschrieben wird. Im Backend finden sich genau diese Teile wieder und lassen sich dort mit Content befüllen.
 
 \section{Bedienung}
 
@@ -29,6 +40,7 @@ Typo3 generiert letztendlich eine Website. Diese lässt sich jedoch durch das Typ
 \end{figure}
 
 Das größte visuelle Merkmal der neuen Typo3 Version 7.6 LTS ist das neue, klarere Design des Backend von Typo3. So wird es für Anwender ohne Programmierkenntnisse einfacher sich zurechtzufinden und Inhalte zu erstellen. Dies geschieht hauptsächlich über einen integrierten WYSIWYG-Editor.
+
 Dennoch enthält die Backend sehr viele Optionen, versteckte Knöpfe und Eigenheiten, die einer Erklärung bedürfen.
 
 \section{Funktionalität und Architektur von Typo3}
