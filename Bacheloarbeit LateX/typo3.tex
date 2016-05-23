@@ -6,7 +6,7 @@ Die Wahl des CMS fiel nun durch die ausreichende Recherche im vorigen Kapitel au
 Die meisten hier präsentierten Informationen entspringen den offiziellen Typo3 Docs\footnote{https://docs.typo3.org/} und einem Lernkurs des Rheinwerk Verlages zur neuen Typo3 Version 7\cite{typo3cms7}. Spezifische Verweise werden natürlich extra angegeben.
 
 \section{Version und Hintergrund}
-Typo3 ist ein Open Source CMS, ursprünglich entwickelt von Kasper Skårhøj und basiert auf der Programmiersprache PHP. Die Entwicklung begann bereits 1997 als Nebenprodukt von Skårhøjs Tätigkeit als Webdesigner. Der Name Typo3 enstand, nachdem Skårhøj durch einen Schreibfehler (engl. Typo) die Arbeit mehrerer Tage löschte. Die Zahl 3 ist der damals aktuellen Version geschuldet, wurde jedoch weiterhin beibehalten. Das System ist Open Source unter der GPL-Lizenz. Bei der Popularität von Open Source Web Content Management Systemen belegt Typo3, je nach Quelle, meist den fünften Platz\footnote{http://trends.builtwith.com/cms/open-source Mai 2016: Platz 5}. Typo3 umfasst eine Fülle an Versionen und spaltete sich 2015 sogar in zwei verschiedene Kernentwicklungsteams. Eines das weiter an Typo3 CMS arbeitet und eines, das an Typo3 Neos arbeitet. Diese Arbeit basiert auf der neuesten Version von Typo3 CMS 7.6 LTS. Version 8 wird jedoch auch noch 2016 kommen.
+Typo3 ist ein Open Source CMS, ursprünglich entwickelt von Kasper Skårhøj und basiert auf der Programmiersprache PHP. Die Entwicklung begann bereits 1997 als Nebenprodukt von Skårhøjs Tätigkeit als Webdesigner. Der Name Typo3 enstand, nachdem Skårhøj durch einen Schreibfehler (engl. Typo) die Arbeit mehrerer Tage löschte. Die Zahl 3 ist der damals aktuellen Version geschuldet, wurde jedoch weiterhin beibehalten. Das System ist Open Source unter der GPL-Lizenz. Bei der Popularität von Open Source Web Content Management Systemen belegt Typo3, je nach Quelle, meist den fünften Platz\footnote{http://trends.builtwith.com/cms/open-source Mai 2016: Platz 5}. Typo3 umfasst eine Fülle an Versionen und spaltete sich 2015 sogar in zwei verschiedene Kernentwicklungsteams. Eines das weiter an Typo3 CMS arbeitet und eines, das an Typo3 Neos arbeitet. Diese Bachelorarbeit basiert auf der neuesten Version von Typo3 CMS 7.6 LTS. Version 8 wird jedoch auch noch 2016 veröffentlicht.
 
 \section{Installation}
 
@@ -121,13 +121,14 @@ page{
 }
 \end{verbatim}
 
-Zu Beginn wird eine Variable mit dem Namen page gesetzt, welche die ganze Seite präsentiert.
+Zu Beginn wird eine Variable mit dem Namen page gesetzt, welche die ganze Seite präsentiert. Diese bekommt in Zeile 3 ein neues Stylsheet zugewiesen, das dann automatisch eingebunden wird. Danach wird eine Variable zum Fluidtemplate. Die Zahl 10 präsentiert dabei einen Platz im PAGE Array, das danach aus Typoscript generiert wird. Hier ist die Reihenfolge oft wichtig. Es ist üblich Anweisungen mit in Zehnerschritten zu nummerieren, sodass man später eventuell vergessene Anweisungen noch zwischen zwei Zahlen einfügen kann. Für das Fluidtemplate werden nun die Pfade zu den Layouts und Partials definiert. Layouts und Partials sind Einzelteile eines Templates. Genaueres dazu im Verlauf dieses Kapitels.
+Darunter wird noch mittels Typoscript der Name der Seite definiert, welcher später an vielen Stellen verwendet werden kann.
 
-\subsection{Erweiterungen}
+\subsection{Erweiterungen/Extensions}
 
-Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterungen oder Extensions. Inzwischen existieren tausende von Erweiterungen für das CMS. Allerdings muss dazugesagt werden, dass ein großer Teil dieser veraltet sind, nicht mehr gepflegt werden oder gar überhaupt nicht auf der neuen Version lauffähig gemacht werden können. Das liegt auch daran, dass viele der Extensions von freien Programmierern in ihrer Freizeit entwickelt werden.
+Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterungen oder Extensions. Inzwischen existieren tausende von Erweiterungen für Typo3. Allerdings muss dazugesagt werden, dass ein großer Teil dieser veraltet ist, nicht mehr gepflegt wird oder gar überhaupt nicht auf der neuen Version lauffähig gemacht werden kann. Das liegt auch daran, dass viele der Extensions von freien Programmierern in ihrer Freizeit entwickelt werden.
 Zu finden sind diese Extensions auf der offiziellen Seite unter typo3.org/extensions/repository. Wichtig ist es hier auf die Kompatibilität zu achten, die dort angezeigt wird. Auch findet sich hier meist eine Dokumentation zur Einrichtung und weiteren Infos zur jeweiligen Erweiterung. 
-Die  Erweiterungen der eigenen Typo3 Anwendung lassen sich durch den Menüpunkt ?Erweiterungen? im Backend verwalten.
+Die Erweiterungen der eigenen Typo3 Anwendung lassen sich durch den Menüpunkt \emph{Erweiterungen} im Backend verwalten.
 
 \subsection{Templates erstellen}
 

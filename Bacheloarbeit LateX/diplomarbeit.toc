@@ -1,63 +1,64 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}
-\contentsline {section}{\numberline {1.1}Das WegE Projekt}{1}
-\contentsline {section}{\numberline {1.2}Zielsetzung und Vorgehensweise}{2}
-\contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{2}
-\contentsline {chapter}{\numberline {2}Begriffskl\"arungen}{3}
-\contentsline {section}{\numberline {2.1}CMS und WCMS}{3}
-\contentsline {section}{\numberline {2.2}ECMS}{4}
-\contentsline {chapter}{\numberline {3}Projektanalyse und Spezifikation}{5}
-\contentsline {section}{\numberline {3.1}Der Prozess der Softwareentwicklung}{5}
-\contentsline {section}{\numberline {3.2}Analyse - Project Blastoff}{6}
-\contentsline {section}{\numberline {3.3}Entwurf - Software Design}{6}
-\contentsline {chapter}{\numberline {4}Die Wahl des richtigen Content Management Systems}{7}
-\contentsline {section}{\numberline {4.1}Die Vorauswahl dreier geeigneter Content Management Systeme}{7}
-\contentsline {section}{\numberline {4.2}Sharepoint}{7}
-\contentsline {section}{\numberline {4.3}LiveRay Portal}{8}
-\contentsline {section}{\numberline {4.4}Typo3}{8}
-\contentsline {chapter}{\numberline {5}Typo3 - Eine \"Ubersicht}{9}
-\contentsline {section}{\numberline {5.1}Version und Hintergrund}{9}
-\contentsline {section}{\numberline {5.2}Installation}{9}
-\contentsline {section}{\numberline {5.3}Bedienung}{10}
-\contentsline {section}{\numberline {5.4}Funktionalit\"at und Architektur von Typo3}{10}
-\contentsline {subsection}{\numberline {5.4.1}Die Backend Module im \"Uberblick}{11}
-\contentsline {subsection}{\numberline {5.4.2}Typoscript}{13}
-\contentsline {subsection}{\numberline {5.4.3}Erweiterungen}{13}
-\contentsline {subsection}{\numberline {5.4.4}Templates erstellen}{14}
-\contentsline {section}{\numberline {5.5}Beispielinstallation}{15}
-\contentsline {paragraph}{\nonumberline Typo 3 Installationsschritte}{15}
-\contentsline {paragraph}{\nonumberline Template-Erstellung Schritte}{16}
-\contentsline {chapter}{\numberline {6}Anpassung eines Typo3 Systems an die gesammelten Requirements}{18}
-\contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{18}
-\contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten}{18}
-\contentsline {subsection}{\numberline {6.1.2}Implementation}{18}
-\contentsline {subsection}{\numberline {6.1.3}Evaluation}{19}
-\contentsline {section}{\numberline {6.2}Blog und News}{19}
-\contentsline {subsection}{\numberline {6.2.1}Alternativen}{19}
-\contentsline {subsection}{\numberline {6.2.2}Implementation}{19}
-\contentsline {subsection}{\numberline {6.2.3}Evaluation}{20}
-\contentsline {section}{\numberline {6.3}Forum}{20}
-\contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{21}
-\contentsline {subsection}{\numberline {6.3.2}Implementation}{21}
-\contentsline {subsection}{\numberline {6.3.3}Evaluation}{21}
-\contentsline {section}{\numberline {6.4}Anbindung an bestehende Systeme wie Opus}{22}
-\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{22}
-\contentsline {subsection}{\numberline {6.4.2}Implementation}{22}
-\contentsline {subsection}{\numberline {6.4.3}Evaluation}{22}
-\contentsline {section}{\numberline {6.5}Teilen von wissenschaftlichen Arbeiten}{22}
-\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{22}
-\contentsline {subsection}{\numberline {6.5.2}Implementation}{22}
-\contentsline {subsection}{\numberline {6.5.3}Evaluation}{22}
-\contentsline {section}{\numberline {6.6}Weitere n\"utzliche Extensions}{22}
-\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{22}
-\contentsline {subsubsection}{\nonumberline Grid Elements}{23}
-\contentsline {subsubsection}{\nonumberline Powermail}{23}
-\contentsline {section}{\numberline {6.7}Wartung}{23}
-\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{24}
-\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{24}
-\contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{24}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{25}
-\contentsline {section}{\numberline {8.1}Erkenntnisse}{25}
-\contentsline {section}{\numberline {8.2}Meine Meinung}{25}
-\contentsline {chapter}{Abbildungsverzeichnis}{26}
-\contentsline {chapter}{Tabellenverzeichnis}{26}
-\contentsline {chapter}{Literaturverzeichnis}{27}
+\contentsline {section}{\numberline {1.1}Moderne Webanwendungen}{1}
+\contentsline {section}{\numberline {1.2}Das WegE Projekt}{1}
+\contentsline {section}{\numberline {1.3}Zielsetzung und Vorgehensweise}{3}
+\contentsline {chapter}{\numberline {2}Begriffskl\"arungen}{4}
+\contentsline {section}{\numberline {2.1}CMS und WCMS}{4}
+\contentsline {section}{\numberline {2.2}ECMS}{5}
+\contentsline {chapter}{\numberline {3}Projektanalyse und Spezifikation}{6}
+\contentsline {section}{\numberline {3.1}Der Prozess der Softwareentwicklung}{6}
+\contentsline {section}{\numberline {3.2}Analyse - Project Blastoff}{7}
+\contentsline {section}{\numberline {3.3}Entwurf - Software Design}{7}
+\contentsline {chapter}{\numberline {4}Die Wahl des richtigen Content Management Systems}{8}
+\contentsline {section}{\numberline {4.1}Die Vorauswahl dreier geeigneter Content Management Systeme}{9}
+\contentsline {section}{\numberline {4.2}Sharepoint}{10}
+\contentsline {section}{\numberline {4.3}LiveRay Portal}{10}
+\contentsline {section}{\numberline {4.4}Typo3}{10}
+\contentsline {chapter}{\numberline {5}Typo3 - Eine \"Ubersicht}{12}
+\contentsline {section}{\numberline {5.1}Version und Hintergrund}{12}
+\contentsline {section}{\numberline {5.2}Installation}{12}
+\contentsline {section}{\numberline {5.3}Frontend Struktur}{13}
+\contentsline {section}{\numberline {5.4}Bedienung}{13}
+\contentsline {section}{\numberline {5.5}Funktionalit\"at und Architektur von Typo3}{14}
+\contentsline {subsection}{\numberline {5.5.1}Die Backend Module im \"Uberblick}{14}
+\contentsline {subsection}{\numberline {5.5.2}Typoscript}{16}
+\contentsline {subsection}{\numberline {5.5.3}Erweiterungen}{17}
+\contentsline {subsection}{\numberline {5.5.4}Templates erstellen}{17}
+\contentsline {section}{\numberline {5.6}Beispielinstallation}{18}
+\contentsline {paragraph}{\nonumberline Typo 3 Installationsschritte}{19}
+\contentsline {paragraph}{\nonumberline Template-Erstellung Schritte}{19}
+\contentsline {chapter}{\numberline {6}Anpassung eines Typo3 Systems an die gesammelten Requirements}{22}
+\contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{22}
+\contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten}{22}
+\contentsline {subsection}{\numberline {6.1.2}Implementation}{22}
+\contentsline {subsection}{\numberline {6.1.3}Evaluation}{23}
+\contentsline {section}{\numberline {6.2}Blog und News}{23}
+\contentsline {subsection}{\numberline {6.2.1}Alternativen}{23}
+\contentsline {subsection}{\numberline {6.2.2}Implementation}{23}
+\contentsline {subsection}{\numberline {6.2.3}Evaluation}{24}
+\contentsline {section}{\numberline {6.3}Forum}{24}
+\contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{25}
+\contentsline {subsection}{\numberline {6.3.2}Implementation}{25}
+\contentsline {subsection}{\numberline {6.3.3}Evaluation}{25}
+\contentsline {section}{\numberline {6.4}Anbindung an bestehende Systeme wie Opus}{26}
+\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{26}
+\contentsline {subsection}{\numberline {6.4.2}Implementation}{26}
+\contentsline {subsection}{\numberline {6.4.3}Evaluation}{26}
+\contentsline {section}{\numberline {6.5}Teilen von wissenschaftlichen Arbeiten}{26}
+\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{26}
+\contentsline {subsection}{\numberline {6.5.2}Implementation}{26}
+\contentsline {subsection}{\numberline {6.5.3}Evaluation}{26}
+\contentsline {section}{\numberline {6.6}Weitere n\"utzliche Extensions}{26}
+\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{26}
+\contentsline {subsubsection}{\nonumberline Grid Elements}{27}
+\contentsline {subsubsection}{\nonumberline Powermail}{27}
+\contentsline {section}{\numberline {6.7}Wartung}{27}
+\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{28}
+\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{28}
+\contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{28}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{29}
+\contentsline {section}{\numberline {8.1}Erkenntnisse}{29}
+\contentsline {section}{\numberline {8.2}Meine Meinung}{29}
+\contentsline {chapter}{Abbildungsverzeichnis}{30}
+\contentsline {chapter}{Tabellenverzeichnis}{30}
+\contentsline {chapter}{Literaturverzeichnis}{31}

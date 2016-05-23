@@ -1,17 +1,44 @@
 \chapter{Die Wahl des richtigen Content Management Systems}
 \label{kap-cmswahl}
 
+Dieses Kapitel beschäftigt sich mit der Wahl der richtigen Technologie für das geplante Projekt. Diese Aufgabe wird im Kontext des Software Engineering i Project Blastoff erledigt, der Teil des ersten Schrittes, der Projektanalyse, ist.\\
 
-Die Wahl des richtigen CMS kann aufgrund der Fülle von möglichen Optionen sehr schwierig sein. Man möchte das beste Tool für den Job finden. Hier kann die Webseite CMSMatrix\footnote{http://www.cmsmatrix.org/} eine Hilfe sein. Sie listet über 1000 verschiedene Systeme, die sich einzeln auswählen und anhand sämtlicher wichtiger Kriterien vergleichen lassen. Darüber hinaus ist es sicherlich eine gute Idee sich an die populäreren Optionen zu halten, da man hier mit dem besten Support und der aktivsten Community rechnen kann, was Einstieg, Support und Lernkurve positiv beeinflusst. Selbst unter den fünf populärsten CMS gibt es immense Unterschiede, die zusammen den Großteil der Bedürfnisse jeglicher unterschiedlicher Websites abdecken.\\ 
+Die Wahl des richtigen CMS kann aufgrund der Fülle von möglichen Optionen sehr schwierig sein. Man möchte das beste Tool für den Job finden und muss hierzu sehr viele Variablen beachten, gegeneinander abwägen und gegebenenfalls Kompromisse eingehen. Hierbei spielt zum Beispiel die Kompetenz und Vorkenntnis eines Entwicklerteams eine große Rolle, wodurch sich eine solche Entscheidung schwer genralisieren lässt. Für die Wahl des richtigen CMS kann die Webseite CMSMatrix\footnote{http://www.cmsmatrix.org/} eine Hilfe sein. Sie listet über 1000 verschiedene Systeme, die sich einzeln auswählen und anhand sämtlicher wichtiger Kriterien vergleichen lassen. Die Kriterien untergliedern sich dabei in verschiedene Kateogorien: 
+
+\begin{itemize}
+	\item Systemanforderungen:
+	Hier können Dinge wie Programmiersprache, Serveranforderungen und Ähnliches verglichen werden. Für das WegE Projekt ist natürlich wichtig, dass das System im Rechenzentrum der Universität läuft.
+	\item Sicherheit:
+	Immer wenn externe User sich in ein System einloggen können stellt sich schnell die Frage nach Sicherheit. In dieser Kategorie lassen sich sicherheitsspezifische Aspekte, wie Art der Authentifizierung oder SSL Möglichkeiten, vergleichen. Dies spielt im WegE Projekt zwar eine große Rolle, sollte jedoch kein großer Entscheider werden, das der Punkt Sicherheit von den meisten Systemen ausreichend abgedeckt ist.
+	\item Support:
+	In diesem Unterpunkt lässt sich vor Allem gut erkennen, wie leicht ein Entwickler eines CMS an Hilfe kommt. Es werden verschiedene Möglichkeiten an Hilfe zu gelangen, verglichen. Besonders wichtig für einen einzelnen Entwickler ist hier ein Punkt zum Vergleich der Entwickler Communities und Foren.
+	\item Bedienbarkeit:
+	Hier lässt sich die Existenz von Features, die einem das Bedienen des CMS erleichtern, anzeigen. Dazu gehören zum Beispiel ein WYSIWIG-Editor, eine Undo Möglichkeit oder auch ein Spell Checker.
+	\item Performance:
+	Hier wird anhand von Ladezeiten und Caching Möglichkeiten die Performance verglichen.
+	\item Management:
+	In diesem Punkt lässt sich schnell erkennen, wie angenehm die Arbeit eines Administrators im jeweiligen CMS sein wird. Es wird verglichen wie ein CMS mit Templating umgeht, wie es Mehrsprachigkeit umsetzt, ob Crons leicht umzusetzen und weitere ähnliche Aspekte.
+	\item Interoperabilität:
+	Dieser Unterpunkt listet die Möglichkeiten eines CMS zur Interoperabilität. Dies bedeutet konkret die Möglichkeit von Datenaustausch durch XHTML oder RSS. Desweiteren listet es auch den Support von HTML5 und UTF8, welche beide auf der WegE Plattform von Vorteil wären. 
+	\item Flexibilität:
+	Hier lassen sich vom CMS eingebaute Möglichkeiten zur Nutzung von mehrsprachigem Content, der Eingabe von Metadaten oder der Möglichkeit des URL Rewriting vergleichen.
+	\item Applikationsumfang:
+	Fast jede mögliche Funktion einer Webseite existiert unter dem Punkt Applikationsumfang als Auswahlkriterium um schnell herauszufinden ob ein CMS diese Funktion bereits anbietet, oder als Addon zur Verfügung steht. Einige exemplarische Funktionen sind ein Blog, ein Mail-Formular oder eine Kalenderfunktion.
+	\item Commerce:
+	Sucht man ein CMS für einen Online Shop lassen sich hier wichtige Funktionen wie ein Shopping Cart, vergleichen.
+	
+\end{itemize}
+
+Es ist sicherlich eine gute Idee sich an die populäreren Optionen zu halten, da man hier mit dem besten Support und der aktivsten Community rechnen kann, was Einstieg, Support und Lernkurve positiv beeinflusst. Selbst unter den fünf populärsten CMS gibt es immense Unterschiede, die zusammen den Großteil der Bedürfnisse jeglicher unterschiedlicher Websites abdecken.\\ 
 
 
 \section{Die Vorauswahl dreier geeigneter Content Management Systeme}
 
-Die Vorauswahl von geeigneten Content Management Systemen für das WegE Projekt wurde durch mehrere Faktoren beeinflusst. Die größte Rolle spielt dabei zweifelsohne das Rechenzentrum der Universität Bamberg, die dort schon bestehenden Systeme und die vorhandene Expertise zur langfristigen Betreuung des WegE Projekts. Vor Allem mit Typo3 hat das Rechenzentrum Erfahrung, Sharepoint wird seit kurzem jedoch auch genutzt. Die sehr populären Optionen Joomla! und Drupal wären durchaus geeignet für das Projekt und werden rein durch den Aspekt der mangelnden Expertise ausgeschlossen. Die Größe und Ambiguität des Projekts schließt außerdem das populärste aller CMS Wordpress aus, welches sich eher für kleinere Projekte eignet. Somit landete die Vorauswahl bei Sharepoint, Typo3 und LiveRay, welche nun vorgestellt und geprüft werden.
+Die Vorauswahl von geeigneten Content Management Systemen für das WegE Projekt wurde durch mehrere Faktoren beeinflusst. Die größte Rolle spielt dabei zweifelsohne das Rechenzentrum der Universität Bamberg, die dort schon bestehenden Systeme und die vorhandene Expertise zur langfristigen Betreuung des WegE Projekts. Vor Allem mit Typo3 hat das Rechenzentrum Erfahrung, Sharepoint wird seit kurzem jedoch auch genutzt. Die sehr populären Optionen Joomla! und Drupal wären durchaus geeignet für das Projekt, bieten jedoch zu wenig Mehrwert zu Typo3 um die die Zeit zur Einarbeitung zu rechtfertigen. Die Größe und Ambiguität des Projekts schließt außerdem das populärste aller CMS Wordpress, aus, welches sich eher für kleinere Projekte eignet. Sollte die Vorkenntnis eines Teams sich jedoch nur auf Wordpress beschränken, ist es trotzdem durchaus eine mögliche Wahl. Somit landete die Vorauswahl bei Sharepoint, Typo3 und LiveRay, welche nun vorgestellt und geprüft werden.
 
 \section{Sharepoint}
 
-Sharepoint ist ein Produkt von Microsoft und wurde hauptsächlich für die Verwendung innerhalb von Unternehmen entwickelt. Da es nur im Browser läuft gibt es hier keine Einschränkung auf Windows, wie man vielleicht denken könnte, auch wenn das Standarddesign hierauf optimiert wurde. Hier dient es als gemeinsamer Ort zum Speichern, Strukturieren und Freigeben von Dateien und Informationen. (https://support.office.com/de-de/article/Was-ist-SharePoint-97b915e6-651b-43b2-827d-fb25777f446f) Dafür verwendet Sharepoint einige Sharepoint einige Sharepoint-Technologien:
+Sharepoint\footnote{https://support.office.com/de-de/article/Was-ist-SharePoint-97b915e6-651b-43b2-827d-fb25777f446f} ist ein Produkt von Microsoft und wurde hauptsächlich für die Verwendung innerhalb von Unternehmen entwickelt. Da das ganze System ausschließlich im Browser läuft gibt es keine Einschränkung auf das Betriebssystem Windows, wie man vielleicht denken könnte, auch wenn das Standarddesign hierfür optimiert wurde. Es dient als gemeinsamer Ort zum Speichern, Strukturieren und Freigeben von Dateien und Informationen. Dafür verwendet das CMS einige spezielle Sharepoint-Technologien:
 \begin{itemize}
 
 \item SharePoint Online lässt ein Unternehmen einen Cloud-Dienst von Microsoft verwenden, anstatt einen eigenen Server aufzusetzen. 
@@ -22,12 +49,12 @@ Sharepoint ist ein Produkt von Microsoft und wurde hauptsächlich für die Verwend
 
 \section{LiveRay Portal}
 
-https://www.liferay.com/products/liferay-portal/nav/overview
-
-Das Hauptprodukt von Liveray heißt Liveray Portal und hat den Fokus mehr auf Businesslösungen und Geschäftsprozessen. Es ist lizenzkostenfrei und Open Source.  Die Kernfunktionalitäten sind die Authentifizierung von Nutzern, ....
+Das Hauptprodukt von Liveray heißt Liveray Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus eher auf Businesslösungen und Geschäftsprozessen. Es ist lizenzkostenfrei und Open Source. Die Kernfunktionalitäten sind die Authentifizierung von Nutzern, ....
 
 \section{Typo3}
 
-Ein Blick in die Gliederung verrät dem aufmerksamen Leser, dass die Wahl des CMS auf Typo3 fiel und diesem CMS die nächsten zwei Kapitel gewidmet sind, weshalb alles Weitere dort ausführlich erklärt wird.
+Typo3 ist ein System, mit dem das Rechenzentrum der Universität Bamberg bereits sehr vertraut ist, da die offizielle Seite der Universität auch mit Typo3 betrieben wird. Somit ist ein wichtiger Punkt, nämlich die Expertise des Teams, gegeben. Es ist Open Source und lizentkostenfrei. Desweiteren zeigt CMSMatrix, dass alle gesammelten Anforderungen an die WegE Plattform entweder vorhanden sind oder als kostenloses Addon zur Verfügung stehen. Als Sahnehäubchen kommt hinzu, dass die zukünftigen Redakteure der WegE Plattform bereits Erfahrung mit dem Backend von Typo3 haben und eine Umstellung auf ein anderes System etwas Mühe und Arbeit in Form von Support nach sich ziehen würde.
+
+Ein Blick in die Gliederung verrät dem aufmerksamen Leser, dass die Wahl des CMS auf Typo3 fiel und diesem CMS die nächsten zwei Kapitel gewidmet sind. Somit wird alles Weitere dort ausführlich erklärt.
 
 
