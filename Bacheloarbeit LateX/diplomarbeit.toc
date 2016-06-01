@@ -1,6 +1,5 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}
 \contentsline {section}{\numberline {1.1}Das WegE Projekt}{1}
-\contentsline {paragraph}{\nonumberline KulturPLUS}{2}
 \contentsline {section}{\numberline {1.2}Zielsetzung und Vorgehensweise}{3}
 \contentsline {chapter}{\numberline {2}Begriffskl\"arungen}{4}
 \contentsline {section}{\numberline {2.1}CMS und WCMS}{4}
@@ -8,7 +7,8 @@
 \contentsline {chapter}{\numberline {3}Projektanalyse und Spezifikation}{6}
 \contentsline {section}{\numberline {3.1}Der Prozess der Softwareentwicklung}{6}
 \contentsline {section}{\numberline {3.2}Analyse - Project Blastoff}{7}
-\contentsline {section}{\numberline {3.3}Entwurf - Software Design}{7}
+\contentsline {section}{\numberline {3.3}Anforderungen an das WegE Projekt}{7}
+\contentsline {section}{\numberline {3.4}Entwurf - Software Design}{7}
 \contentsline {chapter}{\numberline {4}Die Wahl des richtigen Content Management Systems}{8}
 \contentsline {section}{\numberline {4.1}Die Vorauswahl dreier geeigneter Content Management Systeme}{9}
 \contentsline {section}{\numberline {4.2}Sharepoint}{10}
