@@ -1,9 +1,26 @@
 \begin{thebibliography}{Wag16}
 
+\bibitem[PR10]{Pressman2010}
+\textsc{Pressman}, Roger~S. ; \textsc{Roger}, Pressman:
+\newblock \emph{Software Engineering: A Practitioner's Approach -}.
+\newblock 7. Aufl.
+\newblock New York : McGraw-Hill Education, 2010. --
+\newblock ISBN 978--0--073--37597--7
+
+\bibitem[typ]{typo3docs}
+\emph{Typo3 Documentation}.
+\newblock www.docs.typo3.org. --
+\newblock Accessed June 12 2016
+
 \bibitem[Wag16]{typo3cms7}
 \textsc{Wagner}, Wolfgang:
 \newblock \emph{Typo3 CMS 7 - Das umfassende Training}.
 \newblock feb 2016. --
 \newblock DVD Training
+
+\bibitem[weg]{wege}
+\emph{Wege: Wegweisende Lehrerbildung}.
+\newblock www.uni-bamberg.de/wege. --
+\newblock Accessed June 12 2016
 
 \end{thebibliography}

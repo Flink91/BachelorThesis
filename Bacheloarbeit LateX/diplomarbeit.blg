@@ -2,6 +2,18 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: diplomarbeit.aux
 The style file: alphadin.bst
 A level-1 auxiliary file: deckblatt.aux
 A level-1 auxiliary file: einleitungmotivation.aux
+White space in argument---line 10 of file einleitungmotivation.aux
+ : \citation{Im
+ :              Mittelpunkt des Projektvorhabens stehen dabei vor allem die inhaltliche Abstimmung zwischen einzelnen Fächern}
+I'm skipping whatever remains of this command
+White space in argument---line 11 of file einleitungmotivation.aux
+ : \citation{die
+ :               Stärkung des Professions- und Schulbezugs sowie der darauf bezogene Ausbau fall- und themenbezogener Lehr-}
+I'm skipping whatever remains of this command
+White space in argument---line 12 of file einleitungmotivation.aux
+ : \citation{Lern-
+ :                 und Prüfungsformate.}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: begriffe.aux
 A level-1 auxiliary file: projektanalyse.aux
 A level-1 auxiliary file: cmswahl.aux
@@ -12,8 +24,24 @@ A level-1 auxiliary file: zusammenfassungausblick.aux
 A level-1 auxiliary file: erklaerung.aux
 Database file #1: bibl.bib
 Warning--I didn't find a database entry for "BilVer"
+Warning--to sort, need author or key in wege
+Warning--to sort, need author or key in typo3docs
+`skip$' is a function literal, not a string, for entry typo3docs
+while executing---line 1656 of file alphadin.bst
+ptr=2, stack=
+
+
+---the literal stack isn't empty for entry typo3docs
+while executing---line 1656 of file alphadin.bst
 ptr=1, stack=
 
 ---the literal stack isn't empty for entry typo3cms7
 while executing---line 1656 of file alphadin.bst
-(There was 1 error message)
+`skip$' is a function literal, not a string, for entry wege
+while executing---line 1656 of file alphadin.bst
+ptr=2, stack=
+
+
+---the literal stack isn't empty for entry wege
+while executing---line 1656 of file alphadin.bst
+(There were 8 error messages)

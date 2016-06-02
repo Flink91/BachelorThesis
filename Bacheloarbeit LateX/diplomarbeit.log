@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  1 JUN 2016 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  2 JUN 2016 18:08
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -842,10 +842,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7225 strings out of 493634
- 106576 string characters out of 3143744
- 252560 words of memory out of 3000000
- 10338 multiletter control sequences out of 15000+200000
+ 7228 strings out of 493634
+ 106607 string characters out of 3143744
+ 252576 words of memory out of 3000000
+ 10341 multiletter control sequences out of 15000+200000
  56843 words of font info for 103 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  58i,8n,68p,1663b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -862,7 +862,7 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (36 pages, 835227 bytes).
+Output written on diplomarbeit.pdf (36 pages, 835946 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
