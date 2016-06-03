@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  2 JUN 2016 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  3 JUN 2016 22:51
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -638,7 +638,7 @@ chapter 3.
 
 
 
-]) [7]
+] [7]) [8]
 \openout2 = `cmswahl.aux'.
 
  (cmswahl.tex
@@ -648,7 +648,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[8
+[9
 
 
 
@@ -657,32 +657,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-<abb/sharepoint_logo.png, id=52, 222.8325pt x 45.16875pt>
+<abb/sharepoint_logo.png, id=55, 222.8325pt x 45.16875pt>
 File: abb/sharepoint_logo.png Graphic file (type png)
 
 <use abb/sharepoint_logo.png>
 Package pdftex.def Info: abb/sharepoint_logo.png used on input line 43.
 (pdftex.def)             Requested size: 111.41597pt x 22.5843pt.
- [9]
-<abb/lifeRay_logo.png, id=56, 198.7425pt x 49.18375pt>
+ [10]
+<abb/lifeRay_logo.png, id=60, 198.7425pt x 49.18375pt>
 File: abb/lifeRay_logo.png Graphic file (type png)
 
 <use abb/lifeRay_logo.png>
 Package pdftex.def Info: abb/lifeRay_logo.png used on input line 60.
 (pdftex.def)             Requested size: 99.371pt x 24.5918pt.
- <abb/typo3_logo.png, id=57, 483.8075pt x 204.765pt>
+ <abb/typo3_logo.png, id=61, 483.8075pt x 204.765pt>
 File: abb/typo3_logo.png Graphic file (type png)
 
 <use abb/typo3_logo.png>
 Package pdftex.def Info: abb/typo3_logo.png used on input line 70.
 (pdftex.def)             Requested size: 120.95157pt x 51.19112pt.
- [10 <./abb/sharepoint_logo.png> <./abb/lifeRay_logo.png>]) [11 <./abb/typo3_lo
+ [11 <./abb/sharepoint_logo.png> <./abb/lifeRay_logo.png>]) [12 <./abb/typo3_lo
 go.png>]
 \openout2 = `typo3.aux'.
 
  (typo3.tex
 chapter 5.
-[12
+[13
 
 
 
@@ -691,21 +691,21 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 28.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-<abb/typo3frontend.jpg, id=71, 840.13875pt x 472.76625pt>
+<abb/typo3frontend.jpg, id=74, 840.13875pt x 472.76625pt>
 File: abb/typo3frontend.jpg Graphic file (type jpg)
 
 <use abb/typo3frontend.jpg>
 Package pdftex.def Info: abb/typo3frontend.jpg used on input line 31.
 (pdftex.def)             Requested size: 420.06834pt x 236.38254pt.
 
-<abb/typo3backend.jpg, id=72, 840.89156pt x 474.27188pt>
+<abb/typo3backend.jpg, id=75, 840.89156pt x 474.27188pt>
 File: abb/typo3backend.jpg Graphic file (type jpg)
 
 <use abb/typo3backend.jpg>
 Package pdftex.def Info: abb/typo3backend.jpg used on input line 37.
 (pdftex.def)             Requested size: 420.44475pt x 237.13536pt.
- [13 <./abb/typo3frontend.jpg>]
-<abb/typo3menu.jpg, id=77, 145.29282pt x 649.67719pt>
+ [14 <./abb/typo3frontend.jpg>]
+<abb/typo3menu.jpg, id=80, 145.29282pt x 649.67719pt>
 File: abb/typo3menu.jpg Graphic file (type jpg)
  <use abb/typo3menu.jpg>
 Package pdftex.def Info: abb/typo3menu.jpg used on input line 55.
@@ -720,21 +720,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--58
 
  []
 
-[14 <./abb/typo3backend.jpg> <./abb/typo3menu.jpg>] [15] [16]
-<abb/typo3_template_overview.png, id=88, 647.41875pt x 536.0025pt>
+[15 <./abb/typo3backend.jpg> <./abb/typo3menu.jpg>] [16] [17]
+<abb/typo3_template_overview.png, id=91, 647.41875pt x 536.0025pt>
 File: abb/typo3_template_overview.png Graphic file (type png)
 
 <use abb/typo3_template_overview.png>
 Package pdftex.def Info: abb/typo3_template_overview.png used on input line 147
 .
 (pdftex.def)             Requested size: 318.66946pt x 263.82944pt.
- [17] [18 <./abb/typo3_template_overview.png>]
+ [18] [19 <./abb/typo3_template_overview.png>]
 Overfull \hbox (58.62167pt too wide) in paragraph at lines 177--178
 []\T1/aer/m/n/10.95 Die PHP Ex-ten-si-on Filein-fo geht nicht. In der php.ini d
 as Se-mi-ko-lon vor \T1/aett/m/n/10.95 extension=php_fileinfo.dll
  []
 
-[19] <abb/roottemplate.jpg, id=100, 216.81pt x 182.18062pt>
+[20] <abb/roottemplate.jpg, id=103, 216.81pt x 182.18062pt>
 File: abb/roottemplate.jpg Graphic file (type jpg)
 
 <use abb/roottemplate.jpg>
@@ -763,40 +763,40 @@ tt/m/n/10.95 <INCLUDE_TYPOSCRIPT: source= FF-ILE:fileadmin/\T1/aett/m/it/10.95
 Template_WegE\T1/aett/m/n/10.95 /ts/setup.ts 
  []
 
-[20 <./abb/roottemplate.jpg>]) [21]
+[21 <./abb/roottemplate.jpg>]) [22]
 \openout2 = `typo3praxisteil.aux'.
 
  (typo3praxisteil.tex
 chapter 6.
-[22
+[23
 
 
 
-] <abb/newsextension.jpg, id=111, 695.59875pt x 424.58624pt>
+] <abb/newsextension.jpg, id=114, 695.59875pt x 424.58624pt>
 File: abb/newsextension.jpg Graphic file (type jpg)
 
 <use abb/newsextension.jpg>
 Package pdftex.def Info: abb/newsextension.jpg used on input line 41.
 (pdftex.def)             Requested size: 341.43306pt x 208.4054pt.
- [23] [24 <./abb/newsextension.jpg>]
-<abb/forumextension.png, id=119, 877.02657pt x 491.58656pt>
+ [24] [25 <./abb/newsextension.jpg>]
+<abb/forumextension.png, id=122, 877.02657pt x 491.58656pt>
 File: abb/forumextension.png Graphic file (type png)
 
 <use abb/forumextension.png>
 Package pdftex.def Info: abb/forumextension.png used on input line 64.
 (pdftex.def)             Requested size: 341.43306pt x 191.38043pt.
- [25 <./abb/forumextension.png>] [26]
-<abb/powermail.jpg, id=126, 517.18219pt x 350.05782pt>
+ [26 <./abb/forumextension.png>] [27]
+<abb/powermail.jpg, id=129, 517.18219pt x 350.05782pt>
 File: abb/powermail.jpg Graphic file (type jpg)
  <use abb/powermail.jpg>
 Package pdftex.def Info: abb/powermail.jpg used on input line 117.
 (pdftex.def)             Requested size: 227.62204pt x 154.06863pt.
-) [27 <./abb/powermail.jpg>]
+) [28 <./abb/powermail.jpg>]
 \openout2 = `mehrwert.aux'.
 
  (mehrwert.tex
 chapter 7.
-) [28
+) [29
 
 
 
@@ -805,7 +805,7 @@ chapter 7.
 
  (zusammenfassungausblick.tex
 chapter 8.
-) [29
+) [30
 
 
 
@@ -813,22 +813,22 @@ chapter 8.
 \tf@lof=\write4
 \openout4 = `diplomarbeit.lof'.
 
- [30
+ [31
 
 
 ] (diplomarbeit.lot)
 \tf@lot=\write5
 \openout5 = `diplomarbeit.lot'.
 
- (diplomarbeit.bbl [31
+ (diplomarbeit.bbl [32
 
 ])
-[32
+[33
 
 ]
 \openout2 = `erklaerung.aux'.
 
- (erklaerung.tex) [33
+ (erklaerung.tex) [34
 
 ] (diplomarbeit.aux (deckblatt.aux)
 (einleitungmotivation.aux) (begriffe.aux) (projektanalyse.aux) (cmswahl.aux)
@@ -862,9 +862,9 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (36 pages, 835946 bytes).
+Output written on diplomarbeit.pdf (37 pages, 834050 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
+ 199 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
