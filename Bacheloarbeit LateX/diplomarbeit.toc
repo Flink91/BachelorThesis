@@ -4,6 +4,7 @@
 \contentsline {chapter}{\numberline {2}Begriffskl\"arungen}{4}
 \contentsline {section}{\numberline {2.1}CMS und WCMS}{4}
 \contentsline {section}{\numberline {2.2}ECMS}{5}
+\contentsline {section}{\numberline {2.3}Web Portal}{5}
 \contentsline {chapter}{\numberline {3}Projektanalyse und Spezifikation}{6}
 \contentsline {section}{\numberline {3.1}Der Prozess der Softwareentwicklung}{6}
 \contentsline {paragraph}{\nonumberline Software life cycle}{6}
@@ -11,7 +12,7 @@
 \contentsline {section}{\numberline {3.3}Requirements Engineering}{7}
 \contentsline {paragraph}{\nonumberline Requirement}{7}
 \contentsline {section}{\numberline {3.4}Anforderungen an das WegE Projekt}{7}
-\contentsline {section}{\numberline {3.5}Die Wahl der passenden Technologie}{8}
+\contentsline {section}{\numberline {3.5}Die Wahl der passenden Technologie}{9}
 \contentsline {chapter}{\numberline {4}Die Wahl des richtigen Content Management Systems}{10}
 \contentsline {section}{\numberline {4.1}Die Vorauswahl dreier geeigneter Content Management Systeme}{11}
 \contentsline {section}{\numberline {4.2}Sharepoint}{12}
@@ -53,9 +54,9 @@
 \contentsline {subsection}{\numberline {6.5.3}Evaluation}{29}
 \contentsline {section}{\numberline {6.6}Weitere n\"utzliche Extensions}{29}
 \contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{29}
-\contentsline {subsubsection}{\nonumberline Grid Elements}{30}
-\contentsline {subsubsection}{\nonumberline Powermail}{30}
-\contentsline {section}{\numberline {6.7}Wartung}{30}
+\contentsline {subsubsection}{\nonumberline Grid Elements}{29}
+\contentsline {subsubsection}{\nonumberline Powermail}{29}
+\contentsline {section}{\numberline {6.7}Wartung und Sicherheit}{30}
 \contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{31}
 \contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{31}
 \contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{31}

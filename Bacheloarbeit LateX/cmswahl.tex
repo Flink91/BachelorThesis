@@ -1,7 +1,7 @@
 \chapter{Die Wahl des richtigen Content Management Systems}
 \label{kap-cmswahl}
 
-Dieses Kapitel beschäftigt sich mit der Wahl der richtigen Technologie für das geplante Projekt. Diese Aufgabe wird im Kontext des Software Engineering im Project Blastoff erledigt, der Teil des ersten Schrittes, der Projektanalyse, ist.\\
+Dieses Kapitel beschäftigt sich mit der Wahl der passenden Technologie für ein geplantes Projekt. Diese Aufgabe wird im Kontext des Software Engineering im Project Blastoff erledigt, der Teil des ersten Schrittes, der Projektanalyse, ist.\\
 
 Die Wahl des richtigen CMS kann aufgrund der Fülle von möglichen Optionen sehr schwierig sein. Man möchte das beste Tool für den Job finden und muss hierzu sehr viele Variablen beachten, gegeneinander abwägen und gegebenenfalls Kompromisse eingehen. Hierbei spielt zum Beispiel die Kompetenz und Vorkenntnis eines Entwicklerteams eine große Rolle, wodurch sich eine solche Entscheidung schwer genralisieren lässt. Für die Wahl des richtigen CMS kann die Webseite CMSMatrix\footnote{http://www.cmsmatrix.org/} eine Hilfe sein. Sie listet über 1000 verschiedene Systeme, die sich einzeln auswählen und anhand sämtlicher wichtiger Kriterien vergleichen lassen. Die Kriterien untergliedern sich dabei in verschiedene Kateogorien: 
 
@@ -34,7 +34,7 @@ Es ist sicherlich eine gute Idee sich an die populäreren Optionen zu halten, da 
 
 \section{Die Vorauswahl dreier geeigneter Content Management Systeme}
 
-Die Vorauswahl von geeigneten Content Management Systemen für das WegE Projekt wurde durch mehrere Faktoren beeinflusst. Die größte Rolle spielt dabei zweifelsohne das Rechenzentrum der Universität Bamberg, die dort schon bestehenden Systeme und die vorhandene Expertise zur langfristigen Betreuung des WegE Projekts. Vor Allem mit Typo3 hat das Rechenzentrum Erfahrung, Sharepoint wird seit kurzem jedoch auch genutzt. Die sehr populären Optionen Joomla! und Drupal wären durchaus geeignet für das Projekt, bieten jedoch zu wenig Mehrwert zu Typo3 um die die Zeit zur Einarbeitung zu rechtfertigen. Die Größe und Ambiguität des Projekts schließt außerdem das populärste aller CMS Wordpress, aus, welches sich eher für kleinere Projekte eignet. Sollte die Vorkenntnis eines Teams sich jedoch nur auf Wordpress beschränken, ist es trotzdem durchaus eine mögliche Wahl. Somit landete die Vorauswahl bei Sharepoint, Typo3 und LiveRay, welche nun vorgestellt und geprüft werden.
+Die Vorauswahl von geeigneten Content Management Systemen für das WegE Projekt wurde durch mehrere Faktoren beeinflusst. Die größte Rolle spielt dabei zweifelsohne das Rechenzentrum der Universität Bamberg, die dort schon bestehenden Systeme und die vorhandene Expertise zur langfristigen Betreuung des WegE Projekts. Anders formuliert, die Vorkenntnisse des Teams. Vor Allem mit Typo3 hat das Rechenzentrum Erfahrung, Sharepoint wird seit kurzem genutzt. Die sehr populären Optionen Joomla! und Drupal wären durchaus geeignet für das Projekt, bieten jedoch zu wenig Mehrwert zu Typo3 um die die Zeit zur Einarbeitung zu rechtfertigen. Die Größe und Ambiguität des Projekts schließt außerdem das populärste aller CMS Wordpress, aus, welches sich eher für kleinere Projekte eignet. Sollte die Vorkenntnis eines Teams sich jedoch nur auf Wordpress beschränken, ist es trotzdem durchaus eine mögliche Wahl. Somit landete die Vorauswahl bei Sharepoint, Typo3 und LifeRay, welche nun vorgestellt und geprüft werden.
 
 \section{Sharepoint}
 
@@ -53,6 +53,8 @@ Sharepoint\footnote{https://support.office.com/de-de/article/Was-ist-SharePoint-
 \item SharePoint Designer erlaubt es leicht Layouts, Workflows und Verbindungen zu externen Datenquellen anzupassen.
 \end{itemize}
 
+
+
 \section{LifeRay Portal}
 
 \begin{figure}[hbtp]
@@ -61,8 +63,16 @@ Sharepoint\footnote{https://support.office.com/de-de/article/Was-ist-SharePoint-
 	\caption{LifeRay Logo}
 \end{figure}
 
-Das Hauptprodukt von Liferay heißt Liveray Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus eher auf Businesslösungen und Geschäftsprozessen. Es ist lizenzkostenfrei und Open Source. Die Kernfunktionalitäten sind die Authentifizierung von Nutzern, ....
+Das Hauptprodukt von Liferay heißt Liveray Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus auf Businesslösungen und Geschäftsprozessen. Es werden zwei Varianten angeboten, LifeRay Portal CE ist lizenzkostenfrei und Open Source. LifeRay Portal EE ist die kommerzielle Variante und bietet zusätzlich zur freien Version offiziellen Support und Langzeitunterstützung.
+LifeRay Portal unterteilt sich in drei Teile:
+\begin{itemize}
+	\item LifeRay Portal: Die Kernfunktionalitäten sind die Authentifizierung von Nutzern mit Single Sign-on, Personalisierung von Seiten durch Drag und Drop, automatischer Dateiupload mit WebDAV (\textsc{Web}-based\textsc{D}istributed \textsc{A}uthoring and \textsc{V}ersioning), Suchen und Taggen von Web-Inhalten und Mehrsprachigkeit.
+	\item LifeRay CMS: Zusätzlich wird LifeRay CMS geboten, das auf LifeRay Portal aufbaut und typische CMS Aufgaben übernimmt.
+	\item LifeRay Collaboration: Als letztes steht das Angebot LifeRay Collaboration zur Verfügung. Hier finden sich Komponenten, wie Foren, Wikis, Blogs Kalender und Ähnliches.
+\end{itemize}
 
+Nach dem ersten Eindruck ist LifeRay eine durchaus geeignete Wahl für das WegE Projekt, alle Anforderungen lassen sich hiermit umsetzen.
+   
 \section{Typo3}
 
 \begin{figure}[hbtp]
@@ -71,8 +81,8 @@ Das Hauptprodukt von Liferay heißt Liveray Portal\footnote{https://www.liferay.c
 	\caption{Typo3 Logo}
 \end{figure}
 
-Typo3 ist ein System, mit dem das Rechenzentrum der Universität Bamberg bereits sehr vertraut ist, da die offizielle Seite der Universität auch mit Typo3 betrieben wird. Somit ist ein wichtiger Punkt, nämlich die Expertise des Teams, gegeben. Es ist Open Source und lizentkostenfrei. Desweiteren zeigt CMSMatrix, dass alle gesammelten Anforderungen an die WegE Plattform entweder vorhanden sind oder als kostenloses Addon zur Verfügung stehen. Als Sahnehäubchen kommt hinzu, dass die zukünftigen Redakteure der WegE Plattform bereits Erfahrung mit dem Backend von Typo3 haben und eine Umstellung auf ein anderes System etwas Mühe und Arbeit in Form von Support nach sich ziehen würde.
+Typo3 ist ein System, mit dem das Rechenzentrum der Universität Bamberg bereits sehr vertraut ist, da die offizielle Seite der Universität auch mit Typo3 betrieben wird. Es ist Open Source und frei von Lizenzkosten. Des Weiteren zeigt CMSMatrix, dass alle gesammelten Anforderungen an die WegE Plattform entweder vorhanden sind oder als kostenloses Addon zur Verfügung stehen. Als Sahnehäubchen kommt hinzu, dass die zukünftigen Redakteure der WegE Plattform bereits Erfahrung mit dem Backend von Typo3 haben und somit die Einarbeitung in ein neues System wegfällt.
 
-Ein Blick in die Gliederung verrät dem aufmerksamen Leser, dass die Wahl des CMS auf Typo3 fiel und diesem CMS die nächsten zwei Kapitel gewidmet sind. Somit wird alles Weitere dort ausführlich erklärt.
+Ein Blick in die Gliederung verrät dem aufmerksamen Leser, dass die Wahl des CMS auf Typo3 fiel und diesem CMS die nächsten zwei Kapitel gewidmet sind. Somit wird alles Weitere zu Typo3 dort ausführlich erklärt.
 
 
