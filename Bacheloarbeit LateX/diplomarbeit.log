@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  8 JUN 2016 22:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  14 JUN 2016 21:29
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -651,46 +651,36 @@ chapter 3.
 
  (cmswahl.tex
 chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
 [10
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-<abb/sharepoint_logo.png, id=59, 222.8325pt x 45.16875pt>
+] [11] [12] <abb/sharepoint_logo.png, id=65, 222.8325pt x 45.16875pt>
 File: abb/sharepoint_logo.png Graphic file (type png)
 
 <use abb/sharepoint_logo.png>
-Package pdftex.def Info: abb/sharepoint_logo.png used on input line 43.
+Package pdftex.def Info: abb/sharepoint_logo.png used on input line 63.
 (pdftex.def)             Requested size: 111.41597pt x 22.5843pt.
- [11]
-<abb/lifeRay_logo.png, id=63, 198.7425pt x 49.18375pt>
+
+<abb/lifeRay_logo.png, id=66, 198.7425pt x 49.18375pt>
 File: abb/lifeRay_logo.png Graphic file (type png)
 
 <use abb/lifeRay_logo.png>
-Package pdftex.def Info: abb/lifeRay_logo.png used on input line 62.
+Package pdftex.def Info: abb/lifeRay_logo.png used on input line 82.
 (pdftex.def)             Requested size: 99.371pt x 24.5918pt.
- [12 <./abb/sharepoint_logo.png> <./abb/lifeRay_logo.png>] <abb/typo3_logo.png,
- id=69, 483.8075pt x 204.765pt>
+ [13 <./abb/sharepoint_logo.png>]
+<abb/typo3_logo.png, id=71, 483.8075pt x 204.765pt>
 File: abb/typo3_logo.png Graphic file (type png)
-
-<use abb/typo3_logo.png>
-Package pdftex.def Info: abb/typo3_logo.png used on input line 80.
+ <use abb/typo3_logo.png>
+Package pdftex.def Info: abb/typo3_logo.png used on input line 100.
 (pdftex.def)             Requested size: 120.95157pt x 51.19112pt.
-) [13 <./abb/typo3_logo.png>]
+)
+[14 <./abb/lifeRay_logo.png> <./abb/typo3_logo.png>]
 \openout2 = `typo3.aux'.
 
  (typo3.tex
 chapter 5.
-[14
+[15
 
 
 
@@ -699,21 +689,21 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 28.
  (V:\ProgrammeV\miktex\tex\latex\ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-<abb/typo3frontend.jpg, id=77, 840.13875pt x 472.76625pt>
+<abb/typo3frontend.jpg, id=80, 840.13875pt x 472.76625pt>
 File: abb/typo3frontend.jpg Graphic file (type jpg)
 
 <use abb/typo3frontend.jpg>
 Package pdftex.def Info: abb/typo3frontend.jpg used on input line 31.
 (pdftex.def)             Requested size: 420.06834pt x 236.38254pt.
 
-<abb/typo3backend.jpg, id=78, 840.89156pt x 474.27188pt>
+<abb/typo3backend.jpg, id=81, 840.89156pt x 474.27188pt>
 File: abb/typo3backend.jpg Graphic file (type jpg)
 
 <use abb/typo3backend.jpg>
 Package pdftex.def Info: abb/typo3backend.jpg used on input line 37.
 (pdftex.def)             Requested size: 420.44475pt x 237.13536pt.
- [15 <./abb/typo3frontend.jpg>]
-<abb/typo3menu.jpg, id=83, 145.29282pt x 649.67719pt>
+ [16 <./abb/typo3frontend.jpg>]
+<abb/typo3menu.jpg, id=87, 145.29282pt x 649.67719pt>
 File: abb/typo3menu.jpg Graphic file (type jpg)
  <use abb/typo3menu.jpg>
 Package pdftex.def Info: abb/typo3menu.jpg used on input line 55.
@@ -728,21 +718,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--58
 
  []
 
-[16 <./abb/typo3backend.jpg> <./abb/typo3menu.jpg>] [17] [18]
-<abb/typo3_template_overview.png, id=94, 647.41875pt x 536.0025pt>
+[17 <./abb/typo3backend.jpg> <./abb/typo3menu.jpg>] [18] [19]
+<abb/typo3_template_overview.png, id=97, 647.41875pt x 536.0025pt>
 File: abb/typo3_template_overview.png Graphic file (type png)
 
 <use abb/typo3_template_overview.png>
 Package pdftex.def Info: abb/typo3_template_overview.png used on input line 147
 .
 (pdftex.def)             Requested size: 318.66946pt x 263.82944pt.
- [19] [20 <./abb/typo3_template_overview.png>]
+ [20] [21 <./abb/typo3_template_overview.png>]
 Overfull \hbox (58.62167pt too wide) in paragraph at lines 177--178
 []\T1/aer/m/n/10.95 Die PHP Ex-ten-si-on Filein-fo geht nicht. In der php.ini d
 as Se-mi-ko-lon vor \T1/aett/m/n/10.95 extension=php_fileinfo.dll
  []
 
-[21] <abb/roottemplate.jpg, id=106, 216.81pt x 182.18062pt>
+[22] <abb/roottemplate.jpg, id=110, 216.81pt x 182.18062pt>
 File: abb/roottemplate.jpg Graphic file (type jpg)
 
 <use abb/roottemplate.jpg>
@@ -771,7 +761,7 @@ tt/m/n/10.95 <INCLUDE_TYPOSCRIPT: source= FF-ILE:fileadmin/\T1/aett/m/it/10.95
 Template_WegE\T1/aett/m/n/10.95 /ts/setup.ts 
  []
 
-[22 <./abb/roottemplate.jpg>]) [23]
+[23 <./abb/roottemplate.jpg>]) [24]
 \openout2 = `typo3praxisteil.aux'.
 
  (typo3praxisteil.tex
@@ -782,42 +772,42 @@ Overfull \hbox (0.59741pt too wide) in paragraph at lines 14--16
 ist die Ex-ten-si-on sr_feuser_registration.
  []
 
-<abb/fe_user.jpg, id=114, 526.21594pt x 478.78876pt>
+<abb/fe_user.jpg, id=117, 526.21594pt x 478.78876pt>
 File: abb/fe_user.jpg Graphic file (type jpg)
  <use abb/fe_user.jpg>
 Package pdftex.def Info: abb/fe_user.jpg used on input line 24.
 (pdftex.def)             Requested size: 341.43306pt x 310.67567pt.
 
-[24
+[25
 
 
 
-] [25 <./abb/fe_user.jpg>]
-<abb/newsextension.jpg, id=121, 695.59875pt x 424.58624pt>
+] [26 <./abb/fe_user.jpg>]
+<abb/newsextension.jpg, id=124, 695.59875pt x 424.58624pt>
 File: abb/newsextension.jpg Graphic file (type jpg)
 
 <use abb/newsextension.jpg>
 Package pdftex.def Info: abb/newsextension.jpg used on input line 48.
 (pdftex.def)             Requested size: 341.43306pt x 208.4054pt.
- [26] [27 <./abb/newsextension.jpg>]
-<abb/forumextension.png, id=129, 877.02657pt x 491.58656pt>
+ [27] [28 <./abb/newsextension.jpg>]
+<abb/forumextension.png, id=133, 877.02657pt x 491.58656pt>
 File: abb/forumextension.png Graphic file (type png)
 
 <use abb/forumextension.png>
 Package pdftex.def Info: abb/forumextension.png used on input line 71.
 (pdftex.def)             Requested size: 341.43306pt x 191.38043pt.
- [28 <./abb/forumextension.png>] [29]
-<abb/powermail.jpg, id=137, 517.18219pt x 350.05782pt>
+ [29 <./abb/forumextension.png>] [30]
+<abb/powermail.jpg, id=140, 517.18219pt x 350.05782pt>
 File: abb/powermail.jpg Graphic file (type jpg)
  <use abb/powermail.jpg>
 Package pdftex.def Info: abb/powermail.jpg used on input line 122.
 (pdftex.def)             Requested size: 227.62204pt x 154.06863pt.
-) [30 <./abb/powermail.jpg>]
+) [31 <./abb/powermail.jpg>]
 \openout2 = `mehrwert.aux'.
 
  (mehrwert.tex
 chapter 7.
-) [31
+) [32
 
 
 
@@ -826,7 +816,7 @@ chapter 7.
 
  (zusammenfassungausblick.tex
 chapter 8.
-) [32
+) [33
 
 
 
@@ -834,22 +824,22 @@ chapter 8.
 \tf@lof=\write4
 \openout4 = `diplomarbeit.lof'.
 
- [33
+ [34
 
 
 ] (diplomarbeit.lot)
 \tf@lot=\write5
 \openout5 = `diplomarbeit.lot'.
 
- (diplomarbeit.bbl [34
+ (diplomarbeit.bbl [35
 
 ])
-[35
+[36
 
 ]
 \openout2 = `erklaerung.aux'.
 
- (erklaerung.tex) [36
+ (erklaerung.tex) [37
 
 ] (diplomarbeit.aux (deckblatt.aux)
 (einleitungmotivation.aux) (begriffe.aux) (projektanalyse.aux) (cmswahl.aux)
@@ -863,10 +853,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7234 strings out of 493634
- 106858 string characters out of 3146593
- 252589 words of memory out of 3000000
- 10346 multiletter control sequences out of 15000+200000
+ 7235 strings out of 493634
+ 106871 string characters out of 3146593
+ 252596 words of memory out of 3000000
+ 10347 multiletter control sequences out of 15000+200000
  56843 words of font info for 103 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  58i,8n,68p,1663b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -882,9 +872,9 @@ msfonts/cm/cmr9.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmsl10
 rammeV/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><V:/ProgrammeV/miktex/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><V:/ProgrammeV/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (39 pages, 907728 bytes).
+Output written on diplomarbeit.pdf (40 pages, 905259 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
+ 209 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

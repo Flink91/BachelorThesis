@@ -1,9 +1,13 @@
 \chapter{Die Wahl des richtigen Content Management Systems}
 \label{kap-cmswahl}
 
-Dieses Kapitel beschäftigt sich mit der Wahl der passenden Technologie für ein geplantes Projekt. Diese Aufgabe wird im Kontext des Software Engineering im Project Blastoff erledigt, der Teil des ersten Schrittes, der Projektanalyse, ist.\\
+Dieses Kapitel beschäftigt sich mit der Wahl der passenden Technologie - spezieller noch, des passenden WCMS - für ein geplantes Projekt. Diese Aufgabe wird im Kontext des Software Engineering im Project Blastoff erledigt, der Teil des ersten Schrittes, der Projektanalyse, ist. Anschließend wird eine Vorauswahl von drei CMS grob auf die EIgnung für dieses Projekt überprüft. Diese drei CMS sind Sharepoint, LifeRay und Typo3.
 
-Die Wahl des richtigen CMS kann aufgrund der Fülle von möglichen Optionen sehr schwierig sein. Man möchte das beste Tool für den Job finden und muss hierzu sehr viele Variablen beachten, gegeneinander abwägen und gegebenenfalls Kompromisse eingehen. Hierbei spielt zum Beispiel die Kompetenz und Vorkenntnis eines Entwicklerteams eine große Rolle, wodurch sich eine solche Entscheidung schwer genralisieren lässt. Für die Wahl des richtigen CMS kann die Webseite CMSMatrix\footnote{http://www.cmsmatrix.org/} eine Hilfe sein. Sie listet über 1000 verschiedene Systeme, die sich einzeln auswählen und anhand sämtlicher wichtiger Kriterien vergleichen lassen. Die Kriterien untergliedern sich dabei in verschiedene Kateogorien: 
+\section{Auswahlkriterien}
+Die Wahl des richtigen CMS kann aufgrund der Fülle von möglichen Optionen sehr schwierig sein. Es gilt das beste Tool für den Job zu finden und hierzu müssen sehr viele Variablen beachtet, gegeneinander abgewägt und gegebenenfalls Kompromisse eingegangen werden. Hierbei spielt die Kompetenz und Vorkenntnis eines Entwicklerteams eine große Rolle, wodurch sich eine solche Entscheidung schwer generalisieren lässt. Grundsätzlich lassen sich Auswahlkriterien in vier Punkte untergliedern: Technologie\&Architektur, Content Management, Content delivery und Anbieter. \textsc{Rüping}\cite{Rueping2010} bietet zu jedem dieser vier Punkte eine ausführliche Checkliste mit wichtigen Fragen, die einem bei der Entscheidung helfen.
+
+\paragraph{CmsMatrix}
+Zur Beantwortung der Checklisten, kann die Webseite CMSMatrix\footnote{http://www.cmsmatrix.org/} eine Hilfe sein. Sie listet über 1000 verschiedene Systeme, die sich einzeln auswählen und anhand sehr vieler Kriterien vergleichen lassen. Die Kriterien untergliedern sich dabei in verschiedene Kategorien: 
 
 \begin{itemize}
 	\item Systemanforderungen:
@@ -11,7 +15,7 @@ Die Wahl des richtigen CMS kann aufgrund der Fülle von möglichen Optionen sehr s
 	\item Sicherheit:
 	Immer wenn externe User sich in ein System einloggen können stellt sich schnell die Frage nach Sicherheit. In dieser Kategorie lassen sich sicherheitsspezifische Aspekte, wie Art der Authentifizierung oder SSL Möglichkeiten, vergleichen. Dies spielt im WegE Projekt zwar eine große Rolle, sollte jedoch kein großer Entscheider werden, das der Punkt Sicherheit von den meisten Systemen ausreichend abgedeckt ist.
 	\item Support:
-	In diesem Unterpunkt lässt sich vor Allem gut erkennen, wie leicht ein Entwickler eines CMS an Hilfe kommt. Es werden verschiedene Möglichkeiten an Hilfe zu gelangen, verglichen. Besonders wichtig für einen einzelnen Entwickler ist hier ein Punkt zum Vergleich der Entwickler Communities und Foren.
+	In diesem Unterpunkt lässt sich vor Allem gut erkennen, wie leicht ein Entwickler eines CMS an Hilfe kommt. Es werden verschiedene Möglichkeiten an Hilfe zu gelangen, verglichen. Besonders wichtig für einen einzelnen Entwickler ist hier ein Punkt zum Vergleich der Entwickler-Communities und Foren.
 	\item Bedienbarkeit:
 	Hier lässt sich die Existenz von Features, die einem das Bedienen des CMS erleichtern, anzeigen. Dazu gehören zum Beispiel ein WYSIWIG-Editor, eine Undo Möglichkeit oder auch ein Spell Checker.
 	\item Performance:
@@ -26,11 +30,27 @@ Die Wahl des richtigen CMS kann aufgrund der Fülle von möglichen Optionen sehr s
 	Fast jede mögliche Funktion einer Webseite existiert unter dem Punkt Applikationsumfang als Auswahlkriterium um schnell herauszufinden ob ein CMS diese Funktion bereits anbietet, oder als Addon zur Verfügung steht. Einige exemplarische Funktionen sind ein Blog, ein Mail-Formular oder eine Kalenderfunktion.
 	\item Commerce:
 	Sucht man ein CMS für einen Online Shop lassen sich hier wichtige Funktionen wie ein Shopping Cart, vergleichen.
-	
 \end{itemize}
 
-Es ist sicherlich eine gute Idee sich an die populäreren Optionen zu halten, da man hier mit dem besten Support und der aktivsten Community rechnen kann, was Einstieg, Support und Lernkurve positiv beeinflusst. Selbst unter den fünf populärsten CMS gibt es immense Unterschiede, die zusammen den Großteil der Bedürfnisse jeglicher unterschiedlicher Websites abdecken.\\ 
+Mit Hilfe von CmsMatrix und der offiziellen Seite des jeweiligen CMS sollten sich alle folgenden Fragen beantworten.
 
+\subsection{Technologie\&Architektur}
+
+Die Fragen der Checkliste drehen sich hier um die unterliegende Technologie, die Systemarchitektur, verfügbare Systemkomponenten, Systemvoraussetzungen und andere nicht-funktionale Eigenschaften des Systems. Es wird nach der grundlegenden Technologie/Programmiersprache und dem Datenformat gefragt. Es wird gefragt, wie Content und Layout separiert sind und ob eine API zum Content existiert. Allgemeiner wird untersucht, welche großen Komponenten das System ausmachen und wie gut dessen Performance ist. Zuletzt werden Fragen nach Anforderungen an Betriebssystem, Datenbank, Hardware und Web Server, gestellt
+
+\subsection{Anbieterinformationen}
+
+Neben technischen Details sind auch Information über den Vertrieb des CMS und den Anbieter dessen interessant. Besonders wichtig ist das Lizenzmodell und ob es sich um ein Open Source Tool handelt. Falls es sich um ein proprietäres Tool handelt , muss ein genauerer Blick auf das Lizensierungsmodell geworfen und dessen Kosten ermittelt werden. Diese hängen oft mit der Anzahl von Nutzern zusammen.
+Weitere wichtige Faktoren sind der offizielle Support und die Stärke der Community um das Tool. Ein starker Support mindert eventuelle Risiken bei der Entwicklung. Eine gute Community erleichtert den Einstieg in ein CMS und kann gegebenenfalls als Ersatz für den Support dienen. 
+Es ist sicherlich eine gute Idee sich an die populäreren Optionen zu halten, da man hier mit dem besten Support und der aktivsten Community rechnen kann, was Einstieg, Support und Lernkurve positiv beeinflusst. Vor Allem als sehr kleines oder Ein-Mann-Team lohnt sich ein Blick auf die CMS mit den stärksten Communities. 
+
+\subsection{Content Management}
+
+Unter Content Management fragt Rüping \cite{Rueping2010} wie gut ein CMS seine Grundfunktionalität erledigt. Die Checkliste untersucht die Modellierung des Content, welche Typen von Content möglich sind, wie mit Links umgegangen wird und wie Content importiert/expoertiert werden kann. Darüber hinaus wird der Editor Client auf Kriterien wie Anpassungsmöglichkeiten, Validierungsmechanismen, Spell Checker und Ergonomie, untersucht. Zuletzt wird nach dem Workflow gefragt und wie dieser angepasst werden kann.
+
+\subsection{Content Delivery}
+
+Im letzten Punkt geht es um den technischen Zustellungsprozess von Content an die Nutzer. Es wird nach der Möglichkeit eigene Komponenten zu integrieren und Support von SOA gefragt. Eine Möglichkeit eigene Komponenten, wie zum Beispiel Extensions, in die Umgebung zu integrieren wird untersucht. Es wird untersucht ob sich eigene Controller-Logik implementieren lässt, was eine Anpassung des Routing von bestimmten Seiten erlauben würde. Es wird gefragt ob das CMS eine Suchengine oder eine Personalisierungsengine bietet. Mit der Personalisierungsengine ist etwas, wie die Oberfläche eines Web Portals gemeint. Bei den Suchengines ist interessant welche Dateiarten gesucht werden können und wie schnell die Suche ist.
 
 \section{Die Vorauswahl dreier geeigneter Content Management Systeme}
 
