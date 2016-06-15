@@ -1,7 +1,28 @@
 \chapter{Anpassung eines Typo3 Systems an die gesammelten Requirements}
 \label{kap-typo3praxisteil}
 
-Nach dem Erstellen einer simplen Typo3 Umgebung ist das Ziel dieses Teils die Untersuchung verschiedener Extensions, die zur Umsetzung der WegE Requirements genutzt werden können. Eine passende Extension erfüllt dabei klar die Anforderungen, ist effizient in der Nutzung und Wartung und lässt sich möglichst leicht implementieren.
+
+https://wiki.typo3.org/ExtensionsCompared\#Extensions\_Compared
+
+Nach dem Erstellen einer simplen Typo3 Umgebung ist das Ziel dieses Teils die Untersuchung verschiedener Extensions, die zur Umsetzung der WegE Requirements genutzt werden können. Um die besten Extensions auswählen zu können, werden einige sinnvolle Kriterien benötigt. Nur wenige dieser Kriterien lassen sich generell auf alle Extensions anbringen. Wie auch bei der Wahl des CMS gibt es nicht die eine beste Lösung, sondern viele Optionen, die gegeneinander abgewägt werden müssen. Nichtsdestotrotz sollte jede ernst zu nehmende Extension einige Punkte erfüllen.
+
+\paragraph{Eigenschaften einer professionellen Extension}
+\begin{itemize}
+	\item \textbf{Einhalten der Typo3 Coding Guidelines}: Diese Guidelines decken die wichtigsten Aspekte einer guten Extension, wie Sicherheit, Erweiterbarkeit, Stabilität und Zukunftssicherheit, ab. https://docs.typo3.org/typo3cms/CodingGuidelinesReference/Index.html
+	\item \textbf{Kompatibilität mit eigenem Typo3 System}: Natürlich soll die Extension für die jeweilige Version verfügbar sein und nicht im Konflikt mit anderen Extensions stehen. Außerdem sollte die Lizenz der Extension beachtet werden.
+	\item \textbf{Extension Manual verfügbar} Eine offizielle Anleitung kann direkt auf der Downloadseite der Extension auf Typo3 verlinkt werden und ist unerlässlich für den richtigen Umgang mit einer Extension und sollte nicht fehlen.
+\end{itemize}
+
+Die erste Anlaufstelle zur Überprüfung dieser Eigenschaften ist die Downloadseite der Extension auf typo3.org. Diese bietet eine Übersicht über Version, Update, Alter, Kategorie, Autor und Downloadzahlen einer Extension. Die Anzahl der Downloads ist meistens ein guter Indikator für eine professionelle Extension, jedoch nicht immer. Deshalb sollte dieser mit Vorsicht genossen werden.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{abb/extensionseite.jpg}
+	\caption[Extension Übersicht]{Übersicht einer Extension auf der Downloadseite}
+	\label{fig:forumextension}
+\end{figure}
+
+Neben den oben genannten Kriterien gibt es noch ein hilfreiches Projekt namens Extension Comparison project auf der Typo3 Wiki Webseite, die ein große Anzahl von Extensions vergleicht. 
 
 \section{Rechtemanagement und Authentikation}
 Die Erstellung und das Management der Usergruppen, die für das WegE Projekt geplant sind, könnten sich als eine der schwierigsten Aufgaben entpuppen. Zum einen gibt es eine Menge Redakteure, für viele verschiedene Sektionen der Webseite. Dann soll es die Möglichkeit geben sich mittels Kennnummer der Universität einzuloggen und zum Schluss soll jeder interessierte User sich einen Account anlegen können, um zum Beispiel im Forum mitzuwirken. Daraus resultiert ein kompliziertes Rechtemanagement.
