@@ -46,16 +46,18 @@ Dennoch enthält die Backend sehr viele Optionen, versteckte Knöpfe und Eigenheit
 \section{Funktionalität und Architektur von Typo3}
 
 Es handelt sich an dieser Stelle zwar um eine wissenschaftliche Arbeit und kein Handbuch, doch es ist ein wesentlicher Bestandteil dessen, die Typo3 Umgebung zu verstehen um analysieren zu können, wie sie am geschicktesten auf die gesammelten Anforderungen anzupassen ist. Daher folgt nun eine komprimierte Übersicht über den Umgang und die Entwicklung von Typo3 Websites und den Workflow beim Erstellen dieser.
-
+\newpage
 \subsection{Die Backend Module im Überblick}
 
-Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestaltet sich jedoch immer noch anspruchsvoller als bei vergleichbaren Konkurrenten. Deshalb findet sich hier zunächst eine Liste mit Erklärungen zur Navigationsleiste im Backend:\\
+Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestaltet sich jedoch immer noch anspruchsvoller als bei vergleichbaren Konkurrenten. Deshalb findet sich hier zunächst eine Liste mit Erklärungen zur Navigationsleiste im Backend:
+\paragraph{Das Backend Menü}
 \begin{wrapfigure}{lh!}{0.25\textwidth}
 	\begin{center}
 		\includegraphics[width=0.25\textwidth]{abb/typo3menu.jpg}
 	\end{center}
 	\caption{Typo3 Backend Menü}
 \end{wrapfigure}
+
 \begin{itemize}
 	
 	\item Page: Hier lassen sich die Einzelseiten der Webanwendung auf einem hohen Level erstellen und verwalten. Auch wenn noch keine Seite angelegt wurde, sieht man im Hierarchiebaum bereits einen Eintrag. Dieser stellt sozusagen die Wurzel aller zukünftigen Seiten dar, zeigt selbst jedoch keine Seite an.
@@ -126,7 +128,22 @@ Darunter wird noch mittels Typoscript der Name der Seite definiert, welcher spät
 
 \subsection{Erweiterungen/Extensions}
 
-Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterungen oder Extensions. Inzwischen existieren tausende von Erweiterungen für Typo3. Allerdings muss dazugesagt werden, dass ein großer Teil dieser veraltet ist, nicht mehr gepflegt wird oder gar überhaupt nicht auf der neuen Version lauffähig gemacht werden kann. Das liegt auch daran, dass viele der Extensions von freien Programmierern in ihrer Freizeit entwickelt werden. So gilt es etwas vorsichtig bei der Auswahl passender Extensions zu sein.
+Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterungen oder Extensions. Mit diesen Extensions lässt sich das CMS mit wenig Aufwand um etliche Features erweitern. Inzwischen existieren tausende von Erweiterungen für Typo3. \textquotedblleft Extension \textquotedblright ist dabei ein Überbegriff für verschiedene Arten von Ergänzungen\cite{typo3CoreApi}\cite{Ebner2010}:
+\begin{itemize}
+	\item \textbf{Plugins} sind Erweiterungen des Frontend, wie zum Beispiel ein Gästebuch. Im den Extension Kategorien werden Plugins unter Frontend oder Frontend-Plug-in gelistet. Frontend Plug-in Extensions erzeugen dabei eine eigene Ausgabe, während das Gegenstück diese Ausgabe lediglich beeinflusst.
+	\item \textbf{Module} sind Backend Erweiterungen und fügen diesem meist auch einen neuen Menüpunkt hinzu. In den Extension Kategorien werden Module unter Backend oder Backend-Modul gelistet. Backend-Module sind dabei diejenigen mit eigenem Menüpunkt.
+	\item \textbf{Services} sind libraries, die Vorteile durch die Nutzung einer API bieten. Sie tragen den selben Namen unter den Extension Kategorien.
+	\item \textbf{Distributionen} sind vollständige CMS Installationen, als Paket vorgefertigt. 
+	\item Die restlichen Extension Kategorien heißen Documentation, Templates, Examples und Miscellaneous. Diese enthalten genau das was der Name verspricht. Miscellaneous dient als Auffangbecken für alle Extensions, die sich nicht zuordnen lassen.
+\end{itemize}
+Es gibt drei Arten von Extensions: 
+\begin{itemize}
+	\item Lokale Extensions
+	\item Globale Extensions
+	\item Systemextensions
+\end{itemize}
+
+Bei der Anzahl von tausenden Extensions muss allerdings dazugesagt werden, dass ein großer Teil dieser veraltet ist, nicht mehr gepflegt wird oder gar überhaupt nicht auf der neuen Version lauffähig gemacht werden kann. Das liegt auch daran, dass viele der Extensions von freien Programmierern in ihrer Freizeit entwickelt werden. So gilt es etwas vorsichtig bei der Auswahl passender Extensions zu sein.
 Zu finden sind diese Extensions auf der offiziellen Seite unter typo3.org/extensions/repository. Wichtig ist es hier auf die Kompatibilität zu achten, die dort angezeigt wird. Auch findet sich hier meist eine Dokumentation zur Einrichtung und weiteren Infos zur jeweiligen Erweiterung. 
 Die Erweiterungen der eigenen Typo3 Anwendung lassen sich durch den Menüpunkt \emph{Erweiterungen} im Backend verwalten.
 
@@ -144,7 +161,7 @@ Ein Typo3 Fluidtemplate besteht also aus einem Layout, das Dinge wie head und he
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{abb/typo3_template_overview.png}
+\includegraphics[width=0.5\linewidth]{abb/typo3_template_overview.png}
 \caption[Typo3 Template Teile]{Typo3 Template Komponenten}
 \label{fig:typo3_template_overview}
 \end{figure}
@@ -198,13 +215,14 @@ Der Vorteil eines CMS ist die Erstellung von dynamischem Content. Um das zu bewe
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.3\linewidth]{abb/roottemplate.jpg}
-		\caption{Aufbau Website-Baum}
+		\caption{Aufbau des Website-Baumes}
 		\label{fig:roottemplate}
 	\end{figure}
 	\item Im Root-Template unter \texttt{Includes} müssen zwei Dinge eingefügt werden, \texttt{css\_styled\_content} und \texttt{fluid\_styled\_content}. Die Reihenfolge ist dabei wichtig. Sollte \texttt{fluid\_styled\_content} nicht existieren, muss dieses als Extension installiert werden.
 	\item Unter \texttt{General} werden nun zwei externe Typoscript Dateien für die Konstanten und das Setup verlinkt. So erhält man mehr Flexibilität bei der Arbeit mit Versionierungen und Teamarbeit.
 	\subitem Unter \texttt{Constants} wird Folgendes geschrieben: \texttt{<INCLUDE\_TYPOSCRIPT: source=" FILE:fileadmin/\textit{Template\_WegE}/ts/constants.ts">}
-	\subitem Unter \texttt{Setup}: \texttt{<INCLUDE\_TYPOSCRIPT: source= " FILE:fileadmin/\textit{Template\_WegE}/ts/setup.ts">}
+	\subitem Unter \texttt{Setup}: \\
+	\texttt{<INCLUDE\_TYPOSCRIPT: source= " FILE:fileadmin/\textit{Template\_WegE}/ts/setup.ts">}
 	\subitem Die zwei verlinkten Dateien müssen nun auch im ts-Ordner erstellt werden.
 	\item Die setup.ts benötigt nun einiges an Code, der aus der index.html übertragen wird. Diese enthält dann nur noch den Code zwischen den body-tags. Die fertige Datei ist im Anhang zu finden. 
 	\item Die Teile aus der index.html, die nun wegfallen, werden in der setup.ts angelegt. Dafür ist ein PAGE Objekt nötig, welches alle referenzierten Dateien, wie bootstrap.css, einbindet. Die komplette Datei ist im Anhang zu finden. Die Inhalte, die das Template der Testumgebung dynamisch erstellt werden sollen beschränken sich auf das Menü und den Seitentitel. Nachdem diese Datei angelegt ist, wird das Menü automatisch mit den erstellten Seiten aus dem Typo3 Backend gefüllt.

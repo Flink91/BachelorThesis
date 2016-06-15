@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  15 JUN 2016 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.17)  15 JUN 2016 22:47
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -705,75 +705,65 @@ File: abb/typo3backend.jpg Graphic file (type jpg)
 <use abb/typo3backend.jpg>
 Package pdftex.def Info: abb/typo3backend.jpg used on input line 37.
 (pdftex.def)             Requested size: 420.44475pt x 237.13536pt.
- [16 <./abb/typo3frontend.jpg>]
-<abb/typo3menu.jpg, id=87, 145.29282pt x 649.67719pt>
+ [16 <./abb/typo3frontend.jpg>] [17 <./abb/typo3backend.jpg>] <abb/typo3menu.jp
+g, id=90, 145.29282pt x 649.67719pt>
 File: abb/typo3menu.jpg Graphic file (type jpg)
- <use abb/typo3menu.jpg>
-Package pdftex.def Info: abb/typo3menu.jpg used on input line 55.
+
+<use abb/typo3menu.jpg>
+Package pdftex.def Info: abb/typo3menu.jpg used on input line 56.
 (pdftex.def)             Requested size: 113.81102pt x 508.91718pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
 [] []\T1/aer/m/n/10 Typo3
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--58
-
- []
-
-[17 <./abb/typo3backend.jpg> <./abb/typo3menu.jpg>] [18] [19]
-<abb/typo3_template_overview.png, id=97, 647.41875pt x 536.0025pt>
+[18 <./abb/typo3menu.jpg>] [19] [20]
+<abb/typo3_template_overview.png, id=100, 330.23375pt x 312.16624pt>
 File: abb/typo3_template_overview.png Graphic file (type png)
 
 <use abb/typo3_template_overview.png>
-Package pdftex.def Info: abb/typo3_template_overview.png used on input line 147
+Package pdftex.def Info: abb/typo3_template_overview.png used on input line 164
 .
-(pdftex.def)             Requested size: 318.66946pt x 263.82944pt.
- [20] [21 <./abb/typo3_template_overview.png>]
-Overfull \hbox (58.62167pt too wide) in paragraph at lines 177--178
+(pdftex.def)             Requested size: 227.62204pt x 215.17583pt.
+ [21] [22 <./abb/typo3_template_overview.png>]
+Overfull \hbox (58.62167pt too wide) in paragraph at lines 194--195
 []\T1/aer/m/n/10.95 Die PHP Ex-ten-si-on Filein-fo geht nicht. In der php.ini d
 as Se-mi-ko-lon vor \T1/aett/m/n/10.95 extension=php_fileinfo.dll
  []
 
-[22] <abb/roottemplate.jpg, id=110, 216.81pt x 182.18062pt>
+<abb/roottemplate.jpg, id=109, 216.81pt x 182.18062pt>
 File: abb/roottemplate.jpg Graphic file (type jpg)
 
 <use abb/roottemplate.jpg>
-Package pdftex.def Info: abb/roottemplate.jpg used on input line 200.
+Package pdftex.def Info: abb/roottemplate.jpg used on input line 217.
 (pdftex.def)             Requested size: 136.5746pt x 114.76604pt.
 
-Overfull \hbox (16.57599pt too wide) in paragraph at lines 204--205
+Overfull \hbox (16.57599pt too wide) in paragraph at lines 221--222
 []\T1/aer/m/n/10.95 Im Root-Template un-ter \T1/aett/m/n/10.95 Includes \T1/aer
 /m/n/10.95 müs-sen zwei Din-ge ein-ge-fügt wer-den, \T1/aett/m/n/10.95 css_styl
 ed_content
  []
 
 
-Overfull \hbox (14.97731pt too wide) in paragraph at lines 204--205
+Overfull \hbox (14.97731pt too wide) in paragraph at lines 221--222
 \T1/aer/m/n/10.95 und \T1/aett/m/n/10.95 fluid_styled_content\T1/aer/m/n/10.95 
 . Die Rei-hen-fol-ge ist da-bei wich-tig. Soll-te \T1/aett/m/n/10.95 fluid_styl
 ed_content
  []
 
-ngerman: "FF is now obsolete, please use FFF instead on input line 206.
-ngerman: "FF is now obsolete, please use FFF instead on input line 207.
-
-Overfull \hbox (65.11401pt too wide) in paragraph at lines 207--208
-[]| \T1/aer/m/n/10.95 Un-ter \T1/aett/m/n/10.95 Setup\T1/aer/m/n/10.95 : \T1/ae
-tt/m/n/10.95 <INCLUDE_TYPOSCRIPT: source= FF-ILE:fileadmin/\T1/aett/m/it/10.95 
-Template_WegE\T1/aett/m/n/10.95 /ts/setup.ts 
- []
-
-[23 <./abb/roottemplate.jpg>]) [24]
+[23]
+ngerman: "FF is now obsolete, please use FFF instead on input line 223.
+ngerman: "FF is now obsolete, please use FFF instead on input line 225.
+) [24 <./abb/roottemplate.jpg>]
 \openout2 = `typo3praxisteil.aux'.
 
  (typo3praxisteil.tex
 chapter 6.
-<abb/extensionseite.jpg, id=117, 716.6775pt x 739.26187pt>
+<abb/extensionseite.jpg, id=116, 716.6775pt x 739.26187pt>
 File: abb/extensionseite.jpg Graphic file (type jpg)
 
 <use abb/extensionseite.jpg>
-Package pdftex.def Info: abb/extensionseite.jpg used on input line 20.
+Package pdftex.def Info: abb/extensionseite.jpg used on input line 17.
 (pdftex.def)             Requested size: 341.43306pt x 352.19081pt.
  [25
 
@@ -788,37 +778,37 @@ Overfull \hbox (0.59741pt too wide) in paragraph at lines 33--35
 ist die Ex-ten-si-on sr_feuser_registration.
  []
 
-<abb/fe_user.jpg, id=124, 526.21594pt x 478.78876pt>
+<abb/fe_user.jpg, id=123, 526.21594pt x 478.78876pt>
 File: abb/fe_user.jpg Graphic file (type jpg)
  <use abb/fe_user.jpg>
 Package pdftex.def Info: abb/fe_user.jpg used on input line 43.
 (pdftex.def)             Requested size: 341.43306pt x 310.67567pt.
 
-[27] <abb/newsextension.jpg, id=128, 695.59875pt x 424.58624pt>
+[27] <abb/newsextension.jpg, id=127, 695.59875pt x 424.58624pt>
 File: abb/newsextension.jpg Graphic file (type jpg)
 
 <use abb/newsextension.jpg>
 Package pdftex.def Info: abb/newsextension.jpg used on input line 67.
 (pdftex.def)             Requested size: 341.43306pt x 208.4054pt.
  [28 <./abb/fe_user.jpg>] [29 <./abb/newsextension.jpg>] <abb/forumextension.pn
-g, id=137, 877.02657pt x 491.58656pt>
+g, id=136, 877.02657pt x 491.58656pt>
 File: abb/forumextension.png Graphic file (type png)
 
 <use abb/forumextension.png>
 Package pdftex.def Info: abb/forumextension.png used on input line 90.
 (pdftex.def)             Requested size: 341.43306pt x 191.38043pt.
- [30] [31 <./abb/forumextension.png>]
-<abb/powermail.jpg, id=144, 517.18219pt x 350.05782pt>
+ [30] [31 <./abb/forumextension.png>] [32]
+<abb/powermail.jpg, id=146, 517.18219pt x 350.05782pt>
 File: abb/powermail.jpg Graphic file (type jpg)
  <use abb/powermail.jpg>
 Package pdftex.def Info: abb/powermail.jpg used on input line 139.
 (pdftex.def)             Requested size: 227.62204pt x 154.06863pt.
-) [32 <./abb/powermail.jpg>]
+) [33 <./abb/powermail.jpg>]
 \openout2 = `mehrwert.aux'.
 
  (mehrwert.tex
 chapter 7.
-) [33
+) [34
 
 
 
@@ -827,7 +817,7 @@ chapter 7.
 
  (zusammenfassungausblick.tex
 chapter 8.
-) [34
+) [35
 
 
 
@@ -835,22 +825,22 @@ chapter 8.
 \tf@lof=\write4
 \openout4 = `diplomarbeit.lof'.
 
- [35
+ [36
 
 
 ] (diplomarbeit.lot)
 \tf@lot=\write5
 \openout5 = `diplomarbeit.lot'.
 
- (diplomarbeit.bbl [36
+ (diplomarbeit.bbl [37
 
 ])
-[37
+[38
 
 ]
 \openout2 = `erklaerung.aux'.
 
- (erklaerung.tex) [38
+ (erklaerung.tex) [39
 
 ] (diplomarbeit.aux (deckblatt.aux)
 (einleitungmotivation.aux) (begriffe.aux) (projektanalyse.aux) (cmswahl.aux)
@@ -864,10 +854,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7240 strings out of 493634
- 106996 string characters out of 3146593
- 252596 words of memory out of 3000000
- 10351 multiletter control sequences out of 15000+200000
+ 7242 strings out of 493634
+ 107021 string characters out of 3146593
+ 252610 words of memory out of 3000000
+ 10353 multiletter control sequences out of 15000+200000
  56843 words of font info for 103 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  58i,8n,68p,1663b,338s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -883,9 +873,9 @@ msfonts/cm/cmr9.pfb><V:/ProgrammeV/miktex/fonts/type1/public/amsfonts/cm/cmsl10
 rammeV/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><V:/ProgrammeV/miktex/f
 onts/type1/public/amsfonts/cm/cmti10.pfb><V:/ProgrammeV/miktex/fonts/type1/publ
 ic/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (41 pages, 1008575 bytes).
+Output written on diplomarbeit.pdf (42 pages, 906478 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
+ 215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

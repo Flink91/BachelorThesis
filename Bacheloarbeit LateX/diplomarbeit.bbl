@@ -1,4 +1,13 @@
-\begin{thebibliography}{Wag16}
+\begin{thebibliography}{ELU10}
+
+\bibitem[ELU10]{Ebner2010}
+\textsc{Ebner}, Alexander ; \textsc{Lobacher}, Patrick  ; \textsc{Ulbrich},
+  Bernhard:
+\newblock \emph{TYPO3-Extensions - professionelle Frontend- und
+  Backend-Programmierung ; [mit Extbase und Fluid]}.
+\newblock 1. Edition.
+\newblock Muenchen : Hanser, 2010. --
+\newblock ISBN 978--3--446--41557--7
 
 \bibitem[PR10]{Pressman2010}
 \textsc{Pressman}, Roger~S. ; \textsc{Roger}, Pressman:
@@ -15,7 +24,12 @@
 \newblock New York : John Wiley \& Sons, 2010. --
 \newblock ISBN 978--0--470--97094--2
 
-\bibitem[typ]{typo3docs}
+\bibitem[typa]{typo3CoreApi}
+\emph{Typo3 Core APIs}.
+\newblock https://docs.typo3.org/typo3cms/CoreApiReference/. --
+\newblock Accessed June 12 2016
+
+\bibitem[typb]{typo3docs}
 \emph{Typo3 Documentation}.
 \newblock www.docs.typo3.org. --
 \newblock Accessed June 12 2016

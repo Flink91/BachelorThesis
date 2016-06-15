@@ -1,10 +1,7 @@
 \chapter{Anpassung eines Typo3 Systems an die gesammelten Requirements}
 \label{kap-typo3praxisteil}
 
-
-https://wiki.typo3.org/ExtensionsCompared\#Extensions\_Compared
-
-Nach dem Erstellen einer simplen Typo3 Umgebung ist das Ziel dieses Teils die Untersuchung verschiedener Extensions, die zur Umsetzung der WegE Requirements genutzt werden können. Um die besten Extensions auswählen zu können, werden einige sinnvolle Kriterien benötigt. Nur wenige dieser Kriterien lassen sich generell auf alle Extensions anbringen. Wie auch bei der Wahl des CMS gibt es nicht die eine beste Lösung, sondern viele Optionen, die gegeneinander abgewägt werden müssen. Nichtsdestotrotz sollte jede ernst zu nehmende Extension einige Punkte erfüllen.
+Nach dem Erstellen einer simplen Typo3 Umgebung ist das Ziel dieses Teils die Untersuchung verschiedener Extensions, die zur Umsetzung der WegE Requirements genutzt werden können. Um die besten Extensions auswählen zu können, werden einige sinnvolle Kriterien benötigt. Nur wenige dieser Kriterien lassen sich generell auf alle Extensions anbringen. Wie auch bei der Wahl des CMS gibt es nicht die eine beste Lösung, sondern viele Optionen, die eigens gegeneinander abgewägt werden müssen. Nichtsdestotrotz sollte jede ernst zu nehmende Extension einige Punkte erfüllen.
 
 \paragraph{Eigenschaften einer professionellen Extension}
 \begin{itemize}
@@ -22,13 +19,14 @@ Die erste Anlaufstelle zur Überprüfung dieser Eigenschaften ist die Downloadseit
 	\label{fig:forumextension}
 \end{figure}
 
-Neben den oben genannten Kriterien gibt es noch ein hilfreiches Projekt namens Extension Comparison project auf der Typo3 Wiki Webseite, die ein große Anzahl von Extensions vergleicht. 
+Neben den oben genannten Kriterien gibt es noch ein hilfreiches Projekt namens Extension Comparison project\footnote{https://wiki.typo3.org/Extension\_Comparison} auf der Typo3 Wiki Webseite, die ein große Anzahl von Extensions gleicher Art jeweils vergleicht und so die Wahl erleichtert.
+
+Für das WegE Projekt kommen prinzipiell nur professionelle Extensions in Frage. Besonders wichtig sind die Zukunftssicherheit und Stabilität. Darüber hinaus spielt der Aufwand eine wichtige Rolle. Lizenzkosten sollen möglichst vermieden werden.  
 
 \section{Rechtemanagement und Authentikation}
 Die Erstellung und das Management der Usergruppen, die für das WegE Projekt geplant sind, könnten sich als eine der schwierigsten Aufgaben entpuppen. Zum einen gibt es eine Menge Redakteure, für viele verschiedene Sektionen der Webseite. Dann soll es die Möglichkeit geben sich mittels Kennnummer der Universität einzuloggen und zum Schluss soll jeder interessierte User sich einen Account anlegen können, um zum Beispiel im Forum mitzuwirken. Daraus resultiert ein kompliziertes Rechtemanagement.
 
 Wichtig hierbei die Unterscheidung von Backend Usern und Frontend Usern. Das Erstellen von Backend Usern lässt sich bequem über das Backend von Typo3 erledigen. Ein Administrator legt dafür einfach einen neuen Nutzer an und bestimmt die jeweiligen Rechte dieses Nutzers. Das werden zumeist Redakteure sein und da sich die Zahl dieser in Grenzen halten sollte, ist es möglich diese alle manuell anzulegen.
-
 
 \subsection{Möglichkeiten}
 

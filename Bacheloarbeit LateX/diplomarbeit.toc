@@ -30,46 +30,47 @@
 \contentsline {section}{\numberline {5.3}Frontend Struktur}{16}
 \contentsline {section}{\numberline {5.4}Bedienung}{16}
 \contentsline {section}{\numberline {5.5}Funktionalit\"at und Architektur von Typo3}{17}
-\contentsline {subsection}{\numberline {5.5.1}Die Backend Module im \"Uberblick}{17}
+\contentsline {subsection}{\numberline {5.5.1}Die Backend Module im \"Uberblick}{18}
+\contentsline {paragraph}{\nonumberline Das Backend Men\"u}{18}
 \contentsline {subsection}{\numberline {5.5.2}Typoscript}{19}
 \contentsline {subsection}{\numberline {5.5.3}Erweiterungen/Extensions}{20}
-\contentsline {subsection}{\numberline {5.5.4}Templates erstellen}{20}
+\contentsline {subsection}{\numberline {5.5.4}Templates erstellen}{21}
 \contentsline {section}{\numberline {5.6}Beispielinstallation}{22}
 \contentsline {paragraph}{\nonumberline Typo 3 Installationsschritte}{22}
 \contentsline {paragraph}{\nonumberline Template-Erstellung Schritte}{23}
 \contentsline {chapter}{\numberline {6}Anpassung eines Typo3 Systems an die gesammelten Requirements}{25}
 \contentsline {paragraph}{\nonumberline Eigenschaften einer professionellen Extension}{25}
-\contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{25}
+\contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{27}
 \contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten}{27}
 \contentsline {subsection}{\numberline {6.1.2}Implementation}{27}
 \contentsline {subsection}{\numberline {6.1.3}Evaluation}{27}
-\contentsline {section}{\numberline {6.2}Blog und News}{27}
+\contentsline {section}{\numberline {6.2}Blog und News}{28}
 \contentsline {subsection}{\numberline {6.2.1}Alternativen}{28}
-\contentsline {subsection}{\numberline {6.2.2}Implementation}{28}
-\contentsline {subsection}{\numberline {6.2.3}Evaluation}{29}
+\contentsline {subsection}{\numberline {6.2.2}Implementation}{29}
+\contentsline {subsection}{\numberline {6.2.3}Evaluation}{30}
 \contentsline {section}{\numberline {6.3}Forum}{30}
 \contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{30}
 \contentsline {subsection}{\numberline {6.3.2}Implementation}{30}
-\contentsline {subsection}{\numberline {6.3.3}Evaluation}{30}
-\contentsline {section}{\numberline {6.4}Anbindung an bestehende Systeme durch Datenimport}{31}
-\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{31}
-\contentsline {subsection}{\numberline {6.4.2}Implementation}{31}
-\contentsline {subsection}{\numberline {6.4.3}Evaluation}{31}
-\contentsline {section}{\numberline {6.5}Teilen von wissenschaftlichen Arbeiten}{31}
-\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{31}
-\contentsline {subsection}{\numberline {6.5.2}Implementation}{31}
-\contentsline {subsection}{\numberline {6.5.3}Evaluation}{31}
-\contentsline {section}{\numberline {6.6}Weitere n\"utzliche Extensions}{31}
+\contentsline {subsection}{\numberline {6.3.3}Evaluation}{31}
+\contentsline {section}{\numberline {6.4}Anbindung an bestehende Systeme durch Datenimport}{32}
+\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{32}
+\contentsline {subsection}{\numberline {6.4.2}Implementation}{32}
+\contentsline {subsection}{\numberline {6.4.3}Evaluation}{32}
+\contentsline {section}{\numberline {6.5}Teilen von wissenschaftlichen Arbeiten}{32}
+\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{32}
+\contentsline {subsection}{\numberline {6.5.2}Implementation}{32}
+\contentsline {subsection}{\numberline {6.5.3}Evaluation}{32}
+\contentsline {section}{\numberline {6.6}Weitere n\"utzliche Extensions}{32}
 \contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{32}
 \contentsline {subsubsection}{\nonumberline Grid Elements}{32}
 \contentsline {subsubsection}{\nonumberline Powermail}{32}
-\contentsline {section}{\numberline {6.7}Wartung und Sicherheit}{32}
-\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{33}
-\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{33}
-\contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{33}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{34}
-\contentsline {section}{\numberline {8.1}Erkenntnisse}{34}
-\contentsline {section}{\numberline {8.2}Meine Meinung}{34}
-\contentsline {chapter}{Abbildungsverzeichnis}{35}
-\contentsline {chapter}{Tabellenverzeichnis}{35}
-\contentsline {chapter}{Literaturverzeichnis}{36}
+\contentsline {section}{\numberline {6.7}Wartung und Sicherheit}{33}
+\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{34}
+\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{34}
+\contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{34}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{35}
+\contentsline {section}{\numberline {8.1}Erkenntnisse}{35}
+\contentsline {section}{\numberline {8.2}Meine Meinung}{35}
+\contentsline {chapter}{Abbildungsverzeichnis}{36}
+\contentsline {chapter}{Tabellenverzeichnis}{36}
+\contentsline {chapter}{Literaturverzeichnis}{37}

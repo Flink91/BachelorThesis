@@ -26,6 +26,14 @@ Database file #1: bibl.bib
 Warning--I didn't find a database entry for "BilVer"
 Warning--to sort, need author or key in wege
 Warning--to sort, need author or key in typo3docs
+Warning--to sort, need author or key in typo3CoreApi
+`skip$' is a function literal, not a string, for entry typo3CoreApi
+while executing---line 1656 of file alphadin.bst
+ptr=2, stack=
+
+
+---the literal stack isn't empty for entry typo3CoreApi
+while executing---line 1656 of file alphadin.bst
 `skip$' is a function literal, not a string, for entry typo3docs
 while executing---line 1656 of file alphadin.bst
 ptr=2, stack=
@@ -44,4 +52,4 @@ ptr=2, stack=
 
 ---the literal stack isn't empty for entry wege
 while executing---line 1656 of file alphadin.bst
-(There were 8 error messages)
+(There were 10 error messages)
