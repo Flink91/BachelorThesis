@@ -1,0 +1,27 @@
+a:21:{s:12:".description";a:1:{i:0;a:2:{s:6:"source";s:43:"Organizers for Calendar Base event records.";s:6:"target";s:43:"Organizers for Calendar Base event records.";}}s:8:".details";a:1:{i:0;a:2:{s:6:"source";s:294:"If your events regularly use a particular
+				organizer, or if you want to provide the organizer's information for
+				registration or for other reasons, you may create a Calendar Event
+				Organizer record that includes more information than the Event
+				Record contains in the Organizer Tab.";s:6:"target";s:294:"If your events regularly use a particular
+				organizer, or if you want to provide the organizer's information for
+				registration or for other reasons, you may create a Calendar Event
+				Organizer record that includes more information than the Event
+				Record contains in the Organizer Tab.";}}s:18:"hidden.description";a:1:{i:0;a:2:{s:6:"source";s:64:"Use this to temporarily exclude this organizer
+				from display.";s:6:"target";s:64:"Use this to temporarily exclude this organizer
+				from display.";}}s:16:"name.description";a:1:{i:0;a:2:{s:6:"source";s:83:"Name of the individual, group, or company
+				responsible for organizing the event.";s:6:"target";s:83:"Name of the individual, group, or company
+				responsible for organizing the event.";}}s:23:"description.description";a:1:{i:0;a:2:{s:6:"source";s:33:"The description of the organizer.";s:6:"target";s:33:"The description of the organizer.";}}s:18:"street.description";a:1:{i:0;a:2:{s:6:"source";s:36:"The street address of the organizer.";s:6:"target";s:36:"The street address of the organizer.";}}s:15:"zip.description";a:1:{i:0;a:2:{s:6:"source";s:45:"The ZIP code or postal code of the organizer.";s:6:"target";s:45:"The ZIP code or postal code of the organizer.";}}s:16:"city.description";a:1:{i:0;a:2:{s:6:"source";s:26:"The city of the organizer.";s:6:"target";s:26:"The city of the organizer.";}}s:19:"country.description";a:1:{i:0;a:2:{s:6:"source";s:29:"The country of the organizer.";s:6:"target";s:29:"The country of the organizer.";}}s:24:"country_zone.description";a:1:{i:0;a:2:{s:6:"source";s:144:"The state of the organizer. The drop-down menu
+				will not be available until you have included the country
+				information and saved the form.";s:6:"target";s:144:"The state of the organizer. The drop-down menu
+				will not be available until you have included the country
+				information and saved the form.";}}s:17:"phone.description";a:1:{i:0;a:2:{s:6:"source";s:34:"The phone number of the organizer.";s:6:"target";s:34:"The phone number of the organizer.";}}s:17:"email.description";a:1:{i:0;a:2:{s:6:"source";s:35:"The email address of the organizer.";s:6:"target";s:35:"The email address of the organizer.";}}s:17:"image.description";a:1:{i:0;a:2:{s:6:"source";s:50:"A logo or photo of the organizer or their company.";s:6:"target";s:50:"A logo or photo of the organizer or their company.";}}s:16:"link.description";a:1:{i:0;a:2:{s:6:"source";s:29:"The website of the organizer.";s:6:"target";s:29:"The website of the organizer.";}}s:12:"link.details";a:1:{i:0;a:2:{s:6:"source";s:74:"This link can be used to provide more information
+				about the organizer.";s:6:"target";s:74:"This link can be used to provide more information
+				about the organizer.";}}s:24:"imagealttext.description";a:1:{i:0;a:2:{s:6:"source";s:66:"Alternate text shown if images are not found or
+				not supported.";s:6:"target";s:66:"Alternate text shown if images are not found or
+				not supported.";}}s:20:"imagealttext.details";a:1:{i:0;a:2:{s:6:"source";s:83:"If you have multiple images, alt text entries must
+				be listed on separate lines.";s:6:"target";s:83:"If you have multiple images, alt text entries must
+				be listed on separate lines.";}}s:26:"imagetitletext.description";a:1:{i:0;a:2:{s:6:"source";s:22:"Tooltip or hover text.";s:6:"target";s:22:"Tooltip or hover text.";}}s:22:"imagetitletext.details";a:1:{i:0;a:2:{s:6:"source";s:85:"If you have multiple images, title text entries
+				must be listed on separate lines.";s:6:"target";s:85:"If you have multiple images, title text entries
+				must be listed on separate lines.";}}s:24:"imagecaption.description";a:1:{i:0;a:2:{s:6:"source";s:34:"Adds a caption beneath each image.";s:6:"target";s:34:"Adds a caption beneath each image.";}}s:20:"imagecaption.details";a:1:{i:0;a:2:{s:6:"source";s:75:"If you have multiple images, captions must be
+				listed on separate lines.";s:6:"target";s:75:"If you have multiple images, captions must be
+				listed on separate lines.";}}}

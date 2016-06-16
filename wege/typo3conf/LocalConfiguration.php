@@ -17,6 +17,7 @@ return [
         'extConf' => [
             'bootstrap_core' => 'a:1:{s:27:"enableHeaderRenderingOption";s:1:"1";}',
             'bsdist' => 'a:0:{}',
+            'cal' => 'a:19:{s:13:"noTabDividers";s:1:"0";s:21:"hideLocationTextfield";s:1:"0";s:22:"hideOrganizerTextfield";s:1:"0";s:20:"useLocationStructure";s:15:"tx_cal_location";s:21:"useOrganizerStructure";s:16:"tx_cal_organizer";s:11:"todoSubtype";s:5:"event";s:16:"categoryTVHeight";s:3:"280";s:11:"treeOrderBy";s:3:"uid";s:9:"showTimes";s:1:"1";s:9:"useTeaser";s:1:"0";s:20:"hideDeviationRecords";s:1:"1";s:15:"categoryService";s:15:"tx_cal_category";s:15:"recurrenceStart";s:8:"20140101";s:13:"recurrenceEnd";s:8:"20201231";s:18:"useInternalCaching";s:1:"1";s:11:"cachingMode";s:6:"normal";s:13:"cacheLifetime";s:1:"0";s:13:"cachingEngine";s:8:"internal";s:30:"enableRealURLAutoConfiguration";s:1:"1";}',
             'css_styled_content' => 'a:1:{s:32:"loadContentElementWizardTsConfig";s:1:"1";}',
             'fluid_styled_content' => 'a:1:{s:32:"loadContentElementWizardTsConfig";s:1:"1";}',
             'mask' => 'a:4:{s:4:"json";s:19:"typo3conf/mask.json";s:7:"content";s:28:"fileadmin/templates/content/";s:7:"preview";s:28:"fileadmin/templates/preview/";s:7:"backend";s:28:"fileadmin/templates/backend/";}',

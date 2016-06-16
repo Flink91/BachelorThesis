@@ -278,6 +278,14 @@ return [
                 'sr_feuser_register',
             ],
         ],
+        'cal' => [
+            'composerName' => 'cal',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/cal/',
+            'suggestions' => [
+                'css_styled_content',
+            ],
+        ],
         'mask' => [
             'composerName' => 'mask/mask',
             'state' => 'active',

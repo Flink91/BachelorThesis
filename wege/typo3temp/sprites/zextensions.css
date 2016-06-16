@@ -156,6 +156,72 @@
 	background-size: contain;
 }
 	
+.t3-icon-tx_cal_attendee-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_attendee.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_calendar-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_calendar.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_category-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_category.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_event-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_events.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_event_deviation-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_event_deviation.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_exception_event-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_exception_event.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_exception_event_group-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_exception_event_group.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_fe_user_event_monitor_mm-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_fe_user_event_monitor_mm.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_location-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_location.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_organizer-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_organizer.gif') !important;
+	background-size: contain;
+}
+	
+.t3-icon-tx_cal_unknown_users-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3conf/ext/cal/Resources/Public/icons/icon_tx_cal_unknown_users.gif') !important;
+	background-size: contain;
+}
+	
 .t3-icon-tx_news_domain_model_file-default {
 	background-position: 0px 0px !important;
 	background-image: url('../../typo3conf/ext/news/Resources/Public/Icons/news_domain_model_file.gif') !important;
