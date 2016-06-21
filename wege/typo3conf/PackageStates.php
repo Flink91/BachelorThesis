@@ -316,6 +316,18 @@ return [
             'packagePath' => 'typo3conf/ext/pt_extlist/',
             'suggestions' => [],
         ],
+        'realurl' => [
+            'composerName' => 'dmitryd/typo3-realurl',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/realurl/',
+            'suggestions' => [],
+        ],
+        'seo_basics' => [
+            'composerName' => 'b13/seo_basics',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/seo_basics/',
+            'suggestions' => [],
+        ],
         'yag' => [
             'composerName' => 'dl/yag',
             'state' => 'active',
@@ -332,6 +344,12 @@ return [
             'composerName' => 'typo3/cms-dbal',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/dbal/',
+            'suggestions' => [],
+        ],
+        'external_import' => [
+            'composerName' => 'external_import',
+            'state' => 'inactive',
+            'packagePath' => 'typo3conf/ext/external_import/',
             'suggestions' => [],
         ],
         'feedit' => [

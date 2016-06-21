@@ -6,36 +6,39 @@
                 "key": "wegepromobox",
                 "shortLabel": "Wege Box",
                 "description": "WegE Promobox",
-                "icon": "",
-                "color": "#000000",
+                "icon": "fa-road",
+                "color": "#55ff42",
                 "columns": [
-                    "image",
-                    "tx_mask_wat"
+                    "tx_mask_etwas hinzuf\u00fcgen?"
                 ],
                 "labels": [
-                    "",
-                    ""
+                    "label"
                 ]
             }
         },
         "sql": {
-            "tx_mask_wat": {
+            "tx_mask_etwas hinzuf\u00fcgen?": {
                 "tt_content": {
-                    "tx_mask_wat": "tinytext"
+                    "tx_mask_etwas hinzuf\u00fcgen?": "int(11) DEFAULT '0' NOT NULL"
                 }
             }
         },
         "tca": {
-            "tx_mask_wat": {
+            "tx_mask_etwas hinzuf\u00fcgen?": {
                 "config": {
-                    "type": "input",
-                    "eval": "",
-                    "size": "",
-                    "max": "",
-                    "default": ""
+                    "type": "check",
+                    "cols": "",
+                    "items": [
+                        [
+                            "Ahjoo"
+                        ],
+                        [
+                            "Neee"
+                        ]
+                    ]
                 },
                 "exclude": "1",
-                "key": "wat"
+                "key": "etwas hinzuf\u00fcgen?"
             }
         }
     }

@@ -2456,6 +2456,69 @@ foreach ($pluginModes as $ident => $label) {
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 
 /**
+ * Extension: realurl
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/realurl/ext_tables.php
+ */
+
+$_EXTKEY = 'realurl';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+// Backend module is available only in TYPO3 7.6 or newer
+if (version_compare(TYPO3_version, '7.6.0', '>=')) {
+	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+		'DmitryDulepov.Realurl',
+		'web',
+		'realurl',
+		'',
+		array(
+			'Overview' => 'index',
+			'Aliases' => 'index,edit,delete,deleteAll',
+			'UrlCache' => 'index,delete,deleteAll,flush',
+			'PathCache' => 'index,delete',
+		),
+		array(
+			'access' => 'user,group',
+			'icon' => 'EXT:realurl/ext_icon.gif',
+			'labels' => 'LLL:EXT:realurl/Resources/Private/Language/locallang.xlf',
+		)
+	);
+}
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
+ * Extension: seo_basics
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/seo_basics/ext_tables.php
+ */
+
+$_EXTKEY = 'seo_basics';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+defined('TYPO3_MODE') or die();
+
+// Adding Web>Info module for SEO management
+if (TYPO3_MODE === 'BE') {
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::insertModuleFunction(
+		'web_info',
+		'B13\\SeoBasics\\BackendModule\\SeoModule',
+		'',
+		'LLL:EXT:seo_basics/Resources/Private/Language/db.xml:module.title',
+		'function'
+	);
+}
+
+
+// Adding a static template TypoScript configuration from static/ (deprecated)
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('seo_basics', 'static', 'Metatags and XML Sitemap (old), simple replaced by new one');
+
+// Adding the static template for new TypoScript
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('seo_basics', 'Configuration/TypoScript', 'Metatags and XML Sitemap');
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
  * Extension: yag
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/yag/ext_tables.php
  */

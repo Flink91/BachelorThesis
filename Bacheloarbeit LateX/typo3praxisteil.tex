@@ -88,7 +88,7 @@ Die Implementation der grundlegensten Forum-Funktionalität fällt moderat aus. Na
 \begin{figure}
 	\centering
 	\includegraphics[width=0.75\linewidth]{abb/forumextension.png}
-	\caption[News Extension]{Das Ergebnis der typo3\_forum Extension}
+	\caption[Forum Extension]{Das Ergebnis der typo3\_forum Extension}
 	\label{fig:forumextension}
 \end{figure}
 
@@ -100,6 +100,8 @@ Grundsätzlich bietet dieses Forum alle Funktionen, die für ein vernünftiges WegE
 
 \subsection{Möglichkeiten}
 
+external\_import
+
 \subsection{Implementation}
 
 \subsection{Evaluation}
@@ -107,11 +109,36 @@ Grundsätzlich bietet dieses Forum alle Funktionen, die für ein vernünftiges WegE
 
 \section{Kalender}
 
+Im Rahmen von WegE wäre eine Kalenderfunktion für verschiedene Aspekte interessant. Zum einen ließen sich so zukünftige Termine für die Öffentlichkeit anschaulich präsentieren. Zum anderen könnte ein Kalender Nutzern erlauben sich selbst in bestimmte Beratungstermine einzutragen. Besagte Termine sollen durch Redakteure erstellt werden können. Eine optimale Extension unterstützt also jene Features.
+
 \subsection{Möglichkeiten}
+
+Aufgrund der gesetzten Kriterien ist die einzig sinnvolle Wahl die Kalender Extension Calendar Base. Die Extension ist nicht bescheiden und behauptet alle Features anderer Extensions in eine Extension zu vereinen. Sie wird bereits seit 2006 entwickelt und regelmäßig aktualisiert. Mit über 60,000 Downloads ist sie eine der beliebtesten Extensions. Das Manual ist mit über 400 Seiten sehr ausführlich. Die Daten des Kalenders sind im iCal Format, was ein Standard für Kalenderinformationen ist. Der Kalender kann auch mit externen Kalendern, wie Google Calendar, zusammenarbeiten. Daten können sowohl im Backend und im Frontend eingetragen werden.
+
+Alternativen zu Calendar Base sind eher rar gesät und bieten entweder weniger Features oder sind weniger ausgereift. Dies kann aber auch ein Vorteil sein. Sollte man nur bestimmte Features benötigen lässt sich eine Überladung von Features vermeiden. Ein Beispiel hierfür ist Event Calendar\footnote{https://docs.typo3.org/typo3cms/extensions/gb\_events/}. Es erlaubt einzig die Erstellung und Anzeige einer Liste von anstehenden Events. 
+
+Für die Anforderungen des WegE Projekt ist Calendar Base am Besten geeignet und wird nun implementiert.
 
 \subsection{Implementation}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\linewidth]{abb/cal.jpg}
+	\caption[Kalender Extension]{Das Ergebnis der cal Extension}
+	\label{fig:calextension}
+\end{figure}
+
+Wie bei allen Extensions empfiehlt es sich, sich bei der Installation genau an das Manual zu halten, da viele der Extension Installationen einige Tücken bergen. Darüber hinaus verläuft die Installation von cal wie üblich. Die nötigen Templates werden hinzugefügt, eine Seite zum Halten der Extension erstellt und konfiguriert. Zuletzt bedarf es einer Zeile Typoscript zur Spezifikation des Sysfolders mit den Terminen.
+\begin{verbatim}
+options.tx_cal_controller.pageIDForPlugin = {PID}
+\end{verbatim}
+Es wird eine Seite zur Anzeige angelegt, welche das Plugin einbindet. Hier lassen sich verschiedene Dinge zur Anzeige steuert, es lässt sich einstellen welche Rechte nötig sind um Events zu abonnieren und es wird der Ordner spezifiziert, der die Kalendereinträge beherbergt.
+In der Beispielimplementation können Events nur im Backend erstellt werden und im Frontend von jedem mittels Email abonniert werden. Handelt es sich bei einem Termin um einen Vortrag kann man so einen Überblick über die Anzahl der zu erwartenden Gäste erlangen. Handelt es sich bei dem Termin um eine Einzelsitzung, kann man dem Abonnent anschließend weitere Infos an die eingetragene Email senden. 
+
 \subsection{Evaluation}
+
+In der Testumgebung stellte sich das Setup der grundlegenden Features von Calendar Base als relativ einfach heraus. 
+Es wird eine monatliche Ansicht angezeigt und auch die erstellten Events tauchen hier auf. Ein Klick auf ein bestimmtes Event zeigt weiter Infos und ein Feld zum Abonnieren des Events via Email an. Lediglich eine Funktion zur Begrenzung von Abonnenten/Teilnehmern ist nicht so einfach zu finden. Wenn ein Nutzer seine Email zu einer Einzelbesprechung angibt und somit diesen Termin für sich beansprucht, wäre es praktisch diesen Termin als reserviert anzuzeigen. Dies würde eigene Programmierarbeit erfordern. 
 
 \section{Weitere nützliche Extensions}
 

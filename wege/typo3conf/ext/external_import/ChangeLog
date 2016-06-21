@@ -1,0 +1,438 @@
+2015-09-08 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected wrong object being passed to process parameters hook, resolves #69579
+	* Released version 2.5.1, resolves #69604
+
+2015-06-11 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 2.5.0, resolves #67412
+
+2015-06-07 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added proper handling of MM_opposite_field property in MM relations, resolves #65648
+
+2015-05-28 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected handling of MM relations, resolves #64775
+
+2015-05-25 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Used reverseOrder flag for inverting sorted records, resolves #67132
+
+2015-05-05 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added hook for processing connector parameters, resolves #66796 (thanks to Julien Henchoz)
+
+2015-01-14 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Allowed for import of very large XML files, resolves #63762 (thanks to Uwe Harnischmacher)
+	* Released version 2.4.1, resolves #64283
+
+2014-11-26 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 2.4.0, resolves #58038
+
+2014-11-16 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added feature to preserve XML structure of imported values, resolves ##63012
+	* Improved manual by adding scope in properties TOC
+
+2014-08-06 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Improved performance of handled items check, resolves #60445 (thanks to Johannes Feustel)
+	* Improved description of reference_uid property, resolves #60808
+	* Released version 2.3.2, resolves #60823
+
+2014-06-19 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Ensured proper initialization of task list in Scheduler repository, resolves #59381
+	* Corrected LaTeX setup for PDF rendering, resolves #59386
+	* Corrected logic to avoid duplicate inserts when update is disabled, resolves #59609
+	* Released version 2.3.1, resolves #59667
+
+2014-06-05 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 2.3.0, resolves #58038
+
+2014-06-01 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Fixed array integrity after pre-processor calls, resolves #56186
+	* Added support for ###PID_IN_USE### marker in mapping where clause, resolves #56270
+	* Added implementation of singleton class in sample user function, resolves #58399
+	* Improved description of MM mappings, resolves #59214
+
+2014-05-30 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Removed invalid use of "value" property in MM handling, resolves #59240
+	* Formalized deprecation of old properties, resolves #59222
+
+2014-05-22 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added support for one to many relations in mapping, resolves #52664
+
+2014-05-15 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Cleaned up some CGL violations, resolves #51686
+
+2014-05-08 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added possibility to apply XPath query directly on current node, resolves #51534
+
+2014-05-02 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Moved documentation to reStructuredText, resolves #58360
+
+2014-04-30 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected wrong property name in soft matching process, resolves #56629
+
+2014-04-27 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Ensured compatibility with TYPO3 CMS 6.2, resolves #56629
+
+2013-08-20 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Improved empty check for external reference values, resolves #51200
+	* Corrected various errors in the manual, resolves #50626
+
+2013-07-22 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Fixed erroneous registration of error messages, resolves #49383
+	* Corrected handling of limitless execution time for ExtJS calls, resolves #43941
+	* Fixed wrong evaluation of rights to synchronization action, resolves #49415
+	* Ensured compatibility with TYPO3 CMS 6.1, resolves #50294
+	* Released version 2.2.0
+
+2013-01-24 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 2.1.0
+
+2013-01-23  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added possibility to tap reference nodes directly in XML, resolves #30015
+
+2013-01-18  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Ensured compatibility with TYPO3 CMS 6.0, resolves #44303
+
+2012-11-01  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Restored usage of time limit in AJAX timeout definition, resolves #42326 (thanks to Andreas Kiessling)
+	* Released version 2.0.4
+
+2012-07-20  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected case error in CSS reference for BE module, resolves #39117
+	* Corrected error with hook names in the manual, resolves #33196
+	* Released version 2.0.3
+
+2012-06-15  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected case error in layout reference for BE module, resolves #38385
+	* Released version 2.0.2
+
+2012-06-15  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 2.0.1 (with missing updated manual)
+	* Released version 2.0.0
+
+2012-06-09  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added support for custom data handlers, resolves #29196
+
+2012-06-07  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added support for namespaces in XML handling, resolves #30779
+
+2012-05-29  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added check to avoid overwriting imported records' pid, references #31787 (thanks to Ian)
+	* Added check to use only records with non-empty external references in mapping, resolves #31787 (thanks to Ian)
+
+2012-05-25  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Used SwiftMailer for reporting mail, resolves #13711
+
+2012-05-21  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Replaced excludedOperations by disabledOperations for naming consistency, resolves #29301
+
+2012-05-20  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Removed the doNotLoadInFE flag, resolves #37325
+	* Moved the whole BE module logic to Extbase and ExtJS, resolves #13836
+	* Adapted the BE module to match the TYPO3 skin, resolves #13835
+	* Removed all legacy code, resolves #5106
+
+2011-05-20  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Used PHP time limit also for AJAX timeout, resolves #25893
+
+2011-05-14  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected time zone handling in sample parse date method, resolves #26292
+	* Properly localized all strings in extension configuration, resolves #13647
+
+2011-05-06  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected bug with wrongly preserved MM-relations when no mapping is available, resolves #26661
+
+2011-04-05  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Removed French translations, resolves #25712
+
+2011-03-15  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added support for self-referential mappings, resolves #13852
+	* Corrected bug with disabling of TCEmain logging, resolves #13855
+
+ 2011-03-14  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Dropped Gabriel support, resolves #13834
+
+2011-03-08  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.2.0
+
+2011-03-05  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added possibility to disable TCEmain logging, resolves #10663
+
+2011-02-17  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Changed value of flushOutput configuration option to off
+
+2011-02-16  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added property for trimming input data, resolves #12666
+
+2011-01-25  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added SQL condition to restrict the set of records being acted upon during import, resolves #10676
+
+2011-01-11  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added softer matching methods to value mappings, resolves #12090
+
+2011-01-10  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected data sample creation for XML format, resolves #12028
+
+2011-01-09  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added support for XPath queries relative to selected nodes in XML data, resolves #12027
+
+2011-01-07  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added possibility to retrieve values from node attributes in XML data, resolves #12004
+	* Corrected import process to abort it when import data type is not defined, resolves #12001
+
+2010-12-13  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added support for rich-text fields, resolves #11344
+	* Added support for exceptions thrown by connectors, resolves #11159
+
+2010-11-29  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected wrong extension key in suggestion list (thanks to Fabien Udriot)
+	* Corrected some wrong initializations in external_import configuration display (BE module)
+
+2010-10-25  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released to TER as version 1.1.0
+
+2010-10-23  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added support for additional where clause in foreign mappings, resolves #9277
+
+2010-09-14  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Removed usage of deprecated method
+
+2010-06-23  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected bug in records order when import table uses sortby field
+
+2010-04-27  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added callback of connector for post-process operations
+	* Added dependency on svconnector version 1.1.0 or above
+
+2010-03-26  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Raised status to stable
+	* Released to TER as version 1.0.0
+
+2010-03-22  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added option to configure number of records in debug ouput (to be also used in preview)
+	* Updated the manual
+
+2010-02-14  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added full handling of user rights in BE module
+	* Added preemptive handling of user rights in importer script
+	* Fixed a bug with a missing initialization in foreign mappings
+
+2010-02-03  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Set compatibility limit for flushOutput option to TYPO3 4.2 or below
+
+2010-01-19  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected usage of TYPO3AJAX API
+	* Added possibility to exclude specific fields from insert or update
+
+2009-12-22  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added display of external configuration inside BE module
+
+2009-12-08  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Improved check to completely hide display of auto sync column when no sync tool is available
+
+2009-11-25  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected abusive display of minimumRecords error message
+	* Released to TER as version 0.11.2
+
+2009-11-23  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added process for aborting import
+	* Updated the manual
+	* Released to TER as version 0.11.1
+
+2009-11-13  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Provided full scheduler support (earlier support was broken due to API changes in the scheduler)
+
+2009-11-09  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added reporting of global result status in email subject
+
+2009-10-26  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added possibility to use cron-like syntax in automatic sync configuration
+
+2009-10-05  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added possibility of auto-syncing each import configuration separately
+
+2009-09-30  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added reporting by email
+
+2009-07-07  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added hooks for post-processing after tcemain operations
+
+2009-06-19  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added capacity to use either gabriel or scheduler (TYPO3 4.3+)
+	* Added usage of autoloader (TYPO3 4.3+)
+
+2009-06-16  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added configuration option for setting fixed value maps
+	* Released to TER as version 0.10.0
+
+2009-06-02  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added configuration option for setting fixed values
+
+2009-03-24  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added option for clearing output
+	* Updated the manual
+	* Released to TER as version 0.9.0
+
+2009-03-23  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Improved error reporting for TCEmain errors
+
+2009-01-20  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added preprocessRawRecordset hook
+
+2009-01-18  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Raised status to beta
+	* Released to TER as version 0.8.0
+
+2009-01-14  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added unsetting of values that cannot be mapped during the transform step
+
+2008-12-16 Stephane Garchery (Cobweb) <typo3@cobweb.ch>
+
+	* Add set_time_limit option
+
+2008-12-12  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected path to table icons
+	* Cleaned up MM-relations configuration
+	* Updated manual accordingly
+
+2008-12-06  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added enforcePid property
+	* Added hook for preprocessing uid list before delete
+
+2008-12-01  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added hooks for preprocessing records before insert and update
+	* Changed logic to call different fetch* method from connector depending on external data type
+	* Changed use of reference_uid property in external configuration
+	* Caught some unitialized variables
+
+2008-11-19  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected behaviour of handleArray() to map field names properly
+	* Changed use of external foreign reference field in mapping transformtions and MM-relations
+
+2008-11-04  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added several setter and getter methods
+
+2008-10-22  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added sample userFunc
+	* Updated manual
+
+2008-10-21  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added feature for calling userFuncs on every external field
+
+2008-09-02  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added API for calling external_import directly with data
+	* Modified BE module to separate synchronisable from non-synchronisable tables
+	* Updated manual
+
+2008-08-10  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Introduced possibility to synchronise a table with multiple external sources
+	* Corrected bug in mapping feature
+	* Updated manual with instructions for setting up automatic synchronisation and some troubleshooting help
+
+2008-08-04  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Updated manual with missing notes about array data format
+	* Released to TER as version 0.6.2
+
+2008-08-03  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added array data format handling
+	* Added user rights setup instructions in the manual
+	* Released to TER as version 0.6.1
+
+2008-07-20  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Introduced use of TCEmain for proper data manipulation
+	* Cleaned up extended TCA syntax
+	* Added hook for pre-processing data before storage
+	* Released to TER as version 0.6.0
+
+2008-04-29  Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Initial release (version 0.5.0)

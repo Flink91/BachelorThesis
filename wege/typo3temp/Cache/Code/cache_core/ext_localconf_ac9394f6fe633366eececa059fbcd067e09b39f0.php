@@ -3372,6 +3372,107 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['hook_eofe
 
 
 /**
+ * Extension: realurl
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/realurl/ext_localconf.php
+ */
+
+$_EXTKEY = 'realurl';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+
+if (!defined('TX_REALURL_AUTOCONF_FILE')) {
+	define('TX_REALURL_AUTOCONF_FILE', 'typo3conf/realurl_autoconf.php');
+}
+
+if (!function_exists('includeRealurlConfiguration')) {
+	/**
+	 * Includes RealURL configuration.
+	 *
+	 * @return void
+	 */
+	function includeRealurlConfiguration() {
+		$configuration = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['realurl'];
+		if (is_string($configuration)) {
+			$configuration = @unserialize($configuration);
+		}
+
+		if (!is_array($configuration)) {
+			$configuration = array(
+				'configFile' => 'typo3conf/realurl_conf.php',
+				'enableAutoConf' => true,
+			);
+		}
+
+		$realurlConfigurationFile = trim($configuration['configFile']);
+		if ($realurlConfigurationFile && @file_exists(PATH_site . $realurlConfigurationFile)) {
+			\TYPO3\CMS\Core\Utility\GeneralUtility::requireOnce(PATH_site . $realurlConfigurationFile);
+		}
+		elseif ($configuration['enableAutoConf']) {
+			/** @noinspection PhpIncludeInspection */
+			@include_once(PATH_site . TX_REALURL_AUTOCONF_FILE);
+		}
+	}
+}
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tstemplate.php']['linkData-PostProc']['realurl'] = 'DmitryDulepov\\Realurl\\Encoder\\UrlEncoder->encodeUrl';
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_content.php']['typoLink_PostProc']['realurl'] = 'DmitryDulepov\\Realurl\\Encoder\\UrlEncoder->postProcessEncodedUrl';
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['checkAlternativeIdMethods-PostProc']['realurl'] = 'DmitryDulepov\\Realurl\\Decoder\\UrlDecoder->decodeUrl';
+
+includeRealurlConfiguration();
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['clearCachePostProc']['realurl_all_caches'] = 'DmitryDulepov\\Realurl\\Hooks\\Cache->clearUrlCache';
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['clearCachePostProc']['realurl_records'] = 'DmitryDulepov\\Realurl\\Hooks\\Cache->clearUrlCacheForRecords';
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass']['realurl'] = 'DmitryDulepov\\Realurl\\Hooks\\DataHandler';
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processCmdmapClass']['realurl'] = 'DmitryDulepov\\Realurl\\Hooks\\DataHandler';
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['realurl']['cacheImplementation'] = 'DmitryDulepov\\Realurl\\Cache\\DatabaseCache';
+
+$GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ',tx_realurl_pathsegment,tx_realurl_exclude,tx_realurl_pathoverride';
+$GLOBALS['TYPO3_CONF_VARS']['FE']['pageOverlayFields'] .= ',tx_realurl_pathsegment';
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']['DmitryDulepov\\Realurl\\Evaluator\\SegmentFieldCleaner'] = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('realurl', 'Classes/Evaluator/SegmentFieldCleaner.php');
+
+
+/**
+ * Extension: seo_basics
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/seo_basics/ext_localconf.php
+ */
+
+$_EXTKEY = 'seo_basics';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+defined('TYPO3_MODE') or die();
+
+// adding th tx_seo_titletag to the pageOverlayFields so it is recognized when fetching the overlay fields
+$GLOBALS['TYPO3_CONF_VARS']['FE']['pageOverlayFields'] .= ',tx_seo_titletag,tx_seo_canonicaltag';
+
+$extensionConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['seo_basics']);
+
+	// registering sitemap.xml for each hierachy of configuration to realurl (meaning to every website in a multisite installation)
+if ($extensionConfiguration['xmlSitemap'] == '1') {
+	$realurl = $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl'];
+	$hooks = array('encodeSpURL_postProc', 'decodeSpURL_preProc', 'getHost');
+	if (is_array($realurl))	{
+		foreach ($realurl as $host => $cnf) {
+			// we won't do anything with string pointer (e.g. example.org => www.example.org)
+			// also ignore realurl hooks
+			if (!is_array($realurl[$host]) || in_array($host, $hooks, true)) {
+				continue;
+			}
+			
+			if (!isset($realurl[$host]['fileName'])) {
+				$realurl[$host]['fileName'] = array();
+			}
+			$realurl[$host]['fileName']['index']['sitemap.xml']['keyValues']['type'] = 776;
+		}
+		$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl'] = $realurl;
+	}
+}
+
+
+/**
  * Extension: yag
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/yag/ext_localconf.php
  */

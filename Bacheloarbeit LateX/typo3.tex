@@ -1,27 +1,16 @@
 \chapter{Typo3 - Eine Übersicht}
 \label{kap-typo3}
 
-Die Wahl des CMS fiel nun durch die ausreichende Recherche im vorigen Kapitel auf Typo3 und wird als Grundlage für alle technischen Aspekte dienen, weshalb Typo3 in dieser Bachelorarbeit einen essentiellen Teil ausmacht. In diesem Kapitel werden zunächst alle nötigen Grundlagen rund um Typo3 geklärt, um im anschließenden Kapitel die Anpassung eines Typo3 Systems an die zuvor gesammelten Anforderungen informiert vornehmen zu können.
+Die Wahl des CMS fiel nun durch die ausreichende Recherche im vorigen Kapitel auf Typo3 und wird als Grundlage für alle technischen Aspekte dienen. In diesem Kapitel werden zunächst alle nötigen Grundlagen rund um Typo3 geklärt, um im anschließenden Kapitel die Anpassung eines Typo3 Systems an die zuvor gesammelten Anforderungen informiert vornehmen zu können.
 
 Die meisten hier präsentierten Informationen entspringen den offiziellen Typo3 Docs\footnote{https://docs.typo3.org/} \cite{typo3docs} und einem Lernkurs des Rheinwerk Verlages zur neuen Typo3 Version 7\cite{typo3cms7}. Spezifische Verweise werden natürlich extra angegeben.
 
 \section{Version und Hintergrund}
-Typo3 ist ein Open Source CMS, ursprünglich entwickelt von Kasper Skårhøj und basiert auf der Programmiersprache PHP. Die Entwicklung begann bereits 1997 als Nebenprodukt von Skårhøjs Tätigkeit als Webdesigner. Der Name Typo3 enstand, nachdem Skårhøj durch einen Schreibfehler (engl. Typo) die Arbeit mehrerer Tage löschte. Die Zahl 3 ist der damals aktuellen Version geschuldet, wurde jedoch weiterhin beibehalten. Das System ist Open Source unter der GPL-Lizenz. Bei der Popularität von Open Source Web Content Management Systemen belegt Typo3, je nach Quelle, meist den fünften Platz\footnote{http://trends.builtwith.com/cms/open-source Mai 2016: Platz 5}. Typo3 umfasst eine Fülle an Versionen und spaltete sich 2015 sogar in zwei verschiedene Kernentwicklungsteams. Eines das weiter an Typo3 CMS arbeitet und eines, das an Typo3 Neos arbeitet. Diese Bachelorarbeit basiert auf der neuesten Version von Typo3 CMS 7.6 LTS. Version 8 wird jedoch auch noch 2016 veröffentlicht.
+Typo3 ist ein Open Source CMS, ursprünglich entwickelt von Kasper Skårhøj und basiert auf der Programmiersprache PHP. Die Entwicklung begann bereits 1997 als Nebenprodukt von Skårhøjs Tätigkeit als Webdesigner. Der Name Typo3 enstand, nachdem Skårhøj durch einen Schreibfehler (engl. Typo) die Arbeit mehrerer Tage löschte. Die Zahl 3 ist der damals aktuellen Version geschuldet, wurde jedoch weiterhin beibehalten.\cite{Meyer} Das System ist Open Source unter der GPL-Lizenz. Bei der Popularität von Open Source Web Content Management Systemen belegt Typo3, je nach Quelle, meist den fünften Platz\footnote{http://trends.builtwith.com/cms/open-source Mai 2016: Platz 5}. Typo3 umfasst eine Fülle an Versionen und spaltete sich 2015 sogar in zwei verschiedene Kernentwicklungsteams. Eines das weiter an Typo3 CMS arbeitet und eines, das an Typo3 Neos arbeitet. Diese Bachelorarbeit basiert auf der neuesten Version von Typo3 CMS 7.6 LTS. Version 8 wird jedoch auch noch 2016 veröffentlicht.
 
-\section{Installation}
+\section{Installation und Anforderungen}
 
-Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfangreich. Je nach Vorhaben muss mit komplexen Einstellungen am serverseitigen System experimentiert werden. Zum Zweck der Entwicklung bietet es sich jedoch an das Typo3 System zunächst lokal zu installieren. Der hierfür nötige Server kann entweder durch ein Programm wie Wamp oder Xampp, welche eine fertige Apache-Distribution liefern, bereitgestellt werden oder durch das Installieren eines Servers auf einer virtuellen Maschine. Die vorgenommenen Implementationen in Kapitel 4 wurden mit Wamp\footnote{http://www.wampserver.com} realisiert.
-
-\section{Frontend Struktur}
-Das Frontend ist von Typo3 in bestimmte Bereiche unterteilt:
-\begin{itemize}
-\item Header: Zeigt Inhalte ganz oben auf der Website, wie ein Logo
-\item Menü: Beinhaltet das Hauptmenü
-\item Content: Unterteilt sich in drei Teile, Links, Mitte und Rechts
-\item Footer: Zeigt Inhalte am Ende der Webseite
-\end{itemize}
-
-Wo genau diese Bereiche auftauchen lässt sich mittels eines Templates definieren, das mit Typoscript beschrieben wird. Im Backend finden sich genau diese Teile wieder und lassen sich dort mit Content befüllen.
+Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfangreich. Je nach Vorhaben muss mit komplexen Einstellungen am serverseitigen System experimentiert werden. Zum Zweck der Entwicklung bietet es sich jedoch an das Typo3 System zunächst lokal zu installieren. Der hierfür nötige Server kann entweder durch ein Programm wie Wamp oder Xampp, welche eine fertige Apache-Distribution liefern, bereitgestellt werden oder durch das Installieren eines Servers auf einer virtuellen Maschine. Die vorgenommenen Implementationen in Kapitel \ref{kap-typo3praxisteil} wurden mit Wamp\footnote{http://www.wampserver.com} realisiert. Eine detailliertere Beschreibung zur Installation hängt von System und Typo3 Version ab. Für Eine Installation mit Wamp und Typo3 7.6 folgt eine genauere Beschreibung später.
 
 \section{Bedienung}
 
@@ -45,62 +34,72 @@ Dennoch enthält die Backend sehr viele Optionen, versteckte Knöpfe und Eigenheit
 
 \section{Funktionalität und Architektur von Typo3}
 
-Es handelt sich an dieser Stelle zwar um eine wissenschaftliche Arbeit und kein Handbuch, doch es ist ein wesentlicher Bestandteil dessen, die Typo3 Umgebung zu verstehen um analysieren zu können, wie sie am geschicktesten auf die gesammelten Anforderungen anzupassen ist. Daher folgt nun eine komprimierte Übersicht über den Umgang und die Entwicklung von Typo3 Websites und den Workflow beim Erstellen dieser.
+Es handelt sich an dieser Stelle zwar um eine wissenschaftliche Arbeit und kein Handbuch, doch es ist ein wesentlicher Bestandteil dieser Arbeit, die Typo3 Umgebung zu verstehen um analysieren zu können, wie sie am geschicktesten auf die gesammelten Anforderungen anzupassen ist. Daher folgt nun eine komprimierte Übersicht über den Umgang und die Entwicklung von Typo3 Websites und den Workflow beim Erstellen dieser.
+
+\subsection{Frontend Struktur}
+Das Frontend ist die Seite, die ein normaler User zu sehen bekommt. Um diese als Entwickler manipulieren zu können muss man dessen Bestandteile kennen. Das Frontend ist grundlegend in vier Bereiche unterteilt.
+\paragraph{Frontend Bereiche}
+\begin{itemize}
+	\item Header: Zeigt Inhalte ganz oben auf der Website, beispielsweise ein Logo.
+	\item Menü: Beinhaltet das Hauptmenü.
+	\item Content: Unterteilt sich in drei Teile, Links, Mitte und Rechts und stellt den eigentlichen Inhalt einer bestimmten Seite dar.
+	\item Footer: Zeigt abschließende Inhalte am Ende der Webseite
+\end{itemize}
+
+Wo genau diese Bereiche auftauchen und positioniert werden lässt sich mittels eines Templates definieren, das mit Typoscript beschrieben wird. Im Backend finden sich genau diese Teile wieder und lassen sich dort mit Content befüllen. Genaueres zu Templates und Typoscript wird weiter unten beschrieben.
+
 \newpage
 \subsection{Die Backend Module im Überblick}
 
-Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestaltet sich jedoch immer noch anspruchsvoller als bei vergleichbaren Konkurrenten. Deshalb findet sich hier zunächst eine Liste mit Erklärungen zur Navigationsleiste im Backend:
-\paragraph{Das Backend Menü}
-\begin{wrapfigure}{lh!}{0.25\textwidth}
+Das Backend sieht seit dem Update deutlich einladender aus, die Bedienung gestaltet sich jedoch immer noch anspruchsvoller als bei vergleichbaren Konkurrenten. Deshalb folgt nun eine Erklärung der standardmäßigen Menüpunkte.\\
+\begin{wrapfigure}{lph!}{0.25\textwidth}
 	\begin{center}
 		\includegraphics[width=0.25\textwidth]{abb/typo3menu.jpg}
 	\end{center}
+	\vspace{-10pt}
 	\caption{Typo3 Backend Menü}
+	\vspace{-240pt}
 \end{wrapfigure}
 
-\begin{itemize}
-	
-	\item Page: Hier lassen sich die Einzelseiten der Webanwendung auf einem hohen Level erstellen und verwalten. Auch wenn noch keine Seite angelegt wurde, sieht man im Hierarchiebaum bereits einen Eintrag. Dieser stellt sozusagen die Wurzel aller zukünftigen Seiten dar, zeigt selbst jedoch keine Seite an.
-	
-	\item View: Hier ist es möglich, das Frontend zu begutachten, ohne das Backend zu verlassen.
-	
-	\item List: In diesem Menüpunkt findet sich eine Übersicht der Elemente, die dem Seitenbaum zugeordnet sind. Das können Webseiten oder auch Kompontenten von Plugins sein.
-	
-	\item Info: Hier lassen sich lediglich Informationen, wie zum Beispiel Erstelleungsdatum, zu einzelnen Komponenten anzeigen.
-	
-	\item Functions: Dieser Bereich beherbergt einige nützliche Hilfsfunktionen, um schneller Änderungen, wie Seitensortierung, durchzuführen. 
-	
-	\item Template: Hier werden alle Templates der Seite verwaltet.
-	
-	\item Filelist: Hier werden alle Dateien des sogenannten Filemount verwaltet. Meist handelt es sich um Dateien, die Redakteure in Einträge integrieren. Aber auch schnelle Änderungen an CSS-Dateien lassen sich hier durch einen integrierten Texteditor vornehmen.
-	
-	\item Extensions: In diesem Bereich werden alle installierten Erweiterungen gelistet. Man hat dort die Möglichkeit diese zu aktivieren und deaktivieren. Zu bemerken ist, dass das nicht mit allen Erweiterungen möglich ist, da einige Grundfunktionalitäten vonTypo3 auch als Erweiterungen gelistet sind und diese lassen sich nicht manipulieren. Darüber hinaus lassen sich hier neue Erweiterungen suchen und herunterladen.
-	
-	\item Languages: Dieser Punkt hilft bei der Verwaltung von mehrsprachigen Seiten. Auch das Backend lässt sich in mehreren Sprachen anzeigen.
-	
-	\item Access:
-	
-	\item Backend users: Hier lassen sich die Nutzer des Backend verwalten. Es lassen sich neue Backend User anlegen und auch spezifische Rechte dieser User konfigurieren. Typische Rollen sind Administrator/-in und Redakteur/-in.
-	
-	\item Install: Hier lassen sich durch das Install-Tool einige gravierende Einstellungen vornehmen, wie das Zurücksetzen von Passwörtern und ähnlichen Interaktionen mit der Datenbank. Außerdem zeigt diese Unterseite die Konfigurationsdetails der Umgebung an.
-	
-	\item Log: In diesem Bereich findet sich ein Protokoll über alle Nutzeraktionen und aufkommende Fehler.
-	
-	\item DB check: Hier lassen sich Statistiken über die Einträge der Datenbank anzeigen und Suchen in der Datenbank direkt durchs Backend durchführen.
-	
-	\item Configuration: In diesem Punkt findet sich eine recht unübersichtliche Liste von Konfigurationsvariablen.
-	
-	\item Reports: Der Report liefert eine Liste von Nachrichten über den Lauf der Webseite und mögliche Probleme.
-	
-\end{itemize}
+\subsubsection{Page} 
+Hier lassen sich die Einzelseiten der Webanwendung auf einem hohen Level erstellen und verwalten. Auch wenn noch keine Seite angelegt wurde, sieht man im Hierarchiebaum bereits einen Eintrag. Dieser stellt sozusagen die Wurzel aller zukünftigen Seiten dar, zeigt selbst jedoch keine Seite an. Hauptsächlich wird dieser Bereich genutzt um an den WYSIWYG-Editor zu kommen und in diesen neue Inhalte einzutragen oder Inhalte zu bearbeiten. 
 
+\subsubsection{View} Hier ist es möglich, das Frontend zu begutachten, ohne das Backend zu verlassen. Das kann nützlich sein, wenn schnell verschieden Auflösungen getestet werden sollen.
+	
+\subsubsection{List} In diesem Menüpunkt findet sich eine Übersicht der Elemente, die dem Seitenbaum zugeordnet sind. Das können Webseiten oder auch Komponenten von Extensions sein. Oft wird diese Ansicht für erstellte Systemordner genutzt.
+
+\subsubsection{Info} Hier lassen sich lediglich Informationen, wie zum Beispiel Erstellungsdatum oder welche Seiten in welcher Sprache verfügbar sind, zu einzelnen Komponenten anzeigen.
+	
+\subsubsection{Functions} Dieser Bereich beherbergt einige nützliche Hilfsfunktionen, um schneller Änderungen, wie das Erstellen mehrerer Seiten gleichzeitig, durchzuführen. 
+	
+\subsubsection{Template} Hier werden alle Templates der Seite verwaltet. Dabei kann man das Template einer bestimmten Seite zuordnen oder ein Template auf die Wurzel der Seite setzen und somit global bereitstellen. Pro Template lassen sich hier vor Allem die Konstanen, das Setup und die Includes bearbeiten. Konstanten sind Dinge wie der Name der Webseite, Includes sind oft Stylesheets und im Setup wird via Typoscript die eigentliche Darstellungslogik des Templates programmiert.
+	
+\subsubsection{Filelist} Hier werden alle Dateien des sogenannten Filemount verwaltet. Alle für die Seite relevante Dateien können hier verwaltet werden. Meist handelt es sich um Dateien, die Redakteure in Einträge integrieren. Auch schnelle Änderungen an CSS-Dateien lassen sich an dieser Stelle durch einen integrierten Texteditor vornehmen.
+	
+\subsubsection{Extensions} In diesem Bereich werden alle installierten Erweiterungen gelistet. Man hat dort die Möglichkeit diese zu aktivieren und deaktivieren. Zu bemerken ist, dass das nicht mit allen Erweiterungen möglich ist, da einige Grundfunktionalitäten von Typo3 auch als Erweiterungen gelistet sind und diese lassen sich nicht manipulieren. Darüber hinaus lassen sich hier neue Erweiterungen suchen und herunterladen. Der Extension Manager sucht dabei im Extension Repository von Typo3. Jede Extension hat hier einen einzigartigen Extension Key.
+	
+\subsubsection{Languages} Dieser Punkt hilft bei der Verwaltung von mehrsprachigen Seiten. Auch das Backend lässt sich in mehreren Sprachen anzeigen.
+	
+\subsubsection{Access} Auf dieser Unterseite kann man sich einen Überblick über die Rechte verschiedener Usergruppen verschaffen. Für jede Seite lassen sich die Rechte zum Ansehen, Editieren, Löschen und Erstellen von Unterseiten aller Gruppen überprüfen.
+	
+\subsubsection{Backend users} Hier lassen sich die Nutzer des Backend verwalten. Es lassen sich neue Backend User anlegen und auch spezifische Rechte dieser User konfigurieren. Typische Rollen sind Administrator/-in und Redakteur/-in. Es lässt sich auch erkennen wer gerade im System eingeloggt ist.
+	
+\subsubsection{Install} Hier lassen sich durch das Install-Tool einige gravierende Einstellungen vornehmen, wie das Zurücksetzen von Passwörtern und ähnlichen Interaktionen mit der Datenbank. Außerdem zeigt diese Unterseite die Konfigurationsdetails der Umgebung an. Dieser Bereich sollte nur Administratoren zugänglich gemacht werden.
+	
+\subsubsection{Log} In diesem Bereich findet sich ein Protokoll über alle Nutzeraktionen und aufkommende Fehlermeldungen.
+	
+\subsubsection{DB check} Hier lassen sich Statistiken über die Einträge der Datenbank anzeigen und Suchen in der Datenbank direkt durchs Backend durchführen.
+	
+\subsubsection{Configuration} In diesem Punkt findet sich lediglich eine recht unübersichtliche Liste von Konfigurationsvariablen.
+	
+\subsubsection{Reports} Der Report liefert eine Liste von Nachrichten über den Lauf der Webseite und mögliche Probleme.
 
 \subsection{Typoscript}
 
 Typoscript ist die Skriptsprache von Typo3. Es handelt sich dabei nicht um eine richtige Programmiersprache, was sich auch schon vom Namen her vermuten lassen könnte. Das zeigt sich auch in der Art und Weise wie Typoscript von Typo3 verarbeitet wird, nämlich als sehr langes PHP Array und einem internen Parser. Typoscript ist mehr dafür ausgelegt dem Ersteller der Webseite eine Möglichkeit zu geben, zu bestimmen, wie Typo3 mit bestimmten Objekten, wie zum Beispiel Bildern, Menüs oder Templates, umgehen soll. Es ist so also hauptsächlich für die spezifische Ausgabe von Content zuständig.
 In Typoscript wird immer mit Objekten gearbeitet, denen man bestimmte Eigenschaften zusprechen kann.
 
-Eine Typoscript Datei, die in jedem Template enthalten ist, ist die setup.ts. Aus dieser ist nun ein kleiner Schnipsel zu sehen.
+Eine Typoscript Datei, die in jedem Template enthalten ist, ist die setup.ts. Aus der Setup Datei des Standard-Templates ist nun ein kleiner Schnipsel zu sehen.
 
 \begin{verbatim}
 page = PAGE
@@ -123,12 +122,13 @@ page{
 }
 \end{verbatim}
 
-Zu Beginn wird eine Variable mit dem Namen page gesetzt, welche die ganze Seite präsentiert. Diese bekommt in Zeile 3 ein neues Stylsheet zugewiesen, das dann automatisch eingebunden wird. Danach wird eine Variable zum Fluidtemplate. Die Zahl 10 präsentiert dabei einen Platz im PAGE Array, das danach aus Typoscript generiert wird. Hier ist die Reihenfolge oft wichtig. Es ist üblich Anweisungen mit in Zehnerschritten zu nummerieren, sodass man später eventuell vergessene Anweisungen noch zwischen zwei Zahlen einfügen kann. Für das Fluidtemplate werden nun die Pfade zu den Layouts und Partials definiert. Layouts und Partials sind Einzelteile eines Templates. Genaueres dazu im Verlauf dieses Kapitels.
+Zu Beginn wird eine Variable mit dem Namen page gesetzt, welche die ganze Seite präsentiert. Das großgeschriebene PAGE ist ein Objekt und die vorgegebene Weise, die komplette Seite anzusprechen. Diese bekommt in Zeile 3 ein neues Stylesheet zugewiesen, das dann automatisch eingebunden wird. Danach wird eine Variable zum Fluidtemplate. Die Zahl 10 präsentiert dabei einen Platz im PAGE Array, das danach aus Typoscript generiert wird. Hier ist die Reihenfolge oft wichtig. Es ist üblich Anweisungen mit in Zehner-schritten zu nummerieren, sodass man später eventuell vergessene Anweisungen noch zwischen zwei Zahlen einfügen kann. Für das Fluidtemplate werden nun die Pfade zu den Layouts und Partials definiert. Layouts und Partials sind Einzelteile eines Templates. Genaueres dazu im Verlauf dieses Kapitels.
 Darunter wird noch mittels Typoscript der Name der Seite definiert, welcher später an vielen Stellen verwendet werden kann.
 
 \subsection{Erweiterungen/Extensions}
 
 Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterungen oder Extensions. Mit diesen Extensions lässt sich das CMS mit wenig Aufwand um etliche Features erweitern. Inzwischen existieren tausende von Erweiterungen für Typo3. \textquotedblleft Extension \textquotedblright ist dabei ein Überbegriff für verschiedene Arten von Ergänzungen\cite{typo3CoreApi}\cite{Ebner2010}:
+
 \begin{itemize}
 	\item \textbf{Plugins} sind Erweiterungen des Frontend, wie zum Beispiel ein Gästebuch. Im den Extension Kategorien werden Plugins unter Frontend oder Frontend-Plug-in gelistet. Frontend Plug-in Extensions erzeugen dabei eine eigene Ausgabe, während das Gegenstück diese Ausgabe lediglich beeinflusst.
 	\item \textbf{Module} sind Backend Erweiterungen und fügen diesem meist auch einen neuen Menüpunkt hinzu. In den Extension Kategorien werden Module unter Backend oder Backend-Modul gelistet. Backend-Module sind dabei diejenigen mit eigenem Menüpunkt.
@@ -136,15 +136,11 @@ Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterung
 	\item \textbf{Distributionen} sind vollständige CMS Installationen, als Paket vorgefertigt. 
 	\item Die restlichen Extension Kategorien heißen Documentation, Templates, Examples und Miscellaneous. Diese enthalten genau das was der Name verspricht. Miscellaneous dient als Auffangbecken für alle Extensions, die sich nicht zuordnen lassen.
 \end{itemize}
-Es gibt drei Arten von Extensions: 
-\begin{itemize}
-	\item Lokale Extensions
-	\item Globale Extensions
-	\item Systemextensions
-\end{itemize}
+
+Darüber hinaus gibt es Systemextensions, welche zum Kern von Typo3 gehören und nicht manipuliert werden können.
 
 Bei der Anzahl von tausenden Extensions muss allerdings dazugesagt werden, dass ein großer Teil dieser veraltet ist, nicht mehr gepflegt wird oder gar überhaupt nicht auf der neuen Version lauffähig gemacht werden kann. Das liegt auch daran, dass viele der Extensions von freien Programmierern in ihrer Freizeit entwickelt werden. So gilt es etwas vorsichtig bei der Auswahl passender Extensions zu sein.
-Zu finden sind diese Extensions auf der offiziellen Seite unter typo3.org/extensions/repository. Wichtig ist es hier auf die Kompatibilität zu achten, die dort angezeigt wird. Auch findet sich hier meist eine Dokumentation zur Einrichtung und weiteren Infos zur jeweiligen Erweiterung. 
+Zu finden sind diese Extensions auf der offiziellen Seite im Extension Repository\footnote{typo3.org/extensions/repository}. Jede Extension findet sich hier unter einem einmaligen Extension Key wieder. Wichtig ist es auf die Kompatibilität zur eigenen Typo3 Installation zu achten, die dort angezeigt wird. Auch findet sich hier meist eine Dokumentation zur Einrichtung und weiteren Infos zur jeweiligen Erweiterung. Extensions selbst können Abhängigkeiten zu anderen Extensions haben, die vorher installiert sein müssen um lauffähig gemacht zu werden. Selten gibt es auch Konflikte zwischen zwei Extensions, was zu Fehlern führen kann. Solche sollte man also nicht gleichzeitig auf einem System installieren.
 Die Erweiterungen der eigenen Typo3 Anwendung lassen sich durch den Menüpunkt \emph{Erweiterungen} im Backend verwalten.
 
 \subsection{Templates erstellen}
@@ -152,9 +148,9 @@ Die Erweiterungen der eigenen Typo3 Anwendung lassen sich durch den Menüpunkt \e
 Beim Erstellen einer Typo3 Website bekommt der Entwickler für gewöhnlich ein Frontend Design der Seite geliefert und hat dann die Aufgabe dieses Design in Typo3 zu integrieren. Das geschieht durch das Schreiben von Typoskript, das Installieren von Extensions, der Anpassung des Backend und die Entwicklung von Templates. Der Begriff Template ist bei Typo3 mehrfach belegt, deshalb vorerst eine Unterscheidung:
 
 \begin{itemize}
-	\item HTML-Template: Die HTML-Vorlage, welche meist ein Designer liefert.
-	\item TypoScript-Template: Alle Typoscript-Anweisungen, die Ausgabe von Menüs und Ähnlichem steuern.
-	\item Fluidtemplate: Mit Typo3 lassen sich im HTML-Code Fluid-Funktionen  verwenden. Diese erlauben Variablen, Bedingungen und das Aufteilen des HTML-Codes in Partials.
+	\item HTML-Template: Die statische HTML-Vorlage, welche meist ein Designer liefert.
+	\item TypoScript-Template: Alle Typoscript-Anweisungen, die Ausgabe von Menüs und Ähnlichem steuern liegen im Typoscript-Template.
+	\item Fluidtemplate: Mit Typo3 lassen sich im HTML-Code Fluid-Funktionen  verwenden. Diese erlauben Variablen und Bedingungen innerhalb des HTML. Außerdem erlaubt es das Aufteilen des HTML-Codes in Partials.
 \end{itemize}
 
 Ein Typo3 Fluidtemplate besteht also aus einem Layout, das Dinge wie head und header enthalten kann, einem Template, das den Inhalt repräsentiert und Partials, die mehrmals auf einer Seite vorkommen können.
@@ -172,9 +168,9 @@ Zu Beginn einer neuen Template-Extension hilft eine Typo3 Extension weiter. Dies
 
 Für die Arbeit mit den Dateien des erstellten Templates wird ein externer Editor benötigt. Im besten Fall sollte dieser auch mit Typoscript umgehen können, was die Wahl deutlich einschränkt. Zwei gute Optionen sind hier die IDEs UltraEdit und Webstorm. 
 
-Da der Fokus dieser Arbeit mehr auf der Umsetzung funktionaler Anforderungen liegt, wird an dieser Stelle nicht weiter auf die Möglichkeiten zum designen von Typo3 Webseiten eingegangen. Für die beispielhafte Umsetzung der Anforderungen wird ein einfaches Bootstrap Gerüst verwendet.
+Da der Fokus dieser Arbeit mehr auf der Umsetzung funktionaler Anforderungen liegt, wird an dieser Stelle nicht weiter auf die Möglichkeiten zum Designen von Typo3 Webseiten eingegangen. Für die beispielhafte Umsetzung der Anforderungen wird ein einfaches Bootstrap Gerüst verwendet, dessen Implementation im Anhang zu finden ist.
 
-\section{Beispielinstallation}
+\subsection{Beispielinstallation}
 
 In diesem Unterpunkt wird der tatsächliche Installationsprozess der Testumgebung, inklusive einem Blick auf den Code, dokumentiert. Da sich diese Installationsanleitung sehr praktisch gestaltet, sollten die Versionen der genutzten Software beachtet werden, da hier schnell Änderungen auftreten können. Die Testumgebung läuft mit Typo3 7.6 LTS und Wamp 3.0.0 mit PHP 5.6. Wichtig hierbei ist vor Allem die Typo3 Version. Es wird mit Bootstrap Version 3 gearbeitet.
 

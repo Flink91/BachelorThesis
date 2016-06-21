@@ -9,6 +9,13 @@
 \newblock Muenchen : Hanser, 2010. --
 \newblock ISBN 978--3--446--41557--7
 
+\bibitem[Mey06]{Meyer}
+\textsc{Meyer}, Robert:
+\newblock \emph{Praxiswissen TYPO3 CMS 4.0 -}.
+\newblock 2.
+\newblock Koeln : O'Reilly Germany, 2006. --
+\newblock ISBN 978--3--955--61535--2
+
 \bibitem[PR10]{Pressman2010}
 \textsc{Pressman}, Roger~S. ; \textsc{Roger}, Pressman:
 \newblock \emph{Software Engineering: A Practitioner's Approach -}.
