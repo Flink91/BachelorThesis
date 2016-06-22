@@ -1,0 +1,28 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<div id="dceConfigurationWizard">
+	<f:if condition="{disableCodemirror}">
+		<f:then></f:then>
+		<f:else>
+			<f:if condition="{parameters.showTemplates}">
+				<f:then>
+					<f:render partial="ConfigurationEditor/AvailableTemplates" arguments="{uniqueIdentifier:uniqueIdentifier, availableTemplates:availableTemplates}"  />
+				</f:then>
+				<f:else>
+					<f:render partial="ConfigurationEditor/AvailableVariables" arguments="{showFields:showFields,uniqueIdentifier:uniqueIdentifier, availableFields:availableFields, famousViewHelpers:famousViewHelpers, dceViewHelpers:dceViewHelpers}"  />
+				</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+	<div>
+		<textarea id="codemirror_{uniqueIdentifier}" name={name} cols="80" rows="15" onchange="{onChangeFunc}" {onFocus}>{value}</textarea>
+	</div>
+</div>
+
+<f:if condition="{disableCodemirror}">
+	<f:then></f:then>
+	<f:else>
+		<script type="text/javascript">
+			initCodeMirrorEditor(TYPO3.jQuery('#codemirror_{uniqueIdentifier}'), '{parameters.mode}');
+		</script>
+	</f:else>
+</f:if>

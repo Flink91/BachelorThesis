@@ -258,6 +258,42 @@ return [
             'packagePath' => 'typo3/sysext/viewpage/',
             'suggestions' => [],
         ],
+        'svconnector' => [
+            'composerName' => 'cobweb/svconnector',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/svconnector/',
+            'suggestions' => [],
+        ],
+        'external_import' => [
+            'composerName' => 'cobweb/external_import',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/external_import/',
+            'suggestions' => [],
+        ],
+        'svconnector_csv' => [
+            'composerName' => 'cobweb/svconnector_csv',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/svconnector_csv/',
+            'suggestions' => [],
+        ],
+        'svconnector_feed' => [
+            'composerName' => 'cobweb/svconnector_feed',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/svconnector_feed/',
+            'suggestions' => [],
+        ],
+        'news' => [
+            'composerName' => 'georgringer/news',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/news/',
+            'suggestions' => [],
+        ],
+        'externalimport_tut' => [
+            'composerName' => 'cobweb/externalimport_tut',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/externalimport_tut/',
+            'suggestions' => [],
+        ],
         'static_info_tables' => [
             'composerName' => 'sjbr/static-info-tables',
             'state' => 'active',
@@ -286,16 +322,16 @@ return [
                 'css_styled_content',
             ],
         ],
+        'dce' => [
+            'composerName' => 'arminvieweg/dce',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/dce/',
+            'suggestions' => [],
+        ],
         'mask' => [
             'composerName' => 'mask/mask',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/mask/',
-            'suggestions' => [],
-        ],
-        'news' => [
-            'composerName' => 'georgringer/news',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/news/',
             'suggestions' => [],
         ],
         'powermail' => [
@@ -344,12 +380,6 @@ return [
             'composerName' => 'typo3/cms-dbal',
             'state' => 'inactive',
             'packagePath' => 'typo3/sysext/dbal/',
-            'suggestions' => [],
-        ],
-        'external_import' => [
-            'composerName' => 'external_import',
-            'state' => 'inactive',
-            'packagePath' => 'typo3conf/ext/external_import/',
             'suggestions' => [],
         ],
         'feedit' => [

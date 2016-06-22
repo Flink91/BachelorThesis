@@ -5,7 +5,13 @@
 $typo3InstallDir = PATH_site;
 
 return array(
+    'ArminVieweg\\Dce\\' => array($typo3InstallDir . 'typo3conf/ext/dce/Classes'),
     'B13\\SeoBasics\\' => array($typo3InstallDir . 'typo3conf/ext/seo_basics/Classes'),
+    'Cobweb\\ExternalImport\\' => array($typo3InstallDir . 'typo3conf/ext/external_import/Classes'),
+    'Cobweb\\ExternalimportTut\\' => array($typo3InstallDir . 'typo3conf/ext/externalimport_tut/Classes'),
+    'Cobweb\\SvconnectorCsv\\' => array($typo3InstallDir . 'typo3conf/ext/svconnector_csv/Classes'),
+    'Cobweb\\SvconnectorFeed\\' => array($typo3InstallDir . 'typo3conf/ext/svconnector_feed/Classes'),
+    'Cobweb\\Svconnector\\' => array($typo3InstallDir . 'typo3conf/ext/svconnector/Classes'),
     'DL\\Yag\\' => array($typo3InstallDir . 'typo3conf/ext/yag/Classes'),
     'DmitryDulepov\\Realurl\\' => array($typo3InstallDir . 'typo3conf/ext/realurl/Classes'),
     'GeorgRinger\\News\\' => array($typo3InstallDir . 'typo3conf/ext/news/Classes'),

@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE UnivIS SYSTEM "http://univis.uni-bamberg.de/univis.dtd">
+<UnivIS version="1.7" semester="2016s">
+<Person key="Person.asv.kurato.kurato.starke">
+<firstname>Andreas</firstname>
+<id>20851984</id>
+<lastname>Starke</lastname>
+<lehr>ja</lehr>
+<orgname>Kuratorium</orgname>
+<orgunits>
+<orgunit>Universit&#xE4;tsleitung/Gremien</orgunit>
+<orgunit>Kuratorium</orgunit>
+</orgunits>
+<visible>ja</visible>
+<work>Oberb&#xFC;rgermeister der Stadt Bamberg</work>
+</Person>
+<Person key="Person.guk.angl.engls2.mllera">
+<atitle>Akad. Oberrat</atitle>
+<firstname>Andreas</firstname>
+<id>40811893</id>
+<lastname>M&#xFC;ller</lastname>
+<lehr>ja</lehr>
+<lehrtyp>mitarb</lehrtyp>
+<locations>
+<location>
+<buildingkey>U9</buildingkey>
+<email>andreas.mueller@uni-bamberg.de</email>
+<floor>00</floor>
+<ort>96047 Bamberg</ort>
+<office>U9/00.12</office>
+<street>An der Universit&#xE4;t 9</street>
+<tel>0951/863 2294</tel>
+<url>http://www.uni-bamberg.de/eng-didaktik/personen/andreas-mueller/</url>
+</location>
+</locations>
+<officehours>
+<officehour>
+<comment>w&#xE4;hrend des Semesters</comment>
+<endtime>12:00</endtime>
+<repeat>w1 2</repeat>
+<office>U9/00.12</office>
+<starttime>11:00</starttime>
+</officehour>
+</officehours>
+<orgname>Fachvertretung f&#xFC;r Didaktik der Englischen Sprache und Literatur</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Anglistik und Amerikanistik</orgunit>
+<orgunit>Fachvertretung f&#xFC;r Didaktik der Englischen Sprache und Literatur</orgunit>
+</orgunits>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.denkmal.vorund.schfer">
+<firstname>Andreas</firstname>
+<id>40959456</id>
+<lastname>Sch&#xE4;fer</lastname>
+<lehr>ja</lehr>
+<lehrtyp>hochsc</lehrtyp>
+<locations>
+<location>
+<buildingkey>KR14</buildingkey>
+<email>andreas.schaefer@uni-bamberg.de</email>
+<fax>0951/863 5387</fax>
+<floor>01</floor>
+<ort>96047 Bamberg</ort>
+<office>KR14/01.03</office>
+<street>Am Kranen 14</street>
+<tel>0951/863-2384</tel>
+<url>http://www.uni-bamberg.de/ufga/mitarbeiter-der-professur-fuer-ur-und-fruehgeschichtliche-archaeologie/prof-dr-andreas-schaefer/</url>
+</location>
+</locations>
+<officehours>
+<officehour>
+<comment>bitte per Mail anmelden!</comment>
+<endtime>15:00</endtime>
+<repeat>w1 3</repeat>
+<office>01.03</office>
+<starttime>14:00</starttime>
+</officehour>
+</officehours>
+<orgname>Professur f&#xFC;r Ur- und fr&#xFC;hgeschichtliche Arch&#xE4;ologie</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Arch&#xE4;ologie, Denkmalkunde und Kunstgeschichte (IADK)</orgunit>
+<orgunit>Professur f&#xFC;r Ur- und fr&#xFC;hgeschichtliche Arch&#xE4;ologie</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Prof.  Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.geo.histo.dixand">
+<firstname>Andreas</firstname>
+<id>40653667</id>
+<lastname>Dix</lastname>
+<lehr>ja</lehr>
+<lehrtyp>hochsc</lehrtyp>
+<locations>
+<location>
+<buildingkey>KR12</buildingkey>
+<email>andreas.dix@uni-bamberg.de</email>
+<fax>0951-863 2317</fax>
+<floor>02</floor>
+<ort>96047 Bamberg</ort>
+<office>KR12/02.16</office>
+<street>Am Kranen 12</street>
+<tel>0951-863 2363</tel>
+<url>http://www.uni-bamberg.de/zemas/organisation/mitglieder/ordentliche-mitglieder/prof-dr-andreas-dix/</url>
+</location>
+</locations>
+<officehours>
+<officehour>
+<comment>Sprechstunde siehe Aushang und Schwarzes Brett VC</comment>
+</officehour>
+</officehours>
+<orgname>Professur f&#xFC;r Historische Geographie</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Geographie</orgunit>
+<orgunit>Professur f&#xFC;r Historische Geographie</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Prof.  Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.german.neuer.witten">
+<firstname>Andreas</firstname>
+<id>41591620</id>
+<lastname>Wittenberg</lastname>
+<lehr>ja</lehr>
+<locations>
+<location>
+<buildingkey>U5</buildingkey>
+<email>lehrstuhl.germ-lit1@uni-bamberg.de</email>
+<ort>96047 Bamberg</ort>
+<office>U5/</office>
+<street>An der Universit&#xE4;t 5</street>
+<tel>0951/863 2120 (Sekretariat)</tel>
+<url>http://typo3.urz.uni-bamberg.de/fakultaeten/guk/faecher/germanistik/lehrstuhl_fuer_neuere_deutsche_literaturwissenschaft/personen/prof_dr_marx/</url>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Neuere Deutsche Literaturwissenschaft</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Germanistik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Neuere Deutsche Literaturwissenschaft</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.gesch.gesch.morama">
+<atitle>M.A.</atitle>
+<firstname>Andreas</firstname>
+<id>41300283</id>
+<lastname>Ullmann</lastname>
+<lehr>ja</lehr>
+<locations>
+<location>
+<buildingkey>FI5</buildingkey>
+<email>andreas.ullmann@uni-bamberg.de</email>
+<floor>02</floor>
+<ort>96047 Bamberg</ort>
+<office>FI5/02.24</office>
+<street>Fischstra&#xDF;e 5/7</street>
+<tel>863-2324</tel>
+</location>
+</locations>
+<officehours>
+<officehour>
+<endtime>15:00</endtime>
+<repeat>w1 2</repeat>
+<office>Fi 02.24</office>
+<starttime>14:00</starttime>
+</officehour>
+<officehour>
+<endtime>12:00</endtime>
+<repeat>w1 3</repeat>
+<office>Fi 02.24</office>
+<starttime>11:00</starttime>
+</officehour>
+</officehours>
+<orgname>Professur f&#xFC;r Didaktik der Geschichte</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Geschichtswissenschaften und Europ&#xE4;ische Ethnologie</orgunit>
+<orgunit>Professur f&#xFC;r Didaktik der Geschichte</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+<work>Sekretariat Didaktik der Geschichte</work>
+<zweitmgl>guk</zweitmgl>
+</Person>
+<Person key="Person.guk.gesch.heima.hlsche">
+<firstname>Andreas</firstname>
+<gender>m</gender>
+<id>21620572</id>
+<lastname>H&#xF6;lscher</lastname>
+<lehr>ja</lehr>
+<lehrtyp>lehrbe</lehrtyp>
+<orgname>Lehrstuhl f&#xFC;r Europ&#xE4;ische Ethnologie</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Geschichtswissenschaften und Europ&#xE4;ische Ethnologie</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Europ&#xE4;ische Ethnologie</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.gesch.neuer.flursc">
+<firstname>Andreas</firstname>
+<id>41180062</id>
+<lastname>Flursch&#xFC;tz da Cruz</lastname>
+<lehr>ja</lehr>
+<lehrtyp>mitarb</lehrtyp>
+<locations>
+<location>
+<buildingkey>FI5</buildingkey>
+<email>andreas.flurschuetz@uni-bamberg.de</email>
+<floor>01</floor>
+<ort>96047 Bamberg</ort>
+<office>FI5/01.21</office>
+<street>Fischstra&#xDF;e 5/7</street>
+<tel>0951/863-2359</tel>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Neuere Geschichte unter Einbeziehung der Landesgeschichte</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Geschichtswissenschaften und Europ&#xE4;ische Ethnologie</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Neuere Geschichte unter Einbeziehung der Landesgeschichte</orgunit>
+</orgunits>
+<pub_link>https://www.uni-bamberg.de/hist-ng/personen/dr-andreas-flurschuetz-da-cruz/</pub_link>
+<pub_visible>ja</pub_visible>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.gesch.neuer.schenk">
+<atitle>M.A.</atitle>
+<firstname>Andreas</firstname>
+<id>41555620</id>
+<lastname>Schenker</lastname>
+<lehr>ja</lehr>
+<lehrtyp>lehrbe</lehrtyp>
+<locations>
+<location>
+<buildingkey>FI5</buildingkey>
+<floor>01</floor>
+<ort>96047 Bamberg</ort>
+<office>FI5/01.22</office>
+<street>Fischstra&#xDF;e 5/7</street>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Neuere Geschichte unter Einbeziehung der Landesgeschichte</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Geschichtswissenschaften und Europ&#xE4;ische Ethnologie</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Neuere Geschichte unter Einbeziehung der Landesgeschichte</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.gesch.neuru.dornhe">
+<firstname>Andreas</firstname>
+<gender>m</gender>
+<id>20811180</id>
+<lastname>Dornheim</lastname>
+<lehr>ja</lehr>
+<lehrtyp>ausser</lehrtyp>
+<locations>
+<location>
+<buildingkey>FI5</buildingkey>
+<email>andreas.dornheim@uni-bamberg.de</email>
+<floor>02</floor>
+<ort>96047 Bamberg</ort>
+<office>FI5/02.30</office>
+<street>Fischstra&#xDF;e 5/7</street>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Neuere und Neueste Geschichte unter Einbeziehung der Landesgeschichte</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Geschichtswissenschaften und Europ&#xE4;ische Ethnologie</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Neuere und Neueste Geschichte unter Einbeziehung der Landesgeschichte</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Apl. Prof. Dr.</title>
+<visible>ja</visible>
+<zweitmgl>guk</zweitmgl>
+</Person>
+<Person key="Person.guk.instit.relig.fleisc">
+<firstname>Andreas</firstname>
+<id>41278588</id>
+<lastname>Fleischer</lastname>
+<lehr>ja</lehr>
+<orgname>Lehrstuhl f&#xFC;r Religionsp&#xE4;dagogik und Didaktik des Religionsunterrichts</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Katholische Theologie</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Religionsp&#xE4;dagogik und Didaktik des Religionsunterrichts</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.klassphi.klass.grnera">
+<firstname>Andreas</firstname>
+<id>41186203</id>
+<lastname>Gr&#xFC;ner</lastname>
+<lehr>ja</lehr>
+<locations>
+<location>
+<email>andreas.gruener@arch.phil.uni-erlangen.de</email>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Klassische Philologie/Schwerpunkt Latinistik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Klassische Philologie und Philosophie</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Klassische Philologie/Schwerpunkt Latinistik</orgunit>
+</orgunits>
+<title>Prof.  Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.klassphi.phil2.trampo">
+<firstname>Andreas</firstname>
+<id>21421696</id>
+<lastname>Trampota</lastname>
+<lehr>ja</lehr>
+<orgname>Lehrstuhl f&#xFC;r Philosophie II</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Klassische Philologie und Philosophie</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Philosophie II</orgunit>
+</orgunits>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.guk.kommwiss.kommu.vogela">
+<atitle>apl.</atitle>
+<firstname>Andreas</firstname>
+<id>40581096</id>
+<lastname>Vogel</lastname>
+<lehr>ja</lehr>
+<lehrtyp>ausser</lehrtyp>
+<locations>
+<location>
+<buildingkey>WE5</buildingkey>
+<email>andreas.vogel@uni-bamberg.de</email>
+<fax>863-2159</fax>
+<ort>96047 Bamberg</ort>
+<office>WE5/</office>
+<street>An der Weberei 5</street>
+<tel>863-2158</tel>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Kommunikationswissenschaft</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Kommunikationswissenschaft</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Kommunikationswissenschaft</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Prof.  Dr.</title>
+<visible>ja</visible>
+<work>Fachgebiet Kommunikationswissenschaft</work>
+</Person>
+<Person key="Person.guk.orient.irani.wildea">
+<atitle>M.A.</atitle>
+<firstname>Andreas</firstname>
+<id>21284442</id>
+<lastname>Wilde</lastname>
+<lehr>ja</lehr>
+<lehrtyp>mitarb</lehrtyp>
+<locations>
+<location>
+<buildingkey>U11</buildingkey>
+<email>andreas.wilde@uni-bamberg.de</email>
+<fax>0951/863 2184 Sekr.</fax>
+<floor>01</floor>
+<ort>96047 Bamberg</ort>
+<office>U11/01.14</office>
+<street>An der Universit&#xE4;t 11</street>
+<tel>0951 / 863-2192</tel>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Iranistik: Sprachen, Geschichte und Kultur</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Geistes- und Kulturwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Orientalistik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Iranistik: Sprachen, Geschichte und Kultur</orgunit>
+</orgunits>
+<visible>ja</visible>
+</Person>
+<Person key="Person.human.eefeu.kunst.kunst.fries">
+<firstname>Andreas</firstname>
+<id>21211070</id>
+<lastname>Fries</lastname>
+<lehr>ja</lehr>
+<lehrtyp>mitarb</lehrtyp>
+<locations>
+<location>
+<buildingkey>WE5</buildingkey>
+<email>andreas.fries@uni-bamberg.de</email>
+<floor>03</floor>
+<ort>96049 Bamberg</ort>
+<office>WE5/03.076</office>
+<street>An der Weberei 5</street>
+</location>
+</locations>
+<officehours>
+<officehour>
+<endtime>17:00</endtime>
+<repeat>w1 2</repeat>
+<office>WE5/03.076</office>
+<starttime>16:00</starttime>
+</officehour>
+</officehours>
+<orgname>Fachvertretung f&#xFC;r Didaktik der Kunst</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Kunst</orgunit>
+<orgunit>Fachvertretung f&#xFC;r Didaktik der Kunst</orgunit>
+</orgunits>
+<visible>ja</visible>
+</Person>
+<Person key="Person.human.eefeu.mathe.profes.emmerl_0">
+<firstname>Andreas</firstname>
+<id>20989749</id>
+<lastname>Emmerling</lastname>
+<lehr>ja</lehr>
+<lehrtyp>lehrbe</lehrtyp>
+<locations>
+<location>
+<buildingkey>M3</buildingkey>
+<email>angelika.brehm@uni-bamberg.de</email>
+<floor>00</floor>
+<ort>96047 Bamberg</ort>
+<office>M3/00.02</office>
+<street>Markusplatz 3</street>
+<tel>0951/863-1805 (Sekr.)</tel>
+<url>http://www.uni-bamberg.de/matheinfdidaktik</url>
+</location>
+</locations>
+<orgname>Professur f&#xFC;r Didaktik der Mathematik und Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Didaktik der Mathematik und Naturwissenschaften</orgunit>
+<orgunit>Professur f&#xFC;r Didaktik der Mathematik und Informatik</orgunit>
+</orgunits>
+<visible>ja</visible>
+</Person>
+<Person key="Person.human.eefeu.musik.musik.ismayr">
+<firstname>Andreas</firstname>
+<id>21157428</id>
+<lastname>Ismayr</lastname>
+<lehr>ja</lehr>
+<lehraufg>Klavier</lehraufg>
+<lehrtyp>lehrbe</lehrtyp>
+<locations>
+<location>
+<buildingkey>WE5</buildingkey>
+<email>andreas.ismayr@posteo.de</email>
+<fax>(0951) 863 1927</fax>
+<floor>02</floor>
+<ort>96047 Bamberg</ort>
+<office>WE5/02.087</office>
+<street>An der Weberei 5</street>
+<tel>(0951) 863 1926</tel>
+<url>http://www.uni-bamberg.de/musikpaed</url>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erforschung und Entwicklung fachbezogenen Unterrichts - EE-feU</orgunit>
+<orgunit>Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Musikp&#xE4;dagogik und Musikdidaktik</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.human.paeda.sozia.kaller">
+<firstname>Andreas</firstname>
+<id>41424402</id>
+<lastname>Kallert</lastname>
+<lehr>ja</lehr>
+<lehrtyp>lehrbe</lehrtyp>
+<locations>
+<location>
+<email>andreaskallert@googlemail.com</email>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Sozialp&#xE4;dagogik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Humanwissenschaften</orgunit>
+<orgunit>Institut f&#xFC;r Erziehungswissenschaft</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Sozialp&#xE4;dagogik</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.sowi.bwl.betrs.kreand">
+<atitle>M. Sc.</atitle>
+<firstname>Andreas</firstname>
+<id>21433176</id>
+<lastname>Kre&#xDF;</lastname>
+<lehr>ja</lehr>
+<locations>
+<location>
+<buildingkey>F21</buildingkey>
+<email>andreas.kress@uni-bamberg.de</email>
+<fax>0951/863-2546</fax>
+<floor>03</floor>
+<ort>96052 Bamberg</ort>
+<office>F21/03.38</office>
+<street>Feldkirchenstra&#xDF;e 21</street>
+<tel>0951/863-2553</tel>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Betriebswirtschaftslehre, insbes. Internationale Rechnungslegung und Wirtschaftspr&#xFC;fung</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Sozial- und Wirtschaftswissenschaften</orgunit>
+<orgunit>Bereich Betriebswirtschaftslehre</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Betriebswirtschaftslehre, insbes. Internationale Rechnungslegung und Wirtschaftspr&#xFC;fung</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.sowi.bwl.betrs.weikan">
+<atitle>M. Sc.</atitle>
+<firstname>Andreas</firstname>
+<id>41138079</id>
+<lastname>Weik</lastname>
+<lehr>ja</lehr>
+<lehrtyp>mitarb</lehrtyp>
+<locations>
+<location>
+<buildingkey>F21</buildingkey>
+<email>andreas.weik@uni-bamberg.de</email>
+<fax>0951/863-2546</fax>
+<ort>96052 Bamberg</ort>
+<office>F21/03.43</office>
+<street>Feldkirchenstra&#xDF;e 21</street>
+<tel>0951/863-2558</tel>
+<url>http://www.uni-bamberg.de/bwl-irwp</url>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Betriebswirtschaftslehre, insbes. Internationale Rechnungslegung und Wirtschaftspr&#xFC;fung</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Sozial- und Wirtschaftswissenschaften</orgunit>
+<orgunit>Bereich Betriebswirtschaftslehre</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Betriebswirtschaftslehre, insbes. Internationale Rechnungslegung und Wirtschaftspr&#xFC;fung</orgunit>
+</orgunits>
+<visible>ja</visible>
+</Person>
+<Person key="Person.sowi.bwl.finan.oehler">
+<firstname>Andreas</firstname>
+<id>29913476</id>
+<lastname>Oehler</lastname>
+<lehr>ja</lehr>
+<lehrtyp>hochsc</lehrtyp>
+<locations>
+<location>
+<buildingkey>K&#xC4;7</buildingkey>
+<email>andreas.oehler@uni-bamberg.de</email>
+<fax>0951/863 2538</fax>
+<floor>01</floor>
+<ort>96052 Bamberg</ort>
+<office>K&#xC4;7/01.29</office>
+<street>K&#xE4;rntenstra&#xDF;e 7</street>
+<tel>0951/863 2536</tel>
+<url>http://www.uni-bamberg.de/bwl-finanz/</url>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Betriebswirtschaftslehre, insbes. Finanzwirtschaft</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Sozial- und Wirtschaftswissenschaften</orgunit>
+<orgunit>Bereich Betriebswirtschaftslehre</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Betriebswirtschaftslehre, insbes. Finanzwirtschaft</orgunit>
+</orgunits>
+<title>Prof. Dr.</title>
+<visible>ja</visible>
+<work>Direktor der Forschungsstelle "Verbraucherfinanzen &amp; Verbraucherbildung"</work>
+</Person>
+<Person key="Person.sowi.sozwiss.bevoe.mergen">
+<firstname>Andreas</firstname>
+<id>21676472</id>
+<lastname>Mergenthaler</lastname>
+<lehr>ja</lehr>
+<orgname>Professur f&#xFC;r Demografie</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Sozial- und Wirtschaftswissenschaften</orgunit>
+<orgunit>Bereich Soziologie</orgunit>
+<orgunit>Professur f&#xFC;r Demografie</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.sowi.sozwiss.profes.gmelch">
+<atitle>Akad. Direktor</atitle>
+<firstname>Andreas</firstname>
+<id>29931489</id>
+<lastname>Gmelch</lastname>
+<lehr>ja</lehr>
+<lehrtyp>mitarb</lehrtyp>
+<locations>
+<location>
+<buildingkey>M3</buildingkey>
+<email>andreas.gmelch@uni-bamberg.de</email>
+<fax>0951/863 4806</fax>
+<ort>96047 Bamberg</ort>
+<office>M3/003</office>
+<street>Markusplatz 3</street>
+<tel>0951/863 1806</tel>
+<url>http://www.uni-bamberg.de/~ba2da1/home.html</url>
+</location>
+</locations>
+<orgname>Professur f&#xFC;r Arbeitswissenschaft</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Sozial- und Wirtschaftswissenschaften</orgunit>
+<orgunit>Bereich Soziologie</orgunit>
+<orgunit>Professur f&#xFC;r Arbeitswissenschaft</orgunit>
+</orgunits>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.sowi.wipaed.wirpa.rausch">
+<firstname>Andreas</firstname>
+<gender>m</gender>
+<id>20587607</id>
+<lastname>Rausch</lastname>
+<lehr>ja</lehr>
+<lehrtyp>mitarb</lehrtyp>
+<locations>
+<location>
+<buildingkey>K&#xC4;7</buildingkey>
+<email>andreas.rausch@uni-bamberg.de</email>
+<fax>0951/863 5760</fax>
+<floor>00</floor>
+<ort>96052 Bamberg</ort>
+<office>K&#xC4;7/00.38</office>
+<street>K&#xE4;rntenstra&#xDF;e 7</street>
+<tel>0951/863 2767</tel>
+<url>http://www.uni-ba.de/sowi/wipaed</url>
+</location>
+</locations>
+<officehours>
+<officehour>
+<comment>nach Vereinbarung</comment>
+</officehour>
+</officehours>
+<orgname>Lehrstuhl f&#xFC;r Wirtschaftsp&#xE4;dagogik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t Sozial- und Wirtschaftswissenschaften</orgunit>
+<orgunit>Bereich Wirtschaftsp&#xE4;dagogik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Wirtschaftsp&#xE4;dagogik</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.unibib.teilbi_1.zentr.bhrand">
+<atitle>Dipl.-Bibl., Bibl.-Oberinspektor</atitle>
+<firstname>Andreas</firstname>
+<id>40871487</id>
+<lastname>B&#xE4;hr</lastname>
+<lehr>nein</lehr>
+<locations>
+<location>
+<buildingkey>U2</buildingkey>
+<email>andreas.baehr@uni-bamberg.de</email>
+<floor>01</floor>
+<ort>96047 Bamberg</ort>
+<office>U2/01.11</office>
+<street>An der Universit&#xE4;t 2</street>
+<tel>0951/863 1544</tel>
+</location>
+</locations>
+<orgname>Teilbibliothek 1 [Theologie und Philosophie]</orgname>
+<orgunits>
+<orgunit>Universit&#xE4;tsbibliothek</orgunit>
+<orgunit>Teilbibliothek 1 [Theologie und Philosophie]</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.unibib.teilbi_3.zentr.hbnera">
+<firstname>Andreas</firstname>
+<id>21520620</id>
+<lastname>H&#xFC;bner</lastname>
+<lehr>nein</lehr>
+<locations>
+<location>
+<buildingkey>HM2</buildingkey>
+<email>andreas.huebner@uni-bamberg.de</email>
+<floor>-1</floor>
+<ort>96047 Bamberg</ort>
+<office>HM2/-1.09</office>
+<street>Heumarkt 2</street>
+<tel>0951/863 1587</tel>
+</location>
+</locations>
+<orgname>Teilbibliothek 4 [Sprach- und Literaturwissenschaften]</orgname>
+<orgunits>
+<orgunit>Universit&#xE4;tsbibliothek</orgunit>
+<orgunit>Teilbibliothek 4 [Sprach- und Literaturwissenschaften]</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.unibib.zentr.drechs">
+<atitle>Bibl.-Oberrat</atitle>
+<firstname>Andreas</firstname>
+<id>49992180</id>
+<lastname>Drechsler</lastname>
+<lehr>nein</lehr>
+<locations>
+<location>
+<buildingkey>UB</buildingkey>
+<email>andreas.drechsler@uni-bamberg.de</email>
+<fax>0951/863 1565</fax>
+<floor>01</floor>
+<ort>96052 Bamberg</ort>
+<office>UB/01.19</office>
+<street>Feldkirchenstra&#xDF;e 21</street>
+<tel>0951/863 1530, 1546</tel>
+</location>
+</locations>
+<officehours>
+<officehour>
+<endtime>18:00</endtime>
+<repeat>w1 4</repeat>
+<office>U2/00.04 (oder nach Vereinbarung) Bitte melden Sie sich an der Ausleihtheke der TB 1.</office>
+<starttime>15:00</starttime>
+</officehour>
+</officehours>
+<orgname>Universit&#xE4;tsbibliothek</orgname>
+<orgunits>
+<orgunit>Universit&#xE4;tsbibliothek</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.wiai.bereic.lehrst_1.henric">
+<firstname>Andreas</firstname>
+<id>40327698</id>
+<lastname>Henrich</lastname>
+<lehr>ja</lehr>
+<lehrtyp>hochsc</lehrtyp>
+<locations>
+<location>
+<buildingkey>WE5</buildingkey>
+<email>andreas.henrich@uni-bamberg.de</email>
+<fax>0951 863 2852</fax>
+<floor>02</floor>
+<ort>96047 Bamberg</ort>
+<office>WE5/02.031</office>
+<street>An der Weberei 5</street>
+<tel>0951 863 2850</tel>
+<url>http://www.uni-bamberg.de/?id=5453</url>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Medieninformatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Angewandte Informatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Medieninformatik</orgunit>
+</orgunits>
+<title>Prof.  Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.wiai.bereic_1.lehrst.schnbe">
+<firstname>Andreas</firstname>
+<id>40663021</id>
+<lastname>Sch&#xF6;nberger</lastname>
+<lehr>ja</lehr>
+<lehrtyp>lehrbe</lehrtyp>
+<locations>
+<location>
+<buildingkey>WE5</buildingkey>
+<email>andreas.schoenberger@uni-bamberg.de</email>
+<fax>0951 863 5528</fax>
+<floor>03</floor>
+<ort>96049 Bamberg</ort>
+<office>WE5/03.018</office>
+<street>An der Weberei 5</street>
+<url>http://www.uni-bamberg.de/pi/team/schoenberger/</url>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Praktische Informatik</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Informatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Praktische Informatik</orgunit>
+</orgunits>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.wiai.bereic_2.lehrst_2.steffa">
+<atitle>M. Sc.</atitle>
+<firstname>Andreas</firstname>
+<id>41360095</id>
+<lastname>Steffan</lastname>
+<lehr>ja</lehr>
+<lehrtyp>mitarb</lehrtyp>
+<locations>
+<location>
+<buildingkey>WE5</buildingkey>
+<email>andreas.steffan@uni-bamberg.de</email>
+<fax>++(0)951-863 2780</fax>
+<floor>01</floor>
+<ort>96049 Bamberg</ort>
+<office>WE5/01.077</office>
+<street>An der Weberei 5</street>
+<tel>++49(0)951-863 3923</tel>
+</location>
+</locations>
+<orgname>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insb. Systementwicklung und Datenbankanwendung</orgname>
+<orgunits>
+<orgunit>Fakult&#xE4;t  Wirtschaftsinformatik / Angewandte Informatik</orgunit>
+<orgunit>Bereich Wirtschaftsinformatik</orgunit>
+<orgunit>Lehrstuhl f&#xFC;r Wirtschaftsinformatik, insb. Systementwicklung und Datenbankanwendung</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.zuv.abtlg1.ref3.stadtm">
+<firstname>Andreas</firstname>
+<gender>m</gender>
+<id>40927553</id>
+<lastname>Stadtm&#xFC;ller</lastname>
+<lehr>nein</lehr>
+<locations>
+<location>
+<buildingkey>K18</buildingkey>
+<email>corporate-design@uni-bamberg.de</email>
+<fax>0951/863 4021</fax>
+<floor>01</floor>
+<ort>96047 Bamberg</ort>
+<office>K18/01.03</office>
+<street>Kapuzinerstra&#xDF;e 18</street>
+<tel>0951/863 1126</tel>
+</location>
+<location>
+<email>andreas.stadtmueller@uni-bamberg.de</email>
+</location>
+</locations>
+<orgname>Dezernat Z/KOM - Kommunikation &amp; Alumni</orgname>
+<orgunits>
+<orgunit>Zentrale Universit&#xE4;tsverwaltung</orgunit>
+<orgunit>Z - Zentrale Dezernate</orgunit>
+<orgunit>Dezernat Z/KOM - Kommunikation &amp; Alumni</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+<Person key="Person.zuv.abtlg2.refera.weihea">
+<firstname>Andreas</firstname>
+<id>29966638</id>
+<lastname>Weihe</lastname>
+<lehr>nein</lehr>
+<locations>
+<location>
+<buildingkey>K25</buildingkey>
+<email>andreas.weihe@uni-bamberg.de</email>
+<fax>0951/863 1054</fax>
+<floor>02</floor>
+<ort>96047 Bamberg</ort>
+<office>K25/02.08</office>
+<street>Kapuzinerstra&#xDF;e 25</street>
+<tel>0951/863 1048</tel>
+</location>
+</locations>
+<orgname>Referat II/4 - Akademisches Auslandsamt</orgname>
+<orgunits>
+<orgunit>Zentrale Universit&#xE4;tsverwaltung</orgunit>
+<orgunit>Abteilung II - Studium und Lehre</orgunit>
+<orgunit>Referat II/4 - Akademisches Auslandsamt</orgunit>
+</orgunits>
+<title>Dr.</title>
+<visible>ja</visible>
+</Person>
+<Person key="Person.zuv.iabtei.i2haus.hoffma">
+<firstname>Andreas</firstname>
+<id>21204557</id>
+<lastname>Hoffmann</lastname>
+<lehr>nein</lehr>
+<locations>
+<location>
+<buildingkey>WE5</buildingkey>
+<email>hausverwaltung-erba.td@uni-bamberg.de</email>
+<floor>05</floor>
+<ort>96047 Bamberg</ort>
+<office>WE5/05.079</office>
+<street>An der Weberei 5</street>
+<tel>0951/863 1196</tel>
+</location>
+</locations>
+<orgname>I/2 - Haus- und Betriebstechnik</orgname>
+<orgunits>
+<orgunit>Zentrale Universit&#xE4;tsverwaltung</orgunit>
+<orgunit>Abteilung I - Bau, Fl&#xE4;chen und Technischer Dienst</orgunit>
+<orgunit>I/2 - Haus- und Betriebstechnik</orgunit>
+</orgunits>
+<visible>ja</visible>
+</Person>
+<Person key="Person.zuv.kanzle.zentr.cronea">
+<firstname>Andreas</firstname>
+<id>41319183</id>
+<lastname>Crone</lastname>
+<lehr>nein</lehr>
+<locations>
+<location>
+<buildingkey>K16</buildingkey>
+<email>justitiariat@uni-bamberg.de</email>
+<fax>0951/863 1005</fax>
+<floor>01</floor>
+<ort>96047 Bamberg</ort>
+<office>K16/01.10</office>
+<street>Kapuzinerstra&#xDF;e 16</street>
+<tel>0951/863 1032</tel>
+</location>
+<location>
+<email>andreas.crone@uni-bamberg.de</email>
+</location>
+</locations>
+<orgname>Kanzlerin</orgname>
+<orgunits>
+<orgunit>Zentrale Universit&#xE4;tsverwaltung</orgunit>
+<orgunit>Kanzlerin</orgunit>
+</orgunits>
+<pub_visible>ja</pub_visible>
+<visible>ja</visible>
+</Person>
+</UnivIS>

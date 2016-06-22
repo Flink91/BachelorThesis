@@ -1315,6 +1315,274 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1433089350] = a
 
 
 /**
+ * Extension: external_import
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/external_import/ext_localconf.php
+ */
+
+$_EXTKEY = 'external_import';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+    die ('Access denied.');
+}
+
+// Register handler calls for Scheduler
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks'][\Cobweb\ExternalImport\Task\AutomatedSyncTask::class] = array(
+        'extension' => $_EXTKEY,
+        'title' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/ExternalImport.xlf:scheduler.title',
+        'description' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/ExternalImport.xlf:scheduler.description',
+        'additionalFields' => \Cobweb\ExternalImport\Task\AutomatedSyncAdditionalFieldProvider::class
+);
+
+// Register Scheduler tasks update script
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['external_import_tasks'] = \Cobweb\ExternalImport\Updates\SchedulerTasksWizard::class;
+
+
+/**
+ * Extension: svconnector_csv
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/svconnector_csv/ext_localconf.php
+ */
+
+$_EXTKEY = 'svconnector_csv';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+    die ('Access denied.');
+}
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addService(
+        $_EXTKEY,
+        // Service type
+        'connector',
+        // Service key
+        'tx_svconnectorcsv_sv1',
+        array(
+                'title' => 'CSV connector',
+                'description' => 'Connector service for reading CSV files or other flat files',
+
+                'subtype' => 'csv',
+
+                'available' => true,
+                'priority' => 50,
+                'quality' => 50,
+
+                'os' => '',
+                'exec' => '',
+
+                'className' => \Cobweb\SvconnectorCsv\Service\ConnectorCsv::class
+        )
+);
+
+
+/**
+ * Extension: svconnector_feed
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/svconnector_feed/ext_localconf.php
+ */
+
+$_EXTKEY = 'svconnector_feed';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined ('TYPO3_MODE')) {
+ 	die ('Access denied.');
+}
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addService(
+		$_EXTKEY,
+        // Service type
+        'connector',
+        // Service key
+        'tx_svconnectorfeed_sv1',
+		array(
+			'title' => 'RSS Feed connector',
+			'description' => 'Connector service to get RSS feeds',
+
+			'subtype' => 'feed',
+
+			'available' => TRUE,
+			'priority' => 50,
+			'quality' => 50,
+
+			'os' => '',
+			'exec' => '',
+
+			'className' => \Cobweb\SvconnectorFeed\Service\ConnectorFeed::class,
+		)
+);
+
+
+/**
+ * Extension: news
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/news/ext_localconf.php
+ */
+
+$_EXTKEY = 'news';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+defined('TYPO3_MODE') or die();
+
+$boot = function () {
+    // Extension manager configuration
+    $configuration = \GeorgRinger\News\Utility\EmConfiguration::getSettings();
+
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+        'GeorgRinger.news',
+        'Pi1',
+        [
+            'News' => 'list,detail,dateMenu,searchForm,searchResult',
+            'Category' => 'list',
+            'Tag' => 'list',
+        ],
+        [
+            'News' => 'searchForm,searchResult',
+        ]
+    );
+
+    // Page module hook
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['list_type_Info']['news' . '_pi1']['news'] =
+        \GeorgRinger\News\Hooks\PageLayoutView::class . '->getExtensionSummary';
+
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['clearCachePostProc']['news_clearcache'] =
+        \GeorgRinger\News\Hooks\DataHandler::class . '->clearCachePostProc';
+
+    // Edit restriction for news records
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processCmdmapClass']['news'] =
+        \GeorgRinger\News\Hooks\DataHandler::class;
+
+    // FormEngine: Rendering of fields
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tceforms.php']['getSingleFieldClass']['news'] =
+        \GeorgRinger\News\Hooks\FormEngine::class;
+
+    // FormEngine: Rendering of the whole FormEngine
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tceforms.php']['getMainFieldsClass']['news'] =
+        \GeorgRinger\News\Hooks\FormEngine::class;
+
+    // Modify flexform values
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFlexFormDSClass']['news'] =
+        \GeorgRinger\News\Hooks\BackendUtility::class;
+
+    // Inline records hook
+    if ($configuration->getUseFal()) {
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tceforms_inline.php']['tceformsInlineHook']['news'] =
+            \GeorgRinger\News\Hooks\InlineElementHook::class;
+    }
+
+    /* ===========================================================================
+        Custom cache, done with the caching framework
+    =========================================================================== */
+    if (!is_array($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category'])) {
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category'] = [];
+    }
+    // Define string frontend as default frontend, this must be set with TYPO3 4.5 and below
+    // and overrides the default variable frontend of 4.6
+    if (!isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category']['frontend'])) {
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category']['frontend'] = \TYPO3\CMS\Core\Cache\Frontend\StringFrontend::class;
+    }
+
+    /* ===========================================================================
+        Add TSconfig
+    =========================================================================== */
+    // For linkvalidator
+    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('linkvalidator')) {
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TSconfig/Page/mod.linkvalidator.txt">');
+    }
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TSconfig/ContentElementWizard.txt">');
+
+    /* ===========================================================================
+        Hooks
+    =========================================================================== */
+    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('realurl')) {
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/realurl/class.tx_realurl_autoconfgen.php']['extensionConfiguration']['news'] =
+            \GeorgRinger\News\Hooks\RealUrlAutoConfiguration::class . '->addNewsConfig';
+    }
+
+    /* ===========================================================================
+        Update scripts
+    =========================================================================== */
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['news_fal'] = \GeorgRinger\News\Updates\FalUpdateWizard::class;
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['news_mm'] = \GeorgRinger\News\Updates\TtContentRelation::class;
+
+    // Register cache frontend for proxy class generation
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['news'] = [
+        'frontend' => \TYPO3\CMS\Core\Cache\Frontend\PhpFrontend::class,
+        'backend' => \TYPO3\CMS\Core\Cache\Backend\FileBackend::class,
+        'groups' => [
+            'all',
+            'system',
+        ],
+        'options' => [
+            'defaultLifetime' => 0,
+        ]
+    ];
+
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['formDataGroup']['tcaDatabaseRecord'][\GeorgRinger\News\Backend\FormDataProvider\NewsRowInitializeNew::class] = [
+        'depends' => [
+            \TYPO3\CMS\Backend\Form\FormDataProvider\DatabaseRowInitializeNew::class,
+        ]
+    ];
+    \GeorgRinger\News\Utility\ClassLoader::registerAutoloader();
+
+    if (TYPO3_MODE === 'BE') {
+        /** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
+        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+        $iconRegistry->registerIcon(
+            'apps-pagetree-folder-contains-news',
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:news/Resources/Public/Icons/ext-news-folder-tree.svg']
+        );
+        $iconRegistry->registerIcon(
+            'ext-news-wizard-icon',
+            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+            ['source' => 'EXT:news/Resources/Public/Icons/ce_wiz.gif']
+        );
+        $iconRegistry->registerIcon(
+            'ext-news-type-default',
+            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+            ['source' => 'EXT:news/Resources/Public/Icons/news_domain_model_news.gif']
+        );
+        $iconRegistry->registerIcon(
+            'ext-news-type-internal',
+            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+            ['source' => 'EXT:news/Resources/Public/Icons/news_domain_model_news_internal.gif']
+        );
+        $iconRegistry->registerIcon(
+            'ext-news-type-external',
+            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+            ['source' => 'EXT:news/Resources/Public/Icons/news_domain_model_news_external.gif']
+        );
+    }
+
+    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('dd_googlesitemap')) {
+        $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['dd_googlesitemap']['sitemap']['txnews']
+            = \GeorgRinger\News\Hooks\TxNewsSitemapGenerator::class . '->main';
+    }
+};
+
+$boot();
+unset($boot);
+
+
+/**
+ * Extension: externalimport_tut
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/externalimport_tut/ext_localconf.php
+ */
+
+$_EXTKEY = 'externalimport_tut';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+    die ('Access denied.');
+}
+
+// Register hook for generating password before storing users
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['external_import']['insertPreProcess'][] = \Cobweb\ExternalimportTut\Hook\ExternalImport::class;
+
+
+/**
  * Extension: static_info_tables
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/static_info_tables/ext_localconf.php
  */
@@ -2689,6 +2957,152 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['cal_sys_temp
 
 
 /**
+ * Extension: dce
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/dce/ext_localconf.php
+ */
+
+$_EXTKEY = 'dce';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+
+/*  | This extension is part of the TYPO3 project. The TYPO3 project is
+ *  | free software and is licensed under GNU General Public License.
+ *  |
+ *  | (c) 2012-2016 Armin Ruediger Vieweg <armin@v.ieweg.de>
+ */
+
+if (!defined('TYPO3_MODE')) {
+    die('Access denied.');
+}
+
+$boot = function ($extensionKey) {
+    $extensionPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($extensionKey);
+
+    // AfterSave hook
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass']['dce'] =
+        'ArminVieweg\\Dce\\Hooks\\AfterSaveHook';
+
+    // ImportExport Hooks
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/impexp/class.tx_impexp.php']['before_setRelation']['dce'] =
+        'EXT:' . $extensionKey . '/Classes/Hooks/ImportExportHook.php:' .
+        'ArminVieweg\\Dce\\Hooks\\ImportExportHook->beforeSetRelation';
+
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/impexp/class.tx_impexp.php']['before_writeRecordsRecords']['dce'] =
+        'EXT:' . $extensionKey . '/Classes/Hooks/ImportExportHook.php:' .
+        'ArminVieweg\\Dce\\Hooks\\ImportExportHook->beforeWriteRecordsRecords';
+
+    // PageLayoutView DrawItem Hook for DCE content elements
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['dce'] =
+        'EXT:' . $extensionKey . '/Classes/Hooks/PageLayoutViewDrawItemHook.php:' .
+        'ArminVieweg\\Dce\\Hooks\\PageLayoutViewDrawItemHook';
+
+    // Clear cache hook
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['clearCachePostProc']['dce'] =
+        'EXT:' . $extensionKey . '/Classes/Hooks/ClearCachePostHook.php:' .
+        'ArminVieweg\\Dce\\Hooks\\ClearCachePostHook->clearDceCache';
+
+    // Make edit form access check hook
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/alt_doc.php']['makeEditForm_accessCheck']['dce'] =
+        'EXT:' . $extensionKey . '/Classes/Hooks/MakeEditFormAccessCheckHook.php:' .
+        'ArminVieweg\\Dce\\Hooks\\MakeEditFormAccessCheckHook->checkAccess';
+
+    // Register ke_search hook to be able to index DCE frontend output
+    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('ke_search')) {
+        $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['ke_search']['modifyContentFromContentElement'][] =
+            'EXT:' . $extensionKey . '/Classes/Hooks/KeSearchHook.php:ArminVieweg\\Dce\\Hooks\\KeSearchHook';
+    }
+
+    // DocHeader buttons hook
+    if (\TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.6')) {
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook']['Dce'] =
+            'ArminVieweg\Dce\Hooks\DocHeaderButtonsHook->addDcePopupButton';
+    } else {
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/template.php']['docHeaderButtonsHook'][] =
+            'EXT:' . $extensionKey . '/Classes/Hooks/DocHeaderButtonsHook.php:' .
+            'ArminVieweg\\Dce\\Hooks\\DocHeaderButtonsHook->addDcePopupButton62';
+    }
+
+
+    // DataPreprocessor XClass
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Backend\\Form\\DataPreprocessor'] = array(
+        'className' => 'ArminVieweg\Dce\XClass\DataPreprocessor',
+    );
+
+    // LiveSearch XClass
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Backend\\Search\\LiveSearch\\LiveSearch'] = array(
+        'className' => 'ArminVieweg\Dce\XClass\LiveSearch',
+    );
+
+    // User conditions
+    require_once($extensionPath . 'Classes/UserConditions/user_dceOnCurrentPage.php');
+
+
+    // Special tce validators (eval)
+    require_once($extensionPath . 'Classes/UserFunction/CustomFieldValidation/AbstractFieldValidator.php');
+
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']
+    ['ArminVieweg\Dce\UserFunction\CustomFieldValidation\\LowerCamelCaseValidator'] =
+        'EXT:dce/Classes/UserFunction/CustomFieldValidation/LowerCamelCaseValidator.php';
+
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tce']['formevals']
+    ['ArminVieweg\Dce\UserFunction\CustomFieldValidation\\NoLeadingNumberValidator'] =
+        'EXT:dce/Classes/UserFunction/CustomFieldValidation/NoLeadingNumberValidator.php';
+
+
+    // Update Scripts
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['dceMigrateOldNamespacesInFluidTemplateUpdate'] =
+        'ArminVieweg\Dce\Updates\MigrateOldNamespacesInFluidTemplateUpdate';
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['dceMigrateDceFieldDatabaseRelationUpdate'] =
+        'ArminVieweg\Dce\Updates\MigrateDceFieldDatabaseRelationUpdate';
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['dceMigrateFlexformSheetIdentifierUpdate'] =
+        'ArminVieweg\Dce\Updates\MigrateFlexformSheetIdentifierUpdate';
+
+
+    // Slot to extend SQL tables definitions
+    /** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
+    $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+        'TYPO3\\CMS\\Extbase\\SignalSlot\\Dispatcher'
+    );
+    $signalSlotDispatcher->connect(
+        'TYPO3\CMS\Install\Service\SqlExpectedSchemaService',
+        'tablesDefinitionIsBeingBuilt',
+        'ArminVieweg\Dce\Slots\TablesDefinitionIsBeingBuiltSlot',
+        'extendTtContentTable'
+    );
+
+
+    // Register Plugin to get Dce instance
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+        'ArminVieweg.' . $extensionKey,
+        'Dce',
+        array(
+            'Dce' => 'renderDce'
+        ),
+        array(
+            'Dce' => ''
+        )
+    );
+
+    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['extbase']['extensions']['Dce']['modules']
+        = $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['extbase']['extensions']['Dce']['plugins'];
+
+    // Include cached ext_localconf
+    if (!\ArminVieweg\Dce\Cache::cacheExists(\ArminVieweg\Dce\Cache::CACHE_TYPE_EXTLOCALCONF)) {
+        /** @var $dceCache \ArminVieweg\Dce\Cache */
+        $dceCache = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('ArminVieweg\Dce\Cache');
+        $dceCache->createLocalconf();
+    }
+    if (\ArminVieweg\Dce\Cache::cacheExists(\ArminVieweg\Dce\Cache::CACHE_TYPE_EXTLOCALCONF)) {
+        require_once(PATH_site . \ArminVieweg\Dce\Cache::CACHE_PATH . \ArminVieweg\Dce\Cache::CACHE_TYPE_EXTLOCALCONF);
+    }
+};
+
+$boot($_EXTKEY);
+unset($boot);
+
+
+/**
  * Extension: mask
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/mask/ext_localconf.php
  */
@@ -2995,158 +3409,6 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Frontend\\ContentObje
 
 // Hook to override tt_content backend_preview
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem'][$_EXTKEY] = 'EXT:' . $_EXTKEY . '/Classes/Hooks/PageLayoutViewDrawItem.php:MASK\Mask\Hooks\PageLayoutViewDrawItem';
-
-
-/**
- * Extension: news
- * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/news/ext_localconf.php
- */
-
-$_EXTKEY = 'news';
-$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
-
-
-defined('TYPO3_MODE') or die();
-
-$boot = function () {
-    // Extension manager configuration
-    $configuration = \GeorgRinger\News\Utility\EmConfiguration::getSettings();
-
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-        'GeorgRinger.news',
-        'Pi1',
-        [
-            'News' => 'list,detail,dateMenu,searchForm,searchResult',
-            'Category' => 'list',
-            'Tag' => 'list',
-        ],
-        [
-            'News' => 'searchForm,searchResult',
-        ]
-    );
-
-    // Page module hook
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['list_type_Info']['news' . '_pi1']['news'] =
-        \GeorgRinger\News\Hooks\PageLayoutView::class . '->getExtensionSummary';
-
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['clearCachePostProc']['news_clearcache'] =
-        \GeorgRinger\News\Hooks\DataHandler::class . '->clearCachePostProc';
-
-    // Edit restriction for news records
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processCmdmapClass']['news'] =
-        \GeorgRinger\News\Hooks\DataHandler::class;
-
-    // FormEngine: Rendering of fields
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tceforms.php']['getSingleFieldClass']['news'] =
-        \GeorgRinger\News\Hooks\FormEngine::class;
-
-    // FormEngine: Rendering of the whole FormEngine
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tceforms.php']['getMainFieldsClass']['news'] =
-        \GeorgRinger\News\Hooks\FormEngine::class;
-
-    // Modify flexform values
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_befunc.php']['getFlexFormDSClass']['news'] =
-        \GeorgRinger\News\Hooks\BackendUtility::class;
-
-    // Inline records hook
-    if ($configuration->getUseFal()) {
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tceforms_inline.php']['tceformsInlineHook']['news'] =
-            \GeorgRinger\News\Hooks\InlineElementHook::class;
-    }
-
-    /* ===========================================================================
-        Custom cache, done with the caching framework
-    =========================================================================== */
-    if (!is_array($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category'])) {
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category'] = [];
-    }
-    // Define string frontend as default frontend, this must be set with TYPO3 4.5 and below
-    // and overrides the default variable frontend of 4.6
-    if (!isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category']['frontend'])) {
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['cache_news_category']['frontend'] = \TYPO3\CMS\Core\Cache\Frontend\StringFrontend::class;
-    }
-
-    /* ===========================================================================
-        Add TSconfig
-    =========================================================================== */
-    // For linkvalidator
-    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('linkvalidator')) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TSconfig/Page/mod.linkvalidator.txt">');
-    }
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TSconfig/ContentElementWizard.txt">');
-
-    /* ===========================================================================
-        Hooks
-    =========================================================================== */
-    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('realurl')) {
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/realurl/class.tx_realurl_autoconfgen.php']['extensionConfiguration']['news'] =
-            \GeorgRinger\News\Hooks\RealUrlAutoConfiguration::class . '->addNewsConfig';
-    }
-
-    /* ===========================================================================
-        Update scripts
-    =========================================================================== */
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['news_fal'] = \GeorgRinger\News\Updates\FalUpdateWizard::class;
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['news_mm'] = \GeorgRinger\News\Updates\TtContentRelation::class;
-
-    // Register cache frontend for proxy class generation
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['news'] = [
-        'frontend' => \TYPO3\CMS\Core\Cache\Frontend\PhpFrontend::class,
-        'backend' => \TYPO3\CMS\Core\Cache\Backend\FileBackend::class,
-        'groups' => [
-            'all',
-            'system',
-        ],
-        'options' => [
-            'defaultLifetime' => 0,
-        ]
-    ];
-
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['formDataGroup']['tcaDatabaseRecord'][\GeorgRinger\News\Backend\FormDataProvider\NewsRowInitializeNew::class] = [
-        'depends' => [
-            \TYPO3\CMS\Backend\Form\FormDataProvider\DatabaseRowInitializeNew::class,
-        ]
-    ];
-    \GeorgRinger\News\Utility\ClassLoader::registerAutoloader();
-
-    if (TYPO3_MODE === 'BE') {
-        /** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
-        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-        $iconRegistry->registerIcon(
-            'apps-pagetree-folder-contains-news',
-            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:news/Resources/Public/Icons/ext-news-folder-tree.svg']
-        );
-        $iconRegistry->registerIcon(
-            'ext-news-wizard-icon',
-            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:news/Resources/Public/Icons/ce_wiz.gif']
-        );
-        $iconRegistry->registerIcon(
-            'ext-news-type-default',
-            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:news/Resources/Public/Icons/news_domain_model_news.gif']
-        );
-        $iconRegistry->registerIcon(
-            'ext-news-type-internal',
-            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:news/Resources/Public/Icons/news_domain_model_news_internal.gif']
-        );
-        $iconRegistry->registerIcon(
-            'ext-news-type-external',
-            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:news/Resources/Public/Icons/news_domain_model_news_external.gif']
-        );
-    }
-
-    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('dd_googlesitemap')) {
-        $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['dd_googlesitemap']['sitemap']['txnews']
-            = \GeorgRinger\News\Hooks\TxNewsSitemapGenerator::class . '->main';
-    }
-};
-
-$boot();
-unset($boot);
 
 
 /**

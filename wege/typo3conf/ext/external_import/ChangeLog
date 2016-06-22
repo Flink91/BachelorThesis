@@ -1,3 +1,29 @@
+2016-06-13 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added configuration validator, resolves #59250
+	* Harmonized naming of "ctrl" properties, resolves #76607
+	* Added logging, resolves #76618
+	* Added composer support, resolves #76621
+	* Released version 3.0.0, resolves #76583
+
+2016-06-10 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added wizard for Scheduler tasks migration, resolves #76017
+
+2016-06-09 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Expanded scope of clearCache property, resolves #76133
+
+2016-05-20 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Refactored BE module, compatible with TYPO3 CMS 7, removed ExtJS, resolves #59441
+	* Moved languages files to XLIFF, resolves #76251
+	* Removed deprecated properties, resolves #76252
+
+2016-05-02 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Moved to namespaces, applied PSR-2, replaced old API calls, resolves #76016
+
 2015-09-08 Francois Suter (Cobweb)  <typo3@cobweb.ch>
 
 	* Corrected wrong object being passed to process parameters hook, resolves #69579

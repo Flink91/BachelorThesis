@@ -1839,6 +1839,302 @@ if (TYPO3_MODE === 'BE' && !(TYPO3_REQUESTTYPE & TYPO3_REQUESTTYPE_INSTALL)) {
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 
 /**
+ * Extension: svconnector
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/svconnector/ext_tables.php
+ */
+
+$_EXTKEY = 'svconnector';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+	die ('Access denied.');
+}
+
+// Add module to the BE
+if (TYPO3_MODE === 'BE') {
+	// Register the backend module
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+			'Cobweb.Svconnector',
+            // Make it a submodule of 'Admin Tools'
+			'tools',
+            // Submodule key
+			'tx_Svconnector',
+            // Position
+			'',
+			array(
+				// An array holding the controller-action-combinations that are accessible
+				'Testing' => 'default'
+			),
+			array(
+					'access' => 'admin',
+					'icon' => 'EXT:svconnector/Resources/Public/Images/ModuleSvconnector.svg',
+					'labels' => 'LLL:EXT:svconnector/Resources/Private/Language/locallang.xlf'
+			)
+	);
+}
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
+ * Extension: external_import
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/external_import/ext_tables.php
+ */
+
+$_EXTKEY = 'external_import';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+    die ('Access denied.');
+}
+
+// Load the module only in the BE context
+if (TYPO3_MODE === 'BE') {
+    // First register a main module
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+            'Cobweb.ExternalImport',
+            // New main module
+            'ExternalImport',
+            '',
+            '',
+            array(),
+            array(
+                    'access' => '',
+                    'icon' => 'EXT:' . $_EXTKEY . '/Resources/Public/Images/MainModuleIcon.svg',
+                    'labels' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/MainModule.xlf'
+            )
+    );
+    // Register the "Data Import" backend module
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+            'Cobweb.ExternalImport',
+            // Make it a submodule of 'ExternalImport'
+            'ExternalImport',
+            // Submodule key
+            'external_import',
+            // Position
+            '',
+            array(
+                    // An array holding the controller-action-combinations that are accessible
+                    'DataModule' => 'listSynchronizable, listNonSynchronizable, synchronize, viewConfiguration, newTask, createTask, editTask, updateTask, deleteTask'
+            ),
+            array(
+                    'access' => 'user,group',
+                    'icon' => 'EXT:' . $_EXTKEY . '/Resources/Public/Images/DataModuleIcon.svg',
+                    'labels' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/DataModule.xlf'
+            )
+    );
+    // Register the "Log" backend module
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+            'Cobweb.ExternalImport',
+            // Make it a submodule of 'ExternalImport'
+            'ExternalImport',
+            // Submodule key
+            'external_import_log',
+            // Position
+            '',
+            array(
+                    // An array holding the controller-action-combinations that are accessible
+                    'LogModule' => 'list, get'
+            ),
+            array(
+                    'access' => 'user,group',
+                    'icon' => 'EXT:' . $_EXTKEY . '/Resources/Public/Images/LogModuleIcon.svg',
+                    'labels' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/LogModule.xlf'
+            )
+    );
+}
+
+// Register sprite icons for new tables
+/** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
+$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+$iconRegistry->registerIcon(
+        'tx_external_import-log',
+        \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+        [
+                'source' => 'EXT:external_import/Resources/Public/Images/Log.png'
+        ]
+);
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
+ * Extension: news
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/news/ext_tables.php
+ */
+
+$_EXTKEY = 'news';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+defined('TYPO3_MODE') or die();
+
+$boot = function () {
+
+    // CSH - context sensitive help
+    foreach (['news', 'media', 'file', 'link', 'tag'] as $table) {
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_news_domain_model_' . $table);
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+            'tx_news_domain_model_' . $table, 'EXT:news/Resources/Private/Language/locallang_csh_' . $table . '.xlf');
+    }
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+        'tt_content.pi_flexform.news_pi1.list', 'EXT:news/Resources/Private/Language/locallang_csh_flexforms.xlf');
+
+    // Extension manager configuration
+    $configuration = \GeorgRinger\News\Utility\EmConfiguration::getSettings();
+
+    if (TYPO3_MODE === 'BE') {
+        // Override news icon
+        $GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = [
+            0 => 'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:news-folder',
+            1 => 'news',
+            2 => 'apps-pagetree-folder-contains-news'
+        ];
+
+        /***************
+         * Show news table in page module
+         */
+        if ($configuration->getPageModuleFieldsNews()) {
+            $addTableItems = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode(';',
+                $configuration->getPageModuleFieldsNews(), true);
+            foreach ($addTableItems as $item) {
+                $split = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode('=', $item, true);
+                if (count($split) == 2) {
+                    $fTitle = $split[0];
+                    $fList = $split[1];
+                } else {
+                    $fTitle = '';
+                    $fList = $split[0];
+                }
+                $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cms']['db_layout']['addTables']['tx_news_domain_model_news'][] = [
+                    'MENU' => $fTitle,
+                    'fList' => $fList,
+                    'icon' => true,
+                ];
+            }
+        }
+
+        if ($configuration->getPageModuleFieldsCategory()) {
+            $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cms']['db_layout']['addTables']['sys_category'][0] = [
+                'fList' => htmlspecialchars($configuration->getPageModuleFieldsCategory()),
+                'icon' => true
+            ];
+        }
+
+        // Extend user settings
+        $GLOBALS['TYPO3_USER_SETTINGS']['columns']['newsoverlay'] = [
+            'label' => 'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:usersettings.overlay',
+            'type' => 'select',
+            'itemsProcFunc' => \GeorgRinger\News\Hooks\ItemsProcFunc::class . '->user_categoryOverlay',
+        ];
+        $GLOBALS['TYPO3_USER_SETTINGS']['showitem'] .= ',
+			--div--;LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:pi1_title,newsoverlay';
+
+        // Add tables to livesearch (e.g. "#news:fo" or "#newscat:fo")
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['livesearch']['news'] = 'tx_news_domain_model_news';
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['livesearch']['newstag'] = 'tx_news_domain_model_tag';
+
+        /* ===========================================================================
+            Register BE-Modules
+        =========================================================================== */
+        if ($configuration->getShowImporter()) {
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+                'GeorgRinger.news',
+                'web',
+                'tx_news_m1',
+                '',
+                ['Import' => 'index, runJob, jobInfo'],
+                [
+                    'access' => 'user,group',
+                    'icon' => 'EXT:news/Resources/Public/Icons/module_import.svg',
+                    'labels' => 'LLL:EXT:news/Resources/Private/Language/locallang_mod.xlf',
+                ]
+            );
+        }
+
+        /* ===========================================================================
+            Register BE-Module for Administration
+        =========================================================================== */
+        if ($configuration->getShowAdministrationModule()) {
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+                'GeorgRinger.news',
+                'web',
+                'tx_news_m2',
+                '',
+                ['Administration' => 'index,newNews,newCategory,newTag,newsPidListing'],
+                [
+                    'access' => 'user,group',
+                    'icon' => 'EXT:news/Resources/Public/Icons/module_administration.svg',
+                    'labels' => 'LLL:EXT:news/Resources/Private/Language/locallang_modadministration.xlf',
+                ]
+            );
+        }
+
+        /* ===========================================================================
+            Ajax call to save tags
+        =========================================================================== */
+        $GLOBALS['TYPO3_CONF_VARS']['BE']['AJAX']['News::createTag'] = [
+            'callbackMethod' => \GeorgRinger\News\Hooks\SuggestReceiverCall::class . '->createTag',
+            'csrfTokenCheck' => false
+        ];
+    }
+
+    /* ===========================================================================
+        Default configuration
+    =========================================================================== */
+    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByCategory'] = 'uid,title,tstamp,sorting';
+    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByNews'] = 'tstamp,datetime,crdate,title' . ($configuration->getManualSorting() ? ',sorting' : '');
+    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByTag'] = 'tstamp,crdate,title';
+    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['switchableControllerActions']['list'] = $configuration->getRemoveListActionFromFlexforms();
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+        'news',
+        'Configuration/TSconfig/Page/news_only.txt',
+        'EXT:news :: Restrict pages to news records');
+
+};
+
+$boot();
+unset($boot);
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
+ * Extension: externalimport_tut
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/externalimport_tut/ext_tables.php
+ */
+
+$_EXTKEY = 'externalimport_tut';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+    die ('Access denied.');
+}
+
+
+// Register sprite icons for new tables
+/** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
+$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+$iconRegistry->registerIcon(
+        'tx_externalimport_tut-department',
+        \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+        [
+                'source' => 'EXT:externalimport_tut/Resources/Public/Icons/Department.png'
+        ]
+);
+$iconRegistry->registerIcon(
+        'tx_externalimport_tut-team',
+        \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+        [
+                'source' => 'EXT:externalimport_tut/Resources/Public/Icons/Team.png'
+        ]
+);
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
  * Extension: static_info_tables
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/static_info_tables/ext_tables.php
  */
@@ -1982,6 +2278,123 @@ if (TYPO3_MODE == "BE") {
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 
 /**
+ * Extension: dce
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/dce/ext_tables.php
+ */
+
+$_EXTKEY = 'dce';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+
+/*  | This extension is part of the TYPO3 project. The TYPO3 project is
+ *  | free software and is licensed under GNU General Public License.
+ *  |
+ *  | (c) 2012-2016 Armin Ruediger Vieweg <armin@v.ieweg.de>
+ */
+
+if (!defined('TYPO3_MODE')) {
+    die('Access denied.');
+}
+
+$boot = function ($extensionKey) {
+    // Include cached ext_tables
+    if (!\ArminVieweg\Dce\Cache::cacheExists(\ArminVieweg\Dce\Cache::CACHE_TYPE_EXTTABLES)) {
+        /** @var $dceCache \ArminVieweg\Dce\Cache */
+        $dceCache = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('ArminVieweg\Dce\Cache');
+        $dceCache->createExtTables();
+    }
+    if (\ArminVieweg\Dce\Cache::cacheExists(\ArminVieweg\Dce\Cache::CACHE_TYPE_EXTTABLES)) {
+        require_once(PATH_site . \ArminVieweg\Dce\Cache::CACHE_PATH . \ArminVieweg\Dce\Cache::CACHE_TYPE_EXTTABLES);
+    }
+
+
+    $extensionIconPath = 'EXT:' . $extensionKey . '/Resources/Public/Icons/ext_icon.svg';
+    if (!\TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.6')) {
+        $extensionIconPath = 'EXT:' . $extensionKey . '/ext_icon.png';
+    }
+
+    // Register backend module
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+        'ArminVieweg.' . $extensionKey,
+        'tools',
+        'dceModule',
+        '',
+        array(
+            'DceModule' => 'index,hallOfFame,updatePreviewTemplates,updateTcaMappings',
+            'Dce' => 'renderPreview'
+        ),
+        array(
+            'access' => 'user,group',
+            'icon' => $extensionIconPath,
+            'labels' => 'LLL:EXT:' . $extensionKey . '/Resources/Private/Language/locallang_mod.xml',
+        )
+    );
+
+    // Register PageTS defaults
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('tx_dce.defaults {
+        simpleBackendView {
+            titleCropLength = 10
+            titleCropAppendix = ...
+
+            imageWidth = 50c
+            imageHeight = 50c
+
+            containerGroupColors {
+                10 = #0079BF
+                11 = #D29034
+                12 = #519839
+                13 = #B04632
+                14 = #838C91
+                15 = #CD5A91
+                16 = #4BBF6B
+                17 = #89609E
+                18 = #00AECC
+                19 = #ED2448
+                20 = #FF8700
+            }
+        }
+    ');
+
+    if (\TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.6')) {
+        /** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
+        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\CMS\Core\Imaging\IconRegistry');
+        // DCE Type Icons
+        $iconRegistry->registerIcon(
+            'ext-dce-dce-type-databased',
+            'TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider',
+            array('source' => 'EXT:dce/Resources/Public/Icons/tx_dce_domain_model_dce_databased.png')
+        );
+        $iconRegistry->registerIcon(
+            'ext-dce-dce-type-filebased',
+            'TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider',
+            array('source' => 'EXT:dce/Resources/Public/Icons/tx_dce_domain_model_dce_filebased.png')
+        );
+        // DCE Field Type Icons
+        $iconRegistry->registerIcon(
+            'ext-dce-dcefield-type-element',
+            'TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider',
+            array('source' => 'EXT:dce/Resources/Public/Icons/tx_dce_domain_model_dcefield_element.png')
+        );
+        $iconRegistry->registerIcon(
+            'ext-dce-dcefield-type-tab',
+            'TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider',
+            array('source' => 'EXT:dce/Resources/Public/Icons/tx_dce_domain_model_dcefield_tab.png')
+        );
+        $iconRegistry->registerIcon(
+            'ext-dce-dcefield-type-section',
+            'TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider',
+            array('source' => 'EXT:dce/Resources/Public/Icons/tx_dce_domain_model_dcefield_section.png')
+        );
+    }
+};
+
+$boot($_EXTKEY);
+unset($boot);
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
  * Extension: mask
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/mask/ext_tables.php
  */
@@ -2052,148 +2465,6 @@ if (!empty($extConf["json"]) && file_exists(PATH_site . $extConf["json"])) {
 $TBE_STYLES['skins']['mask']['name'] = 'mask';
 $TBE_STYLES['skins']['mask']['stylesheetDirectories'][] = 'EXT:mask/Resources/Public/Styles/Backend/';
 //$TBE_STYLES['skins']['mask']['stylesheetDirectories'][] = "/" . $extConf["backend"];
-
-TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
-
-/**
- * Extension: news
- * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/news/ext_tables.php
- */
-
-$_EXTKEY = 'news';
-$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
-
-
-defined('TYPO3_MODE') or die();
-
-$boot = function () {
-
-    // CSH - context sensitive help
-    foreach (['news', 'media', 'file', 'link', 'tag'] as $table) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_news_domain_model_' . $table);
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-            'tx_news_domain_model_' . $table, 'EXT:news/Resources/Private/Language/locallang_csh_' . $table . '.xlf');
-    }
-
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
-        'tt_content.pi_flexform.news_pi1.list', 'EXT:news/Resources/Private/Language/locallang_csh_flexforms.xlf');
-
-    // Extension manager configuration
-    $configuration = \GeorgRinger\News\Utility\EmConfiguration::getSettings();
-
-    if (TYPO3_MODE === 'BE') {
-        // Override news icon
-        $GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = [
-            0 => 'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:news-folder',
-            1 => 'news',
-            2 => 'apps-pagetree-folder-contains-news'
-        ];
-
-        /***************
-         * Show news table in page module
-         */
-        if ($configuration->getPageModuleFieldsNews()) {
-            $addTableItems = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode(';',
-                $configuration->getPageModuleFieldsNews(), true);
-            foreach ($addTableItems as $item) {
-                $split = \TYPO3\CMS\Core\Utility\GeneralUtility::trimExplode('=', $item, true);
-                if (count($split) == 2) {
-                    $fTitle = $split[0];
-                    $fList = $split[1];
-                } else {
-                    $fTitle = '';
-                    $fList = $split[0];
-                }
-                $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cms']['db_layout']['addTables']['tx_news_domain_model_news'][] = [
-                    'MENU' => $fTitle,
-                    'fList' => $fList,
-                    'icon' => true,
-                ];
-            }
-        }
-
-        if ($configuration->getPageModuleFieldsCategory()) {
-            $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['cms']['db_layout']['addTables']['sys_category'][0] = [
-                'fList' => htmlspecialchars($configuration->getPageModuleFieldsCategory()),
-                'icon' => true
-            ];
-        }
-
-        // Extend user settings
-        $GLOBALS['TYPO3_USER_SETTINGS']['columns']['newsoverlay'] = [
-            'label' => 'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:usersettings.overlay',
-            'type' => 'select',
-            'itemsProcFunc' => \GeorgRinger\News\Hooks\ItemsProcFunc::class . '->user_categoryOverlay',
-        ];
-        $GLOBALS['TYPO3_USER_SETTINGS']['showitem'] .= ',
-			--div--;LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:pi1_title,newsoverlay';
-
-        // Add tables to livesearch (e.g. "#news:fo" or "#newscat:fo")
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['livesearch']['news'] = 'tx_news_domain_model_news';
-        $GLOBALS['TYPO3_CONF_VARS']['SYS']['livesearch']['newstag'] = 'tx_news_domain_model_tag';
-
-        /* ===========================================================================
-            Register BE-Modules
-        =========================================================================== */
-        if ($configuration->getShowImporter()) {
-            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-                'GeorgRinger.news',
-                'web',
-                'tx_news_m1',
-                '',
-                ['Import' => 'index, runJob, jobInfo'],
-                [
-                    'access' => 'user,group',
-                    'icon' => 'EXT:news/Resources/Public/Icons/module_import.svg',
-                    'labels' => 'LLL:EXT:news/Resources/Private/Language/locallang_mod.xlf',
-                ]
-            );
-        }
-
-        /* ===========================================================================
-            Register BE-Module for Administration
-        =========================================================================== */
-        if ($configuration->getShowAdministrationModule()) {
-            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-                'GeorgRinger.news',
-                'web',
-                'tx_news_m2',
-                '',
-                ['Administration' => 'index,newNews,newCategory,newTag,newsPidListing'],
-                [
-                    'access' => 'user,group',
-                    'icon' => 'EXT:news/Resources/Public/Icons/module_administration.svg',
-                    'labels' => 'LLL:EXT:news/Resources/Private/Language/locallang_modadministration.xlf',
-                ]
-            );
-        }
-
-        /* ===========================================================================
-            Ajax call to save tags
-        =========================================================================== */
-        $GLOBALS['TYPO3_CONF_VARS']['BE']['AJAX']['News::createTag'] = [
-            'callbackMethod' => \GeorgRinger\News\Hooks\SuggestReceiverCall::class . '->createTag',
-            'csrfTokenCheck' => false
-        ];
-    }
-
-    /* ===========================================================================
-        Default configuration
-    =========================================================================== */
-    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByCategory'] = 'uid,title,tstamp,sorting';
-    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByNews'] = 'tstamp,datetime,crdate,title' . ($configuration->getManualSorting() ? ',sorting' : '');
-    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['orderByTag'] = 'tstamp,crdate,title';
-    $GLOBALS['TYPO3_CONF_VARS']['EXT']['news']['switchableControllerActions']['list'] = $configuration->getRemoveListActionFromFlexforms();
-
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-        'news',
-        'Configuration/TSconfig/Page/news_only.txt',
-        'EXT:news :: Restrict pages to news records');
-
-};
-
-$boot();
-unset($boot);
 
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 

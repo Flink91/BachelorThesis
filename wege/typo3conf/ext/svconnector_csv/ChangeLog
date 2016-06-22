@@ -1,0 +1,94 @@
+2016-05-02 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 2.0.0, resolves #76004
+
+2016-04-26 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Used new Connector exceptions and updated unit tests, resolves #75924
+	* Changed sample configuration to use test file, resolves #75925
+
+2016-04-25 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Refactored for TYPO3 CMS 7, resolves #75914
+
+2016-03-02 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected bug with files starting with a BOM, resolves #54778
+	* Released version 1.5.3, resolves #73877
+
+2015-06-11 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.5.2, resolves #67397
+
+2015-06-10 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added unit tests, resolves #67387
+	* Added check for catching and discarding empty lines, resolves #67386
+
+2015-05-13 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected handling of non-Unix line endings, resolves #66899 (thanks to Simon Schaufelberger)
+	* Released version 1.5.1, resolves #66949
+
+2015-04-29 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected wrong code sample in documentation, resolves #66596 (thanks to Martin Hummer)
+
+2014-06-05 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.5.0, resolves #57767
+
+2014-04-03 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Implemented new API from base connector, resolves #57554
+
+2013-07-21 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Verified compatibility with TYPO3 CMS 6.1, resolves #50257
+	* Released version 1.4.0
+
+2013-01-24 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.3.0
+
+2013-01-11 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Verified compatibility with TYPO3 CMS 6.0, resolves #44464
+
+2012-09-23 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.2.0
+
+2012-09-22 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Cleaned up some code, verified compatibility with TYPO3 4.7, raised requirements to 4.5, resolves #41237
+
+2012-09-14 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added sample configuration, resolves #40918
+	* Added possibility to set locale explicitly, resolves #25703 (thanks to Sebastian Steinmetz)
+
+2011-03-08 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.1.0
+
+2011-03-05 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added throwing of exceptions when query fails, resolves #10706
+
+2010-11-30 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Moved extension configuration labels to locallang file
+
+2010-09-14 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected handling of empty files (avoid PHP warnings)
+
+2010-04-27 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Changed service to use new connector base class
+	* Released version 1.0.1
+
+2009-01-16 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 0.1.0

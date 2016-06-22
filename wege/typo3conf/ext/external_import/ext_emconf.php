@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "external_import".
  *
- * Auto generated 21-06-2016 12:57
+ * Auto generated 22-06-2016 13:43
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array (
   'title' => 'External Data Import',
   'description' => 'Tool for importing data from external sources into the TYPO3 database, using an extended TCA syntax. Provides a BE module, a Scheduler task and an API.',
   'category' => 'module',
-  'version' => '2.5.1',
+  'version' => '3.0.0',
   'state' => 'stable',
   'uploadfolder' => true,
   'createDirs' => '',
@@ -26,10 +26,8 @@ $EM_CONF[$_EXTKEY] = array (
   array (
     'depends' => 
     array (
-      'svconnector' => '2.0.0-0.0.0',
-      'extbase' => '1.3.0-0.0.0',
-      'fluid' => '1.3.0-0.0.0',
-      'typo3' => '4.5.0-6.2.99',
+      'svconnector' => '3.0.0-0.0.0',
+      'typo3' => '7.6.0-7.99.99',
     ),
     'conflicts' => 
     array (

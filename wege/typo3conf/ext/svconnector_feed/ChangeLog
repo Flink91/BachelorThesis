@@ -1,0 +1,54 @@
+2016-05-02 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 2.0.0, resolves #76005
+
+2016-04-25 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Refactored for TYPO3 CMS 7, resolves #75926
+
+2014-06-05 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.5.0, resolves #57779
+
+2014-04-02 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Verified compatibility with TYPO3 CMS 6.2, resolves #57532
+	* Implemented new API from base connector, resolves #57552
+
+2013-07-21 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Verified compatibility with TYPO3 CMS 6.1, resolves #50259
+	* Released version 1.4.0
+
+2013-01-24 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.3.0
+
+2013-01-11 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Verified compatibility with TYPO3 CMS 6.0, resolves #44467
+
+2012-09-23 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.2.0
+
+2012-09-22 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Verified compatibility with TYPO3 4.7, raised requirements to 4.5, resolves #41244
+
+2012-09-14 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added sample configuration, resolves #40904
+
+2012-09-10 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Corrected call to wrong error message, resolves #40803
+
+2011-09-14 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Added option for faking user agent, resolves #29767
+	* Released version 1.1.0
+
+2011-03-08 Francois Suter (Cobweb)  <typo3@cobweb.ch>
+
+	* Released version 1.0.0
