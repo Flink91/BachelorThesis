@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  22 JUN 2016 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  22 JUN 2016 19:04
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -786,40 +786,34 @@ File: abb/forumextension.png Graphic file (type png)
 <use abb/forumextension.png>
 Package pdftex.def Info: abb/forumextension.png used on input line 90.
 (pdftex.def)             Requested size: 341.43306pt x 191.38043pt.
- [33]
-<abb/wegebox.jpg, id=151, 476.53032pt x 386.94562pt>
+ [33] [34 <./abb/forumextension.png>]
+<abb/wegebox.jpg, id=155, 476.53032pt x 386.94562pt>
 File: abb/wegebox.jpg Graphic file (type jpg)
  <use abb/wegebox.jpg>
 Package pdftex.def Info: abb/wegebox.jpg used on input line 115.
 (pdftex.def)             Requested size: 341.43306pt x 277.26035pt.
 
-[34 <./abb/forumextension.png>]
-<abb/wegeboxergebnis.jpg, id=156, 395.97937pt x 331.2375pt>
+[35 <./abb/wegebox.jpg>]
+<abb/wegeboxergebnis.jpg, id=159, 395.97937pt x 331.2375pt>
 File: abb/wegeboxergebnis.jpg Graphic file (type jpg)
 
 <use abb/wegeboxergebnis.jpg>
-Package pdftex.def Info: abb/wegeboxergebnis.jpg used on input line 131.
+Package pdftex.def Info: abb/wegeboxergebnis.jpg used on input line 146.
 (pdftex.def)             Requested size: 227.62204pt x 190.40953pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[35 <./abb/wegebox.jpg>] [36 <./abb/wegeboxergebnis.jpg>]
+ [36 <./abb/wegeboxergebnis.jpg>]
 <abb/cal.jpg, id=163, 906.38625pt x 492.33937pt>
 File: abb/cal.jpg Graphic file (type jpg)
  <use abb/cal.jpg>
-Package pdftex.def Info: abb/cal.jpg used on input line 155.
+Package pdftex.def Info: abb/cal.jpg used on input line 170.
 (pdftex.def)             Requested size: 341.43306pt x 185.46068pt.
- [37 <./abb/cal.jpg>] <abb/powermail.jpg, id=167, 517.18219pt x 350.05782pt>
+ [37 <./abb/cal.jpg>] [38] <abb/powermail.jpg, id=170, 517.18219pt x 350.05782p
+t>
 File: abb/powermail.jpg Graphic file (type jpg)
 
 <use abb/powermail.jpg>
-Package pdftex.def Info: abb/powermail.jpg used on input line 190.
+Package pdftex.def Info: abb/powermail.jpg used on input line 205.
 (pdftex.def)             Requested size: 227.62204pt x 154.06863pt.
-) [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39 <./abb/powermail.jpg>]
+) [39 <./abb/powermail.jpg>]
 \openout2 = `mehrwert.aux'.
 
  (mehrwert.tex
@@ -908,7 +902,7 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (50 pages, 1073813 bytes).
+Output written on diplomarbeit.pdf (50 pages, 1075996 bytes).
 PDF statistics:
  246 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

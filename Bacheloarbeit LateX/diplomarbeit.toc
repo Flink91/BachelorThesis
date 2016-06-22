@@ -76,9 +76,10 @@
 \contentsline {section}{\numberline {6.5}Eigene Contentelemente}{34}
 \contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{35}
 \contentsline {subsection}{\numberline {6.5.2}Implementation}{36}
+\contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{36}
 \contentsline {subsection}{\numberline {6.5.3}Evaluation}{36}
 \contentsline {section}{\numberline {6.6}Kalender}{36}
-\contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{36}
+\contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{37}
 \contentsline {subsection}{\numberline {6.6.2}Implementation}{37}
 \contentsline {subsection}{\numberline {6.6.3}Evaluation}{38}
 \contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{38}
@@ -87,7 +88,7 @@
 \contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{38}
 \contentsline {subsubsection}{\nonumberline Grid Elements}{38}
 \contentsline {subsubsection}{\nonumberline Powermail}{38}
-\contentsline {section}{\numberline {6.8}Wartung und Sicherheit}{38}
+\contentsline {section}{\numberline {6.8}Wartung und Sicherheit}{39}
 \contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{40}
 \contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{40}
 \contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{40}

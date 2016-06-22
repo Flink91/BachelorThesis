@@ -108,7 +108,7 @@ external\_import
 
 \section{Eigene Contentelemente}
 
-Üblicherweise bekommt ein Redakteur beim Erstellen eine Seite zu Gesicht, die sich grob in bestimmte Positionen auf der Seite gliedert. Mit einem Klick auf ein Plus in einem der Positionen taucht eine Auswahl von verschiedenen Content Elementen auf. So lässt sich beispielsweise eine Tabelle oder ein ganzer WYSIWYG Bereich hinzufügen. 
+Üblicherweise bekommt ein Redakteur beim Erstellen eine Seite zu Gesicht, die sich grob in bestimmte Positionen auf der Seite gliedert. Mit einem Klick auf ein Plus in einem der Positionen taucht eine Auswahl von verschiedenen Content Elementen auf. So lässt sich beispielsweise eine Tabelle oder ein ganzer WYSIWYG Bereich hinzufügen. Spätestens wenn man Elemente mit komplizierterem Design auf einer Webseite platzieren will, werden stärkere Tools benötigt. Durch das Hinzufügen eigener Content Elemente ließe sich der Output viel besser steuern und vorab so designen, dass der Redakteur sich darum keine Gedanken machen muss. Redakteure könnten weniger falsch machen und würden sich gleichzeitig besser zurechtfinden. Das Beispiel im WegE Projekt, das Gebrauch von dieser Funktionalität machen würde, ist eine Promobox, die am Rand der Webseite auftauchen soll und auf verschiedenes aufmerksam machen soll.
 
 \begin{figure}[h]
 	\centering
@@ -117,14 +117,33 @@ external\_import
 	\label{fig:forumextension}
 \end{figure}
 
-
-
 \subsection{Möglichkeiten}
 
 Prinzipiell ist es möglich alle angelegten Content Elemente von anderen Seiten zu kopieren und nochmals einzufügen. Für das Beispiel einer WegE Promobox ist diese Lösung jedoch aus mehreren Gründen nicht optimal. Zuerst müsste ein Redakteur bereits eine ansprechende Box nur mit Hilfe des WYSIWIG Editors angelegt haben. Dann müsste jeder, der diese Box nutzen will, wissen in welchen Seiten sie zu finden ist um sie zu kopieren.
-Bessere Alternativen bietet eine passende Extension namens Dynamic Content Elements (dce). Sie erlaubt das Anlegen neuer Content Elemente und das Manipulieren dieser mittels Fluidtemplate. 
+Bessere Alternativen bietet eine passende Extension namens Dynamic Content Elements (dce)\footnote{https://docs.typo3.org/typo3cms/extensions/dce/}. Sie erlaubt das Anlegen neuer Content Elemente und das Manipulieren dieser mittels Fluidtemplate. Die Extension wird bereits seit 2012 angeboten und ist über 25,000 Downloads sehr beliebt. Sie hat keinerlei Anforderungen oder Konflikte mit anderen Extensions.
 
 \subsection{Implementation}
+
+Die Implementation eines kleinen Beispiels ist sehr einfach. Nach dem Download der Extension lassen sich im neuen Menüpunkt DCE eigene Content Elemente erstellen. Hierfür lassen sich so viele verschiedene Input Felder wie nötig anlegen. Im Falle des Beipiels nur eins. Das Input Feld bekommt dann einen Variablennamen, in diesem Fall \texttt{wgppb}. Dieser Variablenname findet im nächsten Schritt Verwendung. Direkt im Backend lässt sich das Fluitemplate für die Anzeige des Content Elements schreiben. Alle Input Felder lassen sich nun hier einarbeiten. Im Beispiel passiert das mit \\texttt{{field.wgppb\}}.
+
+\paragraph{Fluidtemplate der Promobox}
+\begin{verbatim}
+	{namespace dce=ArminVieweg\Dce\ViewHelpers}
+	<f:layout name="Default" />
+	
+	<f:section name="main">
+	<div style="max-width: 220px; background-color: #cecece;
+	   border-radius: 10px; padding: 10px;">
+	 <h2>Promobox</h2>
+	 <f:image src="uploads/pics/wege_logo.png" alt=""/>
+	 <p>Diese Promobox ist mit DCE erstellt worden!</p>
+	 <p>Der Redakeuter darf nur bestimmen wo der folgende Link hinführt.</p>
+	 <a href="{field.wgppb}">Klick mich</a>
+	</div>
+	</f:section>
+\end{verbatim}
+
+Darüber hinaus lässt sich das Aussehen des Content Elements in der Auswahl für Redakteure verändern. Beim Einbinden der WegE Promobox taucht lediglich ein Feld auf und verlangt nach einem Link. Alles andere wurde vom Fluidtemplate übernommen.
 
 \begin{figure}[h]
 	\centering
