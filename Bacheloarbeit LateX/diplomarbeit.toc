@@ -78,26 +78,25 @@
 \contentsline {subsection}{\numberline {6.5.2}Implementation}{36}
 \contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{36}
 \contentsline {subsection}{\numberline {6.5.3}Evaluation}{36}
-\contentsline {section}{\numberline {6.6}Kalender}{36}
+\contentsline {section}{\numberline {6.6}Kalender}{37}
 \contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{37}
-\contentsline {subsection}{\numberline {6.6.2}Implementation}{37}
+\contentsline {subsection}{\numberline {6.6.2}Implementation}{38}
 \contentsline {subsection}{\numberline {6.6.3}Evaluation}{38}
-\contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{38}
-\contentsline {subsubsection}{\nonumberline RealURL}{38}
-\contentsline {subsubsection}{\nonumberline SEO}{38}
-\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{38}
-\contentsline {subsubsection}{\nonumberline Grid Elements}{38}
-\contentsline {subsubsection}{\nonumberline Powermail}{38}
-\contentsline {section}{\numberline {6.8}Wartung und Sicherheit}{39}
-\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{40}
-\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{40}
-\contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{40}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{41}
-\contentsline {section}{\numberline {8.1}Erkenntnisse}{41}
-\contentsline {section}{\numberline {8.2}Meine Meinung}{41}
-\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{42}
-\contentsline {paragraph}{\nonumberline index.html}{42}
-\contentsline {paragraph}{\nonumberline setup.ts}{42}
-\contentsline {chapter}{Abbildungsverzeichnis}{44}
-\contentsline {chapter}{Tabellenverzeichnis}{44}
-\contentsline {chapter}{Literaturverzeichnis}{45}
+\contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{39}
+\contentsline {subsubsection}{\nonumberline RealURL}{39}
+\contentsline {subsubsection}{\nonumberline SEO}{39}
+\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{39}
+\contentsline {subsubsection}{\nonumberline Powermail}{39}
+\contentsline {section}{\numberline {6.8}Wartung und Sicherheit}{40}
+\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{41}
+\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{41}
+\contentsline {section}{\numberline {7.2}Alternativen und Verbesserungsvorschl\"age}{41}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{42}
+\contentsline {section}{\numberline {8.1}Erkenntnisse}{42}
+\contentsline {section}{\numberline {8.2}Meine Meinung}{42}
+\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{43}
+\contentsline {paragraph}{\nonumberline index.html}{43}
+\contentsline {paragraph}{\nonumberline setup.ts}{43}
+\contentsline {chapter}{Abbildungsverzeichnis}{45}
+\contentsline {chapter}{Tabellenverzeichnis}{45}
+\contentsline {chapter}{Literaturverzeichnis}{46}

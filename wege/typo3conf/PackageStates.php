@@ -352,12 +352,6 @@ return [
             'packagePath' => 'typo3conf/ext/pt_extlist/',
             'suggestions' => [],
         ],
-        'realurl' => [
-            'composerName' => 'dmitryd/typo3-realurl',
-            'state' => 'active',
-            'packagePath' => 'typo3conf/ext/realurl/',
-            'suggestions' => [],
-        ],
         'seo_basics' => [
             'composerName' => 'b13/seo_basics',
             'state' => 'active',

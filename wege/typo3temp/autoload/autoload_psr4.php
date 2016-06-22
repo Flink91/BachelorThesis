@@ -13,7 +13,6 @@ return array(
     'Cobweb\\SvconnectorFeed\\' => array($typo3InstallDir . 'typo3conf/ext/svconnector_feed/Classes'),
     'Cobweb\\Svconnector\\' => array($typo3InstallDir . 'typo3conf/ext/svconnector/Classes'),
     'DL\\Yag\\' => array($typo3InstallDir . 'typo3conf/ext/yag/Classes'),
-    'DmitryDulepov\\Realurl\\' => array($typo3InstallDir . 'typo3conf/ext/realurl/Classes'),
     'GeorgRinger\\News\\' => array($typo3InstallDir . 'typo3conf/ext/news/Classes'),
     'MASK\\Mask\\' => array($typo3InstallDir . 'typo3conf/ext/mask/Classes'),
     'Mittwald\\Typo3Forum\\' => array($typo3InstallDir . 'typo3conf/ext/typo3_forum/Classes'),

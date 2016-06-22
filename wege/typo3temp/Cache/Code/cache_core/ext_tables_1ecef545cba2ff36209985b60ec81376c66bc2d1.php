@@ -2727,38 +2727,6 @@ foreach ($pluginModes as $ident => $label) {
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 
 /**
- * Extension: realurl
- * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/realurl/ext_tables.php
- */
-
-$_EXTKEY = 'realurl';
-$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
-
-
-// Backend module is available only in TYPO3 7.6 or newer
-if (version_compare(TYPO3_version, '7.6.0', '>=')) {
-	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
-		'DmitryDulepov.Realurl',
-		'web',
-		'realurl',
-		'',
-		array(
-			'Overview' => 'index',
-			'Aliases' => 'index,edit,delete,deleteAll',
-			'UrlCache' => 'index,delete,deleteAll,flush',
-			'PathCache' => 'index,delete',
-		),
-		array(
-			'access' => 'user,group',
-			'icon' => 'EXT:realurl/ext_icon.gif',
-			'labels' => 'LLL:EXT:realurl/Resources/Private/Language/locallang.xlf',
-		)
-	);
-}
-
-TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
-
-/**
  * Extension: seo_basics
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/seo_basics/ext_tables.php
  */
