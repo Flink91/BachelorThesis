@@ -3634,6 +3634,53 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['hook_eofe
 
 
 /**
+ * Extension: rss_display
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/rss_display/ext_localconf.php
+ */
+
+$_EXTKEY = 'rss_display';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) die ('Access denied.');
+
+$pluginType = 'USER_INT';
+$configuration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['rss_display']);
+if (!empty($configuration['plugin_type'])) {
+    $pluginType = $configuration['plugin_type'];
+}
+
+// Configure Extbase plugin
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    'Fab.rss_display',
+    'Pi1',
+    array('Feed' => 'show'),
+    $pluginType === 'USER_INT' ? array('Feed' => 'show') : array()
+);
+
+$TYPO3_CONF_VARS['SYS']['caching']['cacheConfigurations']['rssdisplay'] = array(
+    'frontend' => 'TYPO3\CMS\Core\Cache\Frontend\StringFrontend',
+//	'options' => array(),
+    'groups' => array('all', 'rssdisplay')
+);
+
+
+# Install PSR-0-compatible class autoloader for SimplePie Library in Resources/PHP/SimplePie
+spl_autoload_register(function ($class) {
+
+    // Only load the class if it starts with "SimplePie"
+    if (strpos($class, 'SimplePie') !== 0) {
+        return;
+    }
+
+    require sprintf('%sResources/Private/PHP/SimplePie/%s',
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('rss_display'),
+        DIRECTORY_SEPARATOR . str_replace('_', DIRECTORY_SEPARATOR, $class) . '.php'
+    );
+});
+
+
+/**
  * Extension: seo_basics
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/seo_basics/ext_localconf.php
  */
@@ -3669,6 +3716,34 @@ if ($extensionConfiguration['xmlSitemap'] == '1') {
 		$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['realurl'] = $realurl;
 	}
 }
+
+
+/**
+ * Extension: xml_xpath
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/xml_xpath/ext_localconf.php
+ */
+
+$_EXTKEY = 'xml_xpath';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+	die ('Access denied.');
+}
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	'KERN23.'.$_EXTKEY,
+	'Pi1',
+	array(
+		'Xpath' => 'renderXml',
+	),
+	// non-cacheable actions
+	array(
+		
+	)
+);
+
+
 
 
 /**

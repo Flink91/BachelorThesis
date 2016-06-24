@@ -1,0 +1,44 @@
+temp.xml_xpath_feeds = COA
+temp.xml_xpath_feeds {
+  wrap = <rss version="2.0"><channel>|</channel></rss>
+  
+  10 < plugin.tx_xmlxpath
+  10.settings {
+    templateFile = typo3conf/ext/xml_xpath/Resources/Private/Templates/rss-xml.html
+    
+    source       = URL
+    source.value = {$plugin.tx_xmlxpath.feed1.url}
+    
+    cache {
+      enable = 1
+      timeout = 3600
+      
+      file = {$plugin.tx_xmlxpath.feed1.cacheFile}
+    }
+    
+    xpath {
+      path   = /rss/channel/item[position() <= 10 and title[contains(.,'{$plugin.tx_xmlxpath.wordFilter.1}')] or description[contains(.,'{$plugin.tx_xmlxpath.wordFilter.1}')] or title[contains(.,'{$plugin.tx_xmlxpath.wordFilter.2}')] or description[contains(.,'{$plugin.tx_xmlxpath.wordFilter.2}')] or title[contains(.,'{$plugin.tx_xmlxpath.wordFilter.3}')] or description[contains(.,'{$plugin.tx_xmlxpath.wordFilter.3}')]]
+      limit  = 10
+    }
+  }
+  
+  20 < .10
+  20.settings.source.value = {$plugin.tx_xmlxpath.feed2.url}
+  20.settings.cache.file   = {$plugin.tx_xmlxpath.feed2.cacheFile}
+  
+  30 < .10
+  30.settings.source.value = {$plugin.tx_xmlxpath.feed3.url}
+  30.settings.cache.file   = {$plugin.tx_xmlxpath.feed3.cacheFile}
+}
+
+# RSS Feed zur verfügung stellen
+xml = PAGE
+xml.typeNum = 100
+xml.10 < temp.xml_xpath_feeds
+xml.config {
+  disableAllHeaderCode = 1
+  #defaultCode = XML
+  #additionalHeaders = Content-type:text/xml
+  no_cache = 1
+  xhtml_cleaning = 0
+}

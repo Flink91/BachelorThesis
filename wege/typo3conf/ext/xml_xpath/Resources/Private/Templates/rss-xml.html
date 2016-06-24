@@ -1,0 +1,7 @@
+<f:for each="{xml}" as="item">
+<item>
+  <title>{item.title -> f:format.cdata()}</title>
+  <link>{item.link}</link>
+  <description>{item.description -> f:format.cdata()}</description>
+</item>
+</f:for>

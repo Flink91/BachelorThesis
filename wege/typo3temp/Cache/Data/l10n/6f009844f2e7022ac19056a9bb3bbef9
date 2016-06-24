@@ -1,0 +1,53 @@
+a:17:{s:12:".description";a:1:{i:0;a:2:{s:6:"source";s:57:"Individual calendars for the Calendar Base
+				extension.";s:6:"target";s:57:"Individual calendars for the Calendar Base
+				extension.";}}s:8:".details";a:1:{i:0;a:2:{s:6:"source";s:74:"Many calendars can be created, each with unique
+				categories and events.";s:6:"target";s:74:"Many calendars can be created, each with unique
+				categories and events.";}}s:17:"title.description";a:1:{i:0;a:2:{s:6:"source";s:21:"Name of the calendar.";s:6:"target";s:21:"Name of the calendar.";}}s:18:"hidden.description";a:1:{i:0;a:2:{s:6:"source";s:68:"Disables the calendar so that it is not visible in
+				the frontend.";s:6:"target";s:68:"Disables the calendar so that it is not visible in
+				the frontend.";}}s:21:"starttime.description";a:1:{i:0;a:2:{s:6:"source";s:70:"Sets a date at which the calendar will be visible
+				in the frontend.";s:6:"target";s:70:"Sets a date at which the calendar will be visible
+				in the frontend.";}}s:18:"_starttime.seeAlso";a:1:{i:0;a:2:{s:6:"source";s:22:"tx_cal_calendar:hidden";s:6:"target";s:22:"tx_cal_calendar:hidden";}}s:19:"endtime.description";a:1:{i:0;a:2:{s:6:"source";s:80:"Sets a date at which the calendar will no longer
+				be visible in the frontend.";s:6:"target";s:80:"Sets a date at which the calendar will no longer
+				be visible in the frontend.";}}s:16:"_endtime.seeAlso";a:1:{i:0;a:2:{s:6:"source";s:22:"tx_cal_calendar:hidden";s:6:"target";s:22:"tx_cal_calendar:hidden";}}s:16:"type.description";a:1:{i:0;a:2:{s:6:"source";s:140:"There are three types of calendars within the
+				Calendar Base extension. Each type indicates how Calendar Event
+				records are generated.";s:6:"target";s:140:"There are three types of calendars within the
+				Calendar Base extension. Each type indicates how Calendar Event
+				records are generated.";}}s:12:"type.details";a:1:{i:0;a:2:{s:6:"source";s:1204:"
+				
+				There are three types of calendars:
+				<b>Standard</b>: The Standard Calendar (database) is the default record. It depends on manual entry to generate Calendar Event records.
+				<b>Include ICS File</b>: The Include ICS File Calendar allows you to upload an .ics file for the creation of Calendar Event records. The Include ICS File Calendar's form is identical to the Standard Calendar's form, with the exception that it provides a field for uploading or attaching a previously uploaded file.
+				NOTE: Desktop applications such as Microsoft Outlook and Apple iCal are able to export ICS files, which can then be uploaded for use with Calendar Base.
+				<b>External Calendar</b>: The External Calendar depends on an ICS feed for the creation of Calendar Event records. The External Calendar's form is identical to the Standard Calendar's form, with the exception that it provides a field for the URL of a web-based ICS calendar feed.
+				NOTE: Google, Yahoo, and others provide online calendars that allow exports of their data. Look for links about "sharing your calendar." You will need the provided URL - look for their ICS or iCal URLs. They will be files with an .ics extension.
+				
+			";s:6:"target";s:1204:"
+				
+				There are three types of calendars:
+				<b>Standard</b>: The Standard Calendar (database) is the default record. It depends on manual entry to generate Calendar Event records.
+				<b>Include ICS File</b>: The Include ICS File Calendar allows you to upload an .ics file for the creation of Calendar Event records. The Include ICS File Calendar's form is identical to the Standard Calendar's form, with the exception that it provides a field for uploading or attaching a previously uploaded file.
+				NOTE: Desktop applications such as Microsoft Outlook and Apple iCal are able to export ICS files, which can then be uploaded for use with Calendar Base.
+				<b>External Calendar</b>: The External Calendar depends on an ICS feed for the creation of Calendar Event records. The External Calendar's form is identical to the Standard Calendar's form, with the exception that it provides a field for the URL of a web-based ICS calendar feed.
+				NOTE: Google, Yahoo, and others provide online calendars that allow exports of their data. Look for links about "sharing your calendar." You will need the provided URL - look for their ICS or iCal URLs. They will be files with an .ics extension.
+				
+			";}}s:19:"ext_url.description";a:1:{i:0;a:2:{s:6:"source";s:20:"URL for an ICS feed.";s:6:"target";s:20:"URL for an ICS feed.";}}s:20:"ics_file.description";a:1:{i:0;a:2:{s:6:"source";s:26:"Static ICS file to upload.";s:6:"target";s:26:"Static ICS file to upload.";}}s:19:"refresh.description";a:1:{i:0;a:2:{s:6:"source";s:173:"Time period (in minutes) at which the external
+				calendar should be automatically checked for updates. A time period
+				of 0 means it will never be automatically updated.";s:6:"target";s:173:"Time period (in minutes) at which the external
+				calendar should be automatically checked for updates. A time period
+				of 0 means it will never be automatically updated.";}}s:17:"owner.description";a:1:{i:0;a:2:{s:6:"source";s:199:"If you leave this field blank, anyone can view the
+				calendar in the frontend. If you select users or groups, the
+				calendar and its events will only be visible to user or group that
+				owns it.";s:6:"target";s:199:"If you leave this field blank, anyone can view the
+				calendar in the frontend. If you select users or groups, the
+				calendar and its events will only be visible to user or group that
+				owns it.";}}s:13:"owner.details";a:1:{i:0;a:2:{s:6:"source";s:70:"This is useful for creating Staff or Members-Only
+				calendar events.";s:6:"target";s:70:"This is useful for creating Staff or Members-Only
+				calendar events.";}}s:24:"activate_fnb.description";a:1:{i:0;a:2:{s:6:"source";s:168:"When used in conjunction with the Owner field,
+				appointments for the owner group will not be shown, but in the Day
+				and Week views the time will be shown as busy.";s:6:"target";s:168:"When used in conjunction with the Owner field,
+				appointments for the owner group will not be shown, but in the Day
+				and Week views the time will be shown as busy.";}}s:24:"fnb_user_cnt.description";a:1:{i:0;a:2:{s:6:"source";s:182:"Limits the generated free and busy views to the
+				users or groups you select. Leaving this field blank will allow the
+				free and busy view to be generated for all calendar users.";s:6:"target";s:182:"Limits the generated free and busy views to the
+				users or groups you select. Leaving this field blank will allow the
+				free and busy view to be generated for all calendar users.";}}}

@@ -1,0 +1,15 @@
+
+plugin.tx_xmlxpath {
+  feed1.url       = http://example1.com/feed.xml
+  feed1.cacheFile = file1.txt
+
+  feed2.url       = http://example2.com/feed.xml
+  feed2.cacheFile = file2.txt
+
+  feed3.url       = http://example3.com/feed.xml
+  feed3.cacheFile = file3.txt
+
+  wordFilter.1 = Filter_the_feed_for_this_word
+  wordFilter.2 = Filter_the_feed_for_this_word
+  wordFilter.3 = Filter_the_feed_for_this_word
+}

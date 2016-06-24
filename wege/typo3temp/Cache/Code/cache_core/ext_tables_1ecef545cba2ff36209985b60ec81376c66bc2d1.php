@@ -2727,6 +2727,30 @@ foreach ($pluginModes as $ident => $label) {
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 
 /**
+ * Extension: rss_display
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/rss_display/ext_tables.php
+ */
+
+$_EXTKEY = 'rss_display';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) die ('Access denied.');
+
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['rssdisplay_pi1'] = 'layout, select_key, pages, recursive';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['rssdisplay_pi1'] = 'pi_flexform';
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue('rssdisplay_pi1', 'FILE:EXT:rss_display/Configuration/FlexForm/feed.xml');
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    'rss_display',
+    'Pi1',
+    'Fetch and display a RSS feed'
+);
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
  * Extension: seo_basics
  * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/seo_basics/ext_tables.php
  */
@@ -2754,6 +2778,28 @@ if (TYPO3_MODE === 'BE') {
 
 // Adding the static template for new TypoScript
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('seo_basics', 'Configuration/TypoScript', 'Metatags and XML Sitemap');
+
+TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
+
+/**
+ * Extension: xml_xpath
+ * File: C:/wamp64/www/BachelorThesis/wege/typo3conf/ext/xml_xpath/ext_tables.php
+ */
+
+$_EXTKEY = 'xml_xpath';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY];
+
+
+if (!defined('TYPO3_MODE')) {
+	die ('Access denied.');
+}
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Default', 'XML X-Path');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/RssFeed', 'CD: RSS Feed');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HtmlFeed', 'CD: HTML Feed');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/MultipleFeedsToFeed', 'MultipleFeedsToFeed Example');
+
+
 
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::loadNewTcaColumnsConfigFiles();
 

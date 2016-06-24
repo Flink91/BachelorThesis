@@ -352,10 +352,22 @@ return [
             'packagePath' => 'typo3conf/ext/pt_extlist/',
             'suggestions' => [],
         ],
+        'rss_display' => [
+            'composerName' => 'typo3cms/rss_display',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/rss_display/',
+            'suggestions' => [],
+        ],
         'seo_basics' => [
             'composerName' => 'b13/seo_basics',
             'state' => 'active',
             'packagePath' => 'typo3conf/ext/seo_basics/',
+            'suggestions' => [],
+        ],
+        'xml_xpath' => [
+            'composerName' => 'xml_xpath',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/xml_xpath/',
             'suggestions' => [],
         ],
         'yag' => [

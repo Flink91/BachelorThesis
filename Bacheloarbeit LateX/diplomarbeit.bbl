@@ -1,4 +1,5 @@
-\begin{thebibliography}{ELU10}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{SAM{\etalchar{+}}04}
 
 \bibitem[ELU10]{Ebner2010}
 \textsc{Ebner}, Alexander ; \textsc{Lobacher}, Patrick  ; \textsc{Ulbrich},
@@ -8,6 +9,12 @@
 \newblock 1. Edition.
 \newblock Muenchen : Hanser, 2010. --
 \newblock ISBN 978--3--446--41557--7
+
+\bibitem[Lue15]{LectureFSE}
+\textsc{Luettgen}, Prof. Dr.~G.
+\newblock \emph{AFoundations of Software Engineering (SWT-FSE-B)}.
+\newblock University Lecture.
+\newblock 2015
 
 \bibitem[Mey06]{Meyer}
 \textsc{Meyer}, Robert:
@@ -28,8 +35,22 @@
 \newblock \emph{Where Code and Content Meet - Design Patterns for Web Content
   Management and Delivery, Personalisation and User Participation}.
 \newblock 1.
-\newblock New York : John Wiley \& Sons, 2010. --
+\newblock New York : John Wiley and Sons, 2010. --
 \newblock ISBN 978--0--470--97094--2
+
+\bibitem[SAM{\etalchar{+}}04]{Society2004}
+\textsc{Society}, IEEE~C. ; \textsc{Abran}, Alain ; \textsc{Moore}, James~W. ;
+  \textsc{Bourque}, Pierre  ; \textsc{Dupuis}, Robert:
+\newblock \emph{Guide to the software engineering body of knowledge -}.
+\newblock New York : IEEE Computer Society, 2004. --
+\newblock ISBN 978--0--769--52330--9
+
+\bibitem[Som07]{Sommerville2007}
+
+\newblock \emph{Software Engineering -}.
+
+\newblock Pearson Deutschland, 2007. --
+
 
 \bibitem[typa]{typo3CoreApi}
 \emph{Typo3 Core APIs}.
