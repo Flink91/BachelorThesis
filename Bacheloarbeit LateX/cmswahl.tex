@@ -1,7 +1,7 @@
 \chapter{Die Wahl des richtigen Content Management Systems}
 \label{kap-cmswahl}
 
-Dieses Kapitel beschäftigt sich mit der Wahl der passenden Technologie - spezieller noch, des passenden WCMS - für ein geplantes Projekt. Diese Aufgabe wird im Kontext des Software Engineering im Project Blastoff erledigt, der Teil des ersten Schrittes, der Projektanalyse, ist. Anschließend wird eine Vorauswahl von drei CMS grob auf die Eignung für dieses Projekt überprüft. Diese drei CMS sind Sharepoint, LifeRay und Typo3.
+Dieses Kapitel beschäftigt sich mit der Wahl der passenden Technologie - spezieller noch, des passenden WCMS - für ein geplantes Projekt. Anschließend wird eine Vorauswahl von drei CMS grob auf die Eignung für dieses Projekt geprüft. Diese drei CMS sind Sharepoint, LifeRay und Typo3.
 
 \section{Auswahlkriterien}
 Die Wahl des richtigen CMS kann aufgrund der Fülle von möglichen Optionen sehr schwierig sein. Es gilt das beste Tool für den Job zu finden und hierzu müssen sehr viele Variablen beachtet, gegeneinander abgewägt und gegebenenfalls Kompromisse eingegangen werden. Hierbei spielt die Kompetenz und Vorkenntnis eines Entwicklerteams eine große Rolle, wodurch sich eine solche Entscheidung schwer generalisieren lässt. Grundsätzlich lassen sich Auswahlkriterien in vier Punkte untergliedern: Technologie\&Architektur, Content Management, Content delivery und Anbieter. \textsc{Rüping}\cite{Rueping2010} bietet zu jedem dieser vier Punkte eine ausführliche Checkliste mit wichtigen Fragen, die einem bei der Entscheidung helfen.
@@ -36,7 +36,7 @@ Mit Hilfe von CmsMatrix und der offiziellen Seite des jeweiligen CMS sollten sic
 
 \subsection{Technologie\&Architektur}
 
-Die Fragen der Checkliste drehen sich hier um die unterliegende Technologie, die Systemarchitektur, verfügbare Systemkomponenten, Systemvoraussetzungen und andere nicht-funktionale Eigenschaften des Systems. Es wird nach der grundlegenden Technologie/Programmiersprache und dem Datenformat gefragt. Es wird gefragt, wie Content und Layout separiert sind und ob eine API zum Content existiert. Allgemeiner wird untersucht, welche großen Komponenten das System ausmachen und wie gut dessen Performance ist. Zuletzt werden Fragen nach Anforderungen an Betriebssystem, Datenbank, Hardware und Web Server, gestellt
+Die Fragen der Checkliste drehen sich hier um die unterliegende Technologie, die Systemarchitektur, verfügbare Systemkomponenten und Systemvoraussetzungen. Es wird nach der grundlegenden Technologie/Programmiersprache und dem Datenformat gefragt. Es wird gefragt, wie Content und Layout separiert sind und ob eine API zum Content existiert. Allgemeiner wird untersucht, welche großen Komponenten das System ausmachen und wie gut dessen Performance ist. Zuletzt werden Fragen nach Anforderungen an Betriebssystem, Datenbank, Hardware und Web Server, gestellt
 
 \subsection{Anbieterinformationen}
 
@@ -46,11 +46,11 @@ Es ist sicherlich eine gute Idee sich an die populäreren Optionen zu halten, da 
 
 \subsection{Content Management}
 
-Unter Content Management fragt \textsc{Rüping} \cite{Rueping2010} wie gut ein CMS seine Grundfunktionalität erledigt. Die Checkliste untersucht die Modellierung des Content, welche Typen von Content möglich sind, wie mit Links umgegangen wird und wie Content importiert/expoertiert werden kann. Darüber hinaus wird der Editor Client auf Kriterien wie Anpassungsmöglichkeiten, Validierungsmechanismen, Spell Checker und Ergonomie, untersucht. Zuletzt wird nach dem Workflow gefragt und wie dieser angepasst werden kann.
+Unter Content Management fragt \textsc{Rüping} \cite{Rueping2010} wie gut ein CMS seine Grundfunktionalität erledigt. Die Checkliste untersucht die Modellierung des Content, welche Typen von Content möglich sind, wie mit Links umgegangen wird und wie Content importiert/exportiert werden kann. Darüber hinaus wird der Editor Client auf Kriterien wie Anpassungsmöglichkeiten, Validierungsmechanismen, Spell Checker und Ergonomie, untersucht. Zuletzt wird nach dem Workflow gefragt und wie dieser angepasst werden kann.
 
 \subsection{Content Delivery}
 
-Im letzten Punkt geht es um den technischen Zustellungsprozess von Content an die Nutzer. Es wird nach der Möglichkeit eigene Komponenten zu integrieren und Support von SOA gefragt. Eine Möglichkeit eigene Komponenten, wie zum Beispiel Extensions, in die Umgebung zu integrieren wird untersucht. Es wird untersucht ob sich eigene Controller-Logik implementieren lässt, was eine Anpassung des Routing von bestimmten Seiten erlauben würde. Es wird gefragt ob das CMS eine Suchengine oder eine Personalisierungsengine bietet. Mit der Personalisierungsengine ist etwas, wie die Oberfläche eines Web Portals gemeint. Bei den Suchengines ist interessant welche Dateiarten gesucht werden können und wie schnell die Suche ist.
+Im letzten Punkt geht es um den technischen Zustellungsprozess von Content an die Nutzer. Es wird nach der Möglichkeit eigene Komponenten zu integrieren. Eine Möglichkeit eigene Komponenten, wie zum Beispiel Extensions, in die Umgebung zu integrieren wird untersucht. Es wird untersucht ob sich eigene Controller-Logik implementieren lässt, was eine Anpassung des Routing von bestimmten Seiten erlauben würde. Es wird gefragt ob das CMS eine Suchengine oder eine Personalisierungsengine bietet. Mit der Personalisierungsengine ist etwas, wie die Oberfläche eines Web Portals gemeint. Bei den Suchengines ist interessant welche Dateiarten gesucht werden können und wie schnell die Suche ist.
 
 \section{Die Vorauswahl dreier geeigneter Content Management Systeme}
 
@@ -64,16 +64,30 @@ Die Vorauswahl von geeigneten Content Management Systemen für das WegE Projekt w
 	\caption{SharePoint Logo}
 \end{figure}
 
-Sharepoint\footnote{https://support.office.com/de-de/article/Was-ist-SharePoint-97b915e6-651b-43b2-827d-fb25777f446f} ist ein Produkt von Microsoft und wurde hauptsächlich für die Verwendung innerhalb von Unternehmen entwickelt. Da das ganze System ausschließlich im Browser läuft gibt es keine Einschränkung auf das Betriebssystem Windows, wie man vielleicht denken könnte, auch wenn das Standarddesign hierfür optimiert wurde. Es dient als gemeinsamer Ort zum Speichern, Strukturieren und Freigeben von Dateien und Informationen. Dafür verwendet das CMS einige spezielle Sharepoint-Technologien:
+Sharepoint\footnote{https://support.office.com/de-de/article/Was-ist-SharePoint-97b915e6-651b-43b2-827d-fb25777f446f} wurde hauptsächlich für die Verwendung innerhalb von Unternehmen entwickelt, die hiermit ein Intranet, sowie öffentliche Webseiten, aufbauen. Außerdem lassen sich mit Sharepoint soziale Netzwerke mit Medien, wie Wikis, Foren oder Teamkalender, einrichten. Es dient als gemeinsamer Ort zum Speichern, Strukturieren und Freigeben von Dateien und Informationen. Dafür verwendet das CMS einige spezielle Sharepoint-Technologien:
 \begin{itemize}
 
 \item SharePoint Online lässt ein Unternehmen einen Cloud-Dienst von Microsoft verwenden, anstatt einen eigenen Server aufzusetzen. 
+
 \item SharePoint Foundation ist die grundlegende Technologie für die SharePoint Webseiten, welche in verschiedenster Form auftreten können. Am prominentesten natürlich Seiten zur Zusammenarbeit an Listen, Daten und Dokumenten, aber außerdem noch Blogs und Wikis. Foundation ist eine kostenlose Edition von SharePoint.
-\item SharePoint Server ist die kostenpflichtige Edition und bietet selbstverständlich weit mehr Features als SharePoint Foundation. Diese sind zum Beispiel Enterprise Content Management, Business Intelligence, unternehmensweite Suche, persönliche Websites und ein Newsfeed. Die Kosten hierfür lassen sich schwer abschätzen, da dabei eine Reihe von Variablen eine Rolle spielen. Die reinen Kosten für die Lizensierung belaufen sich zum Stand der Arbeit auf 4,20 Euro bis 8,40 Euro pro Benutzer pro Monat.
+
+\item SharePoint Server ist die kostenpflichtige Edition des Servers und bietet selbstverständlich weit mehr Features als SharePoint Foundation. Diese sind zum Beispiel Enterprise Content Management, Business Intelligence, unternehmensweite Suche, persönliche Websites und ein Newsfeed.
+
 \item SharePoint Designer erlaubt es leicht Layouts, Workflows und Verbindungen zu externen Datenquellen anzupassen.
+
 \end{itemize}
 
+Sharepoint wird nun anhand der oben genannten Kriterien kurz untersucht.
 
+\textbf{Technologie \& Architektur:} Sharepoints Technologie basiert auf ASP.NET 3.5 und somit wird bevorzugt in C\# programmiert. Auf Serverseite wird Microsoft Windows Server 2008 und Microsoft SQL Server benötigt. Da das System im Browser aufgerufen wird, gibt es für Nutzer keine Einschränkung auf das Betriebssystem Windows, auch wenn Standarddesign und APIs hierfür optimiert sind.
+
+\textbf{Anbieterinformationen:} Sharepoint ist ein Produkt von Microsoft und würde für die Nutzung im Typo3 Projekt eine Lizenz erfordern. Der Preis für diese ist abhängig von den Nutzern. Der aktuelle Preis im Juni 2016 liegt bei 4,20 Euro bis 8,40 Euro pro Nutzer pro Monat\footnote{https://products.office.com/de-de/sharepoint/compare-sharepoint-plans}. Lizenzen für das Office Paket kosten extra. Dazu kommen größere Summen für den Server. So schätzt CMS Matrix die Kosten auf 4000-40000 Dollar. Für das WegE Projekt ist diese Summe theoretisch noch akzeptabel, doch könnte diese Summe an anderen Stellen sicherlich auch gut gebraucht werden. Der Support von Microsoft ist durch das Bezahlmodell dementsprechend gut ausgebaut. Dazu gibt es für Entwickler sehr viele offizielle Hilfestellungen.
+
+\textbf{Content Management:} Im Content Management bietet Sharepoint alle erdenklichen Funktionen. Es unterstützt Template-Management, erlaubt einfache Administration, hat eine eigene Workflow Engine, Asset Management und sehr viele Komfortfunktionen, wie Spell Checker und Papierkorb.  
+
+\textbf{Content Delivery:} Sharepoint bietet eine Möglichkeit eigene Erweiterungen, sogenannte Add-ins bereitzustellen. [TODO]
+
+Alles in Allem ist Sharepoint keine schlechte Wahl. Das Produkt ist sehr ausgereift und bietet sehr viele Funktionen. Der Schwerpunkt liegt dabei mehr auf Intranetstruktur und weniger auf öffentlichen Webseiten. Die Anpassung daran sollte jedoch nicht zu schwer sein. Viele übliche Funktionen lassen sich ohne Programmieraufwand einbinden. Sind sehr spezielle Dinge gefordert, kann es auf technischer Ebene schnell kompliziert werden, da Sharepoint extrem umfangreich ist und vieles gelernt werden muss. Der Preis der Lizenz ist relativ hoch, im Vergleich zu Open Source Software natürlich ein negativer Aspekt. 
 
 \section{LifeRay Portal}
 
@@ -83,13 +97,22 @@ Sharepoint\footnote{https://support.office.com/de-de/article/Was-ist-SharePoint-
 	\caption{LifeRay Logo}
 \end{figure}
 
-Das Hauptprodukt von Liferay heißt Liveray Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus auf Businesslösungen und Geschäftsprozessen. Es werden zwei Varianten angeboten, LifeRay Portal CE ist lizenzkostenfrei und Open Source. LifeRay Portal EE ist die kommerzielle Variante und bietet zusätzlich zur freien Version offiziellen Support und Langzeitunterstützung.
-LifeRay Portal unterteilt sich in drei Teile:
+Das Hauptprodukt von Liferay heißt Liferay Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus auf Businesslösungen und Geschäftsprozessen. Es werden zwei Varianten angeboten, LifeRay Portal CE ist lizenzkostenfrei und Open Source. LifeRay Portal EE ist die kommerzielle Variante und bietet zusätzlich zu den Funktionen der freien Version offiziellen Support und Langzeitunterstützung.
+LifeRay Portal gliedert sich in drei Teile:
 \begin{itemize}
 	\item LifeRay Portal: Die Kernfunktionalitäten sind die Authentifizierung von Nutzern mit Single Sign-on, Personalisierung von Seiten durch Drag und Drop, automatischer Dateiupload mit WebDAV (\textsc{Web}-based\textsc{D}istributed \textsc{A}uthoring and \textsc{V}ersioning), Suchen und Taggen von Web-Inhalten und Mehrsprachigkeit.
 	\item LifeRay CMS: Zusätzlich wird LifeRay CMS geboten, das auf LifeRay Portal aufbaut und typische CMS Aufgaben übernimmt.
 	\item LifeRay Collaboration: Als letztes steht das Angebot LifeRay Collaboration zur Verfügung. Hier finden sich Komponenten, wie Foren, Wikis, Blogs Kalender und Ähnliches.
 \end{itemize}
+
+\textbf{Technologie \& Architektur}
+LifeRay basiert auf Java. Der Server läuft mit J2EE und MySQL als Datenbank. Es ist plattformunabhängig.
+
+\textbf{Anbieterinformationen}
+Die Anbieterfirma heißt LifeRay, Inc. und
+\textbf{Content Management}
+
+\textbf{Content delivery}
 
 Nach dem ersten Eindruck ist LifeRay eine durchaus geeignete Wahl für das WegE Projekt, alle Anforderungen lassen sich hiermit umsetzen.
    
@@ -102,6 +125,22 @@ Nach dem ersten Eindruck ist LifeRay eine durchaus geeignete Wahl für das WegE P
 \end{figure}
 
 Typo3 ist ein System, mit dem das Rechenzentrum der Universität Bamberg bereits sehr vertraut ist, da die offizielle Seite der Universität auch mit Typo3 betrieben wird. Es ist Open Source und frei von Lizenzkosten. Des Weiteren zeigt CMSMatrix, dass alle gesammelten Anforderungen an die WegE Plattform entweder vorhanden sind oder als kostenloses Addon zur Verfügung stehen. Als Sahnehäubchen kommt hinzu, dass die zukünftigen Redakteure der WegE Plattform bereits Erfahrung mit dem Backend von Typo3 haben und somit die Einarbeitung in ein neues System wegfällt.
+
+
+\textbf{Technologie und Architektur}
+Typo3 baut auf PHP auf. Beim Server handelt es sich um Apache mit einer MySQL Datenbank. Es ist plattformunabhängig.
+
+
+\textbf{Anbieterinformationen}
+Typo3 wird von der Typo3 Association entwickelt. Das ganze System ist Open Source und ohne Lizenzkosten. Es gibt sowohl kommerziellen Support, als auch eine große Anzahl kostenloser Dienste. Diese werden von einer sehr lebendigen Typo3 Community gepflegt. 
+
+Im Content Management bietet Sharepoint alle erdenklichen Funktionen. Es unterstützt Template-Management, erlaubt einfache Administration, hat eine eigene Workflow Engine, Asset Management und sehr viele Komfortfunktionen, wie Spell Checker und Papierkorb.  
+
+\textbf{Content Management}
+Auch Typo3 meistert die Aufgabe des Content Management sehr gut. Template Management ist auf verschiedene Arten möglich, Administration ist einfach durchzuführen und der Editor bietet alle üblichen Komfortfunktionen. Workflows lassen sich leicht einstellen.
+
+\textbf{Content delivery}
+In Typo3 kann die Funktion durch Extensions erweitert werden. Eine große Auswahl, von Community Mitgliedern erstellte Extensions finden sich im offiziellen Extension Repository.
 
 Ein Blick in die Gliederung verrät dem aufmerksamen Leser, dass die Wahl des CMS auf Typo3 fiel und diesem CMS die nächsten zwei Kapitel gewidmet sind. Somit wird alles Weitere zu Typo3 dort ausführlich erklärt.
 

@@ -18,13 +18,13 @@
 \contentsline {section}{\numberline {4.1}Auswahlkriterien}{11}
 \contentsline {paragraph}{\nonumberline CmsMatrix}{11}
 \contentsline {subsection}{\numberline {4.1.1}Technologie\&Architektur}{12}
-\contentsline {subsection}{\numberline {4.1.2}Anbieterinformationen}{13}
+\contentsline {subsection}{\numberline {4.1.2}Anbieterinformationen}{12}
 \contentsline {subsection}{\numberline {4.1.3}Content Management}{13}
 \contentsline {subsection}{\numberline {4.1.4}Content Delivery}{13}
 \contentsline {section}{\numberline {4.2}Die Vorauswahl dreier geeigneter Content Management Systeme}{13}
 \contentsline {section}{\numberline {4.3}Sharepoint}{14}
 \contentsline {section}{\numberline {4.4}LifeRay Portal}{15}
-\contentsline {section}{\numberline {4.5}Typo3}{15}
+\contentsline {section}{\numberline {4.5}Typo3}{16}
 \contentsline {chapter}{\numberline {5}Typo3 - Eine \"Ubersicht}{17}
 \contentsline {section}{\numberline {5.1}Version und Hintergrund}{17}
 \contentsline {section}{\numberline {5.2}Installation und Anforderungen}{17}
@@ -88,14 +88,13 @@
 \contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{40}
 \contentsline {subsubsection}{\nonumberline Powermail}{40}
 \contentsline {section}{\numberline {6.8}Wartung und Sicherheit}{41}
-\contentsline {chapter}{\numberline {7}Analyse des Mehrwerts der WegE Plattform}{42}
-\contentsline {section}{\numberline {7.1}Sichtung anderer Projekte der Qualit\"atsoffensive Lehrerbildung}{42}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{43}
-\contentsline {section}{\numberline {8.1}Erkenntnisse}{43}
-\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung udn der WegE Plattform}{43}
-\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{44}
-\contentsline {paragraph}{\nonumberline index.html}{44}
-\contentsline {paragraph}{\nonumberline setup.ts}{44}
-\contentsline {chapter}{Abbildungsverzeichnis}{46}
-\contentsline {chapter}{Tabellenverzeichnis}{46}
-\contentsline {chapter}{Literaturverzeichnis}{47}
+\contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{42}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{44}
+\contentsline {section}{\numberline {8.1}Erkenntnisse}{44}
+\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung udn der WegE Plattform}{44}
+\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{45}
+\contentsline {paragraph}{\nonumberline index.html}{45}
+\contentsline {paragraph}{\nonumberline setup.ts}{45}
+\contentsline {chapter}{Abbildungsverzeichnis}{47}
+\contentsline {chapter}{Tabellenverzeichnis}{47}
+\contentsline {chapter}{Literaturverzeichnis}{48}
