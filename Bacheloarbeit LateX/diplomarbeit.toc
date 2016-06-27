@@ -91,10 +91,10 @@
 \contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{42}
 \contentsline {chapter}{\numberline {8}Zusammenfassung}{44}
 \contentsline {section}{\numberline {8.1}Erkenntnisse}{44}
-\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung udn der WegE Plattform}{44}
-\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{45}
-\contentsline {paragraph}{\nonumberline index.html}{45}
-\contentsline {paragraph}{\nonumberline setup.ts}{45}
-\contentsline {chapter}{Abbildungsverzeichnis}{47}
-\contentsline {chapter}{Tabellenverzeichnis}{47}
-\contentsline {chapter}{Literaturverzeichnis}{48}
+\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{45}
+\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{46}
+\contentsline {paragraph}{\nonumberline index.html}{46}
+\contentsline {paragraph}{\nonumberline setup.ts}{46}
+\contentsline {chapter}{Abbildungsverzeichnis}{48}
+\contentsline {chapter}{Tabellenverzeichnis}{48}
+\contentsline {chapter}{Literaturverzeichnis}{49}
