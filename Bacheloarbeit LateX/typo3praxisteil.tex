@@ -71,7 +71,7 @@ Die Extension kommt mit einem eigenen Design daher, was für eine seriöse Anwendu
 
 
 \subsection{Evaluation}
-Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeige von News jemals brauchen wird. Die Implementation geht schnell, wenn auch nicht unbedingt beim ersten Mal. Alles in Allem ist diese Extension eine exzellente Wahl.
+Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeige von News braucht. Die Implementation geht schnell, wenn auch nicht unbedingt beim ersten Mal. Im Test läuft das Ergebnis stabil und ohne Fehler. Alles in Allem ist diese Extension eine exzellente Wahl.
 
 \section{Forum}
 
@@ -83,7 +83,7 @@ Es gibt eigentlich nur eine Extension, die für Typo3 7.6 in Frage kommt und die 
 
 \subsection{Implementation}
 
-Die Implementation der grundlegensten Forum-Funktionalität fällt moderat aus. Nach der Installation wird ein Sysfolder benötigt und ein spezieller Forum-Record angelegt. In diesem lassen sich die Rechte für jegliche Funktionen genau anpassen. Beispielsweise welche Usergruppen in der Lage sind Antworten zu posten. Außerdem wird das Root Template mit der Extension erweitert. Zuletzt kommt man nicht drum herum etwas Typoscript zu schreiben. Es handelt sich hierbei jedoch nur um einen kleinen Schnipsel, der die Orte zur Anzeige des Forums und des Speichers über die PID definieren. Zusätzlich ist zu beachten, dass MySQL nicht im strict mode sein darf. Das lässt sich in der my.ini abschalten.
+Die Implementation der grundlegenden Forum-Funktionalität fällt moderat aus. Nach der Installation wird ein Sysfolder benötigt und ein spezieller Forum-Record angelegt. In diesem lassen sich die Rechte für jegliche Funktionen genau anpassen. Beispielsweise welche Usergruppen in der Lage sind Antworten zu posten. Außerdem wird das Root Template mit der Extension erweitert. Wie bei vielen Extensions ist so ein standardmäßiges Aussehen via CSS vorgegeben. Zur Anpassung ändert man einfach das CSS dieser Datei. Zuletzt kommt man nicht drum herum etwas Typoscript zu schreiben. Es handelt sich hierbei jedoch nur um einen kleinen Schnipsel, der die Orte zur Anzeige des Forums und des Speichers über die PID definieren. Zusätzlich ist zu beachten, dass MySQL nicht im strict mode sein darf. Das lässt sich in der my.ini abschalten.
 
 \begin{figure}
 	\centering
@@ -104,7 +104,6 @@ Die Universität Bamberg nutzt und betreut bereits einige verschiedene Systeme. D
 
 Bei der Recherche fällt schnell aus, dass sich keine universelle Lösung via Extension anbietet. Zu zahlreich sind Datenformate und Wünsche von Entwicklern. So kommt es, dass viele selbst den gewünschten Parser zur Anzeige im Frontend schreiben. Eine Möglichkeit, die für simples XML tatsächlich nicht sehr anspruchsvoll ist. Einige Extensions nehmen einem spezielle Aufgaben ab.
 
-xmlinclude
 
 svconnector
 
@@ -136,7 +135,7 @@ Es existieren einige ähnliche Extensions, wie Mask oder gridelements, die recht 
 
 \subsection{Implementation}
 
-Die Implementation eines kleinen Beispiels ist sehr einfach. Nach dem Download der Extension lassen sich im neuen Menüpunkt DCE eigene Content Elemente erstellen. Hierfür lassen sich so viele verschiedene Input Felder wie nötig anlegen. Im Falle des Beispiels ist das nur eins, nämlich ein Link. Das Input Feld bekommt dann einen Variablennamen, in diesem Fall \texttt{wgppb}. Dieser Variablenname findet im nächsten Schritt Verwendung. Direkt im Backend lässt sich das Fluitemplate für die Anzeige des Content Elements schreiben. Alle Input Felder lassen sich nun an dieser Stelle einarbeiten. Im Beispiel passiert das mit \texttt{\{field.wgppb\}}.
+Die Implementation eines kleinen Beispiels ist sehr einfach. Nach dem Download der Extension lassen sich im neuen Menüpunkt DCE eigene Content Elemente erstellen. Hierfür lassen sich so viele verschiedene Input Felder wie nötig anlegen. Im Falle des Beispiels ist das nur eins, nämlich ein Link. Das Input Feld bekommt dann einen Variablennamen, in diesem Fall \texttt{wgppb}. Dieser Variablenname findet im nächsten Schritt Verwendung. Direkt im Backend lässt sich das Fluidtemplate für die Anzeige des Content Elements schreiben. Alle Input Felder lassen sich nun an dieser Stelle einarbeiten. Im Beispiel passiert das mit \texttt{\{field.wgppb\}}.
 
 \paragraph{Fluidtemplate der Promobox}
 \begin{verbatim}
@@ -213,7 +212,7 @@ Dieses Verhalten lässt sich mit der Extension Real URL bewerkstelligen. Nach der
 
 \subsubsection{SEO}
 
-Typo3 ist von Haus aus schon sehr gut für Suchmaschinen optimiert. [TODO]
+Typo3 ist von Haus aus schon sehr gut für Suchmaschinen optimiert. Viel der Suchmaschinenoptimierung kann nicht technisch vorgenommen werden, sondern ist Aufgabe der Redakteure. Typo3 erlaubt diesen, entsprechende meta-tags, alt- und title-tags können leicht gesetzt werden. Den größten Sprung im Ranking würde also wahrscheinlich eine Schulung der Redakteure zum Setzen sinnvoller Tags und Überschriften, bewirken. Will man darüber hinaus noch mehr erreichen, empfehlen sich Extensions, wie seo\_basics und metaseo. 
 
 \subsubsection{YAG - Yet another Gallery}
 

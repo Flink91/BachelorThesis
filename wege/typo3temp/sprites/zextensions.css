@@ -246,6 +246,12 @@
 	background-size: contain;
 }
 	
+.t3-icon-tx_metaseo_setting_root-default {
+	background-position: 0px 0px !important;
+	background-image: url('../../typo3/sysext/t3skin/icons/gfx/i/page') !important;
+	background-size: contain;
+}
+	
 .t3-icon-tx_powermail_domain_model_answers-default {
 	background-position: 0px 0px !important;
 	background-image: url('../../typo3conf/ext/powermail/Resources/Public/Icons/tx_powermail_domain_model_answers.gif') !important;

@@ -334,6 +334,12 @@ return [
             'packagePath' => 'typo3conf/ext/mask/',
             'suggestions' => [],
         ],
+        'metaseo' => [
+            'composerName' => 'mblaschke/metaseo',
+            'state' => 'active',
+            'packagePath' => 'typo3conf/ext/metaseo/',
+            'suggestions' => [],
+        ],
         'powermail' => [
             'composerName' => 'powermail',
             'state' => 'active',
