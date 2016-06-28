@@ -69,32 +69,32 @@
 \contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{34}
 \contentsline {subsection}{\numberline {6.3.2}Implementation}{34}
 \contentsline {subsection}{\numberline {6.3.3}Evaluation}{35}
-\contentsline {section}{\numberline {6.4}Anbindung an bestehende Systeme durch Datenimport}{35}
+\contentsline {section}{\numberline {6.4}Import, Anzeige und Bereitstellung von Daten}{35}
 \contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{35}
-\contentsline {subsection}{\numberline {6.4.2}Implementation}{35}
-\contentsline {subsection}{\numberline {6.4.3}Evaluation}{35}
-\contentsline {section}{\numberline {6.5}Eigene Contentelemente}{35}
-\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{36}
+\contentsline {subsection}{\numberline {6.4.2}Implementation}{36}
+\contentsline {subsection}{\numberline {6.4.3}Evaluation}{36}
+\contentsline {section}{\numberline {6.5}Eigene Contentelemente}{36}
+\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{37}
 \contentsline {subsection}{\numberline {6.5.2}Implementation}{37}
 \contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{37}
-\contentsline {subsection}{\numberline {6.5.3}Evaluation}{37}
+\contentsline {subsection}{\numberline {6.5.3}Evaluation}{38}
 \contentsline {section}{\numberline {6.6}Kalender}{38}
 \contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{38}
 \contentsline {subsection}{\numberline {6.6.2}Implementation}{39}
-\contentsline {subsection}{\numberline {6.6.3}Evaluation}{39}
+\contentsline {subsection}{\numberline {6.6.3}Evaluation}{40}
 \contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{40}
 \contentsline {subsubsection}{\nonumberline RealURL}{40}
 \contentsline {subsubsection}{\nonumberline SEO}{40}
-\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{40}
-\contentsline {subsubsection}{\nonumberline Powermail}{40}
-\contentsline {section}{\numberline {6.8}Wartung und Sicherheit}{41}
-\contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{42}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{44}
-\contentsline {section}{\numberline {8.1}Erkenntnisse}{44}
-\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{45}
-\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{46}
-\contentsline {paragraph}{\nonumberline index.html}{46}
-\contentsline {paragraph}{\nonumberline setup.ts}{46}
-\contentsline {chapter}{Abbildungsverzeichnis}{48}
-\contentsline {chapter}{Tabellenverzeichnis}{48}
-\contentsline {chapter}{Literaturverzeichnis}{49}
+\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{41}
+\contentsline {subsubsection}{\nonumberline Powermail}{41}
+\contentsline {subsubsection}{\nonumberline Wartung und Sicherheit}{41}
+\contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{43}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{45}
+\contentsline {section}{\numberline {8.1}Erkenntnisse}{45}
+\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{46}
+\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{47}
+\contentsline {paragraph}{\nonumberline index.html}{47}
+\contentsline {paragraph}{\nonumberline setup.ts}{47}
+\contentsline {chapter}{Abbildungsverzeichnis}{49}
+\contentsline {chapter}{Tabellenverzeichnis}{49}
+\contentsline {chapter}{Literaturverzeichnis}{50}

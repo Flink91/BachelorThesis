@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  26 JUN 2016 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.29)  28 JUN 2016 17:32
 entering extended mode
 **./diplomarbeit.tex
 (diplomarbeit.tex
@@ -800,101 +800,93 @@ Package pdftex.def Info: abb/forumextension.png used on input line 90.
 <abb/wegebox.jpg, id=158, 476.53032pt x 386.94562pt>
 File: abb/wegebox.jpg Graphic file (type jpg)
  <use abb/wegebox.jpg>
-Package pdftex.def Info: abb/wegebox.jpg used on input line 115.
+Package pdftex.def Info: abb/wegebox.jpg used on input line 124.
 (pdftex.def)             Requested size: 341.43306pt x 277.26035pt.
 
-[36 <./abb/wegebox.jpg>]
-<abb/wegeboxergebnis.jpg, id=162, 395.97937pt x 331.2375pt>
+[36 <./abb/wegebox.jpg>] [37]
+<abb/wegeboxergebnis.jpg, id=165, 395.97937pt x 331.2375pt>
 File: abb/wegeboxergebnis.jpg Graphic file (type jpg)
 
 <use abb/wegeboxergebnis.jpg>
-Package pdftex.def Info: abb/wegeboxergebnis.jpg used on input line 153.
+Package pdftex.def Info: abb/wegeboxergebnis.jpg used on input line 162.
 (pdftex.def)             Requested size: 227.62204pt x 190.40953pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[37] <abb/cal.jpg, id=166, 906.38625pt x 492.33937pt>
+ [38 <./abb/wegeboxergebnis.jpg>]
+<abb/cal.jpg, id=169, 906.38625pt x 492.33937pt>
 File: abb/cal.jpg Graphic file (type jpg)
  <use abb/cal.jpg>
-Package pdftex.def Info: abb/cal.jpg used on input line 178.
+Package pdftex.def Info: abb/cal.jpg used on input line 187.
 (pdftex.def)             Requested size: 341.43306pt x 185.46068pt.
-
-[38 <./abb/wegeboxergebnis.jpg>] [39 <./abb/cal.jpg>]
-<abb/powermail.jpg, id=173, 517.18219pt x 350.05782pt>
+ [39 <./abb/cal.jpg>] [40] <abb/powermail.jpg, id=177, 517.18219pt x 350.05782p
+t>
 File: abb/powermail.jpg Graphic file (type jpg)
- <use abb/powermail.jpg>
-Package pdftex.def Info: abb/powermail.jpg used on input line 218.
+
+<use abb/powermail.jpg>
+Package pdftex.def Info: abb/powermail.jpg used on input line 227.
 (pdftex.def)             Requested size: 227.62204pt x 154.06863pt.
-) [40] [41 <./abb/powermail.jpg>]
+ [41 <./abb/powermail.jpg>]) [42]
 \openout2 = `mehrwert.aux'.
 
  (mehrwert.tex
 chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+[43
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-[42
-
-
-
-]) [43]
+) [44]
 \openout2 = `zusammenfassungausblick.aux'.
 
  (zusammenfassungausblick.tex
 chapter 8.
-[44
+[45
 
 
 
-]) [45]
+]) [46]
 \openout2 = `appendix.aux'.
 
  (appendix.tex
 chapter A.
-[46
+[47
 
 
 
@@ -910,26 +902,26 @@ Overfull \hbox (26.72925pt too wide) in paragraph at lines 88--88
 tstrap/js/bootstrap.min.js[] 
  []
 
-) [47] (diplomarbeit.lof)
+) [48] (diplomarbeit.lof)
 \tf@lof=\write4
 \openout4 = `diplomarbeit.lof'.
 
- [48
+ [49
 
 
 ] (diplomarbeit.lot)
 \tf@lot=\write5
 \openout5 = `diplomarbeit.lot'.
 
- (diplomarbeit.bbl [49
+ (diplomarbeit.bbl [50
 
 ])
-[50
+[51
 
 ]
 \openout2 = `erklaerung.aux'.
 
- (erklaerung.tex) [51
+ (erklaerung.tex) [52
 
 ] (diplomarbeit.aux (deckblatt.aux)
 (einleitungmotivation.aux) (begriffe.aux) (projektanalyse.aux) (cmswahl.aux)
@@ -960,9 +952,9 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on diplomarbeit.pdf (54 pages, 1098049 bytes).
+Output written on diplomarbeit.pdf (55 pages, 1103221 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
+ 262 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
