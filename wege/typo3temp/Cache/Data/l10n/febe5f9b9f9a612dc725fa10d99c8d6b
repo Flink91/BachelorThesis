@@ -1,0 +1,19 @@
+a:7:{s:12:".description";a:1:{i:0;a:2:{s:6:"source";s:122:"An exception event group is a collection of
+				multiple exception events that can be applied to an event at one
+				time.";s:6:"target";s:122:"An exception event group is a collection of
+				multiple exception events that can be applied to an event at one
+				time.";}}s:8:".details";a:1:{i:0;a:2:{s:6:"source";s:301:"Exception event groups provide the ability to
+				group common exceptions, such as holidays, into one record and apply
+				that single record to an event. As an example, this allows you to
+				close the office for all holidays by adding one exception group to
+				the recurring event for office hours.";s:6:"target";s:301:"Exception event groups provide the ability to
+				group common exceptions, such as holidays, into one record and apply
+				that single record to an event. As an example, this allows you to
+				close the office for all holidays by adding one exception group to
+				the recurring event for office hours.";}}s:17:"title.description";a:1:{i:0;a:2:{s:6:"source";s:35:"Title of the exception event group.";s:6:"target";s:35:"Title of the exception event group.";}}s:18:"hidden.description";a:1:{i:0;a:2:{s:6:"source";s:70:"Use this to temporarily exclude this exception
+				event from display.";s:6:"target";s:70:"Use this to temporarily exclude this exception
+				event from display.";}}s:21:"starttime.description";a:1:{i:0;a:2:{s:6:"source";s:88:"The "Start" time determines the date
+				from which the record will be available online.";s:6:"target";s:88:"The "Start" time determines the date
+				from which the record will be available online.";}}s:19:"endtime.description";a:1:{i:0;a:2:{s:6:"source";s:101:"The "End" time determines the date from
+				which the db-record will NOT be available online anymore.";s:6:"target";s:101:"The "End" time determines the date from
+				which the db-record will NOT be available online anymore.";}}s:31:"exception_event_cnt.description";a:1:{i:0;a:2:{s:6:"source";s:46:"Assigns exception event records to this group.";s:6:"target";s:46:"Assigns exception event records to this group.";}}}

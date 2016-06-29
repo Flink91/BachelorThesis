@@ -1,0 +1,27 @@
+a:20:{s:12:".description";a:1:{i:0;a:2:{s:6:"source";s:58:"Exception to an event for the Calendar Base
+				extension.";s:6:"target";s:58:"Exception to an event for the Calendar Base
+				extension.";}}s:8:".details";a:1:{i:0;a:2:{s:6:"source";s:137:"Exception events are generally used in conjunction
+				with recurrent events for specific days when you don't want an event
+				to occur.";s:6:"target";s:137:"Exception events are generally used in conjunction
+				with recurrent events for specific days when you don't want an event
+				to occur.";}}s:17:"title.description";a:1:{i:0;a:2:{s:6:"source";s:29:"Title of the exception event.";s:6:"target";s:29:"Title of the exception event.";}}s:18:"hidden.description";a:1:{i:0;a:2:{s:6:"source";s:42:"Exclude this exception event from display.";s:6:"target";s:42:"Exclude this exception event from display.";}}s:21:"starttime.description";a:1:{i:0;a:2:{s:6:"source";s:88:"The "Start" time determines the date
+				from which the record will be available online.";s:6:"target";s:88:"The "Start" time determines the date
+				from which the record will be available online.";}}s:19:"endtime.description";a:1:{i:0;a:2:{s:6:"source";s:101:"The "End" time determines the date from
+				which the db-record will NOT be available online anymore.";s:6:"target";s:101:"The "End" time determines the date from
+				which the db-record will NOT be available online anymore.";}}s:22:"start_date.description";a:1:{i:0;a:2:{s:6:"source";s:65:"The start date determines the day the exception
+				event starts.";s:6:"target";s:65:"The start date determines the day the exception
+				event starts.";}}s:20:"end_date.description";a:1:{i:0;a:2:{s:6:"source";s:61:"The end date determines the day the exception
+				event ends.";s:6:"target";s:61:"The end date determines the day the exception
+				event ends.";}}s:22:"start_time.description";a:1:{i:0;a:2:{s:6:"source";s:66:"The start time determines the time the exception
+				event starts.";s:6:"target";s:66:"The start time determines the time the exception
+				event starts.";}}s:20:"end_time.description";a:1:{i:0;a:2:{s:6:"source";s:62:"The end time determines the time the exception
+				event ends.";s:6:"target";s:62:"The end time determines the time the exception
+				event ends.";}}s:16:"freq.description";a:1:{i:0;a:2:{s:6:"source";s:46:"Frequency at which the exception event occurs.";s:6:"target";s:46:"Frequency at which the exception event occurs.";}}s:17:"until.description";a:1:{i:0;a:2:{s:6:"source";s:31:"Date the recurrence should end.";s:6:"target";s:31:"Date the recurrence should end.";}}s:14:"_until.seeAlso";a:1:{i:0;a:2:{s:6:"source";s:26:"tx_cal_exception_event:cnt";s:6:"target";s:26:"tx_cal_exception_event:cnt";}}s:15:"cnt.description";a:1:{i:0;a:2:{s:6:"source";s:69:"Number of times the exception event should recur
+				before stopping.";s:6:"target";s:69:"Number of times the exception event should recur
+				before stopping.";}}s:12:"_cnt.seeAlso";a:1:{i:0;a:2:{s:6:"source";s:28:"tx_cal_exception_event:until";s:6:"target";s:28:"tx_cal_exception_event:until";}}s:17:"byday.description";a:1:{i:0;a:2:{s:6:"source";s:40:"Defines the interval by day of the week.";s:6:"target";s:40:"Defines the interval by day of the week.";}}s:22:"bymonthday.description";a:1:{i:0;a:2:{s:6:"source";s:56:"Defines the interval by day of the month (e.g.
+				20th)";s:6:"target";s:56:"Defines the interval by day of the month (e.g.
+				20th)";}}s:19:"bymonth.description";a:1:{i:0;a:2:{s:6:"source";s:30:"Defines the interval by month.";s:6:"target";s:30:"Defines the interval by month.";}}s:19:"intrval.description";a:1:{i:0;a:2:{s:6:"source";s:61:"Defines the interval at which the exception event
+				recurs.";s:6:"target";s:61:"Defines the interval at which the exception event
+				recurs.";}}s:15:"intrval.details";a:1:{i:0;a:2:{s:6:"source";s:109:"An interval of 2 with a frequency of weekly would
+				create an exception event that recurs every other week.";s:6:"target";s:109:"An interval of 2 with a frequency of weekly would
+				create an exception event that recurs every other week.";}}}

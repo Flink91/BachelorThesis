@@ -74,12 +74,12 @@
 \contentsline {subsection}{\numberline {6.4.2}Implementation}{36}
 \contentsline {subsection}{\numberline {6.4.3}Evaluation}{36}
 \contentsline {section}{\numberline {6.5}Eigene Contentelemente}{36}
-\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{37}
-\contentsline {subsection}{\numberline {6.5.2}Implementation}{37}
+\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{36}
+\contentsline {subsection}{\numberline {6.5.2}Implementation}{36}
 \contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{37}
 \contentsline {subsection}{\numberline {6.5.3}Evaluation}{38}
 \contentsline {section}{\numberline {6.6}Kalender}{38}
-\contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{38}
+\contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{39}
 \contentsline {subsection}{\numberline {6.6.2}Implementation}{39}
 \contentsline {subsection}{\numberline {6.6.3}Evaluation}{40}
 \contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{40}
@@ -87,14 +87,14 @@
 \contentsline {subsubsection}{\nonumberline SEO}{40}
 \contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{41}
 \contentsline {subsubsection}{\nonumberline Powermail}{41}
-\contentsline {subsubsection}{\nonumberline Wartung und Sicherheit}{41}
+\contentsline {subsubsection}{\nonumberline Wartung und Sicherheit}{42}
 \contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{43}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{45}
-\contentsline {section}{\numberline {8.1}Erkenntnisse}{45}
-\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{46}
-\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{47}
-\contentsline {paragraph}{\nonumberline index.html}{47}
-\contentsline {paragraph}{\nonumberline setup.ts}{47}
-\contentsline {chapter}{Abbildungsverzeichnis}{49}
-\contentsline {chapter}{Tabellenverzeichnis}{49}
-\contentsline {chapter}{Literaturverzeichnis}{50}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{46}
+\contentsline {section}{\numberline {8.1}Erkenntnisse}{46}
+\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{47}
+\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{48}
+\contentsline {paragraph}{\nonumberline index.html}{48}
+\contentsline {paragraph}{\nonumberline setup.ts}{48}
+\contentsline {chapter}{Abbildungsverzeichnis}{50}
+\contentsline {chapter}{Tabellenverzeichnis}{50}
+\contentsline {chapter}{Literaturverzeichnis}{51}
