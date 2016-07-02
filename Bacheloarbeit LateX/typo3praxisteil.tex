@@ -73,7 +73,7 @@ Die Extension kommt mit einem eigenen Design daher, was für eine seriöse Anwendu
 \subsection{Evaluation}
 Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeige von News braucht. Die Implementation geht schnell, wenn auch nicht unbedingt beim ersten Mal. Im Test läuft das Ergebnis stabil und ohne Fehler. Alles in Allem ist diese Extension eine exzellente Wahl.
 
-\section{Forum}
+\section{Diskussionsforum}
 
 Die Anforderung an ein Forum ist mit Sicherheit eines der aufwändigsten Teile dieses Projekts. Das bedeutet auch, dass eine hochwertige Extension hier eine große Zeitersparnis bedeuten kann. Ein Forum soll bestimmten Nutzern erlauben neue Themen anzulegen. Diese Themen werden in Listen angeordnet und das Klicken eines Themas führt zu einer Unterseite, in der User dieses Thema diskutieren können. Der Content besteht dabei nicht nur aus Text, sondern auch aus Bildern und eventuell aus Dateianhängen. Dazu soll es Funktionalität geben, all diesen Content editieren und löschen zu können und dabei diese Funktionalität sinnvoll nur bestimmten Nutzern zu geben. So soll zum Beispiel nur der Ersteller ein Thema wieder löschen können. Erreicht ein Forum eine bestimmte Größe ist es wünschenswert eine weitere Usergruppe definieren zu können, die ein Forum moderieren und somit die Rechte besitzen jegliche Anpassungen vorzunehmen. 
 
@@ -110,11 +110,51 @@ Alternativ ließe sich ein eigener Parser schreiben und in einem eigenen Content 
 
 \subsection{Implementation}
 
+Die Implementation des rss\_display ist sehr einfach. Nach Hinzufügen des Template includes lässt sich der rss Feed im Frontend durch das General Plugin Content Element, ausgeben.
 
+Die Extension cag\_tables würde exakt eine XML Datei im Frontend als Tabelle ausgeben, nur leider ist diese Extension nicht mit Typo3 7.6 kompatibel. Somit muss ein Blick auf die wesentlich kompliziertere und umfangreichere Extension external\_import, geworfen werden. Diese hat Abhängigkeiten zu den Extensions svconnector und scheduler. Mit dem svconnector werden ausgewählte externe Daten in Typo3 importiert. Diesen Vorgang kann man mit dem scheduler automatisieren und so in bestimmten Zeitintervallen ausführen lassen. Das offizielle Extension Manual selbst, warnt davor nichts zu überstürzen, da die Implementation nicht trivial ist\footnote{https://docs.typo3.org/typo3cms/extensions/external\_import/}.
 
-Ein eigener Parser könnte ungefähr so aussehen
+Eine weitere Möglichkeit ist, auf solche Extensions zu verzichten und einen eigenen Parser zu schreiben. Diesen könnte man in ein Fluidtemplate integrieren und als custom Contentelement anbieten, um einer Redakteurin das Anzeigen von XML Dateien zu ermöglichen. 
+Ein eigener Parser ist nicht allzu kompliziert und könnte in Javascript mit der Hilfe von einem XMLHttpRequest und AJAX so aussehen.
+
+\begin{verbatim}
+ function loadXML() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+   if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    myFunction(xmlhttp);
+   }
+  };
+  xmlhttp.open("GET", "myXml.xml", true);
+  xmlhttp.send();
+ }
+\end{verbatim}
+Beim Seitenaufruf könnte diese Funktion aufgerufen werden, dann lässt sich die XML Datei in Javascript weiterverarbeiten.
+
+\begin{verbatim}
+ function showXml(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Kursleiter</th><th>Kurs</th></tr>";
+  var x = xmlDoc.getElementsByTagName("Kursleiter");
+  for (i = 0; i <x.length; i++) { 
+   table += "<tr><td>" +
+   x[i].getElementsByTagName("KURSLEITER")[0].childNodes[0].nodeValue +
+   "</td><td>" +
+   x[i].getElementsByTagName("KURS")[0].childNodes[0].nodeValue +
+   "</td></tr>";
+   }
+   document.getElementById("kurseXml").innerHTML = table;
+  }
+\end{verbatim}
+
+Diese Funktion erstellt nun eine Tabelle, indem die XML auf die Tags Kursleiter und Kurs durchsucht wird. Die fertige Tabelle wird als innerHTML in die Seite eingefügt. Dazu muss hier die gewählte ID bereits bestehen.
 
 \subsection{Evaluation}
+Bei der Implementierung dieses Requirements hat sich gezeigt, dass es je nach Umfang verschiedene Möglichkeiten gibt. Für das automatische Einbinden vieler, externer Daten ist die Extension external\_import zu empfehlen. Diese fordert jedoch sehr viel Entwicklungszeit. 
+Hinsichtlich des Umfangs und Implementationsaufwandes von external\_import kann es für kleinere Anzeigen sinnvoller sein, selbst einen Parser zu schreiben, da diese nicht so aufwändig sind wie vielleicht erwartet. 
+
+Handelt es sich bei den Daten um einen RSS Feed trifft man mit rss\_display auf eine sehr gute Extension und wenig Aufwand.
 
 \section{Eigene Contentelemente}
 

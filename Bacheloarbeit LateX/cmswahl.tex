@@ -50,7 +50,7 @@ Unter Content Management fragt \textsc{Rüping} \cite{Rueping2010} wie gut ein CM
 
 \subsection{Content Delivery}
 
-Im letzten Punkt geht es um den technischen Zustellungsprozess von Content an die Nutzer. Es wird nach der Möglichkeit eigene Komponenten zu integrieren. Eine Möglichkeit eigene Komponenten, wie zum Beispiel Extensions, in die Umgebung zu integrieren wird untersucht. Es wird untersucht ob sich eigene Controller-Logik implementieren lässt, was eine Anpassung des Routing von bestimmten Seiten erlauben würde. Es wird gefragt ob das CMS eine Suchengine oder eine Personalisierungsengine bietet. Mit der Personalisierungsengine ist etwas, wie die Oberfläche eines Web Portals gemeint. Bei den Suchengines ist interessant welche Dateiarten gesucht werden können und wie schnell die Suche ist.
+Im letzten Punkt geht es um den technischen Zustellungsprozess von Content an die Nutzer. Eine Möglichkeit eigene Komponenten, wie zum Beispiel Extensions, in die Umgebung zu integrieren wird untersucht. Es wird gefragt ob das CMS eine Suchengine oder eine Personalisierungsengine bietet. Mit der Personalisierungsengine ist etwas, wie die Oberfläche eines Web Portals gemeint. Bei den Suchengines ist interessant welche Dateiarten gesucht werden können und wie schnell die Suche ist.
 
 \section{Die Vorauswahl dreier geeigneter Content Management Systeme}
 
@@ -85,7 +85,7 @@ Sharepoint wird nun anhand der oben genannten Kriterien kurz untersucht.
 
 \textbf{Content Management:} Im Content Management bietet Sharepoint alle erdenklichen Funktionen. Es unterstützt Template-Management, erlaubt einfache Administration, hat eine eigene Workflow Engine, Asset Management und sehr viele Komfortfunktionen, wie Spell Checker und Papierkorb.  
 
-\textbf{Content Delivery:} Sharepoint bietet eine Möglichkeit eigene Erweiterungen, sogenannte Add-ins bereitzustellen. [TODO]
+\textbf{Content Delivery:} Sharepoint bietet eine Möglichkeit eigene Erweiterungen, sogenannte Add-ins, bereitzustellen. Als Web Portal bietet Sharepoint dem User Möglichkeit angezeigte Add-ins (oder Portlets) zu personalisieren. Eine Volltextsuche ist integriert. Die kommerzielle Version enthält erweiterte Suchfunktionen, wie automatische Suchvorschläge während dem Tippen.
 
 Alles in Allem ist Sharepoint keine schlechte Wahl. Das Produkt ist sehr ausgereift und bietet sehr viele Funktionen. Der Schwerpunkt liegt dabei mehr auf Intranetstruktur und weniger auf öffentlichen Webseiten. Die Anpassung daran sollte jedoch nicht zu schwer sein. Viele übliche Funktionen lassen sich ohne Programmieraufwand einbinden. Sind sehr spezielle Dinge gefordert, kann es auf technischer Ebene schnell kompliziert werden, da Sharepoint extrem umfangreich ist und vieles gelernt werden muss. Der Preis der Lizenz ist relativ hoch, im Vergleich zu Open Source Software natürlich ein negativer Aspekt. 
 
@@ -97,7 +97,7 @@ Alles in Allem ist Sharepoint keine schlechte Wahl. Das Produkt ist sehr ausgere
 	\caption{LifeRay Logo}
 \end{figure}
 
-Das Hauptprodukt von Liferay heißt Liferay Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus auf Businesslösungen und Geschäftsprozessen. Es werden zwei Varianten angeboten, LifeRay Portal CE ist lizenzkostenfrei und Open Source. LifeRay Portal EE ist die kommerzielle Variante und bietet zusätzlich zu den Funktionen der freien Version offiziellen Support und Langzeitunterstützung.
+Das Hauptprodukt von Liferay heißt Liferay Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus auf Businesslösungen und Geschäftsprozessen. Es fällt in die Kategorie Web Portal Software, welche meist unternehmensintern eingesetzt wird. Es werden zwei Varianten angeboten, LifeRay Portal CE ist lizenzkostenfrei und Open Source. LifeRay Portal EE ist die kommerzielle Variante und bietet zusätzlich zu den Funktionen der freien Version offiziellen Support und Langzeitunterstützung.
 LifeRay Portal gliedert sich in drei Teile:
 \begin{itemize}
 	\item LifeRay Portal: Die Kernfunktionalitäten sind die Authentifizierung von Nutzern mit Single Sign-on, Personalisierung von Seiten durch Drag und Drop, automatischer Dateiupload mit WebDAV (\textsc{Web}-based\textsc{D}istributed \textsc{A}uthoring and \textsc{V}ersioning), Suchen und Taggen von Web-Inhalten und Mehrsprachigkeit.
@@ -109,13 +109,13 @@ LifeRay Portal gliedert sich in drei Teile:
 LifeRay basiert auf Java. Der Server läuft mit J2EE und MySQL als Datenbank. Es ist plattformunabhängig.
 
 \textbf{Anbieterinformationen}
-Die Anbieterfirma heißt LifeRay, Inc. und
+Die Anbieterfirma heißt LifeRay, Inc. und wirde von Bryan Cheung im Jahre 2000 ins Leben gerufen. LifeRay lässt sich in Umfang und Funktion mit Microsoft Sharepoint vergleichen und wird oft als beste Open Source Alternative genannt.
 \textbf{Content Management}
 
 \textbf{Content delivery}
+Einzelne Komponenten werden in LifeRay als Portlets angezeigt. Mit der zugrundeliegenden serviceorientierten Architektur (SOA) lässt sich so der Umfang durch eigene Portlets beliebig erweitern.
 
-Nach dem ersten Eindruck ist LifeRay eine durchaus geeignete Wahl für das WegE Projekt, alle Anforderungen lassen sich hiermit umsetzen.
-   
+Nach dem ersten Eindruck ist LifeRay eine durchaus geeignete Wahl für das WegE Projekt, alle Anforderungen lassen sich hiermit umsetzen. Als Web Portal liegt, der Fokus von LifeRay jedoch, genau wie bei Sharepoint, auf Geschäftsprozessen und unternehmensinterner Anwendung. Diese Portlets lassen sich von jedem User personalisieren. Die Suchengine erlaubt einfaches Suchen und Tagging.
 \section{Typo3}
 
 \begin{figure}[hbtp]
