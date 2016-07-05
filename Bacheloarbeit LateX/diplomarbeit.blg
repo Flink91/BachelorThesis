@@ -15,6 +15,7 @@ Database file #1: bibl.bib
 Warning--to sort, need author or key in wege
 Warning--to sort, need author or key in typo3docs
 Warning--to sort, need author or key in typo3CoreApi
+Warning--empty edition in Nix2005
 Warning--empty edition in Society2004
 `skip$' is a function literal, not a string, for entry typo3CoreApi
 while executing---line 1656 of file alphadin.bst

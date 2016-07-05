@@ -1,6 +1,12 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{SAM{\etalchar{+}}04}
 
+\bibitem[AII05]{aiimECMS}
+\textsc{AIIM}.
+\newblock \emph{What is Enterprise Content Management (ECM)?}
+\newblock http://www.aiim.org/what-is-ecm-enterprise-content-management.
+\newblock 2005
+
 \bibitem[ELU10]{Ebner2010}
 \textsc{Ebner}, Alexander ; \textsc{Lobacher}, Patrick  ; \textsc{Ulbrich},
   Bernhard:
@@ -12,7 +18,7 @@
 
 \bibitem[Lue15]{LectureFSE}
 \textsc{Luettgen}, Prof. Dr.~G.
-\newblock \emph{AFoundations of Software Engineering (SWT-FSE-B)}.
+\newblock \emph{Foundations of Software Engineering (SWT-FSE-B)}.
 \newblock University Lecture.
 \newblock 2015
 
@@ -22,6 +28,12 @@
 \newblock 2.
 \newblock Koeln : O'Reilly Germany, 2006. --
 \newblock ISBN 978--3--955--61535--2
+
+\bibitem[Nix05]{Nix2005}
+\textsc{Nix}, Markus:
+\newblock \emph{{Web Content Management -- CMS verstehen und auswaehlen}}.
+\newblock Entwickler.Press, Juli 2005. --
+\newblock ISBN 3935042647
 
 \bibitem[PR10]{Pressman2010}
 \textsc{Pressman}, Roger~S. ; \textsc{Roger}, Pressman:
@@ -46,11 +58,11 @@
 \newblock ISBN 978--0--769--52330--9
 
 \bibitem[Som07]{Sommerville2007}
-
+\textsc{Sommerville}, Ian:
 \newblock \emph{Software Engineering -}.
-
+\newblock 8. Aufl.
 \newblock Pearson Deutschland, 2007. --
-
+\newblock ISBN 978--3--827--37257--4
 
 \bibitem[typa]{typo3CoreApi}
 \emph{Typo3 Core APIs}.

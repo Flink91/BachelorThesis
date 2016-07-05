@@ -7,10 +7,10 @@ Nach dem Erstellen einer simplen Typo3 Umgebung ist das Ziel dieses Teils die Un
 \begin{itemize}
 	\item \textbf{Einhalten der Typo3 Coding Guidelines}: Diese Guidelines decken die wichtigsten Aspekte einer guten Extension, wie Sicherheit, Erweiterbarkeit, Stabilität und Zukunftssicherheit, ab. https://docs.typo3.org/typo3cms/CodingGuidelinesReference/Index.html
 	\item \textbf{Kompatibilität mit eigenem Typo3 System}: Natürlich soll die Extension für die jeweilige Version verfügbar sein und nicht im Konflikt mit anderen Extensions stehen. Außerdem sollte die Lizenz der Extension beachtet werden.
-	\item \textbf{Extension Manual verfügbar} Eine offizielle Anleitung kann direkt auf der Downloadseite der Extension auf Typo3 verlinkt werden und ist unerlässlich für den richtigen Umgang mit einer Extension und sollte nicht fehlen.
+	\item \textbf{Extension Manual verfügbar} Eine offizielle Anleitung kann direkt auf der Downloadseite der Extension auf Typo3 verlinkt werden, ist unerlässlich für den richtigen Umgang mit einer Extension und sollte daher nicht fehlen.
 \end{itemize}
 
-Die erste Anlaufstelle zur Überprüfung dieser Eigenschaften ist die Downloadseite der Extension auf typo3.org. Diese bietet eine Übersicht über Version, Update, Alter, Kategorie, Autor und Downloadzahlen einer Extension. Die Anzahl der Downloads ist meistens ein guter Indikator für eine professionelle Extension, jedoch nicht immer. Deshalb sollte dieser mit Vorsicht genossen werden.
+Die erste Anlaufstelle zur Überprüfung dieser Eigenschaften ist die Downloadseite der Extension auf typo3.org. Diese bietet eine Übersicht über Version, Update, Alter, Kategorie, Autor und Downloadzahlen einer Extension. Die Anzahl der Downloads ist meistens ein guter Indikator für eine professionelle Extension, jedoch nicht immer. Deshalb sollte die Downloadzahl nicht als einziger Indikator in Betracht gezogen werden.
 
 \begin{figure}
 	\centering
@@ -19,24 +19,24 @@ Die erste Anlaufstelle zur Überprüfung dieser Eigenschaften ist die Downloadseit
 	\label{fig:forumextension}
 \end{figure}
 
-Neben den oben genannten Kriterien gibt es noch ein hilfreiches Projekt namens Extension Comparison project\footnote{https://wiki.typo3.org/Extension\_Comparison} auf der Typo3 Wiki Webseite, die ein große Anzahl von Extensions gleicher Art jeweils vergleicht und so die Wahl erleichtert.
+Neben den oben genannten Kriterien existiert noch ein hilfreiches Projekt namens Extension Comparison project\footnote{https://wiki.typo3.org/Extension\_Comparison} auf der Typo3 Wiki Webseite, die ein große Anzahl von Extensions gleicher Art jeweils vergleicht und so die Wahl erleichtert.
 
 Für das WegE Projekt kommen prinzipiell nur professionelle Extensions in Frage. Besonders wichtig sind die Zukunftssicherheit und Stabilität. Darüber hinaus spielt der Aufwand eine wichtige Rolle. Lizenzkosten sollen möglichst vermieden werden.  
 
 \section{Rechtemanagement und Authentikation}
-Die Erstellung und das Management der Usergruppen, die für das WegE Projekt geplant sind, könnten sich als eine der schwierigsten Aufgaben entpuppen. Zum einen gibt es eine Menge Redakteure, für viele verschiedene Sektionen der Webseite. Dann soll es die Möglichkeit geben sich mittels Kennnummer der Universität einzuloggen und zum Schluss soll jeder interessierte User sich einen Account anlegen können, um zum Beispiel im Forum mitzuwirken. Daraus resultiert ein kompliziertes Rechtemanagement.
+Die Erstellung und das Management der Usergruppen, die für das WegE Projekt geplant sind, könnten sich als eine der schwierigsten Aufgaben entpuppen. Zum einen gibt es eine größere Anzahl an Redakteuren, für viele verschiedene Sektionen der Webseite. Dazu soll jeder interessierte User sich einen Account anlegen können, um zum Beispiel im Forum mitzuwirken. Daraus resultiert ein kompliziertes Rechtemanagement.
 
 Wichtig hierbei die Unterscheidung von Backend Usern und Frontend Usern. Das Erstellen von Backend Usern lässt sich bequem über das Backend von Typo3 erledigen. Ein Administrator legt dafür einfach einen neuen Nutzer an und bestimmt die jeweiligen Rechte dieses Nutzers. Das werden zumeist Redakteure sein und da sich die Zahl dieser in Grenzen halten sollte, ist es möglich diese alle manuell anzulegen.
+Für Frontend User sind andere Methoden notwendig. Der Registrierungsprozess dafür muss in gewisser Weise automatisiert werden.
 
 \subsection{Möglichkeiten}
 
 Braucht eine Webseite nur Administratoren und einige Redakteure, also nur Backend User, so lässt sich das nur mit Typo3 allein bewerkstelligen. Dafür legt ein Administrator per Hand im Backend manuell neue Zugänge an. Das funktioniert nicht mit Frontend Usern.
-Die momentan vorherrschende Methode zur Verwaltung von Frontend Usern ist die Extension sr\_feuser\_registration. Sie befindet sich in den meist heruntergeladenen Extensions, wurde bereits 2005 das erste mal veröffentlicht und wird in Version 4.0 angeboten. 
-
+Die momentan vorherrschende Methode zur Verwaltung von Frontend Usern ist die Extension sr\_feuser\_registration\footnote{https://typo3.org/extensions/repository/view/sr\_feuser\_register}. Von Vorteil ist, dass diese Extension auf typischen Typo3 Funktionen im Backend aufbaut, was die Verwaltung erleichtet. Es werden alle nötigen Funktionen, wie Registrierungsformular, E-Mail Verifizierung und gehashte Passwörter geboten. Sie befindet sich mit knapp 100,000 Downloads in den meist heruntergeladenen Extensions, wurde bereits 2005 das erste mal veröffentlicht und wird in Version 4.0 angeboten. Die Extension hat Abhängigkeiten zu fünf anderen Extensions, die vorweg automatisch installiert werden. Es gibt einige Konflikte mit anderen Extensions, die beachtet werden sollten.
 
 \subsection{Implementation}
 
-Die Implementation dieser Extension verläuft, in Berücksichtigung der Größe des Vorhabens, sehr schnell ab.
+Die Implementation dieser Extension verläuft, in Berücksichtigung der Größe des Vorhabens, sehr schnell ab. Nach der Installation wird das Template FE User \emph{Registration CSS-styled} hinzugefügt. Danach muss ein Sysfolder für die User angelegt werden. Hier werden zwei User Gruppen angelegt, eine für sich gerade registrierende User und einen für bereits registrierte User. In den Template Constants wird die PID dieses Ordners eingetragen. [TODO]
 
 \begin{figure}
 	\centering
@@ -52,7 +52,7 @@ Die Arbeit mit der sr\_feuser\_registration Extension stellte sich als sehr ange
 \section{Blog und News}
 Die Anzeige von News oder einem fortlaufenden Blog findet auf immer mehr Webseiten Relevanz. So ist es wenig verwunderlich, dass die bekannteste News-Extension von Typo3 auch eine der meistverwendeten Extensions überhaupt ist. Die populärste Wahl scheint dabei die Extension mit dem Namen \texttt{news} zu sein.
 
-\subsection{Alternativen}
+\subsection{Alternative Möglichkeiten}
 Eine weitere Extension, die für die Anzeige eines Blogs geeignet ist, heißt typo3\_blog. Die Extension steht der vorgestellten news Extension in Nichts nach, jedoch bietet die news Extension zwei Dinge in einem, news und Blog Funktionalität und deckt somit zwei mögliche Anforderungen der WegE Plattform ab. Somit minimiert die Wahl der news Extension theoretisch Installationsaufwand.
 
 \subsection{Implementation}
@@ -79,7 +79,7 @@ Die Anforderung an ein Forum ist mit Sicherheit eines der aufwändigsten Teile di
 
 \subsection{Möglichkeiten}
 
-Es gibt eigentlich nur eine Extension, die für Typo3 7.6 in Frage kommt und die heißt typo3\_forum. Sollte diese aus irgendwelchen Gründen als Möglichkeit ausscheiden kann man auf ein externes Forum Plugin zurückgreifen, das auf einer niedrigeren Ebene integriert wird. Ein etabliertes Beispiel heißt phpBB und bietet genau diese Funktionalität. Tatsächlich bietet phpBB mehr Anpassungsmöglichkeiten als die typo3\_forum Extension, ist aber auch mit etwas mehr Arbeit verbunden, da man aus der Typo3 Umgebung ausbricht.
+Es gibt eigentlich nur eine Extension, die für Typo3 7.6 in Frage kommt und die heißt typo3\_forum. Sollte diese aus irgendwelchen Gründen als Möglichkeit ausscheiden kann man auf ein externes Forum Plugin zurückgreifen, das auf einer niedrigeren Ebene integriert wird. Ein etabliertes Beispiel heißt phpBB und bietet genau diese Funktionalität. Tatsächlich bietet phpBB mehr Anpassungsmöglichkeiten als die typo3\_forum Extension, ist aber auch mit etwas mehr Arbeit verbunden, da man aus der Typo3 Umgebung ausbricht. [TODO]
 
 \subsection{Implementation}
 
@@ -244,22 +244,22 @@ Es wird eine monatliche Ansicht angezeigt und auch die erstellten Events tauchen
 
 \section{Weitere nützliche Extensions}
 
-\subsubsection{RealURL}
+\subsubsection{RealURL - Lesbare URLs}
 Die Seiten in Typo3 bekommen bei ihrer Erstellung eine Page ID (PID). Diese ist einzigartig und wird benutzt um Seiten zu identifizieren. Auf diese Weise entstehen auch die URLs von Typo3 Seiten. 
 Eine typische URL von Typo3 sieht ungefähr so aus :\\ \texttt{http://localhost/BachelorThesis/wege/index.php?id=14}.\\ 
 Diese URL ruft die Seite mit der pid=14 auf.
 Schöner wäre allerdings wenn die URL so aussähe und damit für den Nutzer lesbar wäre:\\ \texttt{http://localhost/BachelorThesis/wege/Extensions/Forum}.\\
 Dieses Verhalten lässt sich mit der Extension Real URL bewerkstelligen. Nach der Installation folgen einige kleine Schritte zur automatischen Konfiguration. Diese erstellt URLs anhand der Seitennamen. Je nach System sollte jedoch mit nicht trivialer Konfigurationsarbeit gerechnet werden, da oft auch Einstellungen am Apache Server nötig sind.
 
-\subsubsection{SEO}
+\subsubsection{SEO Features}
 
 Typo3 ist von Haus aus schon sehr gut für Suchmaschinen optimiert. Viel der Suchmaschinenoptimierung kann nicht technisch vorgenommen werden, sondern ist Aufgabe der Redakteure. Typo3 erlaubt diesen, entsprechende meta-tags, alt- und title-tags können leicht gesetzt werden. Den größten Sprung im Ranking würde also wahrscheinlich eine Schulung der Redakteure zum Setzen sinnvoller Tags und Überschriften, bewirken. Will man darüber hinaus noch mehr erreichen, empfehlen sich Extensions,  wie metaseo\footnote{https://typo3.org/extensions/repository/view/metaseo}. Diese Extension erzeugt automatisch Sitemaps, MEtatags und erlaubt die Manipulation der Seitentitel. Somit lassen sich der Suchmaschine und dem User verschiedene Titel anzeigen. Dazu lassen sich Google Analytics und Piwik integrieren.
 
-\subsubsection{YAG - Yet another Gallery}
+\subsubsection{YAG - Bildergalerie}
 
 Will man auf einer Webseite sehr viele Bilder anzeigen, ist es ratsam diese ein wenig zu strukturieren. Das geschieht meist durch die Aufteilung in Galerien und Alben. Dieses sollen dem Betrachter natürlich auch ansprechend präsentiert werden. Beide dieser Anforderungen werden von der YAG Extension erfüllt. Die Installation ist sehr einfach, zu beachten ist jedoch, dass eine nahtlose Integration nicht trivial ist und einige Anpassungen vorgenommen werden um eine ansprechende Ausgabe zu bekommen. 
 
-\subsubsection{Powermail}
+\subsubsection{Powermail - Mail Formular}
 
 Eine sehr einfach klassifizierbare Extension ist Powermail. Sie erfüllt den Zweck ein Formular anzuzeigen, durch das ein Nutzer der Seite eine Nachricht senden kann ohne in ein externes Mailingprogramm zu wechseln. Dies findet im WegE Projekt als Anlaufstelle eine Verwendung. Die Installation gestaltet sich sehr einfach und alle Aspekte eines solchen Formulars lassen sich bequem über das Backend anpassen. Das Formular wird als Plugin in die Seite integriert, bekommt ein erstelltes Formular zugewiesen, erhält einen Include im Template und schon ist es betriebsfähig. Die einzige etwas speziellere Anforderung an diese Extension, die das WegE Projekt haben könnte, wäre die Möglichkeit unterschiedlicher Empfängeradressen in unterschiedlichen Formularen. Auch das ist kein Problem. Die Wahl auf Powermail fiel aufgrund der Popularität und Stabilität. Andere ähnliche Extensions unterscheiden sich jedoch kaum.
 

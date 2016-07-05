@@ -1,100 +1,100 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}
 \contentsline {section}{\numberline {1.1}Das WegE Projekt}{1}
 \contentsline {section}{\numberline {1.2}Zielsetzung und Vorgehensweise}{3}
-\contentsline {chapter}{\numberline {2}Begriffskl\"arungen}{4}
-\contentsline {section}{\numberline {2.1}CMS und WCMS}{4}
-\contentsline {paragraph}{\nonumberline Typische Features eines CMS}{4}
-\contentsline {section}{\numberline {2.2}ECMS}{5}
-\contentsline {section}{\numberline {2.3}Web Portal}{5}
-\contentsline {chapter}{\numberline {3}Projektanalyse und Spezifikation}{6}
-\contentsline {section}{\numberline {3.1}Der Prozess der Softwareentwicklung}{6}
-\contentsline {paragraph}{\nonumberline Software life cycle}{6}
-\contentsline {section}{\numberline {3.2}Requirements Engineering}{7}
-\contentsline {paragraph}{\nonumberline Requirement}{8}
-\contentsline {section}{\numberline {3.3}Anforderungen an das WegE Projekt}{8}
-\contentsline {paragraph}{\nonumberline Auf Machbarkeit zu \"uberpr\"ufende Anforderungen}{9}
-\contentsline {section}{\numberline {3.4}Die Wahl der passenden Technologie}{10}
-\contentsline {chapter}{\numberline {4}Die Wahl des richtigen Content Management Systems}{11}
-\contentsline {section}{\numberline {4.1}Auswahlkriterien}{11}
-\contentsline {paragraph}{\nonumberline CmsMatrix}{11}
-\contentsline {subsection}{\numberline {4.1.1}Technologie\&Architektur}{12}
-\contentsline {subsection}{\numberline {4.1.2}Anbieterinformationen}{12}
-\contentsline {subsection}{\numberline {4.1.3}Content Management}{13}
-\contentsline {subsection}{\numberline {4.1.4}Content Delivery}{13}
-\contentsline {section}{\numberline {4.2}Die Vorauswahl dreier geeigneter Content Management Systeme}{13}
-\contentsline {section}{\numberline {4.3}Sharepoint}{14}
-\contentsline {section}{\numberline {4.4}LifeRay Portal}{15}
-\contentsline {section}{\numberline {4.5}Typo3}{16}
-\contentsline {chapter}{\numberline {5}Typo3 - Eine \"Ubersicht}{18}
-\contentsline {section}{\numberline {5.1}Version und Hintergrund}{18}
-\contentsline {section}{\numberline {5.2}Installation und Anforderungen}{18}
-\contentsline {section}{\numberline {5.3}Bedienung}{19}
-\contentsline {section}{\numberline {5.4}Funktionalit\"at und Architektur von Typo3}{19}
-\contentsline {subsection}{\numberline {5.4.1}Frontend Struktur}{20}
-\contentsline {paragraph}{\nonumberline Frontend Bereiche}{20}
-\contentsline {subsection}{\numberline {5.4.2}Die Backend Module im \"Uberblick}{21}
-\contentsline {subsubsection}{\nonumberline Page}{21}
-\contentsline {subsubsection}{\nonumberline View}{21}
-\contentsline {subsubsection}{\nonumberline List}{21}
-\contentsline {subsubsection}{\nonumberline Info}{21}
-\contentsline {subsubsection}{\nonumberline Functions}{21}
-\contentsline {subsubsection}{\nonumberline Template}{22}
-\contentsline {subsubsection}{\nonumberline Filelist}{22}
-\contentsline {subsubsection}{\nonumberline Extensions}{22}
-\contentsline {subsubsection}{\nonumberline Languages}{22}
-\contentsline {subsubsection}{\nonumberline Access}{22}
-\contentsline {subsubsection}{\nonumberline Backend users}{22}
-\contentsline {subsubsection}{\nonumberline Install}{23}
-\contentsline {subsubsection}{\nonumberline Log}{23}
-\contentsline {subsubsection}{\nonumberline DB check}{23}
-\contentsline {subsubsection}{\nonumberline Configuration}{23}
-\contentsline {subsubsection}{\nonumberline Reports}{23}
-\contentsline {subsection}{\numberline {5.4.3}Typoscript}{23}
-\contentsline {subsection}{\numberline {5.4.4}Erweiterungen/Extensions}{24}
-\contentsline {subsection}{\numberline {5.4.5}Templates erstellen}{25}
-\contentsline {subsection}{\numberline {5.4.6}Beispielinstallation}{26}
-\contentsline {paragraph}{\nonumberline Typo 3 Installationsschritte}{27}
-\contentsline {paragraph}{\nonumberline Template-Erstellung Schritte}{27}
-\contentsline {chapter}{\numberline {6}Anpassung eines Typo3 Systems an die gesammelten Requirements}{30}
-\contentsline {paragraph}{\nonumberline Eigenschaften einer professionellen Extension}{30}
-\contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{32}
-\contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten}{32}
-\contentsline {subsection}{\numberline {6.1.2}Implementation}{32}
-\contentsline {subsection}{\numberline {6.1.3}Evaluation}{32}
-\contentsline {section}{\numberline {6.2}Blog und News}{33}
-\contentsline {subsection}{\numberline {6.2.1}Alternativen}{33}
-\contentsline {subsection}{\numberline {6.2.2}Implementation}{34}
-\contentsline {subsection}{\numberline {6.2.3}Evaluation}{35}
-\contentsline {section}{\numberline {6.3}Forum}{35}
-\contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{35}
-\contentsline {subsection}{\numberline {6.3.2}Implementation}{35}
-\contentsline {subsection}{\numberline {6.3.3}Evaluation}{36}
-\contentsline {section}{\numberline {6.4}Import, Anzeige und Bereitstellung von Daten}{36}
-\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{36}
-\contentsline {subsection}{\numberline {6.4.2}Implementation}{37}
-\contentsline {subsection}{\numberline {6.4.3}Evaluation}{38}
-\contentsline {section}{\numberline {6.5}Eigene Contentelemente}{38}
-\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{38}
-\contentsline {subsection}{\numberline {6.5.2}Implementation}{39}
-\contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{40}
-\contentsline {subsection}{\numberline {6.5.3}Evaluation}{40}
-\contentsline {section}{\numberline {6.6}Kalender}{41}
-\contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{41}
-\contentsline {subsection}{\numberline {6.6.2}Implementation}{41}
-\contentsline {subsection}{\numberline {6.6.3}Evaluation}{42}
-\contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{42}
-\contentsline {subsubsection}{\nonumberline RealURL}{42}
-\contentsline {subsubsection}{\nonumberline SEO}{43}
-\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{43}
-\contentsline {subsubsection}{\nonumberline Powermail}{43}
-\contentsline {subsubsection}{\nonumberline Wartung und Sicherheit}{44}
-\contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{45}
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{48}
-\contentsline {section}{\numberline {8.1}Erkenntnisse}{48}
-\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{49}
-\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{50}
-\contentsline {paragraph}{\nonumberline index.html}{50}
-\contentsline {paragraph}{\nonumberline setup.ts}{50}
-\contentsline {chapter}{Abbildungsverzeichnis}{52}
-\contentsline {chapter}{Tabellenverzeichnis}{52}
-\contentsline {chapter}{Literaturverzeichnis}{53}
+\contentsline {chapter}{\numberline {2}Begriffskl\"arungen}{5}
+\contentsline {section}{\numberline {2.1}CMS und WCMS}{5}
+\contentsline {paragraph}{\nonumberline Typische Features eines CMS}{5}
+\contentsline {section}{\numberline {2.2}ECMS}{6}
+\contentsline {section}{\numberline {2.3}Web Portal}{6}
+\contentsline {chapter}{\numberline {3}Projektanalyse und Spezifikation}{7}
+\contentsline {section}{\numberline {3.1}Der Prozess der Softwareentwicklung}{7}
+\contentsline {paragraph}{\nonumberline Software life cycle}{7}
+\contentsline {section}{\numberline {3.2}Requirements Engineering}{8}
+\contentsline {paragraph}{\nonumberline Requirement}{9}
+\contentsline {section}{\numberline {3.3}Anforderungen an das WegE Projekt}{9}
+\contentsline {paragraph}{\nonumberline Auf Machbarkeit zu \"uberpr\"ufende Anforderungen}{10}
+\contentsline {section}{\numberline {3.4}Die Wahl der passenden Technologie}{11}
+\contentsline {chapter}{\numberline {4}Die Wahl des richtigen Content Management Systems}{12}
+\contentsline {section}{\numberline {4.1}Auswahlkriterien}{12}
+\contentsline {paragraph}{\nonumberline CmsMatrix}{12}
+\contentsline {subsection}{\numberline {4.1.1}Technologie\&Architektur}{13}
+\contentsline {subsection}{\numberline {4.1.2}Anbieterinformationen}{13}
+\contentsline {subsection}{\numberline {4.1.3}Content Management}{14}
+\contentsline {subsection}{\numberline {4.1.4}Content Delivery}{14}
+\contentsline {section}{\numberline {4.2}Die Vorauswahl dreier geeigneter Content Management Systeme}{14}
+\contentsline {section}{\numberline {4.3}Sharepoint}{15}
+\contentsline {section}{\numberline {4.4}LifeRay Portal}{16}
+\contentsline {section}{\numberline {4.5}Typo3}{17}
+\contentsline {chapter}{\numberline {5}Typo3 - Eine \"Ubersicht}{19}
+\contentsline {section}{\numberline {5.1}Version und Hintergrund}{19}
+\contentsline {section}{\numberline {5.2}Installation und Anforderungen}{19}
+\contentsline {section}{\numberline {5.3}Bedienung}{20}
+\contentsline {section}{\numberline {5.4}Funktionalit\"at und Architektur von Typo3}{21}
+\contentsline {subsection}{\numberline {5.4.1}Frontend Struktur}{21}
+\contentsline {paragraph}{\nonumberline Frontend Bereiche}{21}
+\contentsline {subsection}{\numberline {5.4.2}Die Backend Module im \"Uberblick}{23}
+\contentsline {subsubsection}{\nonumberline Page}{23}
+\contentsline {subsubsection}{\nonumberline View}{23}
+\contentsline {subsubsection}{\nonumberline List}{23}
+\contentsline {subsubsection}{\nonumberline Info}{23}
+\contentsline {subsubsection}{\nonumberline Functions}{23}
+\contentsline {subsubsection}{\nonumberline Template}{24}
+\contentsline {subsubsection}{\nonumberline Filelist}{24}
+\contentsline {subsubsection}{\nonumberline Extensions}{24}
+\contentsline {subsubsection}{\nonumberline Languages}{24}
+\contentsline {subsubsection}{\nonumberline Access}{24}
+\contentsline {subsubsection}{\nonumberline Backend users}{24}
+\contentsline {subsubsection}{\nonumberline Install}{25}
+\contentsline {subsubsection}{\nonumberline Log}{25}
+\contentsline {subsubsection}{\nonumberline DB check}{25}
+\contentsline {subsubsection}{\nonumberline Configuration}{25}
+\contentsline {subsubsection}{\nonumberline Reports}{25}
+\contentsline {subsection}{\numberline {5.4.3}Typoscript}{25}
+\contentsline {subsection}{\numberline {5.4.4}Erweiterungen/Extensions}{26}
+\contentsline {subsection}{\numberline {5.4.5}Templates erstellen}{27}
+\contentsline {subsection}{\numberline {5.4.6}Beispielinstallation}{29}
+\contentsline {paragraph}{\nonumberline Typo 3 Installationsschritte}{29}
+\contentsline {paragraph}{\nonumberline Template-Erstellung Schritte}{30}
+\contentsline {chapter}{\numberline {6}Anpassung eines Typo3 Systems an die gesammelten Requirements}{32}
+\contentsline {paragraph}{\nonumberline Eigenschaften einer professionellen Extension}{32}
+\contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{34}
+\contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten}{34}
+\contentsline {subsection}{\numberline {6.1.2}Implementation}{34}
+\contentsline {subsection}{\numberline {6.1.3}Evaluation}{34}
+\contentsline {section}{\numberline {6.2}Blog und News}{35}
+\contentsline {subsection}{\numberline {6.2.1}Alternativen}{35}
+\contentsline {subsection}{\numberline {6.2.2}Implementation}{36}
+\contentsline {subsection}{\numberline {6.2.3}Evaluation}{37}
+\contentsline {section}{\numberline {6.3}Diskussionsforum}{37}
+\contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{37}
+\contentsline {subsection}{\numberline {6.3.2}Implementation}{37}
+\contentsline {subsection}{\numberline {6.3.3}Evaluation}{38}
+\contentsline {section}{\numberline {6.4}Import, Anzeige und Bereitstellung von Daten}{38}
+\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{38}
+\contentsline {subsection}{\numberline {6.4.2}Implementation}{39}
+\contentsline {subsection}{\numberline {6.4.3}Evaluation}{40}
+\contentsline {section}{\numberline {6.5}Eigene Contentelemente}{40}
+\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{40}
+\contentsline {subsection}{\numberline {6.5.2}Implementation}{41}
+\contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{42}
+\contentsline {subsection}{\numberline {6.5.3}Evaluation}{42}
+\contentsline {section}{\numberline {6.6}Kalender}{43}
+\contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{43}
+\contentsline {subsection}{\numberline {6.6.2}Implementation}{43}
+\contentsline {subsection}{\numberline {6.6.3}Evaluation}{44}
+\contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{44}
+\contentsline {subsubsection}{\nonumberline RealURL}{44}
+\contentsline {subsubsection}{\nonumberline SEO}{45}
+\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{45}
+\contentsline {subsubsection}{\nonumberline Powermail}{45}
+\contentsline {subsubsection}{\nonumberline Wartung und Sicherheit}{46}
+\contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{47}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{50}
+\contentsline {section}{\numberline {8.1}Pers\"onliche Erkenntnisse}{50}
+\contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{51}
+\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{52}
+\contentsline {paragraph}{\nonumberline index.html}{52}
+\contentsline {paragraph}{\nonumberline setup.ts}{52}
+\contentsline {chapter}{Abbildungsverzeichnis}{54}
+\contentsline {chapter}{Tabellenverzeichnis}{54}
+\contentsline {chapter}{Literaturverzeichnis}{55}

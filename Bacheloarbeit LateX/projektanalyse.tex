@@ -7,11 +7,11 @@
 \medskip
 \medskip
 Dieses Kapitel betrachtet die Entwicklung eines größeren webbasierten Projektes aus der Projektmanagementperspektive.
-Die Planungsphase eines Projekts ist sehr wichtig und erspart, sofern richtig durchgeführt, eine Menge Arbeit. Diese Arbeitsersparnis wächst exponentiell mit der Größe des Projekts und trifft somit besonders auf ein Projekt wie das der WegE Plattform zu. Der folgende Abschnitt wird mit Hilfsmitteln des klassischen Software Engineering das Projekt analysieren. Hier geht es vor Allem um das Erkennen und die Spezifikation der Anforderungen an die Plattform, denn diese beeinflussen natürlich direkt die technische Anpassung, die in Kapitel \ref{kap-typo3praxisteil} vorgenommen wird.
+Die Planungsphase eines Projekts ist sehr wichtig und erspart, sofern richtig durchgeführt, eine Menge Arbeit. Diese Arbeitsersparnis wächst exponentiell mit der Größe des Projekts und trifft somit besonders auf ein Projekt wie das der WegE Plattform zu. Der folgende Abschnitt wird mit Hilfsmitteln des klassischen Software Engineering das Projekt analysieren. Es geht vor Allem um das Erkennen und die Spezifikation der Anforderungen an die Plattform, denn diese beeinflussen natürlich direkt die technische Anpassung, die in Kapitel \ref{kap-typo3praxisteil} vorgenommen wird.
 
 \section{Der Prozess der Softwareentwicklung}
 
-Der Grund warum Software Engineering existiert, ist die wachsende Komplexität von besagter Software. Um diese Komplexität zu bewältigen verwendet man Software Process Models. \cite{Pressman2010} \textsc{Pressman} liefert eine generische Unterteilung eines Software Process Model Frameworks in fünf Bereiche: Kommunikation, Planung, Modellierung, Konstruktion und Einsatz. Diese fünf Bereiche können verschieden angeordnet sein. Bei einer linearen Anordnung wird ein Bereich nach dem anderen abgearbeitet. Eine iterative Anordnung erlaubt es einen oder mehrere Bereiche zu wiederholen, bevor man voranschreitet. Eine parallele Anordnung erlaubt mehrere Aktivitäten zur selben Zeit. In der letzten beschriebenen Anordnung, dem evolutionären Einsatz dieses Frameworks werden die fünf Punkte zyklisch angeordnet. Synonyme Begrifflichkeiten, die auch folgend genutzt werden, finden sich im berühmten Software Life Cycle.
+Der Grund für die Existenz von Software Engineering, ist die wachsende Komplexität von besagter Software. Um diese Komplexität zu bewältigen verwendet man Software Process Models. \cite{Pressman2010} \textsc{Pressman} liefert eine generische Unterteilung eines Software Process Model Frameworks in fünf Bereiche: Kommunikation, Planung, Modellierung, Konstruktion und Einsatz. So lässt sich die gesamte Entwicklung von Software zunächst in fünf kleinere Bereiche einteilen. Die fünf Bereiche können verschieden angeordnet sein. Bei einer linearen Anordnung wird ein Bereich nach dem anderen abgearbeitet. Eine iterative Anordnung erlaubt es einen oder mehrere Bereiche zu wiederholen, bevor man voranschreitet. Eine parallele Anordnung erlaubt mehrere Aktivitäten zur selben Zeit. In der letzten beschriebenen Anordnung, dem evolutionären Einsatz dieses Frameworks werden die fünf Punkte zyklisch angeordnet. Ein berühmtes Beispiel für die lineare Anordnung ist das Wasserfallmodell. Heutzutage setzt man immer öfter auf agile Methoden, wie SCRUM, die eine evolutionäre Anordnung haben. Synonyme Begrifflichkeiten, die auch folgend genutzt werden, finden sich im berühmten Software Life Cycle.
 
 \begin{figure}[ht]
 	\includegraphics[scale=0.5]{abb/P10.png}
@@ -42,8 +42,8 @@ Die Aufgaben des Requirements Engineering sind vor Allem das Ermitteln und Struk
 	\item Requirements validation
 \end{itemize}
 
-Beim Erheben von Requirements, dem ersten Punkt dieser Liste, steht das Sammeln von Informationen über das System im Mittelpunkt. Einige Techniken zur Erhebung von Requirements sind Interviews, Fragebögen, Brainstorming, Prototyping, Erstellung einer Stakeholder map oder einfach das Einarbeiten in die Materie des Projekts.\\ 
-Die Art und Weise, wie Requirements erhoben werden, unterscheidet sich auch, je nach Modell. So ist eine der größten Unterschiede zwischen den Modellen, dass klassischere Ansätze zu Beginn eines Projekts alle Requirements definieren, während agile Ansätze zu Beginn nur nötige Requirements erheben und diesen Prozess parallel zur Entwicklung fortführen.Je nach Projekt können diese Methoden mehr oder weniger sinnvoll sein. Um Requirements sinnvoll zu kommunizieren müssen diese eine Liste von Kriterien erfüllen. Diese umfasst oft Eigenschaften wie atomar, abgegrenzt, nachprüfbar und konsistent. Wurden alle Requirements in eine einheitliche Form gebracht, werden diese strukturiert und klassifiziert. Das heißt es wird überprüft ob einige Requirements von anderen abhängig oder zusammengehörig sind. Auch die Aufteilung in funktionale und nicht-funktionale Requirements ist hier möglich. Zum besseren Verständnis eine kurze Definition eines Requirements.
+Beim Erheben von Requirements, dem ersten Punkt dieser Liste, steht das Sammeln von Informationen über das System im Mittelpunkt. Einige Techniken zur Erhebung von Requirements sind Interviews, Fragebögen, Brainstorming, Prototyping, Erstellung einer Stakeholder map oder das Einarbeiten in die Materie des Projekts.\\ 
+Die Art und Weise, wie Requirements erhoben werden, unterscheidet sich auch, je nach Modell. So ist eine der größten Unterschiede zwischen den Modellen, dass klassischere Ansätze zu Beginn eines Projekts alle Requirements definieren, während agile Ansätze zu Beginn nur nötige Requirements erheben und diesen Prozess parallel zur gesamten Entwicklung fortführen.Je nach Projekt können diese Methoden mehr oder weniger sinnvoll sein. Um Requirements sinnvoll zu kommunizieren müssen diese eine Liste von Kriterien erfüllen. Diese umfasst oft Eigenschaften wie atomar, abgegrenzt, nachprüfbar und konsistent. Wurden alle Requirements in eine einheitliche Form gebracht, werden diese im nächsten Schritt strukturiert und klassifiziert. Das heißt, es wird überprüft ob einige Requirements von anderen abhängig oder zusammengehörig sind. Auch die Aufteilung in funktionale und nicht-funktionale Requirements ist hier möglich. Zum besseren Verständnis eine kurze Definition eines Requirements.
 
 \paragraph{Requirement}
 Ein Requirement wird nach Standard des IEEE Konsortiums als eine Kondition oder Fähigkeit, die für einen User zur Lösung eines Problems notwendig ist, beschrieben. Ausnahmen sind vertraglich zu erfüllende Requirements. Sehr oft ist im Software Engineering die Rede von funktionalen und nicht-funktionalen Requirements. Funktionale Requirements beschreiben etwas, das ein System können muss, währenddessen nicht-funktionale Requirements Ansprüche an die Qualität des Systems stellen.\cite{LectureFSE}\\\\
@@ -52,43 +52,43 @@ Als letzten Teil des Requirements Engineering werden die erhobenen Requirements 
 Auf weitere Details wird nun nicht näher eingegangen. Dieses Grundwissen soll im Folgenden dazu dienen die Requirements des WegE Projekts zu erheben. 
 
 \section{Anforderungen an das WegE Projekt}
-Für ein Projekt, wie die WegE Plattform sind die Anforderungen zahlreich und beschränken sich nicht nur auf technische Dinge. Von diesen nicht-technischen Anforderungen sei nun jedoch abgesehen. Betrachtet man die Möglichkeiten der Umsetzung, lässt sich schnell erkennen, dass das System ein Content Management System ist. Glücklicherweise sind CMS Projekte schon sehr oft umgesetzt worden, weshalb \textsc{Rüping} \cite{Rueping2010} eine Übersicht zur Requirements Analyse solcher Projekte gibt. Im Mittelpunkt steht dabei das Zustellen von Inhalt (Content delivery). Die Requirements hierfür lassen sich in vier Bereiche einteilen.
+Für ein Projekt, wie die WegE Plattform sind die Anforderungen zahlreich und beschränken sich nicht nur auf technische Dinge. Von den meisten nicht-technischen Anforderungen sei nun jedoch abgesehen. Betrachtet man die Möglichkeiten der Umsetzung, lässt sich schnell erkennen, dass die WegE Plattform am Besten mit Hilfe eines CMS umgesetzt werden kann. Glücklicherweise sind CMS Projekte schon sehr oft umgesetzt worden, weshalb \textsc{Rüping} \cite{Rueping2010} eine Übersicht zur Requirements Analyse solcher Projekte gibt. Im Mittelpunkt steht dabei das Zustellen von Inhalt (Content delivery). Die Requirements hierfür lassen sich in vier Bereiche einteilen.
 \begin{enumerate}
 	\item Serverseitige Requirements für Content delivery\\
-	In diesem Bereich muss ermittelt werden, welche Arten von Content gebraucht werden und welche Arten von Content durch User auch hochgeladen werden können. Dazu kommt, wie dieser Content klassifiziert und gefunden werden kann. Darüber hinaus sollte erhoben werden, inwieweit User Personalisierungen vornehemen können sollen. 
+	In diesem Bereich muss ermittelt werden, welche Arten von Content gebraucht werden und welche Arten von Content durch User auch hochgeladen werden können. Dazu kommt, wie dieser Content klassifiziert und gefunden werden kann. Darüber hinaus sollte erhoben werden, inwieweit User Personalisierungen vornehmen können sollen. 
 	\item Clientseitige Requirements für Content delivery\\
-	In diesem Bereich muss eine realistische Annahme für die Technologie des Clients getroffen werden. Nötige Seitentypen für jede Art von Content muss definiert werden. Außerdem sollten Anforderungen an die Seitenstruktur und das Design untersucht werden.
+	In diesem Bereich muss eine realistische Annahme für die Technologie des Clients getroffen werden. Nötige Seitentypen für jede Art von Content müssen definiert werden. Außerdem sollten Anforderungen an die Seitenstruktur und das Design untersucht werden.
 	\item Nicht funktionale Requirements für Content delivery\\
-	Unter diesen Punkt fallen Anforderungen an die Performance, Erreichbarkeit und Skalierbarkeit des Systems. Dazu kommen Sicherheitsaspekte und Aufwand für die Instandhaltung des Systems, welche untersucht werden müssen.
+	Unter diesen Punkt fallen Anforderungen an die Performance, Erreichbarkeit und Skalierbarkeit des Systems. Dazu kommen Sicherheitsaspekte und Aufwand für die Instandhaltung des Systems, welche untersucht werden können.
 	\item Requirements für Content Management\\
 	In diesem Punkt werden vor Allem die Workflows des Systems untersucht. Gewünschte Workflows müssen als Requirements festgehalten werden. Außerdem muss untersucht werden, inwiefern erstellter Content validiert werden muss.
 \end{enumerate}
 
 Diese Liste ist ein guter Ansatzpunkt für das Erheben von Requirements bei Projekten mit Content Management Systemen. Für das WegE Projekt werden die Requirements von fähigen Mitarbeitern der Universität Bamberg erhoben. Für diese Arbeit bleibt eine sehr spezielle Liste von Anforderungen, die als Vorschlag der vier Institutionen des Wege Projekts an das Team der WegE Plattform eingegangen sind. 
 
-Die nun aufgezählten Requirements wurden noch nicht auf ihre Machbarkeit geprüft, das ist Teil dieser Arbeit. Deshalb werden sich sicherlich nicht alle folgenden Requirements auf der fertigen Plattform wiederfinden. Dies ist keine vollständige Liste der Requirements an das WegE Projekt, sondern eine Aufzählung der Requirements mit einer Relevanz in Bezug auf die technische Umsetzung, welche mit einer prototypischen Umsetzung (Kapitel 6) getestet werden sollen.
+Die nun aufgezählten Requirements wurden noch nicht auf ihre Machbarkeit geprüft, denn das ist Teil dieser Arbeit. Deshalb werden sich sicherlich nicht alle folgenden Requirements auf der fertigen Plattform wiederfinden. Dies ist keine vollständige Liste der Requirements an das WegE Projekt, sondern eine Aufzählung jener Anforderungen mit einer Relevanz in Bezug auf die technische Umsetzung, welche mit einer prototypischen Implemenation (Kapitel 6) getestet werden.
 \paragraph{Auf Machbarkeit zu überprüfende Anforderungen}
 \begin{description}
 
 \item [Statische Informationen]
 Als Erstes soll das WegE Projekt über das Internet erreichbar sein, um so Informationen über kommende Termine, Forschungsergebnisse und das Projekt selbst zu verbreiten.
 
-\item [Newsfeed]
-Die Plattform soll einen Newsfeed beinhalten, welche Besucher der Seite über neueste Informationen aufklärt.
-
-\item [Blogs]
-Einige Einrichtungen der WegE Plattformen werden neben den allgemeinen News einen Blog führen.
-
 \item [Redakteure]
 Es muss möglich sein, dass Redakteure aus den einzelnen Abteilungen ohne Programmierkenntnisse Inhalte auf der Plattform einstellen können.
 Da sich das WegE Projekt aus mehreren Abteilungen zusammensetzt, muss es möglich sein, dass mehrere Redakteure Neuigkeiten auf der Plattform veröffentlichen können. Hier wird bereits die Notwendigkeit eines CMS deutlich.
-Als nicht-funktionales Requirement schließt sich hier noch, extra hervorgehoben, die Bedienfreundlichkeit für die Redakteure an.
+Ein nicht-funktionales Requirement mit besonderer Wichtigkeit ist hier die Bedienfreundlichkeit für Redakteure.
+
+\item [Newsfeed]
+Die Plattform soll einen Newsfeed beinhalten, welche Besucher der Seite über neueste Informationen aufklärt. Dieser soll von Redakteuren leicht aktualisiert werden können.
+
+\item [Blogs]
+Einige Einrichtungen der WegE Plattformen werden neben den allgemeinen News einen Blog führen. Auch der Blog soll leicht zu pflegen sein.
 
 \item [Forum]
 Um den Kontakt mit Interessierten Nutzern aufzubauen, soll möglicherweise ein eigenes Forum eingerichtet werden. Auf diesen soll es nur eingeloggten Usern möglich sein, zu diskutieren. Sollte das Forum eine gewissen Größe erreichen, ist es wichtig Moderatoren mit mehr Rechten ernennen zu können, die Struktur und Inhalt des Forums wahren.
 
 \item [Registrierung]
-Um an Diskussionen im Forum teilzunehmen sollen verschiedene Möglichkeiten zur Anmeldung angeboten werden. Zuerst ein Registrierungsformular für die Öffentlichkeit und zusätzlich eine Möglichkeit zur Anmeldung mittels Kennnummer der Universität Bamberg.
+Um an Diskussionen im Forum teilzunehmen soll es möglich sein, sich auf der Webseite via E-Mail zu registrieren und einzuloggen. 
 
 \item [Forschungsergebnisse teilen]
 Nutzer sollen auf der Plattform neue Forschungsergebnisse als Dateidownload erhalten können.
@@ -97,10 +97,10 @@ Nutzer sollen auf der Plattform neue Forschungsergebnisse als Dateidownload erha
 Als weitere Möglichkeit zur Kontaktaufnahme soll ein Kontaktformular bereitstehen, das Mails an Ansprechpartner des WegE Projekts sendet.
 
 \item [Kalender]
-Ein interaktiver Kalender soll kommende Termine anzeigen können. Zusätzlich soll ein Nutzer hier direkt einen freien Termin für einen Beratungstermin für sich belegen können.
+Ein interaktiver Kalender soll kommende Termine anzeigen können. Zusätzlich soll ein Nutzer hier direkt seine Teilnahme an bestimmten Events angeben können.
 
 \item[Search Engine Optimization]
-Sehr oft spielen Suchmaschinen bei der Popularität einer Website eine Rolle, weshalb SEO ein häfig genanntes Requirement ist. Die Website soll möglichst hoch von Suchmaschinen geranked werden und es soll möglich sein Besucherdaten einzusehen.
+Sehr oft spielen Suchmaschinen bei der Popularität einer Website eine Rolle, weshalb SEO ein häfig genanntes Requirement ist. Die Website soll möglichst hoch von Suchmaschinen eingestuft werden und es wäre praktisch, Besucherdaten einsehen zu können.
 
 \end{description}
 
