@@ -5,9 +5,9 @@ Nach dem Erstellen einer simplen Typo3 Umgebung ist das Ziel dieses Teils die Un
 
 \paragraph{Eigenschaften einer professionellen Extension}
 \begin{itemize}
-	\item \textbf{Einhalten der Typo3 Coding Guidelines}: Diese Guidelines decken die wichtigsten Aspekte einer guten Extension, wie Sicherheit, Erweiterbarkeit, Stabilität und Zukunftssicherheit, ab. https://docs.typo3.org/typo3cms/CodingGuidelinesReference/Index.html
+	\item \textbf{Einhalten der Typo3 Coding Guidelines}: Diese Guidelines decken die wichtigsten Aspekte einer guten Extension, wie Sicherheit, Erweiterbarkeit, Stabilität und Zukunftssicherheit, ab.\footnote{https://docs.typo3.org/typo3cms/CodingGuidelinesReference/Index.html}
 	\item \textbf{Kompatibilität mit eigenem Typo3 System}: Natürlich soll die Extension für die jeweilige Version verfügbar sein und nicht im Konflikt mit anderen Extensions stehen. Außerdem sollte die Lizenz der Extension beachtet werden.
-	\item \textbf{Extension Manual verfügbar} Eine offizielle Anleitung kann direkt auf der Downloadseite der Extension auf Typo3 verlinkt werden, ist unerlässlich für den richtigen Umgang mit einer Extension und sollte daher nicht fehlen.
+	\item \textbf{Verfügbares Extension Manual} Eine offizielle Anleitung kann direkt auf der Downloadseite der Extension auf Typo3 verlinkt werden, ist unerlässlich für den richtigen Umgang mit einer Extension und sollte daher nicht fehlen.
 \end{itemize}
 
 Die erste Anlaufstelle zur Überprüfung dieser Eigenschaften ist die Downloadseite der Extension auf typo3.org. Diese bietet eine Übersicht über Version, Update, Alter, Kategorie, Autor und Downloadzahlen einer Extension. Die Anzahl der Downloads ist meistens ein guter Indikator für eine professionelle Extension, jedoch nicht immer. Deshalb sollte die Downloadzahl nicht als einziger Indikator in Betracht gezogen werden.
@@ -29,7 +29,7 @@ Die Erstellung und das Management der Usergruppen, die für das WegE Projekt gepl
 Wichtig hierbei die Unterscheidung von Backend Usern und Frontend Usern. Das Erstellen von Backend Usern lässt sich bequem über das Backend von Typo3 erledigen. Ein Administrator legt dafür einfach einen neuen Nutzer an und bestimmt die jeweiligen Rechte dieses Nutzers. Das werden zumeist Redakteure sein und da sich die Zahl dieser in Grenzen halten sollte, ist es möglich diese alle manuell anzulegen.
 Für Frontend User sind andere Methoden notwendig. Der Registrierungsprozess dafür muss in gewisser Weise automatisiert werden.
 
-\subsection{Möglichkeiten}
+\subsection{Möglichkeiten - Typo3 und sr\_feuser\_registration}
 
 Braucht eine Webseite nur Administratoren und einige Redakteure, also nur Backend User, so lässt sich das nur mit Typo3 allein bewerkstelligen. Dafür legt ein Administrator per Hand im Backend manuell neue Zugänge an. Das funktioniert nicht mit Frontend Usern.
 Die momentan vorherrschende Methode zur Verwaltung von Frontend Usern ist die Extension sr\_feuser\_registration\footnote{https://typo3.org/extensions/repository/view/sr\_feuser\_register}. Von Vorteil ist, dass diese Extension auf typischen Typo3 Funktionen im Backend aufbaut, was die Verwaltung erleichtet. Es werden alle nötigen Funktionen, wie Registrierungsformular, E-Mail Verifizierung und gehashte Passwörter geboten. Sie befindet sich mit knapp 100,000 Downloads in den meist heruntergeladenen Extensions, wurde bereits 2005 das erste mal veröffentlicht und wird in Version 4.0 angeboten. Die Extension hat Abhängigkeiten zu fünf anderen Extensions, die vorweg automatisch installiert werden. Es gibt einige Konflikte mit anderen Extensions, die beachtet werden sollten.
@@ -47,21 +47,22 @@ Die Implementation dieser Extension verläuft, in Berücksichtigung der Größe des 
 
 \subsection{Evaluation}
 
-Die Arbeit mit der sr\_feuser\_registration Extension stellte sich als sehr angenehm heraus. Das mag mitunter daran liegen, dass sie sich seit über 10 Jahren in Entwicklung befindet und in einem sehr ausgereiften Stadium befindet. Die Extension bietet so gut wie jede erdenkliche Funktion rund um das Thema Frontend User als Menüpunkt im Backend, sodass man schnell und ohne Anleitung ein funktionierendes Registrierungsformular aufsetzen kann. Es nutzt die bereits vorhandenen Funktionen von Typo3, womit es sich leicht definieren lässt, welche Seiten nur für registrierte User gedacht sind. Sind Frontend User auf einer Typo3 Seite nötig ist diese Extension eine optimale Lösung. Darüber hinaus gibt es viele Extensions, welche die Funktion von sr\_feuser\_registration erweitern.
+Die Arbeit mit der sr\_feuser\_registration Extension stellte sich als sehr angenehm heraus. Das mag mitunter daran liegen, dass sie sich seit über 10 Jahren in Entwicklung befindet und in einem sehr ausgereiften Stadium befindet. Die Extension bietet so gut wie jede erdenkliche Funktion rund um das Thema Frontend User als Menüpunkt im Backend, sodass man schnell und ohne Anleitung ein funktionierendes Registrierungsformular aufsetzen kann. Es nutzt die bereits vorhandenen Funktionen von Typo3, womit es sich leicht definieren lässt, welche Seiten nur für registrierte User gedacht sind. Sind Frontend User auf einer Typo3 Seite nötig ist diese Extension die optimale Lösung. Darüber hinaus gibt es viele Extensions, welche die Funktion von sr\_feuser\_registration um etliche Featueres erweitern oder einbinden. Durch die Größe der Extension und deren Aufgabe, sollte bei einer realistisch angepassten Implementation dennoch mit nicht trivialem Aufwand für die Einbindung gerechnet werden.
 
 \section{Blog und News}
 Die Anzeige von News oder einem fortlaufenden Blog findet auf immer mehr Webseiten Relevanz. So ist es wenig verwunderlich, dass die bekannteste News-Extension von Typo3 auch eine der meistverwendeten Extensions überhaupt ist. Die populärste Wahl scheint dabei die Extension mit dem Namen \texttt{news} zu sein.
 
-\subsection{Alternative Möglichkeiten}
+\subsection{Möglichkeiten - news und typo3\_blog}
+Die news Extension wird seit 2011 entwickelt und ist mit 40,000 Downloads sehr beliebt. Auf der Extension Seite werden keinerlei Abhängigkeiten oder Konflikte gelistet. Sie bietet viele Komponenten, wie Kategorisierung, Social Buttons und einen sehr leichten Umgang für Redakteure.
 Eine weitere Extension, die für die Anzeige eines Blogs geeignet ist, heißt typo3\_blog. Die Extension steht der vorgestellten news Extension in Nichts nach, jedoch bietet die news Extension zwei Dinge in einem, news und Blog Funktionalität und deckt somit zwei mögliche Anforderungen der WegE Plattform ab. Somit minimiert die Wahl der news Extension theoretisch Installationsaufwand.
 
-\subsection{Implementation}
+\subsection{Implementation der news Extension}
 Zu Beginn eine kleine Warnung: Eine Extension mit dem Namen \texttt{tt\_news} ist nicht mehr lauffähig und sollte nicht mit der Extension \texttt{news} verwechselt werden.\\
 Nach dem Installieren der Extension findet sich im Menü des Typo3 Backend ein neuer Unterpunkt. Hier lassen sich neue News anlegen und verwalten. Vorerst müssen jedoch einige Seiten zur Anzeige der News angelegt werden. Im Page Menü erstellt man dazu eine Seite zum Anzeigen der Übersicht aller News. Hier werden kleine Vorschauen der News in einer Liste angezeigt. Dazu muss des Weiteren eine Unterseite zur News Übersichtsseite angelegt werden. Hier wird eine volle News angezeigt, sofern der User auf der Übersichtsseite auf den Auszug einer News klickt. Als letztes wird noch ein Ordner benötigt, in dem alle News gespeichert werden. Dieser wird im Webseitenbaum angelegt.\\
 Beim Erstellen von Content auf der News Übersichtsseite und einem Klick auf Normal->Content, findet sich oben im Menü der Reiter Plugins. Hier taucht auch das News System auf. Dieses muss noch ein zweites Mal auf der Detailseite hinzugefügt werden. \\
 Um diese Funktionalität der Detailseite zu bewerkstelligen müssen nach dem Erstellen dieser Seiten im Plugin einige Angaben gemacht werden. Beim Editieren des Plugins auf der News Übersichtsseite unter dem Reiter Plugin muss die List view ausgewählt sein. Diese erzeugt die gewünschte Übersicht aller News. Im Unterreiter Additional wird angegeben welche Seite für die Detailansicht verantwortlich sein soll. Im Plugin der Detailseite ist für die Detailansicht Detail view zu wählen und eine Referenz auf die Übersichtsseite zu setzen.\\
 Unter dem News Menüpunkt lassen sich nun neue Artikel mit Tags, Bildern, Kategorien, Autor etc. erstellen, die bereits, wie gewollt, angezeigt werden.\\
-Die Extension kommt mit einem eigenen Design daher, was für eine seriöse Anwendung natürlich angepasst werden müsste. Für diese Testumgebung bleibt es jedoch beim Standard-Design.
+Die Extension kommt mit einem eigenen Design, was für eine seriöse Anwendung natürlich angepasst werden müsste. Das geschieht am einfachsten durch die Anpassung der mitgelieferten CSS Datei.
 \begin{figure}
 \centering
 \includegraphics[width=0.75\linewidth]{abb/newsextension.jpg}
@@ -158,7 +159,7 @@ Handelt es sich bei den Daten um einen RSS Feed trifft man mit rss\_display auf 
 
 \section{Eigene Contentelemente}
 
-Üblicherweise bekommt ein Redakteur beim Erstellen eine Seite zu Gesicht, die sich grob in bestimmte Positionen auf der Seite gliedert. Mit einem Klick auf ein Plus in einem der Positionen taucht eine Auswahl von verschiedenen Content Elementen auf. So lässt sich beispielsweise eine Tabelle oder ein ganzer WYSIWYG Bereich hinzufügen. Spätestens wenn man Elemente mit komplizierterem Design auf einer Webseite platzieren will, werden stärkere Tools benötigt. Durch das Hinzufügen eigener Content Elemente ließe sich der Output viel besser steuern und vorab so designen, dass der Redakteur sich darum keine Gedanken machen muss. Redakteure könnten weniger falsch machen und würden sich gleichzeitig besser zurechtfinden. Das Beispiel im WegE Projekt, das Gebrauch von dieser Funktionalität machen würde, ist eine Promobox, die am Rand der Webseite auftauchen soll und auf verschiedenes aufmerksam machen soll.
+Üblicherweise bekommt ein Redakteur beim Erstellen von Content eine Seite zu Gesicht, die sich grob in bestimmte Positionen auf der Seite gliedert. Mit einem Klick auf ein Plus in einem der Positionen taucht eine Auswahl von verschiedenen Content Elementen auf. So lässt sich beispielsweise eine Tabelle oder ein ganzer WYSIWYG Bereich hinzufügen. Spätestens wenn man Elemente mit komplizierterem Design auf einer Webseite platzieren will, werden stärkere Tools benötigt. Durch das Hinzufügen eigener Content Elemente ließe sich der Output viel besser steuern und vorab so designen, dass der Redakteur sich darum keine Gedanken machen muss. Redakteure könnten weniger falsch machen und würden sich gleichzeitig besser zurechtfinden. Ein Beispiel im WegE Projekt, das Gebrauch von dieser Funktionalität machen würde, ist eine Promobox, die am Rand der Webseite auftauchen soll und auf verschiedenes aufmerksam machen soll.
 
 \begin{figure}[h]
 	\centering
@@ -167,14 +168,14 @@ Handelt es sich bei den Daten um einen RSS Feed trifft man mit rss\_display auf 
 	\label{fig:forumextension}
 \end{figure}
 
-\subsection{Möglichkeiten}
+\subsection{Möglichkeiten - Dynamic Content Elements}
 
 Prinzipiell ist es möglich alle angelegten Content Elemente von anderen Seiten zu kopieren und nochmals einzufügen. Für das Beispiel einer WegE Promobox ist diese Lösung jedoch aus mehreren Gründen nicht optimal. Zuerst müsste ein Redakteur bereits eine ansprechende Box nur mit Hilfe des WYSIWIG Editors angelegt haben. Dann müsste jeder, der diese Box nutzen will, wissen in welchen Seiten sie zu finden ist um sie zu kopieren.
 Bessere Alternativen bietet eine passende Extension namens Dynamic Content Elements (dce)\footnote{https://docs.typo3.org/typo3cms/extensions/dce/}. Sie erlaubt das Anlegen neuer Content Elemente und das Manipulieren dieser mittels Fluidtemplate. Die Extension wird bereits seit 2012 angeboten und ist über 25,000 Downloads sehr beliebt. Sie hat keinerlei Anforderungen oder Konflikte mit anderen Extensions.
 
 Es existieren einige ähnliche Extensions, wie Mask oder gridelements, die recht ähnlich funktionieren. Diese sind jedoch etwas weniger etabliert, weshalb die Wahl auf dce fiel.
 
-\subsection{Implementation}
+\subsection{Implementation mit dce und Fluidtemplate}
 
 Die Implementation eines kleinen Beispiels ist sehr einfach. Nach dem Download der Extension lassen sich im neuen Menüpunkt DCE eigene Content Elemente erstellen. Hierfür lassen sich so viele verschiedene Input Felder wie nötig anlegen. Im Falle des Beispiels ist das nur eins, nämlich ein Link. Das Input Feld bekommt dann einen Variablennamen, in diesem Fall \texttt{wgppb}. Dieser Variablenname findet im nächsten Schritt Verwendung. Direkt im Backend lässt sich das Fluidtemplate für die Anzeige des Content Elements schreiben. Alle Input Felder lassen sich nun an dieser Stelle einarbeiten. Im Beispiel passiert das mit \texttt{\{field.wgppb\}}.
 
@@ -205,7 +206,7 @@ Das Fluidtemplate lässt sich beliebig erweitern. In diesem Falle wird etwas Text
 	\label{fig:forumextension}
 \end{figure}
 
-\subsection{Evaluation}
+\subsection{Evaluation von dce}
 
 Das Erstellen von eigenen Content Elementen ist nicht zwingend notwendig für den Lauf einer Webseite, weshalb diese Aufgabe eventuell gerne verdrängt wird. Allerdings erleichtert sie die Arbeit der Redakteure immens und trägt zu Aussehen, Bedienung und Übersicht einer Webseite bei. Es spricht also viel für die Erstellung eigener Content Elemente und die Extension Dynamic Content Elements erlaubt genau das. Die Umsetzung ist sehr gut und einfach zu handhaben. Der einzige kleine Nachteil ist, dass gewisses Vorwissen mit Fluidtemplate benötigt wird. Dafür lässt sich so jede beliebige Anpassung vornehmen.
 
@@ -244,22 +245,22 @@ Es wird eine monatliche Ansicht angezeigt und auch die erstellten Events tauchen
 
 \section{Weitere nützliche Extensions}
 
-\subsubsection{RealURL - Lesbare URLs}
+\subsection{RealURL - Lesbare URLs}
 Die Seiten in Typo3 bekommen bei ihrer Erstellung eine Page ID (PID). Diese ist einzigartig und wird benutzt um Seiten zu identifizieren. Auf diese Weise entstehen auch die URLs von Typo3 Seiten. 
 Eine typische URL von Typo3 sieht ungefähr so aus :\\ \texttt{http://localhost/BachelorThesis/wege/index.php?id=14}.\\ 
 Diese URL ruft die Seite mit der pid=14 auf.
 Schöner wäre allerdings wenn die URL so aussähe und damit für den Nutzer lesbar wäre:\\ \texttt{http://localhost/BachelorThesis/wege/Extensions/Forum}.\\
 Dieses Verhalten lässt sich mit der Extension Real URL bewerkstelligen. Nach der Installation folgen einige kleine Schritte zur automatischen Konfiguration. Diese erstellt URLs anhand der Seitennamen. Je nach System sollte jedoch mit nicht trivialer Konfigurationsarbeit gerechnet werden, da oft auch Einstellungen am Apache Server nötig sind.
 
-\subsubsection{SEO Features}
+\subsection{SEO Features}
 
 Typo3 ist von Haus aus schon sehr gut für Suchmaschinen optimiert. Viel der Suchmaschinenoptimierung kann nicht technisch vorgenommen werden, sondern ist Aufgabe der Redakteure. Typo3 erlaubt diesen, entsprechende meta-tags, alt- und title-tags können leicht gesetzt werden. Den größten Sprung im Ranking würde also wahrscheinlich eine Schulung der Redakteure zum Setzen sinnvoller Tags und Überschriften, bewirken. Will man darüber hinaus noch mehr erreichen, empfehlen sich Extensions,  wie metaseo\footnote{https://typo3.org/extensions/repository/view/metaseo}. Diese Extension erzeugt automatisch Sitemaps, MEtatags und erlaubt die Manipulation der Seitentitel. Somit lassen sich der Suchmaschine und dem User verschiedene Titel anzeigen. Dazu lassen sich Google Analytics und Piwik integrieren.
 
-\subsubsection{YAG - Bildergalerie}
+\subsection{YAG - Bildergalerie}
 
 Will man auf einer Webseite sehr viele Bilder anzeigen, ist es ratsam diese ein wenig zu strukturieren. Das geschieht meist durch die Aufteilung in Galerien und Alben. Dieses sollen dem Betrachter natürlich auch ansprechend präsentiert werden. Beide dieser Anforderungen werden von der YAG Extension erfüllt. Die Installation ist sehr einfach, zu beachten ist jedoch, dass eine nahtlose Integration nicht trivial ist und einige Anpassungen vorgenommen werden um eine ansprechende Ausgabe zu bekommen. 
 
-\subsubsection{Powermail - Mail Formular}
+\subsection{Powermail - Mail Formular}
 
 Eine sehr einfach klassifizierbare Extension ist Powermail. Sie erfüllt den Zweck ein Formular anzuzeigen, durch das ein Nutzer der Seite eine Nachricht senden kann ohne in ein externes Mailingprogramm zu wechseln. Dies findet im WegE Projekt als Anlaufstelle eine Verwendung. Die Installation gestaltet sich sehr einfach und alle Aspekte eines solchen Formulars lassen sich bequem über das Backend anpassen. Das Formular wird als Plugin in die Seite integriert, bekommt ein erstelltes Formular zugewiesen, erhält einen Include im Template und schon ist es betriebsfähig. Die einzige etwas speziellere Anforderung an diese Extension, die das WegE Projekt haben könnte, wäre die Möglichkeit unterschiedlicher Empfängeradressen in unterschiedlichen Formularen. Auch das ist kein Problem. Die Wahl auf Powermail fiel aufgrund der Popularität und Stabilität. Andere ähnliche Extensions unterscheiden sich jedoch kaum.
 
@@ -271,7 +272,7 @@ Eine sehr einfach klassifizierbare Extension ist Powermail. Sie erfüllt den Zwec
 \end{figure}
 
 
-\subsubsection{Wartung und Sicherheit}
+\subsection{Wartung und Sicherheit}
 
 Auch was Wartung und Sicherheit angeht, liefert Typo3 dem Administrator einige nützliche Tools. Fehler im System lassen sich in einem Log im Backend inspizieren, verschiedene Datenbankchecks lassen sich von hier durchführen und mit der offiziellen scheduler Extension lassen sich alle Aufgaben als cron jobs automatisieren. Auch das Updaten von Typo3 und installierten Extensions lässt sich hier erledigen, was beim Auftauchen eventueller Sicherheitslücken sehr wichtig sein kann. Beim Punkt Sicherheit ist Typo3 prinzipiell gut gewappnet, solange man bei der Entwicklung Zugriffsrechte und Passwörter sinnvoll einstellt. Auch Redakteure sollten sichere Passwörter für den Login am Backend einrichten. Um das zu gewährleisten existiert eine weitere nützliche Extension. Diese heißt be\_secure\_pw\footnote{https://docs.typo3.org/typo3cms/extensions/be\_secure\_pw/} und erzwingt sicherere Passwörter, als Typo3 das von Haus aus tut.
 

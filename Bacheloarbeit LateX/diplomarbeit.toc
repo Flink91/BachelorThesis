@@ -58,36 +58,36 @@
 \contentsline {chapter}{\numberline {6}Anpassung eines Typo3 Systems an die gesammelten Requirements}{32}
 \contentsline {paragraph}{\nonumberline Eigenschaften einer professionellen Extension}{32}
 \contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{34}
-\contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten}{34}
+\contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten - Typo3 und sr\_feuser\_registration}{34}
 \contentsline {subsection}{\numberline {6.1.2}Implementation}{34}
 \contentsline {subsection}{\numberline {6.1.3}Evaluation}{34}
 \contentsline {section}{\numberline {6.2}Blog und News}{35}
-\contentsline {subsection}{\numberline {6.2.1}Alternativen}{35}
-\contentsline {subsection}{\numberline {6.2.2}Implementation}{36}
-\contentsline {subsection}{\numberline {6.2.3}Evaluation}{37}
+\contentsline {subsection}{\numberline {6.2.1}M\"oglichkeiten - news und typo3\_blog}{36}
+\contentsline {subsection}{\numberline {6.2.2}Implementation der news Extension}{36}
+\contentsline {subsection}{\numberline {6.2.3}Evaluation}{36}
 \contentsline {section}{\numberline {6.3}Diskussionsforum}{37}
 \contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{37}
-\contentsline {subsection}{\numberline {6.3.2}Implementation}{37}
+\contentsline {subsection}{\numberline {6.3.2}Implementation}{38}
 \contentsline {subsection}{\numberline {6.3.3}Evaluation}{38}
 \contentsline {section}{\numberline {6.4}Import, Anzeige und Bereitstellung von Daten}{38}
-\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{38}
+\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{39}
 \contentsline {subsection}{\numberline {6.4.2}Implementation}{39}
 \contentsline {subsection}{\numberline {6.4.3}Evaluation}{40}
 \contentsline {section}{\numberline {6.5}Eigene Contentelemente}{40}
-\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten}{40}
-\contentsline {subsection}{\numberline {6.5.2}Implementation}{41}
+\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten - Dynamic Content Elements}{41}
+\contentsline {subsection}{\numberline {6.5.2}Implementation mit dce und Fluidtemplate}{42}
 \contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{42}
-\contentsline {subsection}{\numberline {6.5.3}Evaluation}{42}
+\contentsline {subsection}{\numberline {6.5.3}Evaluation von dce}{42}
 \contentsline {section}{\numberline {6.6}Kalender}{43}
 \contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{43}
-\contentsline {subsection}{\numberline {6.6.2}Implementation}{43}
+\contentsline {subsection}{\numberline {6.6.2}Implementation}{44}
 \contentsline {subsection}{\numberline {6.6.3}Evaluation}{44}
-\contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{44}
-\contentsline {subsubsection}{\nonumberline RealURL}{44}
-\contentsline {subsubsection}{\nonumberline SEO}{45}
-\contentsline {subsubsection}{\nonumberline YAG - Yet another Gallery}{45}
-\contentsline {subsubsection}{\nonumberline Powermail}{45}
-\contentsline {subsubsection}{\nonumberline Wartung und Sicherheit}{46}
+\contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{45}
+\contentsline {subsection}{\numberline {6.7.1}RealURL - Lesbare URLs}{45}
+\contentsline {subsection}{\numberline {6.7.2}SEO Features}{45}
+\contentsline {subsection}{\numberline {6.7.3}YAG - Bildergalerie}{45}
+\contentsline {subsection}{\numberline {6.7.4}Powermail - Mail Formular}{45}
+\contentsline {subsection}{\numberline {6.7.5}Wartung und Sicherheit}{46}
 \contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{47}
 \contentsline {chapter}{\numberline {8}Zusammenfassung}{50}
 \contentsline {section}{\numberline {8.1}Pers\"onliche Erkenntnisse}{50}

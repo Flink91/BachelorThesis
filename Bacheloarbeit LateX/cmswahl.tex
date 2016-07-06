@@ -81,9 +81,9 @@ Sharepoint wird nun anhand der oben genannten Kriterien kurz untersucht.
 
 \textbf{Technologie \& Architektur:} Sharepoints Technologie basiert auf ASP.NET 3.5 und somit wird bevorzugt in C\# programmiert. Auf Serverseite wird Microsoft Windows Server 2008 und Microsoft SQL Server benötigt. Da das System im Browser aufgerufen wird, gibt es für Nutzer keine Einschränkung auf das Betriebssystem Windows, auch wenn Standarddesign und APIs hierfür optimiert sind.
 
-\textbf{Anbieterinformationen:} Sharepoint ist ein Produkt von Microsoft und würde für die Nutzung im Typo3 Projekt eine Lizenz erfordern. Der Preis für diese ist abhängig von den Nutzern. Der aktuelle Preis im Juni 2016 liegt bei 4,20 Euro bis 8,40 Euro pro Nutzer pro Monat\footnote{https://products.office.com/de-de/sharepoint/compare-sharepoint-plans}. Lizenzen für das Office Paket kosten extra. Dazu kommen größere Summen für den Server. So schätzt CMS Matrix die Kosten auf 4000-40000 Dollar. Für das WegE Projekt ist diese Summe theoretisch noch akzeptabel, doch könnte diese Summe an anderen Stellen sicherlich auch gut gebraucht werden. Der Support von Microsoft ist durch das Bezahlmodell dementsprechend gut ausgebaut. Dazu gibt es für Entwickler sehr viele offizielle Hilfestellungen.
+\textbf{Anbieterinformationen:} Sharepoint ist ein Produkt von Microsoft und würde für die Nutzung im Typo3 Projekt eine Lizenz erfordern. Der Preis für diese ist abhängig von den Nutzern. Der aktuelle Preis im Juni 2016 liegt bei 4,20 Euro bis 8,40 Euro pro Nutzer pro Monat\footnote{https://products.office.com/de-de/sharepoint/compare-sharepoint-plans}. Lizenzen für das Office Paket kosten extra. Dazu kommen größere Summen für den Server. So schätzt CMS Matrix die Kosten auf 4000-40000 Dollar. Für das WegE Projekt ist diese Summe theoretisch noch akzeptabel, doch könnten diese Mittel an anderen Stellen sicherlich auch gut gebraucht werden. Der Support von Microsoft ist durch das Bezahlmodell dementsprechend gut ausgebaut. Dazu gibt es für Entwickler sehr viele offizielle Hilfestellungen.
 
-\textbf{Content Management:} Im Content Management bietet Sharepoint alle erdenklichen Funktionen. Es unterstützt Template-Management, erlaubt einfache Administration, hat eine eigene Workflow Engine, Asset Management und sehr viele Komfortfunktionen, wie Spell Checker und Papierkorb.  
+\textbf{Content Management:} Im Content Management bietet Sharepoint alle erdenklichen Funktionen. Es unterstützt Template-Management, erlaubt einfache Administration, hat eine eigene Workflow Engine, Asset Management und sehr viele Komfortfunktionen, wie Upload mit Drag\&Drop, Spell Checker und Papierkorb.  
 
 \textbf{Content Delivery:} Sharepoint bietet eine Möglichkeit eigene Erweiterungen, sogenannte Add-ins, bereitzustellen. Als Web Portal bietet Sharepoint dem User Möglichkeit angezeigte Add-ins (oder Portlets) zu personalisieren. Eine Volltextsuche ist integriert. Die kommerzielle Version enthält erweiterte Suchfunktionen, wie automatische Suchvorschläge während dem Tippen.
 
@@ -97,25 +97,28 @@ Alles in Allem ist Sharepoint keine schlechte Wahl. Das Produkt ist sehr ausgere
 	\caption{LifeRay Logo}
 \end{figure}
 
-Das Hauptprodukt von Liferay heißt Liferay Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus auf Businesslösungen und Geschäftsprozessen. Es fällt in die Kategorie Web Portal Software, welche meist unternehmensintern eingesetzt wird. Es werden zwei Varianten angeboten, LifeRay Portal CE ist lizenzkostenfrei und Open Source. LifeRay Portal EE ist die kommerzielle Variante und bietet zusätzlich zu den Funktionen der freien Version offiziellen Support und Langzeitunterstützung.
+Das Hauptprodukt von Liferay heißt Liferay Portal\footnote{https://www.liferay.com/products/liferay-portal} und hat den Fokus auf Businesslösungen und Geschäftsprozessen. Es fällt in die Kategorie Web Portal Software, welche meist eher unternehmensintern eingesetzt wird. Es werden zwei Varianten angeboten, LifeRay Portal CE ist lizenzkostenfrei und Open Source. LifeRay Portal EE ist die kommerzielle Variante und bietet zusätzlich zu den Funktionen der freien Version offiziellen Support und Langzeitunterstützung.
 LifeRay Portal gliedert sich in drei Teile:
 \begin{itemize}
-	\item LifeRay Portal: Die Kernfunktionalitäten sind die Authentifizierung von Nutzern mit Single Sign-on, Personalisierung von Seiten durch Drag und Drop, automatischer Dateiupload mit WebDAV (\textsc{Web}-based\textsc{D}istributed \textsc{A}uthoring and \textsc{V}ersioning), Suchen und Taggen von Web-Inhalten und Mehrsprachigkeit.
+	\item LifeRay Portal: Die Kernfunktionalitäten sind die Authentifizierung von Nutzern mit Single Sign-on, Personalisierung von Seiten durch Drag\&Drop, automatischer Dateiupload mit WebDAV (\textsc{Web}-based\textsc{D}istributed \textsc{A}uthoring and \textsc{V}ersioning), Suchen und Taggen von Web-Inhalten und Mehrsprachigkeit.
 	\item LifeRay CMS: Zusätzlich wird LifeRay CMS geboten, das auf LifeRay Portal aufbaut und typische CMS Aufgaben übernimmt.
 	\item LifeRay Collaboration: Als letztes steht das Angebot LifeRay Collaboration zur Verfügung. Hier finden sich Komponenten, wie Foren, Wikis, Blogs Kalender und Ähnliches.
 \end{itemize}
 
 \textbf{Technologie \& Architektur}
-LifeRay basiert auf Java. Der Server läuft mit J2EE und MySQL als Datenbank. Es ist plattformunabhängig.
+LifeRay basiert auf Java. Dabei nutzt es eine große Bandbreite an Java Technologien, wie Hibernate und Spring. Der Server läuft mit J2EE und MySQL als Datenbank. Beides kann jedoch bei Bedarf geändert werden, auch in Mocrosoft SQL Server. Es ist plattformunabhängig.
+
 
 \textbf{Anbieterinformationen}
-Die Anbieterfirma heißt LifeRay, Inc. und wirde von Bryan Cheung im Jahre 2000 ins Leben gerufen. LifeRay lässt sich in Umfang und Funktion mit Microsoft Sharepoint vergleichen und wird oft als beste Open Source Alternative genannt.
+Die Anbieterfirma heißt LifeRay, Inc. und wirde von Bryan Cheung im Jahre 2000 ins Leben gerufen. LifeRay lässt sich in Umfang und Funktion mit Microsoft Sharepoint vergleichen und wird oft als beste Open Source Alternative genannt. Neben der kostenlosen CE Version gibt es eine proprietäre EE Version mit offiziellem Support, Garantien und weiteren Vorteilen. Ein Preis wird nur auf Anfrage eines spezifischen Unternehmens genannt.
+
 \textbf{Content Management}
+Auch LifeRay bietet die typischen Funktionen im Bereich Content Management. Template Management, einfache Administration, Content Scheduling, und ein guter Editor sind vorhanden. Einzig eine Papierkorbfunktion fehlt.
 
 \textbf{Content delivery}
-Einzelne Komponenten werden in LifeRay als Portlets angezeigt. Mit der zugrundeliegenden serviceorientierten Architektur (SOA) lässt sich so der Umfang durch eigene Portlets beliebig erweitern.
+Einzelne Komponenten werden in LifeRay als Portlets angezeigt, welche sich vom Nutzer personalisieren lassen. Mit der zugrundeliegenden serviceorientierten Architektur (Abk. SOA) lässt sich so der Umfang durch eigene Portlets beliebig erweitern. Es existiert eine CMS-weite Suche nach Volltext und tags. 
 
-Nach dem ersten Eindruck ist LifeRay eine durchaus geeignete Wahl für das WegE Projekt, alle Anforderungen lassen sich hiermit umsetzen. Als Web Portal liegt, der Fokus von LifeRay jedoch, genau wie bei Sharepoint, auf Geschäftsprozessen und unternehmensinterner Anwendung. Diese Portlets lassen sich von jedem User personalisieren. Die Suchengine erlaubt einfaches Suchen und Tagging.
+Nach dem ersten Eindruck ist LifeRay eine durchaus geeignete Wahl für das WegE Projekt, alle Anforderungen lassen sich hiermit umsetzen. Als Web Portal liegt, der Fokus von LifeRay jedoch, genau wie bei Sharepoint, auf Geschäftsprozessen und unternehmensinterner Anwendung, womit etwas Umstellungsarbeit anfällt. Mit LifeRay Collaboration lassen sich viele der Anforderungen, wie Forum und Blog jedoch leicht umsetzen.
 \section{Typo3}
 
 \begin{figure}[hbtp]
@@ -128,21 +131,18 @@ Typo3 ist ein System, mit dem das Rechenzentrum der Universität Bamberg bereits 
 
 
 \textbf{Technologie und Architektur}
-Typo3 baut auf PHP auf. Beim Server handelt es sich um Apache mit einer MySQL Datenbank. Es ist plattformunabhängig.
-
+Typo3 baut auf PHP und etwas Javascript auf. Beim Server handelt es sich meist um Apache mit einer MySQL Datenbank. Es ist jedoch plattformunabhängig. Intern existiert außerdem noch eine eigene Metasprache namens Typoscript.
 
 \textbf{Anbieterinformationen}
 Typo3 wird von der Typo3 Association entwickelt. Das ganze System ist Open Source und ohne Lizenzkosten. Es gibt sowohl kommerziellen Support, als auch eine große Anzahl kostenloser Dienste. Diese werden von einer sehr lebendigen Typo3 Community gepflegt. 
-
-Im Content Management bietet Sharepoint alle erdenklichen Funktionen. Es unterstützt Template-Management, erlaubt einfache Administration, hat eine eigene Workflow Engine, Asset Management und sehr viele Komfortfunktionen, wie Spell Checker und Papierkorb.  
 
 \textbf{Content Management}
 Auch Typo3 meistert die Aufgabe des Content Management sehr gut. Template Management ist auf verschiedene Arten möglich, Administration ist einfach durchzuführen und der Editor bietet alle üblichen Komfortfunktionen. Workflows lassen sich leicht einstellen.
 
 \textbf{Content delivery}
-In Typo3 kann die Funktion durch Extensions erweitert werden. Eine große Auswahl, von Community Mitgliedern erstellte Extensions finden sich im offiziellen Extension Repository.
+In Typo3 kann die Funktion durch Extensions erweitert werden. Eine große Auswahl, von Community Mitgliedern erstellte Extensions finden sich im offiziellen Extension Repository. Typo3 bietet im Grundumfang keine Personalisierungsengine aber eine gute Suchengine.
 
-Ein Blick in die Gliederung verrät dem aufmerksamen Leser, dass die Wahl des CMS auf Typo3 fiel und diesem CMS die nächsten zwei Kapitel gewidmet sind. Ein Grund dafür ist, dass das WegE Projekt im Laufe seiner Entwicklung weniger Funktionen eines Web Portals benötigte, als gedacht und somit LifeRay und SharePoint, als solche, etwas abgeschlagen werden. Dazu kommt die Etabliertheit von Typo3 an der Universität Bamberg. 
+Ein Blick in die Gliederung verrät dem aufmerksamen Leser, dass die Wahl des CMS auf Typo3 fiel und diesem CMS die nächsten zwei Kapitel gewidmet sind. Ein Grund dafür ist, dass das WegE Projekt im Laufe seiner Entwicklung weniger Funktionen eines Web Portals benötigte, als gedacht und somit LifeRay und SharePoint, als solche, etwas abgeschlagen werden. Dazu kommt die Etabliertheit von Typo3 an der Universität Bamberg und die kostenlose Lizenz. 
 Alles Weitere zu Typo3 wird im nächsten Kapitel ausführlich erklärt.
 
 
