@@ -36,7 +36,9 @@ Die momentan vorherrschende Methode zur Verwaltung von Frontend Usern ist die Ex
 
 \subsection{Implementation}
 
-Die Implementation dieser Extension verläuft, in Berücksichtigung der Größe des Vorhabens, sehr schnell ab. Nach der Installation wird das Template FE User \emph{Registration CSS-styled} hinzugefügt. Danach muss ein Sysfolder für die User angelegt werden. Hier werden zwei User Gruppen angelegt, eine für sich gerade registrierende User und einen für bereits registrierte User. In den Template Constants wird die PID dieses Ordners eingetragen. [TODO]
+Die Implementation dieser Extension verläuft, in Berücksichtigung der Größe des Vorhabens, sehr schnell ab. Nach der Installation wird das Template FE User \emph{Registration CSS-styled} hinzugefügt. Danach muss ein Sysfolder für die User angelegt werden. Hier werden zwei User Gruppen angelegt, eine für sich gerade registrierende User und einen für bereits registrierte User. In den Template Constants wird die PID dieses Ordners eingetragen. Außerdem werden vier Seiten für verschiedene Aufgaben, wie Registrierung und Login, angelegt. Diese Seiten werden durch ihre IDs in den Konstanten bekannt gemacht. 
+Leider traten bei der Installation einige Fehler im Code der Extension auf, was bei der Größe und Bekanntheit dieser, relativ verwunderlich ist. Glücklicherweise ließen sich diese leicht manuell fixen (Es fehlten einige static-Deklarationen).
+Für die Registrierung der User lassen sich eine Vielzahl an Felder einstellen. Nach diesem Schritt kann das Formular bereits genutzt werden und so eingetragene Nutzer landen in der ersten Gruppe der sich registrierenden User. Nach diesem Schritt wird auf einer Live Umgebung eine Bestätigunsmail gesendet, welche Nutzer letztendlich in die registrierte Usergruppe verschiebt. Auf einer lokalen Umgebung funktioniert das nicht. Danach kann sich dieser Nutzer ein- und ausloggen und gesperrte Seiten sehen. Seiten lassen sich leicht durch das Backend so einstellen, dass nur eingeloggte User sie sehen können. Dazu gibt es bei jeder Seite den Reiter Access, unter welchem alle Usergruppen ausgewählt werden können, die Zugriff auf diese Seite bekommen.
 
 \begin{figure}
 	\centering
@@ -47,10 +49,10 @@ Die Implementation dieser Extension verläuft, in Berücksichtigung der Größe des 
 
 \subsection{Evaluation}
 
-Die Arbeit mit der sr\_feuser\_registration Extension stellte sich als sehr angenehm heraus. Das mag mitunter daran liegen, dass sie sich seit über 10 Jahren in Entwicklung befindet und in einem sehr ausgereiften Stadium befindet. Die Extension bietet so gut wie jede erdenkliche Funktion rund um das Thema Frontend User als Menüpunkt im Backend, sodass man schnell und ohne Anleitung ein funktionierendes Registrierungsformular aufsetzen kann. Es nutzt die bereits vorhandenen Funktionen von Typo3, womit es sich leicht definieren lässt, welche Seiten nur für registrierte User gedacht sind. Sind Frontend User auf einer Typo3 Seite nötig ist diese Extension die optimale Lösung. Darüber hinaus gibt es viele Extensions, welche die Funktion von sr\_feuser\_registration um etliche Featueres erweitern oder einbinden. Durch die Größe der Extension und deren Aufgabe, sollte bei einer realistisch angepassten Implementation dennoch mit nicht trivialem Aufwand für die Einbindung gerechnet werden.
+Die Arbeit mit der sr\_feuser\_registration Extension stellte sich als recht angenehm heraus. Das mag mitunter daran liegen, dass sie sich seit über 10 Jahren in Entwicklung befindet und in einem sehr ausgereiften Stadium befindet. Die Extension bietet so gut wie jede erdenkliche Funktion rund um das Thema Frontend User als Menüpunkt im Backend, sodass man schnell und ohne Anleitung ein funktionierendes Registrierungsformular aufsetzen kann. Es nutzt die bereits vorhandenen Funktionen von Typo3, womit es sich leicht definieren lässt, welche Seiten nur für registrierte User gedacht sind. Sind Frontend User auf einer Typo3 Seite nötig ist diese Extension die optimale Lösung. Darüber hinaus gibt es viele Extensions, welche die Funktion von sr\_feuser\_registration um etliche Features erweitern oder diese einbinden. Durch die Größe der Extension und dessen Aufgabe, sollte bei einer realistisch angepassten Implementation dennoch mit nicht trivialem Aufwand für die Einbindung gerechnet werden.
 
 \section{Blog und News}
-Die Anzeige von News oder einem fortlaufenden Blog findet auf immer mehr Webseiten Relevanz. So ist es wenig verwunderlich, dass die bekannteste News-Extension von Typo3 auch eine der meistverwendeten Extensions überhaupt ist. Die populärste Wahl scheint dabei die Extension mit dem Namen \texttt{news} zu sein.
+Die Anzeige von News oder einem fortlaufenden Blog findet auf immer mehr Webseiten Relevanz. So ist es wenig verwunderlich, dass die bekannteste News-Extension von Typo3 auch eine der meistverwendeten Extensions überhaupt ist. Die populärste Wahl scheint dabei die Extension mit dem Namen news\footnote{https://typo3.org/extensions/repository/view/news} zu sein.
 
 \subsection{Möglichkeiten - news und typo3\_blog}
 Die news Extension wird seit 2011 entwickelt und ist mit 40,000 Downloads sehr beliebt. Auf der Extension Seite werden keinerlei Abhängigkeiten oder Konflikte gelistet. Sie bietet viele Komponenten, wie Kategorisierung, Social Buttons und einen sehr leichten Umgang für Redakteure.
@@ -72,19 +74,19 @@ Die Extension kommt mit einem eigenen Design, was für eine seriöse Anwendung nat
 
 
 \subsection{Evaluation}
-Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeige von News braucht. Die Implementation geht schnell, wenn auch nicht unbedingt beim ersten Mal. Im Test läuft das Ergebnis stabil und ohne Fehler. Alles in Allem ist diese Extension eine exzellente Wahl.
+Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeige von News braucht. Die Implementation geht schnell, wenn auch nicht unbedingt beim ersten Mal. Im Test läuft das Ergebnis stabil und ohne Fehler. Alles in Allem ist diese Extension eine exzellente Wahl, sowohl allgemein, als auch für die spezifisch untersuchten Anforderungen.
 
 \section{Diskussionsforum}
 
-Die Anforderung an ein Forum ist mit Sicherheit eines der aufwändigsten Teile dieses Projekts. Das bedeutet auch, dass eine hochwertige Extension hier eine große Zeitersparnis bedeuten kann. Ein Forum soll bestimmten Nutzern erlauben neue Themen anzulegen. Diese Themen werden in Listen angeordnet und das Klicken eines Themas führt zu einer Unterseite, in der User dieses Thema diskutieren können. Der Content besteht dabei nicht nur aus Text, sondern auch aus Bildern und eventuell aus Dateianhängen. Dazu soll es Funktionalität geben, all diesen Content editieren und löschen zu können und dabei diese Funktionalität sinnvoll nur bestimmten Nutzern zu geben. So soll zum Beispiel nur der Ersteller ein Thema wieder löschen können. Erreicht ein Forum eine bestimmte Größe ist es wünschenswert eine weitere Usergruppe definieren zu können, die ein Forum moderieren und somit die Rechte besitzen jegliche Anpassungen vorzunehmen. 
+Die Anforderung an ein Forum ist mit Sicherheit eines der aufwändigsten Teile dieses Projekts. Das bedeutet auch, dass eine hochwertige Extension hier eine große Zeitersparnis bedeuten kann. Ein Forum soll bestimmten Nutzern erlauben neue Themen anzulegen. Diese Themen werden in Listen angeordnet und das Klicken eines Themas führt zu einer Unterseite, in der User dieses Thema diskutieren können. Der Content besteht dabei nicht nur aus Text, sondern auch aus Bildern und eventuell aus Dateianhängen. Dazu soll es Funktionalität geben, all diesen Content editieren und löschen zu können und dabei diese Funktionalität sinnvoll nur bestimmten Nutzern zu geben. So soll zum Beispiel nur der Ersteller ein Thema wieder löschen können. Erreicht ein Forum eine bestimmte Größe ist es wünschenswert eine weitere Usergruppe definieren zu können, die ein Forum moderieren und somit die Rechte besitzen, jegliche Anpassungen vorzunehmen. 
 
 \subsection{Möglichkeiten}
 
-Es gibt eigentlich nur eine Extension, die für Typo3 7.6 in Frage kommt und die heißt typo3\_forum. Sollte diese aus irgendwelchen Gründen als Möglichkeit ausscheiden kann man auf ein externes Forum Plugin zurückgreifen, das auf einer niedrigeren Ebene integriert wird. Ein etabliertes Beispiel heißt phpBB und bietet genau diese Funktionalität. Tatsächlich bietet phpBB mehr Anpassungsmöglichkeiten als die typo3\_forum Extension, ist aber auch mit etwas mehr Arbeit verbunden, da man aus der Typo3 Umgebung ausbricht. [TODO]
+Es gibt eigentlich nur eine Extension, die für Typo3 7.6 in Frage kommt und die heißt typo3\_forum\footnote{https://typo3.org/extensions/repository/view/typo3\_forum}. Sollte diese aus irgendwelchen Gründen als Möglichkeit ausscheiden kann man auf ein externes Forum Plugin zurückgreifen, das auf einer niedrigeren Ebene integriert wird. Ein etabliertes Beispiel heißt phpBB und bietet genau diese Funktionalität. Tatsächlich bietet phpBB mehr Anpassungsmöglichkeiten als die typo3\_forum Extension, ist aber auch mit etwas mehr Arbeit verbunden, da man aus der Typo3 Umgebung ausbricht. Das soll nur eine Anmerkung sein, in dieser Arbeit liegt der Fokus auf Typo3, weshalb nun die typo3\_forum Extension untersucht wird.
 
 \subsection{Implementation}
 
-Die Implementation der grundlegenden Forum-Funktionalität fällt moderat aus. Nach der Installation wird ein Sysfolder benötigt und ein spezieller Forum-Record angelegt. In diesem lassen sich die Rechte für jegliche Funktionen genau anpassen. Beispielsweise welche Usergruppen in der Lage sind Antworten zu posten. Außerdem wird das Root Template mit der Extension erweitert. Wie bei vielen Extensions ist so ein standardmäßiges Aussehen via CSS vorgegeben. Zur Anpassung ändert man einfach das CSS dieser Datei. Zuletzt kommt man nicht drum herum etwas Typoscript zu schreiben. Es handelt sich hierbei jedoch nur um einen kleinen Schnipsel, der die Orte zur Anzeige des Forums und des Speichers über die PID definieren. Zusätzlich ist zu beachten, dass MySQL nicht im strict mode sein darf. Das lässt sich in der my.ini abschalten.
+Die Implementation der grundlegenden Forum-Funktionalität fällt moderat aus. Nach der Installation wird ein Sysfolder benötigt und ein spezieller Forum-Record angelegt. In diesem lassen sich die Rechte für jegliche Funktionen genau anpassen. Beispielsweise welche Usergruppen in der Lage sind Antworten zu posten. Außerdem wird das Root Template mit der Extension erweitert. Wie bei vielen Extensions ist so ein standardmäßiges Aussehen via CSS vorgegeben. Zur Anpassung ändert man einfach das CSS dieser Datei. Zuletzt kommt man nicht drum herum etwas Typoscript zu schreiben. Es handelt sich hierbei jedoch nur um einen kleinen Schnipsel, der die Orte zur Anzeige des Forums und des Speichers über die PID definieren. Zusätzlich ist zu beachten, dass MySQL nicht im strict mode sein darf. Das lässt sich in der Datei my.ini abschalten.
 
 \begin{figure}
 	\centering
@@ -95,27 +97,28 @@ Die Implementation der grundlegenden Forum-Funktionalität fällt moderat aus. Nac
 
 \subsection{Evaluation}
 
-Grundsätzlich bietet dieses Forum alle Funktionen, die für ein vernünftiges WegE Forum nötig sind. Leider existieren zu diesem Zeitpunkt noch einige schwer nachvollziehbare Bugs. Ein Beispiel hierfür sind die Buttons zum Erstellen eines neuen Forumeintrages, die nicht immer angezeigt werden, wenn sie es sollten. Diese lassen sich durch individuelle Anpassungen soweit vermeiden, das bedeutet wiederum merh Aufwand. Da diese Extension jedoch noch sehr neu ist und von einem professionellen Team betreut wird, ist es gut möglich, dass sich dieser Fakt bereits in wenigen Monaten ändert.
+Grundsätzlich bietet dieses Forum alle Funktionen, die für ein vernünftiges WegE Forum nötig sind. Für die Userrechte lässt sich das typo3\_forum außerdem mit der sr\_feuser\_registration Extension verknüpfen (siehe Kapitel 6.1).\\
+Leider existieren zu diesem Zeitpunkt noch einige schwer nachvollziehbare Bugs. Ein Beispiel hierfür sind die Buttons zum Erstellen eines neuen Forumeintrages, die nicht immer angezeigt werden, wenn sie es sollten. Diese lassen sich durch individuelle Anpassungen soweit vermeiden, das bedeutet jedoch mehr Aufwand. Da diese Extension jedoch noch sehr neu ist und von einem professionellen Team betreut wird, ist es gut möglich, dass sich dieser Fakt bereits in wenigen Monaten geändert hat. Somit ist diese Extension immer noch eine sehr gute Wahl, wenn man aufgrund einiger Bugs und der Größe des Requirements auf dementsprechend viel Entwicklungszeit eingestellt ist.
 
 \section{Import, Anzeige und Bereitstellung von Daten}
 
-Die Universität Bamberg nutzt und betreut bereits einige verschiedene Systeme. Da wäre es oftmals sehr nützlich diese zu verbinden. Diese Verbindungen lassen sich auf viele Arten bewerkstelligen. Die konkrete Idee für diesen Punkt ist, zu untersuchen, wie sich strukturierte Daten, zum Beispiel in XML Form, importieren und anzeigen lassen. 
+Die Universität Bamberg nutzt und betreut bereits einige verschiedene Systeme zur Verwaltung diverser Daten. Es wäre oftmals sehr nützlich diese zu verbinden. Solche Verbindungen lassen sich auf viele Arten bewerkstelligen. Die konkrete Idee für diesen Punkt ist, zu untersuchen, wie sich strukturierte Daten, zum Beispiel in XML Form, importieren, anzeigen und teilen lassen. 
 
 \subsection{Möglichkeiten}
 
-Bei der Recherche fällt schnell aus, dass sich keine universelle Lösung via Extension anbietet. Zu zahlreich sind Datenformate und Wünsche von Entwicklern. So kommt es, dass viele selbst den gewünschten Parser zur Anzeige im Frontend schreiben. Eine Möglichkeit, die für simples XML tatsächlich nicht sehr anspruchsvoll ist. Einige Extensions nehmen einem spezielle Aufgaben ab. So kann man mit rss\_display sehr einfach RSS Feeds anzeigen. 
+Bei der Recherche fällt schnell auf, dass sich keine universelle Lösung via Extension anbietet. Zu zahlreich sind Datenformate und Wünsche von Entwicklern. So kommt es, dass viele selbst den gewünschten Parser zur Anzeige im Frontend schreiben. Eine Möglichkeit, die für simples XML tatsächlich nicht sehr anspruchsvoll ist und eine gute Möglichkeit darstellt. Dieser Parser könnte zusätzlich in ein eigenes Content Element (siehe Kapitel 6.5) verpackt werden.
+Einige Extensions nehmen einem spezielle Aufgaben ab. So kann man mit rss\_display\footnote{https://typo3.org/extensions/repository/view/rss\_display} sehr einfach RSS Feeds anzeigen. 
 Mit svconnector und external\_import lässt sich Typo3 mit externen Datenquellen verbinden.
 Die Extension cag\_tables erleichtert die Anzeige solcher Daten im Frontend.
-
-Alternativ ließe sich ein eigener Parser schreiben und in einem eigenen Content Element verpacken, welche in Kürze erklärt werden.
+Will man lediglich Dateien zum Download anbieten, wird keine Extension benötigt. Typo3 erlaubt die Erstellung von Download Links im Editor.
 
 \subsection{Implementation}
 
-Die Implementation des rss\_display ist sehr einfach. Nach Hinzufügen des Template includes lässt sich der rss Feed im Frontend durch das General Plugin Content Element, ausgeben.
+Die Implementation des rss\_display ist sehr einfach. Nach Hinzufügen des Template Includes lässt sich der RSS-Feed im Frontend durch das General Plugin Content Element, ausgeben.
 
-Die Extension cag\_tables würde exakt eine XML Datei im Frontend als Tabelle ausgeben, nur leider ist diese Extension nicht mit Typo3 7.6 kompatibel. Somit muss ein Blick auf die wesentlich kompliziertere und umfangreichere Extension external\_import, geworfen werden. Diese hat Abhängigkeiten zu den Extensions svconnector und scheduler. Mit dem svconnector werden ausgewählte externe Daten in Typo3 importiert. Diesen Vorgang kann man mit dem scheduler automatisieren und so in bestimmten Zeitintervallen ausführen lassen. Das offizielle Extension Manual selbst, warnt davor nichts zu überstürzen, da die Implementation nicht trivial ist\footnote{https://docs.typo3.org/typo3cms/extensions/external\_import/}.
+Die Extension cag\_tables würde exakt eine XML Datei im Frontend als Tabelle ausgeben und so genau der Anforderung gerecht werden, nur leider ist diese Extension nicht mit Typo3 7.6 kompatibel. Somit muss ein Blick auf die wesentlich kompliziertere und umfangreichere Extension external\_import, geworfen werden. Diese hat Abhängigkeiten zu den Extensions svconnector und scheduler. Mit dem svconnector werden ausgewählte externe Daten in Typo3 importiert. Diesen Vorgang kann man mit dem scheduler automatisieren und so in bestimmten Zeitintervallen ausführen lassen. Das offizielle Extension Manual selbst, warnt davor nichts zu überstürzen, da die Implementation sehr aufwändig ist\footnote{https://docs.typo3.org/typo3cms/extensions/external\_import/}.
 
-Eine weitere Möglichkeit ist, auf solche Extensions zu verzichten und einen eigenen Parser zu schreiben. Diesen könnte man in ein Fluidtemplate integrieren und als custom Contentelement anbieten, um einer Redakteurin das Anzeigen von XML Dateien zu ermöglichen. 
+Eine weitere Möglichkeit ist, auf eine Extension zu verzichten und einen eigenen Parser zu schreiben. Diesen könnte man in ein Fluidtemplate integrieren und als Custom Content Element anbieten, um einer Redakteurin das Anzeigen von XML Dateien zu ermöglichen. 
 Ein eigener Parser ist nicht allzu kompliziert und könnte in Javascript mit der Hilfe von einem XMLHttpRequest und AJAX so aussehen.
 
 \begin{verbatim}
@@ -151,15 +154,15 @@ Beim Seitenaufruf könnte diese Funktion aufgerufen werden, dann lässt sich die X
 
 Diese Funktion erstellt nun eine Tabelle, indem die XML auf die Tags Kursleiter und Kurs durchsucht wird. Die fertige Tabelle wird als innerHTML in die Seite eingefügt. Dazu muss hier die gewählte ID bereits bestehen.
 
-\subsection{Evaluation}
+\subsection{Evaluation von external\_import und eigenen Parsern}
 Bei der Implementierung dieses Requirements hat sich gezeigt, dass es je nach Umfang verschiedene Möglichkeiten gibt. Für das automatische Einbinden vieler, externer Daten ist die Extension external\_import zu empfehlen. Diese fordert jedoch sehr viel Entwicklungszeit. 
 Hinsichtlich des Umfangs und Implementationsaufwandes von external\_import kann es für kleinere Anzeigen sinnvoller sein, selbst einen Parser zu schreiben, da diese nicht so aufwändig sind wie vielleicht erwartet. 
 
 Handelt es sich bei den Daten um einen RSS Feed trifft man mit rss\_display auf eine sehr gute Extension und wenig Aufwand.
 
-\section{Eigene Contentelemente}
+\section{Eigene Content Elemente}
 
-Üblicherweise bekommt ein Redakteur beim Erstellen von Content eine Seite zu Gesicht, die sich grob in bestimmte Positionen auf der Seite gliedert. Mit einem Klick auf ein Plus in einem der Positionen taucht eine Auswahl von verschiedenen Content Elementen auf. So lässt sich beispielsweise eine Tabelle oder ein ganzer WYSIWYG Bereich hinzufügen. Spätestens wenn man Elemente mit komplizierterem Design auf einer Webseite platzieren will, werden stärkere Tools benötigt. Durch das Hinzufügen eigener Content Elemente ließe sich der Output viel besser steuern und vorab so designen, dass der Redakteur sich darum keine Gedanken machen muss. Redakteure könnten weniger falsch machen und würden sich gleichzeitig besser zurechtfinden. Ein Beispiel im WegE Projekt, das Gebrauch von dieser Funktionalität machen würde, ist eine Promobox, die am Rand der Webseite auftauchen soll und auf verschiedenes aufmerksam machen soll.
+Üblicherweise bekommt ein Redakteur beim Erstellen von Content eine Seite zu Gesicht, die sich grob in bestimmte Positionen auf der Seite gliedert. Mit einem Klick auf ein Plus in einem der Positionen taucht eine Auswahl von verschiedenen Content Elementen auf. So lässt sich beispielsweise eine Tabelle oder ein ganzer Rich-Text-Editor (auch WYSIWYG-Editor genannt) Bereich hinzufügen. Spätestens wenn man Elemente mit komplizierterem Design auf einer Webseite platzieren will, werden stärkere Tools benötigt. Durch das Hinzufügen eigener Content Elemente ließe sich der Output viel besser steuern und vorab so designen, dass der Redakteur sich darum keine Gedanken machen muss. Redakteure könnten weniger falsch machen und würden sich gleichzeitig besser zurechtfinden. Ein Beispiel im WegE Projekt, das Gebrauch von dieser Funktionalität machen würde, ist eine Promobox, die am Rand der Webseite auftauchen soll und die Aufmerksamkeit auf verschiedene Aktuelle Anlässe lenkt.
 
 \begin{figure}[h]
 	\centering
@@ -173,7 +176,7 @@ Handelt es sich bei den Daten um einen RSS Feed trifft man mit rss\_display auf 
 Prinzipiell ist es möglich alle angelegten Content Elemente von anderen Seiten zu kopieren und nochmals einzufügen. Für das Beispiel einer WegE Promobox ist diese Lösung jedoch aus mehreren Gründen nicht optimal. Zuerst müsste ein Redakteur bereits eine ansprechende Box nur mit Hilfe des WYSIWIG Editors angelegt haben. Dann müsste jeder, der diese Box nutzen will, wissen in welchen Seiten sie zu finden ist um sie zu kopieren.
 Bessere Alternativen bietet eine passende Extension namens Dynamic Content Elements (dce)\footnote{https://docs.typo3.org/typo3cms/extensions/dce/}. Sie erlaubt das Anlegen neuer Content Elemente und das Manipulieren dieser mittels Fluidtemplate. Die Extension wird bereits seit 2012 angeboten und ist über 25,000 Downloads sehr beliebt. Sie hat keinerlei Anforderungen oder Konflikte mit anderen Extensions.
 
-Es existieren einige ähnliche Extensions, wie Mask oder gridelements, die recht ähnlich funktionieren. Diese sind jedoch etwas weniger etabliert, weshalb die Wahl auf dce fiel.
+Es existieren einige ähnliche Extensions, wie Mask\footnote{https://typo3.org/extensions/repository/view/mask} oder gridelements\footnote{https://typo3.org/extensions/repository/view/gridelements}, die recht ähnlich funktionieren. Diese sind jedoch etwas weniger etabliert, weshalb die Wahl auf dce fiel.
 
 \subsection{Implementation mit dce und Fluidtemplate}
 
@@ -212,17 +215,17 @@ Das Erstellen von eigenen Content Elementen ist nicht zwingend notwendig für den
 
 \section{Kalender}
 
-Im Rahmen von WegE wäre eine Kalenderfunktion für verschiedene Aspekte interessant. Zum einen ließen sich so zukünftige Termine für die Öffentlichkeit anschaulich präsentieren. Zum anderen könnte ein Kalender Nutzern erlauben sich selbst in bestimmte Beratungstermine einzutragen. Besagte Termine sollen durch Redakteure erstellt werden können. Eine optimale Extension unterstützt also jene Features.
+Im Rahmen von WegE wäre eine Kalenderfunktion für verschiedene Aspekte interessant. Zum einen ließen sich so zukünftige Termine für die Öffentlichkeit anschaulich präsentieren. Zum anderen könnte ein Kalender Nutzern erlauben sich selbst in bestimmte Beratungs- oder Veranstaltungstermine einzutragen. Besagte Termine sollen durch Redakteure erstellt werden können. Eine optimale Extension unterstützt also eben jene Features.
 
-\subsection{Möglichkeiten}
+\subsection{Möglichkeiten - Calendar Base}
 
-Aufgrund der gesetzten Kriterien ist die einzig sinnvolle Wahl die Kalender Extension Calendar Base. Die Extension ist nicht bescheiden und behauptet alle Features anderer Extensions in eine Extension zu vereinen. Sie wird bereits seit 2006 entwickelt und regelmäßig aktualisiert. Mit über 60,000 Downloads ist sie eine der beliebtesten Extensions. Das Manual ist mit über 400 Seiten sehr ausführlich. Die Daten des Kalenders sind im iCal Format, was ein Standard für Kalenderinformationen ist. Der Kalender kann auch mit externen Kalendern, wie Google Calendar, zusammenarbeiten. Daten können sowohl im Backend und im Frontend eingetragen werden.
+Aufgrund der gesetzten Kriterien ist die einzig sinnvolle Wahl die Kalender Extension Calendar Base.\footnote{https://typo3.org/extensions/repository/view/cal} Die Extension ist nicht bescheiden und behauptet alle Features anderer Kalenderextensions in eine Extension zu vereinen. Sie wird bereits seit 2006 entwickelt und regelmäßig aktualisiert. Mit über 60,000 Downloads ist sie eine der beliebtesten Extensions. Das Manual ist mit über 400 Seiten sehr ausführlich und gibt einen Hinweis auf die Größe der Extension. Die Daten des Kalenders sind im iCal Format, was ein Standard für Kalenderinformationen ist. Der Kalender kann auch mit externen Kalendern, wie Google Calendar, zusammenarbeiten. Daten können sowohl im Backend und, wenn gewünscht, im Frontend eingetragen werden.
 
-Alternativen zu Calendar Base sind eher rar gesät und bieten entweder weniger Features oder sind weniger ausgereift. Dies kann aber auch ein Vorteil sein. Sollte man nur bestimmte Features benötigen lässt sich eine Überladung von Features vermeiden. Ein Beispiel hierfür ist Event Calendar\footnote{https://docs.typo3.org/typo3cms/extensions/gb\_events/}. Es erlaubt einzig die Erstellung und Anzeige einer Liste von anstehenden Events. 
+Alternativen zu Calendar Base sind eher rar gesät und bieten entweder weniger Features oder sind weniger ausgereift. Dies kann aber auch ein Vorteil sein. Sollte man nur sehr bestimmte Features benötigen lässt sich so eine Überladung von Features vermeiden. Ein Beispiel hierfür ist Event Calendar\footnote{https://docs.typo3.org/typo3cms/extensions/gb\_events/}. Es erlaubt einzig die Erstellung und Anzeige einer Liste von anstehenden Events. 
 
 Für die Anforderungen des WegE Projekt ist Calendar Base am Besten geeignet und wird nun implementiert.
 
-\subsection{Implementation}
+\subsection{Implementation eines einfachen Kalenders}
 
 \begin{figure}[h]
 	\centering
@@ -231,38 +234,38 @@ Für die Anforderungen des WegE Projekt ist Calendar Base am Besten geeignet und 
 	\label{fig:calextension}
 \end{figure}
 
-Wie bei allen Extensions empfiehlt es sich, sich bei der Installation genau an das Manual zu halten, da viele der Extension Installationen einige Tücken bergen. Darüber hinaus verläuft die Installation von cal wie üblich. Die nötigen Templates werden hinzugefügt, eine Seite zum Halten der Extension erstellt und konfiguriert. Zuletzt bedarf es einer Zeile Typoscript zur Spezifikation des Sysfolders mit den Terminen.
+Wie bei allen Extensions empfiehlt es sich, sich bei der Installation genau an das Manual zu halten, da viele der Extension Installationen einige Tücken bergen. Darüber hinaus verläuft die Installation von cal wie üblich. Die nötigen Templates werden hinzugefügt, eine Seite zum Halten der Extension wird erstellt und konfiguriert. Zuletzt bedarf es einer Zeile Typoscript zur Spezifikation des Sysfolders mit den Terminen.
 \begin{verbatim}
 options.tx_cal_controller.pageIDForPlugin = {PID}
 \end{verbatim}
-Es wird eine Seite zur Anzeige angelegt, welche das Plugin einbindet. Hier lassen sich verschiedene Dinge zur Anzeige steuert, es lässt sich einstellen welche Rechte nötig sind um Events zu abonnieren und es wird der Ordner spezifiziert, der die Kalendereinträge beherbergt.
-In der Beispielimplementation können Events nur im Backend erstellt werden und im Frontend von jedem mittels Email abonniert werden. Handelt es sich bei einem Termin um einen Vortrag kann man so einen Überblick über die Anzahl der zu erwartenden Gäste erlangen. Handelt es sich bei dem Termin um eine Einzelsitzung, kann man dem Abonnent anschließend weitere Infos an die eingetragene Email senden. 
+Es wird eine Seite zur Anzeige angelegt, welche das Plugin einbindet. Hier lassen sich verschiedene Dinge zur Anzeige steuer. Es lässt sich einstellen welche Rechte nötig sind um Events zu abonnieren und es wird der Ordner spezifiziert, der die Kalendereinträge beherbergt.
+In der Beispielimplementation können Events nur im Backend erstellt werden und im Frontend von jedem mittels E-Mail abonniert werden. Handelt es sich bei einem Termin um einen Vortrag kann man so einen Überblick über die Anzahl der zu erwartenden Gäste erlangen. Handelt es sich bei dem Termin um eine Einzelsitzung, könnte man dem Abonnent so anschließend weitere Infos an die eingetragene E-Mail senden. 
 
-\subsection{Evaluation}
+\subsection{Evaluation von Calendar Base}
 
-In der Testumgebung stellte sich das Setup der grundlegenden Features von Calendar Base als relativ einfach heraus. 
-Es wird eine monatliche Ansicht angezeigt und auch die erstellten Events tauchen hier auf. Ein Klick auf ein bestimmtes Event zeigt weiter Infos und ein Feld zum Abonnieren des Events via Email an. Lediglich eine Funktion zur Begrenzung von Abonnenten/Teilnehmern ist nicht so einfach zu finden. Wenn ein Nutzer seine Email zu einer Einzelbesprechung angibt und somit diesen Termin für sich beansprucht, wäre es praktisch diesen Termin als reserviert anzuzeigen. Dies würde eigene Programmierarbeit erfordern. 
+In der Testumgebung stellte sich das Setup , solange nur grundlegende Features von Calendar Base gewünscht sind, als relativ einfach heraus. 
+Es wurde eine monatliche Ansicht eingestellt und auch die erstellten Events tauchten in dieser auf. Ein Klick auf ein bestimmtes Event zeigt weitere Infos und ein Feld zum Abonnieren des Events, via Email, an. Lediglich eine Funktion zur Begrenzung von Abonnenten/Teilnehmern ist nicht so einfach zu finden. Wenn ein Nutzer seine Email zu einer Einzelbesprechung angibt und somit diesen Termin für sich beansprucht, wäre es praktisch diesen Termin als reserviert anzuzeigen. Dies würde eigene Programmierarbeit erfordern. Somit lässt sich sagen, dass die Extension zwar einen sehr ausgereiften und stabilen Eindruck macht, doch je nach Anwendungsfall etliches an Konfigurationsarbeit erfordern kann.
 
 \section{Weitere nützliche Extensions}
 
 \subsection{RealURL - Lesbare URLs}
-Die Seiten in Typo3 bekommen bei ihrer Erstellung eine Page ID (PID). Diese ist einzigartig und wird benutzt um Seiten zu identifizieren. Auf diese Weise entstehen auch die URLs von Typo3 Seiten. 
-Eine typische URL von Typo3 sieht ungefähr so aus :\\ \texttt{http://localhost/BachelorThesis/wege/index.php?id=14}.\\ 
+Die Seiten in Typo3 bekommen bei ihrer Erstellung eine Page ID (PID). Diese ist einzigartig und wird benutzt um Seiten zu identifizieren. Auf diese Weise entstehen auch die URLs von Typo3 Seiten. \\
+Eine typische URL von Typo3 sieht dann ungefähr so aus :\\       \texttt{http://localhost/BachelorThesis/wege/index.php?id=14}.\\ 
 Diese URL ruft die Seite mit der pid=14 auf.
-Schöner wäre allerdings wenn die URL so aussähe und damit für den Nutzer lesbar wäre:\\ \texttt{http://localhost/BachelorThesis/wege/Extensions/Forum}.\\
-Dieses Verhalten lässt sich mit der Extension Real URL bewerkstelligen. Nach der Installation folgen einige kleine Schritte zur automatischen Konfiguration. Diese erstellt URLs anhand der Seitennamen. Je nach System sollte jedoch mit nicht trivialer Konfigurationsarbeit gerechnet werden, da oft auch Einstellungen am Apache Server nötig sind.
+Schöner wäre allerdings wenn die URL wie folgt aussähe und damit für den Nutzer wesentlich lesbarer wäre:\\ \texttt{http://localhost/BachelorThesis/wege/Extensions/Forum}.\\
+Dieses Verhalten lässt sich mit der Extension Real URL bewerkstelligen. Nach der Installation folgen einige kleine Schritte zur automatischen Konfiguration. Diese erstellt URLs anhand der Seitennamen. Je nach System sollte jedoch mit nicht trivialer Konfigurationsarbeit gerechnet werden, da oft auch Einstellungen am Apache Server nötig sind und die automatische Konfiguration nicht immer die gewünschten Ergebnisse liefert.
 
 \subsection{SEO Features}
 
-Typo3 ist von Haus aus schon sehr gut für Suchmaschinen optimiert. Viel der Suchmaschinenoptimierung kann nicht technisch vorgenommen werden, sondern ist Aufgabe der Redakteure. Typo3 erlaubt diesen, entsprechende meta-tags, alt- und title-tags können leicht gesetzt werden. Den größten Sprung im Ranking würde also wahrscheinlich eine Schulung der Redakteure zum Setzen sinnvoller Tags und Überschriften, bewirken. Will man darüber hinaus noch mehr erreichen, empfehlen sich Extensions,  wie metaseo\footnote{https://typo3.org/extensions/repository/view/metaseo}. Diese Extension erzeugt automatisch Sitemaps, MEtatags und erlaubt die Manipulation der Seitentitel. Somit lassen sich der Suchmaschine und dem User verschiedene Titel anzeigen. Dazu lassen sich Google Analytics und Piwik integrieren.
+Typo3 ist von Haus aus schon sehr gut für Suchmaschinen optimiert. Viel der weiteren Suchmaschinenoptimierung kann nicht technisch vorgenommen werden, sondern ist Aufgabe der Redakteure. Typo3 erlaubt diesen, entsprechende meta-tags, alt- und title-tags leicht zu setzen und zu verändern. Den größten Sprung im Ranking würde also wahrscheinlich eine Schulung der Redakteure zum Setzen sinnvoller Tags und Überschriften, bewirken. Will man darüber hinaus noch mehr erreichen, empfehlen sich Extensions,  wie metaseo\footnote{https://typo3.org/extensions/repository/view/metaseo}. Diese Extension erzeugt automatisch Sitemaps, Metatags und erlaubt die Manipulation der Seitentitel. Somit lassen sich der Suchmaschine und dem User verschiedene Titel anzeigen. Dazu lassen sich Google Analytics oder Piwik leicht integrieren.
 
 \subsection{YAG - Bildergalerie}
 
-Will man auf einer Webseite sehr viele Bilder anzeigen, ist es ratsam diese ein wenig zu strukturieren. Das geschieht meist durch die Aufteilung in Galerien und Alben. Dieses sollen dem Betrachter natürlich auch ansprechend präsentiert werden. Beide dieser Anforderungen werden von der YAG Extension erfüllt. Die Installation ist sehr einfach, zu beachten ist jedoch, dass eine nahtlose Integration nicht trivial ist und einige Anpassungen vorgenommen werden um eine ansprechende Ausgabe zu bekommen. 
+Will man auf einer Webseite sehr viele Bilder anzeigen, ist es ratsam diese ein wenig zu strukturieren. Das geschieht meist durch die Aufteilung in Galerien und Alben. Diese sollen dem Betrachter natürlich auch ansprechend präsentiert werden. Beide dieser Anforderungen werden von der YAG Extension erfüllt. Die Installation ist sehr einfach, zu beachten ist jedoch, dass eine nahtlose Integration nicht trivial ist und einige Anpassungen vorgenommen werden müssen um eine ansprechende Ausgabe zu bekommen. 
 
 \subsection{Powermail - Mail Formular}
 
-Eine sehr einfach klassifizierbare Extension ist Powermail. Sie erfüllt den Zweck ein Formular anzuzeigen, durch das ein Nutzer der Seite eine Nachricht senden kann ohne in ein externes Mailingprogramm zu wechseln. Dies findet im WegE Projekt als Anlaufstelle eine Verwendung. Die Installation gestaltet sich sehr einfach und alle Aspekte eines solchen Formulars lassen sich bequem über das Backend anpassen. Das Formular wird als Plugin in die Seite integriert, bekommt ein erstelltes Formular zugewiesen, erhält einen Include im Template und schon ist es betriebsfähig. Die einzige etwas speziellere Anforderung an diese Extension, die das WegE Projekt haben könnte, wäre die Möglichkeit unterschiedlicher Empfängeradressen in unterschiedlichen Formularen. Auch das ist kein Problem. Die Wahl auf Powermail fiel aufgrund der Popularität und Stabilität. Andere ähnliche Extensions unterscheiden sich jedoch kaum.
+Eine sehr einfach klassifizierbare Extension ist Powermail. Sie erfüllt den Zweck ein Formular anzuzeigen, durch das ein Nutzer der Seite eine Nachricht senden kann ohne in ein externes Mailingprogramm zu wechseln. Dies findet im WegE Projekt als Anlaufstelle eine Verwendung. Die Installation gestaltet sich sehr einfach und alle Aspekte eines solchen Formulars lassen sich bequem über das Backend anpassen. Das Formular wird als Plugin in die Seite integriert, bekommt ein erstelltes Formular zugewiesen, erhält einen Include im Template und ist damit schon betriebsfähig. Die einzige etwas speziellere Anforderung an diese Extension, die das WegE Projekt haben könnte, wäre die Möglichkeit unterschiedlicher Empfängeradressen in unterschiedlichen Formularen. Auch das ist kein Problem. Die Wahl auf Powermail fiel aufgrund der Popularität und Stabilität. Andere ähnliche Extensions unterscheiden sich jedoch kaum.
 
 \begin{figure}
 \centering
@@ -274,5 +277,5 @@ Eine sehr einfach klassifizierbare Extension ist Powermail. Sie erfüllt den Zwec
 
 \subsection{Wartung und Sicherheit}
 
-Auch was Wartung und Sicherheit angeht, liefert Typo3 dem Administrator einige nützliche Tools. Fehler im System lassen sich in einem Log im Backend inspizieren, verschiedene Datenbankchecks lassen sich von hier durchführen und mit der offiziellen scheduler Extension lassen sich alle Aufgaben als cron jobs automatisieren. Auch das Updaten von Typo3 und installierten Extensions lässt sich hier erledigen, was beim Auftauchen eventueller Sicherheitslücken sehr wichtig sein kann. Beim Punkt Sicherheit ist Typo3 prinzipiell gut gewappnet, solange man bei der Entwicklung Zugriffsrechte und Passwörter sinnvoll einstellt. Auch Redakteure sollten sichere Passwörter für den Login am Backend einrichten. Um das zu gewährleisten existiert eine weitere nützliche Extension. Diese heißt be\_secure\_pw\footnote{https://docs.typo3.org/typo3cms/extensions/be\_secure\_pw/} und erzwingt sicherere Passwörter, als Typo3 das von Haus aus tut.
+Auch was Wartung und Sicherheit angeht, liefert Typo3 dem Administrator einige nützliche Tools. Fehler im System lassen sich in einem Log im Backend inspizieren, verschiedene Datenbankchecks lassen sich von hier durchführen und mit der offiziellen scheduler Extension lassen sich alle Aufgaben als cron jobs automatisieren. Auch das Updaten von Typo3 und installierten Extensions lässt sich hier erledigen, was beim Auftauchen eventueller Sicherheitslücken sehr wichtig sein kann. Beim Punkt Sicherheit ist Typo3 prinzipiell gut gewappnet, solange man bei der Entwicklung Zugriffsrechte und Passwörter sinnvoll einstellt. Auch Redakteure sollten sichere Passwörter für den Login am Backend einrichten. Um das zu gewährleisten existiert eine weitere nützliche Extension. Diese heißt be\_secure\_pw\footnote{https://docs.typo3.org/typo3cms/extensions/be\_secure\_pw/} und erzwingt sicherere Passwörter, als Typo3 das von Haus aus verlangt.
 

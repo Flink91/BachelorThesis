@@ -10,7 +10,7 @@ Typo3 ist ein Open Source CMS, ursprünglich entwickelt von Kasper Skårhøj und ba
 
 \section{Installation und Anforderungen}
 
-Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfangreich. Je nach Vorhaben muss mit komplexen Einstellungen am serverseitigen System experimentiert werden. Zum Zweck der Entwicklung bietet es sich jedoch an das Typo3 System zunächst lokal zu installieren. Der hierfür nötige Server kann entweder durch ein Programm wie Wamp oder Xampp, welche eine fertige Apache-Distribution liefern, bereitgestellt werden oder durch das Installieren eines Servers auf einer virtuellen Maschine. Die vorgenommenen Implementationen in Kapitel \ref{kap-typo3praxisteil} wurden mit Wamp\footnote{http://www.wampserver.com} realisiert. Eine detailliertere Beschreibung zur Installation hängt von System und Typo3 Version ab. Für Eine Installation mit Wamp und Typo3 7.6 folgt eine genauere Beschreibung später.
+Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfangreich. Je nach Vorhaben muss mit komplexen Einstellungen am serverseitigen System experimentiert werden. Zum Zweck der Entwicklung bietet es sich jedoch an das Typo3 System zunächst lokal zu installieren. Der hierfür nötige Server kann entweder durch ein Programm wie Wamp oder Xampp, welche eine fertige Apache-Distribution liefern, bereitgestellt werden oder durch das Installieren eines Servers auf einer virtuellen Maschine. Die vorgenommenen Implementationen in Kapitel \ref{kap-typo3praxisteil} wurden mit Wamp\footnote{http://www.wampserver.com} realisiert. Eine detailliertere Beschreibung zur Installation hängt von System und Typo3 Version ab. Für Eine Installation mit Wamp und Typo3 7.6 findet sich eine detaillierte Beschreibung, welche auch auf spezielle Tücken aufmerksam macht, im Anhang.
 
 \section{Bedienung}
 
@@ -170,41 +170,14 @@ Zu Beginn einer neuen Template-Extension hilft eine weitere Typo3 Extension weit
 
 Für die Arbeit mit den Dateien des erstellten Templates wird ein externer Editor benötigt. Im besten Fall sollte dieser auch mit Typoscript umgehen können, was die Wahl deutlich einschränkt. Zwei gute Optionen sind hier die IDEs UltraEdit\footnote{http://www.ultraedit.com/} und Webstorm\footnote{https://www.jetbrains.com/webstorm/}. 
 
-Da der Fokus dieser Arbeit mehr auf der Umsetzung funktionaler Anforderungen liegt, wird an dieser Stelle nicht weiter auf die Möglichkeiten zum Designen von Typo3 Webseiten eingegangen. Für die beispielhafte Umsetzung der Anforderungen wird ein einfaches Bootstrap Template verwendet, dessen Implementation im Anhang zu finden ist.
-
-\subsection{Beispielinstallation}
-
-In diesem Unterpunkt wird der tatsächliche Installationsprozess der Testumgebung, inklusive einem Blick auf den Code, dokumentiert. Diese erlaubt es am Anschaulichsten nötige anfängliche Konfigurationen zu erklären. Da sich diese Installationsanleitung sehr praktisch gestaltet, sollten die Versionen der genutzten Software beachtet werden, da hier schnell Änderungen auftreten können. Die Testumgebung läuft mit Typo3 7.6 LTS und Wamp 3.0.0 mit PHP 5.6. Wichtig hierbei ist vor Allem die Typo3 Version. Es wird mit Bootstrap Version 3 gearbeitet.
-
-\paragraph{Typo 3 Installationsschritte}
-\begin{enumerate}
-	
-	\item Typo3 7.6 LTS herunterladen.
-	\item Wamp oder vergleichbares Programm herunterladen und installieren.
-	\item Den Typo3 Ordner in den \texttt{www}-Ordner von Wamp (htdocs bei XAMPP) verschieben.
-	\item Nach dem Starten von Wamp zu \texttt{localhost/\textit{typo3Ordner}} navigieren.
-	\item Es erscheint ein Installationsguide und wahrscheinlich eine Reihe von Fehlern, die zu beheben sind.
-	\item Die \texttt{php.ini} öffnen
-	\subitem Die Variable \texttt{memory\_limit} erhöhen auf 64 oder höher.
-	\subitem Die Variable \texttt{upload\_max\_filesize} auf mindestens 10MB erhöhen.
-	\subitem Die Variable \texttt{max\_execution\_time} auf 240 setzen.
-	\item Die OpenSSL Extension muss als Systemvariable gesetzt werden. Unter Systemvariablen die Variable mit dem Namen \texttt{OPENSSL\_CONF} und dem Wert des Pfades zur openssl.cnf angeben. Danach eventuell Computer neu starten.
-	\item Die PHP Extension Fileinfo geht oft nicht. In der php.ini das Kommentar-Semikolon vor\\ \texttt{extension=php\_fileinfo.dll} entfernen.
-	\item Windows Apache Thread Stack Size Fehler. Dieser kann in der httpd.conf Datei angepasst werden. Hier folgenden Codeschnipsel ans Ende der Datei kopieren:\\ \texttt{<IfModule mpm\_winnt\_module> ThreadStackSize 8388608 </IfModule>}
-	\item Alle Dienste von Wamp neu starten und zum Installationstool von Typo3 zurückkehren. Im nächsten Schritt wird eine Datenbank benötigt. Will man diese selbst anlegen hilft das Tool phpmyadmin unter localhost/phpmyadmin. Hier lässt sich mit einem Klick eine leere Datenbank anlegen.
-	\item Typo3 verlangt beim Anlegen der Datenbank auch den Port. Dieser lässt sich in der Konsole mit dem Befehl netstat -a -o auslesen. Hierzu vergleicht man die angezeigte PID mit dem Wamp Prozess im Taskmanager. Für gewöhnlich ist der Port eine Zahl um die 3000.
-	\item Nun lässt sich das Backend, durch das Anhängen von /typo3 in der Adresszeile, aufrufen.
-	
-\end{enumerate}
-
-\paragraph{Template-Erstellung Schritte} 
+\paragraph{Rudimentäre Template-Erstellung} 
 
 Der Vorteil eines CMS ist die Erstellung von dynamischem Content. Um das zu bewerkstelligen braucht es ein Template zum Anzeigen dieser Inhalte. Für die Testumgebung wurde ein rudimentäres Template basierend auf dem Bootstrap Framework installiert. Das Bootstrap Framework sorgt ohne viel Arbeit für ein besseres Aussehen der Webseite und Responsivität, d.h. eine automatische Anpassung an alle Bildschirmgrößen.
 
 
 \begin{enumerate}
 	
-	\item Bootstrap 3 herunterladen.
+	\item Bootstrap \footnote{http://getbootstrap.com/} herunterladen.
 	\item Bootstrap Starter Template herunterladen durch das Kopieren des Quellcodes (F12). Diese vorerst als \texttt{index.html} abspeichern.
 	\item In der \texttt{index.html} alle href-Links an die neue Umgebung anpassen. Der vollständige Code findet sich im Anhang.
 	\item Einen neuen Ordner im Verzeichnis fileadmin anlegen. Dieser hält das Template.

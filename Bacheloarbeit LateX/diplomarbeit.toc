@@ -52,49 +52,50 @@
 \contentsline {subsection}{\numberline {5.4.3}Typoscript}{25}
 \contentsline {subsection}{\numberline {5.4.4}Erweiterungen/Extensions}{26}
 \contentsline {subsection}{\numberline {5.4.5}Templates erstellen}{27}
-\contentsline {subsection}{\numberline {5.4.6}Beispielinstallation}{29}
-\contentsline {paragraph}{\nonumberline Typo 3 Installationsschritte}{29}
-\contentsline {paragraph}{\nonumberline Template-Erstellung Schritte}{30}
-\contentsline {chapter}{\numberline {6}Anpassung eines Typo3 Systems an die gesammelten Requirements}{32}
-\contentsline {paragraph}{\nonumberline Eigenschaften einer professionellen Extension}{32}
-\contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{34}
-\contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten - Typo3 und sr\_feuser\_registration}{34}
-\contentsline {subsection}{\numberline {6.1.2}Implementation}{34}
+\contentsline {paragraph}{\nonumberline Rudiment\"are Template-Erstellung}{29}
+\contentsline {chapter}{\numberline {6}Anpassung eines Typo3 Systems an die gesammelten Requirements}{31}
+\contentsline {paragraph}{\nonumberline Eigenschaften einer professionellen Extension}{31}
+\contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{33}
+\contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten - Typo3 und sr\_feuser\_registration}{33}
+\contentsline {subsection}{\numberline {6.1.2}Implementation}{33}
 \contentsline {subsection}{\numberline {6.1.3}Evaluation}{34}
 \contentsline {section}{\numberline {6.2}Blog und News}{35}
-\contentsline {subsection}{\numberline {6.2.1}M\"oglichkeiten - news und typo3\_blog}{36}
-\contentsline {subsection}{\numberline {6.2.2}Implementation der news Extension}{36}
+\contentsline {subsection}{\numberline {6.2.1}M\"oglichkeiten - news und typo3\_blog}{35}
+\contentsline {subsection}{\numberline {6.2.2}Implementation der news Extension}{35}
 \contentsline {subsection}{\numberline {6.2.3}Evaluation}{36}
-\contentsline {section}{\numberline {6.3}Diskussionsforum}{37}
+\contentsline {section}{\numberline {6.3}Diskussionsforum}{36}
 \contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{37}
-\contentsline {subsection}{\numberline {6.3.2}Implementation}{38}
-\contentsline {subsection}{\numberline {6.3.3}Evaluation}{38}
+\contentsline {subsection}{\numberline {6.3.2}Implementation}{37}
+\contentsline {subsection}{\numberline {6.3.3}Evaluation}{37}
 \contentsline {section}{\numberline {6.4}Import, Anzeige und Bereitstellung von Daten}{38}
-\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{39}
-\contentsline {subsection}{\numberline {6.4.2}Implementation}{39}
-\contentsline {subsection}{\numberline {6.4.3}Evaluation}{40}
-\contentsline {section}{\numberline {6.5}Eigene Contentelemente}{40}
-\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten - Dynamic Content Elements}{41}
-\contentsline {subsection}{\numberline {6.5.2}Implementation mit dce und Fluidtemplate}{42}
-\contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{42}
+\contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{38}
+\contentsline {subsection}{\numberline {6.4.2}Implementation}{38}
+\contentsline {subsection}{\numberline {6.4.3}Evaluation von external\_import und eigenen Parsern}{40}
+\contentsline {section}{\numberline {6.5}Eigene Content Elemente}{40}
+\contentsline {subsection}{\numberline {6.5.1}M\"oglichkeiten - Dynamic Content Elements}{40}
+\contentsline {subsection}{\numberline {6.5.2}Implementation mit dce und Fluidtemplate}{41}
+\contentsline {paragraph}{\nonumberline Fluidtemplate der Promobox}{41}
 \contentsline {subsection}{\numberline {6.5.3}Evaluation von dce}{42}
 \contentsline {section}{\numberline {6.6}Kalender}{43}
-\contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten}{43}
-\contentsline {subsection}{\numberline {6.6.2}Implementation}{44}
-\contentsline {subsection}{\numberline {6.6.3}Evaluation}{44}
-\contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{45}
-\contentsline {subsection}{\numberline {6.7.1}RealURL - Lesbare URLs}{45}
+\contentsline {subsection}{\numberline {6.6.1}M\"oglichkeiten - Calendar Base}{43}
+\contentsline {subsection}{\numberline {6.6.2}Implementation eines einfachen Kalenders}{43}
+\contentsline {subsection}{\numberline {6.6.3}Evaluation von Calendar Base}{44}
+\contentsline {section}{\numberline {6.7}Weitere n\"utzliche Extensions}{44}
+\contentsline {subsection}{\numberline {6.7.1}RealURL - Lesbare URLs}{44}
 \contentsline {subsection}{\numberline {6.7.2}SEO Features}{45}
 \contentsline {subsection}{\numberline {6.7.3}YAG - Bildergalerie}{45}
 \contentsline {subsection}{\numberline {6.7.4}Powermail - Mail Formular}{45}
 \contentsline {subsection}{\numberline {6.7.5}Wartung und Sicherheit}{46}
 \contentsline {chapter}{\numberline {7}Validierung der Requirements basierend auf der Implementation}{47}
+\contentsline {paragraph}{\nonumberline Validierung der untersuchten WegE Requirements}{47}
 \contentsline {chapter}{\numberline {8}Zusammenfassung}{50}
 \contentsline {section}{\numberline {8.1}Pers\"onliche Erkenntnisse}{50}
 \contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{51}
-\contentsline {chapter}{\numberline {A}Anhang - Bootstrap Fluidtemplate}{52}
-\contentsline {paragraph}{\nonumberline index.html}{52}
-\contentsline {paragraph}{\nonumberline setup.ts}{52}
-\contentsline {chapter}{Abbildungsverzeichnis}{54}
-\contentsline {chapter}{Tabellenverzeichnis}{54}
-\contentsline {chapter}{Literaturverzeichnis}{55}
+\contentsline {chapter}{\numberline {A}Anhang -Typo3 Beispielinstallation}{52}
+\contentsline {paragraph}{\nonumberline Typo 3 Installationsschritte}{52}
+\contentsline {chapter}{\numberline {B}Anhang - Bootstrap Fluidtemplate}{54}
+\contentsline {paragraph}{\nonumberline index.html}{54}
+\contentsline {paragraph}{\nonumberline setup.ts}{54}
+\contentsline {chapter}{Abbildungsverzeichnis}{56}
+\contentsline {chapter}{Tabellenverzeichnis}{56}
+\contentsline {chapter}{Literaturverzeichnis}{57}
