@@ -10,7 +10,7 @@ Nach dem Erstellen einer simplen Typo3 Umgebung ist das Ziel dieses Teils die Un
 	\item \textbf{Verfügbares Extension Manual} Eine offizielle Anleitung kann direkt auf der Downloadseite der Extension auf Typo3 verlinkt werden, ist unerlässlich für den richtigen Umgang mit einer Extension und sollte daher nicht fehlen.
 \end{itemize}
 
-Die erste Anlaufstelle zur Überprüfung dieser Eigenschaften ist die Downloadseite der Extension auf typo3.org. Diese bietet eine Übersicht über Version, Update, Alter, Kategorie, Autor und Downloadzahlen einer Extension. Die Anzahl der Downloads ist meistens ein guter Indikator für eine professionelle Extension, jedoch nicht immer. Deshalb sollte die Downloadzahl nicht als einziger Indikator in Betracht gezogen werden.
+Die erste Anlaufstelle zur Überprüfung dieser Eigenschaften ist die Downloadseite der Extension auf \texttt{typo3.orgt}. Diese bietet eine Übersicht über Version, Update, Alter, Kategorie, Autor und Downloadzahlen einer Extension. Die Anzahl der Downloads ist meistens ein guter Indikator für eine professionelle Extension, jedoch nicht immer. Deshalb sollte die Downloadzahl nicht als einziger Indikator in Betracht gezogen werden.
 
 \begin{figure}
 	\centering
@@ -34,7 +34,7 @@ Für Frontend User sind andere Methoden notwendig. Der Registrierungsprozess dafü
 Braucht eine Webseite nur Administratoren und einige Redakteure, also nur Backend User, so lässt sich das nur mit Typo3 allein bewerkstelligen. Dafür legt ein Administrator per Hand im Backend manuell neue Zugänge an. Das funktioniert nicht mit Frontend Usern.
 Die momentan vorherrschende Methode zur Verwaltung von Frontend Usern ist die Extension sr\_feuser\_registration\footnote{https://typo3.org/extensions/repository/view/sr\_feuser\_register}. Von Vorteil ist, dass diese Extension auf typischen Typo3 Funktionen im Backend aufbaut, was die Verwaltung erleichtet. Es werden alle nötigen Funktionen, wie Registrierungsformular, E-Mail Verifizierung und gehashte Passwörter geboten. Sie befindet sich mit knapp 100,000 Downloads in den meist heruntergeladenen Extensions, wurde bereits 2005 das erste mal veröffentlicht und wird in Version 4.0 angeboten. Die Extension hat Abhängigkeiten zu fünf anderen Extensions, die vorweg automatisch installiert werden. Es gibt einige Konflikte mit anderen Extensions, die beachtet werden sollten.
 
-\subsection{Implementation}
+\subsection{Implementation von FE user}
 
 Die Implementation dieser Extension verläuft, in Berücksichtigung der Größe des Vorhabens, sehr schnell ab. Nach der Installation wird das Template FE User \emph{Registration CSS-styled} hinzugefügt. Danach muss ein Sysfolder für die User angelegt werden. Hier werden zwei User Gruppen angelegt, eine für sich gerade registrierende User und einen für bereits registrierte User. In den Template Constants wird die PID dieses Ordners eingetragen. Außerdem werden vier Seiten für verschiedene Aufgaben, wie Registrierung und Login, angelegt. Diese Seiten werden durch ihre IDs in den Konstanten bekannt gemacht. 
 Leider traten bei der Installation einige Fehler im Code der Extension auf, was bei der Größe und Bekanntheit dieser, relativ verwunderlich ist. Glücklicherweise ließen sich diese leicht manuell fixen (Es fehlten einige static-Deklarationen).
@@ -73,18 +73,18 @@ Die Extension kommt mit einem eigenen Design, was für eine seriöse Anwendung nat
 \end{figure}
 
 
-\subsection{Evaluation}
+\subsection{Evaluation der news Extension}
 Die \texttt{news} Extension bietet alle Funktionalitäten, die man für die Anzeige von News braucht. Die Implementation geht schnell, wenn auch nicht unbedingt beim ersten Mal. Im Test läuft das Ergebnis stabil und ohne Fehler. Alles in Allem ist diese Extension eine exzellente Wahl, sowohl allgemein, als auch für die spezifisch untersuchten Anforderungen.
 
 \section{Diskussionsforum}
 
 Die Anforderung an ein Forum ist mit Sicherheit eines der aufwändigsten Teile dieses Projekts. Das bedeutet auch, dass eine hochwertige Extension hier eine große Zeitersparnis bedeuten kann. Ein Forum soll bestimmten Nutzern erlauben neue Themen anzulegen. Diese Themen werden in Listen angeordnet und das Klicken eines Themas führt zu einer Unterseite, in der User dieses Thema diskutieren können. Der Content besteht dabei nicht nur aus Text, sondern auch aus Bildern und eventuell aus Dateianhängen. Dazu soll es Funktionalität geben, all diesen Content editieren und löschen zu können und dabei diese Funktionalität sinnvoll nur bestimmten Nutzern zu geben. So soll zum Beispiel nur der Ersteller ein Thema wieder löschen können. Erreicht ein Forum eine bestimmte Größe ist es wünschenswert eine weitere Usergruppe definieren zu können, die ein Forum moderieren und somit die Rechte besitzen, jegliche Anpassungen vorzunehmen. 
 
-\subsection{Möglichkeiten}
+\subsection{Möglichkeiten - typo3\_forum}
 
 Es gibt eigentlich nur eine Extension, die für Typo3 7.6 in Frage kommt und die heißt typo3\_forum\footnote{https://typo3.org/extensions/repository/view/typo3\_forum}. Sollte diese aus irgendwelchen Gründen als Möglichkeit ausscheiden kann man auf ein externes Forum Plugin zurückgreifen, das auf einer niedrigeren Ebene integriert wird. Ein etabliertes Beispiel heißt phpBB und bietet genau diese Funktionalität. Tatsächlich bietet phpBB mehr Anpassungsmöglichkeiten als die typo3\_forum Extension, ist aber auch mit etwas mehr Arbeit verbunden, da man aus der Typo3 Umgebung ausbricht. Das soll nur eine Anmerkung sein, in dieser Arbeit liegt der Fokus auf Typo3, weshalb nun die typo3\_forum Extension untersucht wird.
 
-\subsection{Implementation}
+\subsection{Implementation von typo3\_forum}
 
 Die Implementation der grundlegenden Forum-Funktionalität fällt moderat aus. Nach der Installation wird ein Sysfolder benötigt und ein spezieller Forum-Record angelegt. In diesem lassen sich die Rechte für jegliche Funktionen genau anpassen. Beispielsweise welche Usergruppen in der Lage sind Antworten zu posten. Außerdem wird das Root Template mit der Extension erweitert. Wie bei vielen Extensions ist so ein standardmäßiges Aussehen via CSS vorgegeben. Zur Anpassung ändert man einfach das CSS dieser Datei. Zuletzt kommt man nicht drum herum etwas Typoscript zu schreiben. Es handelt sich hierbei jedoch nur um einen kleinen Schnipsel, der die Orte zur Anzeige des Forums und des Speichers über die PID definieren. Zusätzlich ist zu beachten, dass MySQL nicht im strict mode sein darf. Das lässt sich in der Datei my.ini abschalten.
 

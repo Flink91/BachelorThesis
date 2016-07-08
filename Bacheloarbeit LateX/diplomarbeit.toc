@@ -8,30 +8,30 @@
 \contentsline {section}{\numberline {2.3}Web Portal}{6}
 \contentsline {chapter}{\numberline {3}Projektanalyse und Spezifikation}{7}
 \contentsline {section}{\numberline {3.1}Der Prozess der Softwareentwicklung}{7}
-\contentsline {paragraph}{\nonumberline Software life cycle}{7}
-\contentsline {section}{\numberline {3.2}Requirements Engineering}{8}
+\contentsline {paragraph}{\nonumberline Software life cycle}{8}
+\contentsline {section}{\numberline {3.2}Requirements Engineering}{9}
 \contentsline {paragraph}{\nonumberline Requirement}{9}
-\contentsline {section}{\numberline {3.3}Anforderungen an das WegE Projekt}{9}
-\contentsline {paragraph}{\nonumberline Auf Machbarkeit zu \"uberpr\"ufende Anforderungen}{10}
+\contentsline {section}{\numberline {3.3}Anforderungen an Content Management Systeme und die WegE Plattform}{10}
+\contentsline {subsubsection}{\nonumberline Auf Machbarkeit zu \"uberpr\"ufende Anforderungen}{11}
 \contentsline {section}{\numberline {3.4}Die Wahl der passenden Technologie}{11}
-\contentsline {chapter}{\numberline {4}Die Wahl des richtigen Content Management Systems}{12}
-\contentsline {section}{\numberline {4.1}Auswahlkriterien}{12}
-\contentsline {paragraph}{\nonumberline CmsMatrix}{12}
-\contentsline {subsection}{\numberline {4.1.1}Technologie\&Architektur}{13}
-\contentsline {subsection}{\numberline {4.1.2}Anbieterinformationen}{13}
-\contentsline {subsection}{\numberline {4.1.3}Content Management}{14}
-\contentsline {subsection}{\numberline {4.1.4}Content Delivery}{14}
-\contentsline {section}{\numberline {4.2}Die Vorauswahl dreier geeigneter Content Management Systeme}{14}
-\contentsline {section}{\numberline {4.3}Sharepoint}{15}
-\contentsline {section}{\numberline {4.4}LifeRay Portal}{16}
-\contentsline {section}{\numberline {4.5}Typo3}{17}
-\contentsline {chapter}{\numberline {5}Typo3 - Eine \"Ubersicht}{19}
-\contentsline {section}{\numberline {5.1}Version und Hintergrund}{19}
-\contentsline {section}{\numberline {5.2}Installation und Anforderungen}{19}
-\contentsline {section}{\numberline {5.3}Bedienung}{20}
+\contentsline {chapter}{\numberline {4}Die Wahl des richtigen Content Management Systems}{13}
+\contentsline {section}{\numberline {4.1}Auswahlkriterien}{13}
+\contentsline {paragraph}{\nonumberline CmsMatrix}{13}
+\contentsline {subsection}{\numberline {4.1.1}Technologie\&Architektur}{14}
+\contentsline {subsection}{\numberline {4.1.2}Anbieterinformationen}{14}
+\contentsline {subsection}{\numberline {4.1.3}Content Management}{15}
+\contentsline {subsection}{\numberline {4.1.4}Content Delivery}{15}
+\contentsline {section}{\numberline {4.2}Die Vorauswahl dreier geeigneter Content Management Systeme}{15}
+\contentsline {section}{\numberline {4.3}Sharepoint}{16}
+\contentsline {section}{\numberline {4.4}LifeRay Portal}{17}
+\contentsline {section}{\numberline {4.5}Typo3}{18}
+\contentsline {chapter}{\numberline {5}Typo3 - Eine \"Ubersicht}{20}
+\contentsline {section}{\numberline {5.1}Version und Hintergrund}{20}
+\contentsline {section}{\numberline {5.2}Installation und Anforderungen}{20}
+\contentsline {section}{\numberline {5.3}Bedienung}{21}
 \contentsline {section}{\numberline {5.4}Funktionalit\"at und Architektur von Typo3}{21}
-\contentsline {subsection}{\numberline {5.4.1}Frontend Struktur}{21}
-\contentsline {paragraph}{\nonumberline Frontend Bereiche}{21}
+\contentsline {subsection}{\numberline {5.4.1}Frontend Struktur}{22}
+\contentsline {paragraph}{\nonumberline Frontend Bereiche}{22}
 \contentsline {subsection}{\numberline {5.4.2}Die Backend Module im \"Uberblick}{23}
 \contentsline {subsubsection}{\nonumberline Page}{23}
 \contentsline {subsubsection}{\nonumberline View}{23}
@@ -57,15 +57,15 @@
 \contentsline {paragraph}{\nonumberline Eigenschaften einer professionellen Extension}{31}
 \contentsline {section}{\numberline {6.1}Rechtemanagement und Authentikation}{33}
 \contentsline {subsection}{\numberline {6.1.1}M\"oglichkeiten - Typo3 und sr\_feuser\_registration}{33}
-\contentsline {subsection}{\numberline {6.1.2}Implementation}{33}
+\contentsline {subsection}{\numberline {6.1.2}Implementation von FE user}{33}
 \contentsline {subsection}{\numberline {6.1.3}Evaluation}{34}
 \contentsline {section}{\numberline {6.2}Blog und News}{35}
 \contentsline {subsection}{\numberline {6.2.1}M\"oglichkeiten - news und typo3\_blog}{35}
 \contentsline {subsection}{\numberline {6.2.2}Implementation der news Extension}{35}
-\contentsline {subsection}{\numberline {6.2.3}Evaluation}{36}
+\contentsline {subsection}{\numberline {6.2.3}Evaluation der news Extension}{36}
 \contentsline {section}{\numberline {6.3}Diskussionsforum}{36}
-\contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten}{37}
-\contentsline {subsection}{\numberline {6.3.2}Implementation}{37}
+\contentsline {subsection}{\numberline {6.3.1}M\"oglichkeiten - typo3\_forum}{37}
+\contentsline {subsection}{\numberline {6.3.2}Implementation von typo3\_forum}{37}
 \contentsline {subsection}{\numberline {6.3.3}Evaluation}{37}
 \contentsline {section}{\numberline {6.4}Import, Anzeige und Bereitstellung von Daten}{38}
 \contentsline {subsection}{\numberline {6.4.1}M\"oglichkeiten}{38}
@@ -91,11 +91,10 @@
 \contentsline {chapter}{\numberline {8}Zusammenfassung}{50}
 \contentsline {section}{\numberline {8.1}Pers\"onliche Erkenntnisse}{50}
 \contentsline {section}{\numberline {8.2}Ausblick auf die Zukunft von CMS Entwicklung und der WegE Plattform}{51}
-\contentsline {chapter}{\numberline {A}Anhang -Typo3 Beispielinstallation}{52}
+\contentsline {chapter}{\numberline {A}Typo3 Beispielinstallation}{52}
 \contentsline {paragraph}{\nonumberline Typo 3 Installationsschritte}{52}
-\contentsline {chapter}{\numberline {B}Anhang - Bootstrap Fluidtemplate}{54}
+\contentsline {chapter}{\numberline {B}Bootstrap Fluidtemplate}{54}
 \contentsline {paragraph}{\nonumberline index.html}{54}
 \contentsline {paragraph}{\nonumberline setup.ts}{54}
 \contentsline {chapter}{Abbildungsverzeichnis}{56}
-\contentsline {chapter}{Tabellenverzeichnis}{56}
-\contentsline {chapter}{Literaturverzeichnis}{57}
+\contentsline {chapter}{Literaturverzeichnis}{56}

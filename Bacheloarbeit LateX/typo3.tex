@@ -17,8 +17,8 @@ Die Installation und Erstellung einer Typo3 Website gestaltet sich relativ umfan
 Typo3 generiert letztendlich eine Website. Diese lässt sich jedoch durch das Typo3 Backend entscheidend verändern. Die Bedienung geschieht fast immer durch dieses Backend, welches von der Startseite der Typo3 Anwendung aus, durch das Anhängen von \texttt{/typo3} in der Adresszeile zu erreichen ist. Hier werden im Grunde drei Aufgaben erledigt. Templates erstellen um das Design der Website anzupassen, Typo3 Konfigurationen vornehmen und die Erstellung von Inhalten. Darüber hinaus lassen sich hier auch Nutzer und Extensions verwalten.
 
 \begin{figure}[ht]
-	\includegraphics[scale=0.5]{abb/typo3frontend.jpg}
-	\caption{Das Frontend gleicht einer normalen Website.}%
+	\includegraphics[scale=0.4]{abb/typo3frontend.jpg}
+	\caption{Das Frontend ist eine normale Website.}%
 	\label{fig:typo3backend}
 \end{figure}
 
@@ -139,7 +139,7 @@ Ein großer Vorteil und Grund für die Wahl von Typo3 als CMS sind die Erweiterung
 	\item Die restlichen Extension Kategorien heißen Documentation, Templates, Examples und Miscellaneous. Diese enthalten genau das was der Name verspricht. Miscellaneous dient als Auffangbecken für alle Extensions, die sich nicht zuordnen lassen.
 \end{itemize}
 
-Darüber hinaus gibt es System-Extensions, welche zum Kern von Typo3 gehören und nicht manipuliert werden können.
+Darüber hinaus gibt es System-Extensions, welche zum Kern von Typo3 gehören und nicht manipuliert werden können. Diese können in allen oberen Bereichen auftauchen.
 
 Bei der großen Zahl von tausenden Typo3 Extensions muss dazugesagt werden, dass ein großer Teil dieser veraltet ist, nicht mehr gepflegt wird oder gar überhaupt nicht auf der neuen Version lauffähig gemacht werden kann. Das liegt auch daran, dass viele der Extensions von freien Programmierern in ihrer Freizeit entwickelt werden. So gilt es etwas vorsichtig bei der Auswahl passender Extensions zu sein.
 Zu finden sind diese Extensions auf der offiziellen Seite im Extension Repository\footnote{typo3.org/extensions/repository}. Jede Extension findet sich hier unter einem einmaligen Extension Key wieder. Wichtig ist es auf die Kompatibilität zur eigenen Typo3 Installation zu achten, die dort angezeigt wird. Auch findet sich hier meist eine Dokumentation zur Einrichtung und weiteren Infos der jeweiligen Erweiterung. Extensions selbst können Abhängigkeiten zu anderen Extensions haben, die vorher installiert sein müssen um lauffähig gemacht zu werden. Selten gibt es auch Konflikte zwischen zwei Extensions, was zu Fehlern führen kann. Solche sollte man also nicht beide auf einem System installieren.
@@ -177,10 +177,9 @@ Der Vorteil eines CMS ist die Erstellung von dynamischem Content. Um das zu bewe
 
 \begin{enumerate}
 	
-	\item Bootstrap \footnote{http://getbootstrap.com/} herunterladen.
-	\item Bootstrap Starter Template herunterladen durch das Kopieren des Quellcodes (F12). Diese vorerst als \texttt{index.html} abspeichern.
-	\item In der \texttt{index.html} alle href-Links an die neue Umgebung anpassen. Der vollständige Code findet sich im Anhang.
-	\item Einen neuen Ordner im Verzeichnis fileadmin anlegen. Dieser hält das Template.
+	\item Bootstrap\footnote{http://getbootstrap.com/} herunterladen und rudimentäres HTML Gerüst in einer \texttt{index.html} anlegen.
+	
+	\item Einen neuen Ordner im Verzeichnis fileadmin von Typo3 anlegen. Dieser wird das Template enthalten.
 	\item Hier die \texttt{index.html} und den bootstrap Ordner ablegen. Dazu drei neue Ordner anlegen mit den Namen \texttt{layouts}, \texttt{partials} und \texttt{ts}.
 	\item Im Backend unter dem Menüpunkt Template muss das Bootstrap Template im Root der Webseite angelegt werden. Sollte dieser nicht existieren, kann dieser unter \texttt{Page} angelegt werden.
 	\begin{figure}
@@ -191,12 +190,12 @@ Der Vorteil eines CMS ist die Erstellung von dynamischem Content. Um das zu bewe
 	\end{figure}
 	\item Im Root-Template unter \texttt{Includes} müssen zwei Dinge eingefügt werden, \texttt{css\_styled\_content} und \texttt{fluid\_styled\_content}. Die Reihenfolge ist dabei wichtig. Sollte \texttt{fluid\_styled\_content} nicht existieren, muss dieses als Extension installiert werden.
 	\item Unter \texttt{General} werden nun zwei externe Typoscript Dateien für die Konstanten und das Setup verlinkt. So erhält man mehr Flexibilität bei der Arbeit mit Versionierungen und Teamarbeit.
-	\subitem Unter \texttt{Constants} wird Folgendes geschrieben: \texttt{<INCLUDE\_TYPOSCRIPT: source=" FILE:fileadmin/\textit{Template\_WegE}/ts/constants.ts">}
+	\subitem Unter \texttt{Constants} wird Folgendes geschrieben, um die Datei bekannt zu machen:\\ \texttt{<INCLUDE\_TYPOSCRIPT: source=" FILE:fileadmin/\textit{Template\_WegE}/ts/constants.ts}''\texttt{>}
 	\subitem Unter \texttt{Setup}: \\
-	\texttt{<INCLUDE\_TYPOSCRIPT: source= " FILE:fileadmin/\textit{Template\_WegE}/ts/setup.ts">}
+	\texttt{<INCLUDE\_TYPOSCRIPT: source= " FILE:fileadmin/\textit{Template\_WegE}/ts/setup.ts}''\texttt{>}
 	\subitem Die zwei verlinkten Dateien müssen nun auch im ts-Ordner erstellt werden.
 	\item Die setup.ts benötigt nun einiges an Code, der aus der index.html übertragen wird. Diese enthält dann nur noch den Code zwischen den body-tags. Die fertige Datei ist im Anhang zu finden. 
-	\item Die Teile aus der index.html, die nun wegfallen, werden in der setup.ts angelegt. Dafür ist ein PAGE Objekt nötig, welches alle referenzierten Dateien, wie bootstrap.css, einbindet. Die komplette Datei ist im Anhang zu finden. Die Inhalte, die das Template der Testumgebung dynamisch erstellt werden sollen beschränken sich auf das Menü und den Seitentitel. Nachdem diese Datei angelegt ist, wird das Menü automatisch mit den erstellten Seiten aus dem Typo3 Backend gefüllt.
+	\item Die Teile aus der index.html, die nun wegfallen, werden in der setup.ts angelegt. Dafür ist ein PAGE Objekt nötig, welches alle referenzierten Dateien, wie bootstrap.css, einbindet (ähnlich zu Kapitel 5.4.3). Die Inhalte, die das Template der Testumgebung dynamisch erstellen soll, beschränken sich auf das Menü und den Seitentitel. Nachdem diese Datei angelegt ist, wird das Menü automatisch mit den erstellten Seiten aus dem Typo3 Backend gefüllt.
 	
 \end{enumerate} 
 
