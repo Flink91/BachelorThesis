@@ -1,0 +1,20 @@
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+INSTALLATIONSANLEITUNG TYPO3 WEGE SEITE
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+1. Wamp herunterladen: http://www.wampserver.com 
+2. Alle Dateien dieser CD in den 'www' Ordner von Wamp (C:/wamp64/www) kopieren (Oder git clone https://github.com/Flink91/BachelorThesis.git).
+3. Wamp starten
+4. Im Browser localhost/phpmyadmin aufrufen
+5. Hier eine neue Datenbank mit dem Namen tpo3 anlegen
+6. In diese die Datei tpo3.sql importieren
+7. Die php.ini öffnen und am Ende diese Zeile hinzufügen: xdebug.max_nesting_level = 200
+8. Wamp neustarten und etwas warten
+9. Webseite unter localhost/BachelorThesis/wege aufrufen
+10. Backend unter localhost/BachelorThesis/wege/typo3 aufrufen und einloggen (Nutzer: admin, PW: password)
+
+FERTIG!
+
+------------------------------------------
+Diese Schritte wurden einmal erfolgreich getestet, aber es kann immer etwas unerwartet schief gehen.
+Sollte etwas nicht geklappt haben, kontaktieren Sie mich gerne unter felix.gellner@stud.uni-bamberg.de
